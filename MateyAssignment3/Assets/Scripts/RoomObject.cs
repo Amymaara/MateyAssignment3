@@ -1,49 +1,58 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class StoryItem : MonoBehaviour
 {
+    public string itemID;
     public TextAsset inkFile;
     public GameObject roomObjects;
     public GameObject itemImage;
-    public int clickCounter = 0;
-    public string postDialogue;
-    public string Speaker;
+    public Material defaultMaterial;
+
+    public float BigWidth;
+    public float BigHeight;
+
+    private int clickCounter = 0;
+
+    public GameObject popupPanel;
     
+
 
     private void Start()
     {
-        clickCounter = 0;
+        clickCounter = ClickTracker.GetClickCount(itemID);
+        GetComponent<Image>().alphaHitTestMinimumThreshold = 0.1f;
     }
 
-    // what happens when player clicks on a character or item in a room
     public void OnItemClick()
     {
         if (inkFile != null)
         {
             clickCounter++;
+            ClickTracker.IncrementClickCount(itemID);
 
-            if (clickCounter == 1) // only plays the whole ink file on the first click
+            Image temp = itemImage.GetComponent<Image>();
+            temp.material = defaultMaterial;
+            
+            temp.rectTransform.localScale = new Vector3(1, 1, 1);
+
+            if (clickCounter == 1)
             {
-                StoryManager.Instance.StartStory(inkFile, this); // loads the ink story
+                popupPanel.SetActive(true);
+                StoryManager.Instance.StartStory(inkFile, this);
             }
-            else 
-            {
-                StoryManager.Instance.postDialogueText(this); // loads a single line
-            }
+
             if (roomObjects != null)
             {
-                RemoveTrigger(roomObjects); // make objects non-clickable when in dialogue
+                RemoveTrigger(roomObjects);
             }
         }
     }
 
-    // makes items non, clickable, this code is alos in DaySystemSequence script
     private void RemoveTrigger(GameObject obj)
     {
-        foreach( var item in obj.GetComponentsInChildren<Image>())
+        foreach (var item in obj.GetComponentsInChildren<Image>())
         {
             EventTrigger trigger = item.GetComponent<EventTrigger>();
             if (trigger != null)
@@ -52,21 +61,40 @@ public class StoryItem : MonoBehaviour
                 Debug.Log("items click true");
             }
         }
-        
     }
 
-
-    //Makes items interactable again
     public void addTrigger()
     {
         foreach (var item in roomObjects.GetComponentsInChildren<Image>())
         {
             EventTrigger trigger = item.GetComponent<EventTrigger>();
-            if (trigger != null)
+            StoryItem storyItem = item.GetComponent<StoryItem>();
+            if (storyItem != null && ClickTracker.GetClickCount(storyItem.itemID) == 0)
             {
-                trigger.enabled = true;
-                Debug.Log("items click false");
+                if (trigger != null)
+                {
+                    trigger.enabled = true;
+                    Debug.Log("items click false");
+                }
             }
         }
+    }
+
+    
+
+    // when player holds their mouse over a room item, item should increase in size
+    public void OnHover()
+    {
+        Image interactableObject = itemImage.GetComponent<Image>();
+        interactableObject.rectTransform.localScale = new Vector3(BigWidth, BigHeight, 1);
+        // in the future maybe add an outline, or have an existing outline change colour
+    }
+
+    // when player takes their mouse off a room item, item should decrease in size
+    public void OnExit()
+    {
+        Image interactableObject = itemImage.GetComponent<Image>();
+        interactableObject.rectTransform.localScale = new Vector3(1, 1, 1);
+        // remove the outline or colour change if implemented OnHover
     }
 }

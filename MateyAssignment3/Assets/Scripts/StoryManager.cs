@@ -27,12 +27,11 @@ public class StoryManager : MonoBehaviour
     public bool canContinue;
     public GridLayoutGroup choicesGrid;
     public Button choicePrefab;
-    public Canvas dialogueCanvas;
+    //public Canvas dialogueCanvas;
     public GameObject CGPanel;
 
     [Header("Story Objects")]
     public Story runningStory;
-    private bool postDialogueActive = false;
     public event Action<string> OnStoryEnd;
     public string storyID;
     public float typeSpeed;
@@ -45,7 +44,7 @@ public class StoryManager : MonoBehaviour
     private StoryItem RoomObject;
     public GameObject charactersInScene;
     string speakerName = "???";
-    [SerializeField] private Animator animator;
+    //[SerializeField] private Animator animator;
 
 
 
@@ -73,8 +72,8 @@ public class StoryManager : MonoBehaviour
 
         }
         
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(dialogueCanvas.gameObject);
+        //DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(dialogueCanvas.gameObject);
     }
 
     private void OnEnable()
@@ -115,7 +114,7 @@ public class StoryManager : MonoBehaviour
 
         }
 
-        postDialogueActive = false;
+        
         runningStory = null;
 
         if (continueButton != null)
@@ -148,7 +147,7 @@ public class StoryManager : MonoBehaviour
 
         }
 
-        postDialogueActive = false;
+        
         runningStory = null;
 
         if (continueButton != null)
@@ -158,10 +157,10 @@ public class StoryManager : MonoBehaviour
 
         }
 
-        if (charactersInScene == null)
-        {
-            charactersInScene = GameObject.Find("CharactersInScene");
-        }
+        //if (charactersInScene == null)
+        //{
+           // charactersInScene = GameObject.Find("CharactersInScene");
+        //}
 
         
     }
@@ -196,10 +195,7 @@ public class StoryManager : MonoBehaviour
     //what happens when the player presses the continue button
     public void OnContinueButton()
     {
-            if (postDialogueActive)
-            {
-                postDialogueText(RoomObject);
-            }
+        Debug.Log("Continue button pressed");
             if (runningStory != null)
             {
                 DisplayNextLine();
@@ -225,6 +221,7 @@ public class StoryManager : MonoBehaviour
     {
         if (runningStory == null)
         {
+            Debug.Log("there is no story");
             return;
         }
 
@@ -274,33 +271,34 @@ public class StoryManager : MonoBehaviour
         continueButton.gameObject.SetActive(true);
     }
 
-    public Slider TextSpeedSlider;
+    //public Slider TextSpeedSlider;
     void Start()
 
     {
-       if (PlayerPrefs.HasKey("typeSpeed"))
-            LoadTextSpeed();
-        else
-            {
-                PlayerPrefs.SetFloat("typeSpeed", 0.4f);
-            }
+       //if (PlayerPrefs.HasKey("typeSpeed"))
+       //     LoadTextSpeed();
+       // else
+        //    {
+        //        PlayerPrefs.SetFloat("typeSpeed", 0.4f);
+         //   }
     }
 
-    public void SetTextSpeed()
-    {
-        typeSpeed = TextSpeedSlider.value;
-        SaveTextSpeed();
-    }
+    //public void SetTextSpeed()
+    //{
+    //    typeSpeed = TextSpeedSlider.value;
+    //    SaveTextSpeed();
+    //}
 
-    public void SaveTextSpeed()
-    {
-        PlayerPrefs.SetFloat("typeSpeed", TextSpeedSlider.value);
-    }
+   // public void SaveTextSpeed()
+    //{
+    //    PlayerPrefs.SetFloat("typeSpeed", TextSpeedSlider.value);
+    //}
 
-    public void LoadTextSpeed()
-    {
-        TextSpeedSlider.value = PlayerPrefs.GetFloat("typeSpeed");
-    }
+   // public void LoadTextSpeed()
+   // {
+   //     TextSpeedSlider.value = PlayerPrefs.GetFloat("typeSpeed");
+   // }
+
     // Title: Unity2D Dialogue System - Names, Portraits, and Layouts using Ink Tags | Unity + Ink tutorial
     // Author: Shaped by Rain Studios
     // Date: 21 October 2021
@@ -333,13 +331,13 @@ public class StoryManager : MonoBehaviour
                     CGPanel.SetActive(false);
                 }
             }
-            else if (tag.StartsWith("animation:"))
-            {
-                string animation = tag.Substring("animation:".Length).Trim();
-                animator = charactersInScene.GetComponent<Animator>();
-                animator.Play(animation);
+            //else if (tag.StartsWith("animation:"))
+           // {
+               //string animation = tag.Substring("animation:".Length).Trim();
+                //animator = charactersInScene.GetComponent<Animator>();
+                //animator.Play(animation);
                 
-            }
+            //}
             else if (tag.StartsWith("activate:"))
             {
                 string active = tag.Substring("activate:".Length).Trim();
@@ -384,25 +382,6 @@ public class StoryManager : MonoBehaviour
        
     }
 
-    // handles the text displayed after a character has already been clicked on
-    public void postDialogueText(StoryItem item)
-    {
-        if (dialoguePanel.activeInHierarchy)
-        {
-            EndStory();
-            postDialogueActive = false;
-        }
-        else
-        {
-            RoomObject = item;
-            dialoguePanel.SetActive(true);
-            continueButton.gameObject.SetActive(true);
-            //dialogueBox.text = item.postDialogue;
-            StartCoroutine(TypeEffect(item.postDialogue));
-            nameTag.text = item.Speaker;
-            postDialogueActive = true;
-        }
-    }
 
 
     // Title: (Part 3) Choices: Unity Visual Novel.
@@ -468,8 +447,14 @@ public class StoryManager : MonoBehaviour
         {
             RoomObject.addTrigger();
             RoomObject.itemImage.transform.localScale = new Vector3(1, 1, 1);
+            if (RoomObject.popupPanel != null)
+            {
+                RoomObject.popupPanel.SetActive(false);
+            }
             RoomObject = null; 
         }
+
+        
 
         if (storyID != null)
         {
