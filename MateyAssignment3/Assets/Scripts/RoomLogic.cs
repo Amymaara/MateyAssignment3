@@ -13,8 +13,8 @@ public class RoomLogic : MonoBehaviour
 
     [Header("Game Objects")]
     [SerializeField] private GameObject Blackscreen;
-    public Image Rory;
-    public Image Stu;
+    public GameObject MainCharcater;
+    public GameObject Stu;
 
     
     [SerializeField] private GameObject item1;
@@ -23,12 +23,12 @@ public class RoomLogic : MonoBehaviour
     [SerializeField] private GameObject item4;
     [SerializeField] private GameObject item5;
     private GameObject[] items;
-    
+
 
     private void Start()
     {
         GameStateManager.OnGameStateChanged += OnStateChanged;
-        StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+        //StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
         items = new GameObject[] { item1, item2, item3, item4, item5 };
 
         if (GameStateManager.CurrentState == gameState.Day0)
@@ -39,9 +39,9 @@ public class RoomLogic : MonoBehaviour
             item3.SetActive(true);
             item4.SetActive(false);
             item5.SetActive(false);
-            foreach (GameObject item in items) 
-            { 
-                RemoveTrigger(item);
+            foreach (GameObject item in items)
+            {
+                //RemoveTrigger(item);
             }
             StoryManager.Instance.StartStory(Day0Script, "Day0Script");
 
@@ -56,17 +56,18 @@ public class RoomLogic : MonoBehaviour
             item5.SetActive(true);
             foreach (GameObject item in items)
             {
-                RemoveTrigger(item);
+                //RemoveTrigger(item);
             }
+            StoryManager.Instance.StartStory(Day1Script, "Day1Script");
         }
-        StoryManager.Instance.StartStory(Day1Script, "Day1Script");
-    }
+    } 
 
     private void OnStateChanged(gameState state)
     {
         // Optional logic when state changes
     }
 
+    /*
     private void AfterStoryEnds(string finishedStory)
     {
         if (finishedStory == "Day0Script")
@@ -116,6 +117,7 @@ public class RoomLogic : MonoBehaviour
                 }
             }
     }
+    */
 
     private void OnDestroy()
     {
