@@ -33,7 +33,7 @@ public class RoomLogic : MonoBehaviour
 
         if (GameStateManager.CurrentState == gameState.Day0)
         {
-            Blackscreen.SetActive(true);
+            Blackscreen.SetActive(false);
             item1.SetActive(true);
             item2.SetActive(true);
             item3.SetActive(true);
@@ -48,7 +48,7 @@ public class RoomLogic : MonoBehaviour
         }
         if (GameStateManager.CurrentState == gameState.Argument)
         {
-            Blackscreen.SetActive(true);
+            Blackscreen.SetActive(false);
             item1.SetActive(true);
             item2.SetActive(true);
             item3.SetActive(true);
