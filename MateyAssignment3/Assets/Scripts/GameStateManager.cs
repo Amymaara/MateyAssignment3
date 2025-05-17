@@ -12,6 +12,8 @@ public static class GameStateManager
         Combat,
         
     }
+
+    public static int roomsVisited = 0;
  
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;
     public static event Action<gameState> OnGameStateChanged;

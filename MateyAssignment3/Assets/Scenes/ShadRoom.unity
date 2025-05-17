@@ -916,7 +916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502949053543376733, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Name
-      value: ScrollHD
+      value: WhiskHD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1119,15 +1119,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928535912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1577742973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257, y: -90}
+  m_AnchoredPosition: {x: 219, y: -100}
   m_SizeDelta: {x: 512, y: 983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &928535914
@@ -1289,7 +1289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502949053543376733, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Name
-      value: BottleHD
+      value: CrayonHD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1611,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502949053543376733, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Name
-      value: ShellHD
+      value: BottleHD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1771,6 +1771,10 @@ PrefabInstance:
       objectReference: {fileID: 1476579441}
     - target: {fileID: 1341293676485122880, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212309731055527825, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3669807858050606017, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
@@ -2021,7 +2025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502949053543376733, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Name
-      value: FluteHD
+      value: BookHD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2336,7 +2340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502949053543376733, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Name
-      value: ChimeHD
+      value: FrameHD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

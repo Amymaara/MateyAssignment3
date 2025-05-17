@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0.5783749, b: 0.40566033, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.61
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -1169,8 +1169,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -8.23325, y: 8.7343, z: 0}
-    m_Extent: {x: 9.7872505, y: 6.9292, z: 0}
+    m_Center: {x: -8.84615, y: 9.00995, z: 0}
+    m_Extent: {x: 9.17435, y: 6.65305, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1
@@ -1182,8 +1182,8 @@ MonoBehaviour:
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -16.581285, y: 4.485648, z: 0}
-  - {x: -13.021873, y: 3.2442589, z: 0}
-  - {x: 0.11620935, y: 9.699525, z: 0}
+  - {x: -14.40783, y: 3.7950888, z: 0}
+  - {x: -1.1098311, y: 10.285892, z: 0}
   - {x: -13.359073, y: 14.223531, z: 0}
 --- !u!1 &1063533929 stripped
 GameObject:
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   storyID: 
   typeSpeed: 0.04
   BigWidth: 1.5
-  BigHeight: 1.5
+  SmallWidth: 1.2
   charactersInScene: {fileID: 505692442}
   loadGlobalsFile: {fileID: 4900000, guid: a556c5a997eb416428f358573fb6a449, type: 3}
 --- !u!1 &1454339871
