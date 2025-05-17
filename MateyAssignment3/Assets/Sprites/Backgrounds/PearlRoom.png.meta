@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 049b51690e0558c49b92a8d760b18efb
+guid: 9cb5f2821da4fd64aa3cc8c8ba3df404
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5851494820903644793
-    second: PearlRoomItems_0
-  - first:
-      213: -1956515903830194930
-    second: PearlRoomItems_1
-  - first:
-      213: -3289184020714860118
-    second: PearlRoomItems_2
-  - first:
-      213: -4097217254680566560
-    second: PearlRoomItems_3
-  - first:
-      213: -1253413637275514307
-    second: PearlRoomItems_4
+      213: -3799647561012149820
+    second: PearlRoom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -36,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -60,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -138,111 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PearlRoomItems_0
+      name: PearlRoom_0
       rect:
         serializedVersion: 2
-        x: 798
-        y: 886
-        width: 225
-        height: 107
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97eeffc798fa43150800000000000000
-      internalID: 5851494820903644793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PearlRoomItems_1
-      rect:
-        serializedVersion: 2
-        x: 1563
-        y: 786
-        width: 206
-        height: 207
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e058ccac62f09d4e0800000000000000
-      internalID: -1956515903830194930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PearlRoomItems_2
-      rect:
-        serializedVersion: 2
-        x: 1178
-        y: 502
-        width: 194
-        height: 178
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa1566c5f887a52d0800000000000000
-      internalID: -3289184020714860118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PearlRoomItems_3
-      rect:
-        serializedVersion: 2
-        x: 1571
-        y: 385
-        width: 301
-        height: 379
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e4e9276d92c327c0800000000000000
-      internalID: -4097217254680566560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PearlRoomItems_4
-      rect:
-        serializedVersion: 2
-        x: 1454
-        y: 93
-        width: 261
-        height: 199
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3a009110fafa9ee0800000000000000
-      internalID: -1253413637275514307
+      spriteID: 4c10136bca0f44bc0800000000000000
+      internalID: -3799647561012149820
       vertices: []
       indices: 
       edges: []
@@ -251,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4d808b026e822044d8d160d564c786ca
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      PearlRoomItems_0: 5851494820903644793
-      PearlRoomItems_1: -1956515903830194930
-      PearlRoomItems_2: -3289184020714860118
-      PearlRoomItems_3: -4097217254680566560
-      PearlRoomItems_4: -1253413637275514307
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
