@@ -9,6 +9,7 @@ public class StoryItem : MonoBehaviour
     public GameObject roomObjects;
     public GameObject itemImage;
     public Material defaultMaterial;
+    
 
     public float BigWidth;
     public float BigHeight;
@@ -97,4 +98,6 @@ public class StoryItem : MonoBehaviour
         interactableObject.rectTransform.localScale = new Vector3(1, 1, 1);
         // remove the outline or colour change if implemented OnHover
     }
+
+   
 }
