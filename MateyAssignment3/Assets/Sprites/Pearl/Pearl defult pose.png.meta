@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 049b51690e0558c49b92a8d760b18efb
+guid: 8154057746697434c99ca21ceea78be1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5851494820903644793
-    second: PearlRoomItems_0
+      213: 7378887998649782684
+    second: Pearl defult pose_0
   - first:
-      213: -1956515903830194930
-    second: PearlRoomItems_1
+      213: -428410560555328353
+    second: Pearl defult pose_1
   - first:
-      213: -3289184020714860118
-    second: PearlRoomItems_2
+      213: 6568354374373082453
+    second: Pearl defult pose_2
   - first:
-      213: -4097217254680566560
-    second: PearlRoomItems_3
-  - first:
-      213: -1253413637275514307
-    second: PearlRoomItems_4
+      213: -9131954658644789096
+    second: Pearl defult pose_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,111 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PearlRoomItems_0
+      name: Pearl defult pose_0
       rect:
         serializedVersion: 2
-        x: 798
-        y: 886
-        width: 225
-        height: 107
+        x: 250
+        y: 11
+        width: 364
+        height: 1059
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97eeffc798fa43150800000000000000
-      internalID: 5851494820903644793
+      spriteID: c91d9ec2a83176660800000000000000
+      internalID: 7378887998649782684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PearlRoomItems_1
+      name: Pearl defult pose_1
       rect:
         serializedVersion: 2
-        x: 1563
-        y: 786
-        width: 206
-        height: 207
+        x: 653
+        y: 11
+        width: 364
+        height: 1057
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e058ccac62f09d4e0800000000000000
-      internalID: -1956515903830194930
+      spriteID: f9cd2107ddafd0af0800000000000000
+      internalID: -428410560555328353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PearlRoomItems_2
+      name: Pearl defult pose_2
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 502
-        width: 194
-        height: 178
+        x: 1052
+        y: 10
+        width: 364
+        height: 1056
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa1566c5f887a52d0800000000000000
-      internalID: -3289184020714860118
+      spriteID: 555046bb08b772b50800000000000000
+      internalID: 6568354374373082453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PearlRoomItems_3
+      name: Pearl defult pose_3
       rect:
         serializedVersion: 2
-        x: 1571
-        y: 385
-        width: 301
-        height: 379
+        x: 1451
+        y: 10
+        width: 364
+        height: 1057
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e4e9276d92c327c0800000000000000
-      internalID: -4097217254680566560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PearlRoomItems_4
-      rect:
-        serializedVersion: 2
-        x: 1454
-        y: 93
-        width: 261
-        height: 199
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3a009110fafa9ee0800000000000000
-      internalID: -1253413637275514307
+      spriteID: 898f0820f97c44180800000000000000
+      internalID: -9131954658644789096
       vertices: []
       indices: 
       edges: []
@@ -251,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4d808b026e822044d8d160d564c786ca
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PearlRoomItems_0: 5851494820903644793
-      PearlRoomItems_1: -1956515903830194930
-      PearlRoomItems_2: -3289184020714860118
-      PearlRoomItems_3: -4097217254680566560
-      PearlRoomItems_4: -1253413637275514307
+      Pearl defult pose_0: 7378887998649782684
+      Pearl defult pose_1: -428410560555328353
+      Pearl defult pose_2: 6568354374373082453
+      Pearl defult pose_3: -9131954658644789096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
