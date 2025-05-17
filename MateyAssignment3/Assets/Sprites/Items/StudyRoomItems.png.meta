@@ -59,11 +59,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 10
+  spriteExtrude: 32
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,12 +141,12 @@ TextureImporter:
       name: StudyRoomItems_0
       rect:
         serializedVersion: 2
-        x: 427
-        y: 662
-        width: 137
-        height: 318
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 430
+        y: 652
+        width: 130
+        height: 328
+      alignment: 9
+      pivot: {x: 0.42829448, y: 0.5106573}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: StudyRoomItems_1
       rect:
         serializedVersion: 2
-        x: 726
-        y: 783
-        width: 135
-        height: 174
+        x: 718
+        y: 786
+        width: 147
+        height: 169
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: StudyRoomItems_2
       rect:
         serializedVersion: 2
-        x: 628
-        y: 552
-        width: 198
-        height: 175
+        x: 617
+        y: 575
+        width: 195
+        height: 149
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +207,10 @@ TextureImporter:
       name: StudyRoomItems_3
       rect:
         serializedVersion: 2
-        x: 938
-        y: 531
-        width: 273
-        height: 185
+        x: 941
+        y: 541
+        width: 266
+        height: 156
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 146
-        width: 499
-        height: 223
-      alignment: 9
-      pivot: {x: 0.50972897, y: 0.5145135}
+        width: 452
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,33 +247,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: StudyRoomItems_5
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 486
-        width: 44
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83304d352508de0478e78de35318b590
-      internalID: 886598260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e968057ba773a1d408ca998303fcff07
+    spriteID: 1c7b1823929ed2d44a74b54c178f0d87
     internalID: 0
     vertices: []
     indices: 
@@ -288,7 +266,6 @@ TextureImporter:
       StudyRoomItems_2: -4655645042630568497
       StudyRoomItems_3: 5453751043277094892
       StudyRoomItems_4: -3228982695030687113
-      StudyRoomItems_5: 886598260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
