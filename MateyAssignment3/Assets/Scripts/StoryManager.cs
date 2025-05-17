@@ -39,8 +39,8 @@ public class StoryManager : MonoBehaviour
     
 
     [Header("Character Handling")]
-    public float BigWidth;
-    public float BigHeight;
+    public float BigWidth = 1.4f;
+    public float SmallWidth = 1.2f;
     private StoryItem RoomObject;
     public GameObject charactersInScene;
     string speakerName = "???";
@@ -368,14 +368,14 @@ public class StoryManager : MonoBehaviour
             if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
             {
                 
-                item.transform.localScale = new Vector3(BigWidth, BigHeight, 1); // Makes image larger Slightly bigger
+                item.transform.localScale = new Vector3(BigWidth, BigWidth, 1f); // Makes image larger Slightly bigger
                 
 
             }
             else
             {
                 // Dim or normalize other characters
-                item.transform.localScale = new Vector3(1f, 1f, 1f);
+                item.transform.localScale = new Vector3(SmallWidth, SmallWidth, 1f);
                 
             }
         }

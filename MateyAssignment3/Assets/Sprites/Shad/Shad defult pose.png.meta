@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 14f3806ca9d853c4a8cde89bd2b8d3ad
+guid: 56a9d79e4f1ef3a4e9d264f891e5604e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -569138355490597397
-    second: GalleyRoomItems_0
+      213: -7370244853752237665
+    second: Shad defult pose_0
   - first:
-      213: -6338217694621624237
-    second: GalleyRoomItems_1
+      213: -3057726243918658702
+    second: Shad defult pose_1
   - first:
-      213: 1522794035822221036
-    second: GalleyRoomItems_2
+      213: -3913292440031513854
+    second: Shad defult pose_2
   - first:
-      213: 6014921507330663611
-    second: GalleyRoomItems_3
+      213: 8680813967195289670
+    second: Shad defult pose_3
   - first:
-      213: 2116758090981917136
-    second: GalleyRoomItems_4
+      213: -6229151044237644542
+    second: Shad defult pose_4
+  - first:
+      213: 7395261321997904506
+    second: Shad defult pose_5
+  - first:
+      213: -4429332104298338020
+    second: Shad defult pose_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,111 +144,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GalleyRoomItems_0
+      name: Shad defult pose_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 794
-        width: 324
-        height: 166
+        x: 566
+        y: 46
+        width: 392
+        height: 1015
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be5deec5ea30a18f0800000000000000
-      internalID: -569138355490597397
+      spriteID: f917270da51a7b990800000000000000
+      internalID: -7370244853752237665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GalleyRoomItems_1
+      name: Shad defult pose_1
       rect:
         serializedVersion: 2
-        x: 672
-        y: 880
-        width: 135
-        height: 161
+        x: 990
+        y: 1058
+        width: 22
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3589bfa86902a08a0800000000000000
-      internalID: -6338217694621624237
+      spriteID: 273c6d28e26c095d0800000000000000
+      internalID: -3057726243918658702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GalleyRoomItems_2
+      name: Shad defult pose_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 285
-        width: 134
-        height: 328
+        x: 991
+        y: 46
+        width: 392
+        height: 1015
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce654438b1d022510800000000000000
-      internalID: 1522794035822221036
+      spriteID: 20333b1624131b9c0800000000000000
+      internalID: -3913292440031513854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GalleyRoomItems_3
+      name: Shad defult pose_3
       rect:
         serializedVersion: 2
-        x: 203
-        y: 485
-        width: 204
-        height: 263
+        x: 1418
+        y: 1059
+        width: 19
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb42d441e3b497350800000000000000
-      internalID: 6014921507330663611
+      spriteID: 648bceb6f42787870800000000000000
+      internalID: 8680813967195289670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GalleyRoomItems_4
+      name: Shad defult pose_4
       rect:
         serializedVersion: 2
-        x: 531
-        y: 507
-        width: 110
-        height: 266
+        x: 1427
+        y: 46
+        width: 392
+        height: 1015
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d14968c44c306d10800000000000000
-      internalID: 2116758090981917136
+      spriteID: 20d26f3f02c9d89a0800000000000000
+      internalID: -6229151044237644542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shad defult pose_5
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1059
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7aeed69dfe31a660800000000000000
+      internalID: 7395261321997904506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shad defult pose_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 46
+        width: 512
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1960133be9d782c0800000000000000
+      internalID: -4429332104298338020
       vertices: []
       indices: 
       edges: []
@@ -251,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1a5e7e1d27010c44f89037a0bf22b808
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +311,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GalleyRoomItems_0: -569138355490597397
-      GalleyRoomItems_1: -6338217694621624237
-      GalleyRoomItems_2: 1522794035822221036
-      GalleyRoomItems_3: 6014921507330663611
-      GalleyRoomItems_4: 2116758090981917136
+      Shad defult pose_0: -7370244853752237665
+      Shad defult pose_1: -3057726243918658702
+      Shad defult pose_2: -3913292440031513854
+      Shad defult pose_3: 8680813967195289670
+      Shad defult pose_4: -6229151044237644542
+      Shad defult pose_5: 7395261321997904506
+      Shad defult pose_6: -4429332104298338020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

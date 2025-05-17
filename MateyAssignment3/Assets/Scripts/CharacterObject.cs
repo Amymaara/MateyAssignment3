@@ -40,6 +40,7 @@ public class StoryCharacter : MonoBehaviour
         if (index >= 0 && index < sprites.Length && sprites[index] != null)
         {
             characterImage.sprite = sprites[index];
+            characterImage.SetNativeSize();
         }
         else
         {
