@@ -14,6 +14,8 @@ public static class GameStateManager
     }
 
     public static int roomsVisited = 0;
+    public static int DayCount = 0;
+
  
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;
     public static event Action<gameState> OnGameStateChanged;
