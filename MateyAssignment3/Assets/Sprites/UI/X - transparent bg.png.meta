@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: f395564247f8ece43b28b135f628a815
+guid: 0be75f8f050a1df4ea2da533aa9d8b86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7466812008575488362
-    second: DeckRoomItems_0
+      213: -2428536744592493374
+    second: X - transparent bg_0
   - first:
-      213: 711266930744811492
-    second: DeckRoomItems_1
-  - first:
-      213: -3367171113138201237
-    second: DeckRoomItems_2
-  - first:
-      213: -7856049943057603640
-    second: DeckRoomItems_3
-  - first:
-      213: 1861244640268111522
-    second: DeckRoomItems_4
+      213: 4819205998564150338
+    second: X - transparent bg_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -36,7 +27,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -60,7 +51,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -138,111 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DeckRoomItems_0
+      name: X - transparent bg_0
       rect:
         serializedVersion: 2
-        x: 592
-        y: 562
-        width: 97
-        height: 200
+        x: 530
+        y: 403
+        width: 278
+        height: 290
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6153cff5f17f9760800000000000000
-      internalID: 7466812008575488362
+      spriteID: 2c4b49e92ba1c4ed0800000000000000
+      internalID: -2428536744592493374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeckRoomItems_1
+      name: X - transparent bg_1
       rect:
         serializedVersion: 2
-        x: 1569
-        y: 644
-        width: 351
-        height: 393
+        x: 1185
+        y: 406
+        width: 278
+        height: 290
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4efd68b418deed900800000000000000
-      internalID: 711266930744811492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeckRoomItems_2
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 441
-        width: 161
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6dd07f66b76541d0800000000000000
-      internalID: -3367171113138201237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeckRoomItems_3
-      rect:
-        serializedVersion: 2
-        x: 1415
-        y: 183
-        width: 232
-        height: 314
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c3e25e2334b9f290800000000000000
-      internalID: -7856049943057603640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeckRoomItems_4
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 182
-        width: 227
-        height: 139
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2aec747932874d910800000000000000
-      internalID: 1861244640268111522
+      spriteID: 24c09db825241e240800000000000000
+      internalID: 4819205998564150338
       vertices: []
       indices: 
       edges: []
@@ -251,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2703c7c9afca4244b9358a4c32c314c7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DeckRoomItems_0: 7466812008575488362
-      DeckRoomItems_1: 711266930744811492
-      DeckRoomItems_2: -3367171113138201237
-      DeckRoomItems_3: -7856049943057603640
-      DeckRoomItems_4: 1861244640268111522
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
