@@ -1,6 +1,7 @@
 using UnityEngine;
 using static GameStateManager;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class SceneChanger : MonoBehaviour
     // loads in a new scene based on the next scene name
     private void LoadNextScene(string sceneName)
     {
+        DOTween.KillAll();
         SceneManager.LoadScene(sceneName);
     }
 

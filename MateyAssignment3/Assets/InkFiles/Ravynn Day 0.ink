@@ -1,4 +1,4 @@
-INCLUDE Load_Globals.ink
+INCLUDE Globals.ink
 
 -> ravynn_visit
 

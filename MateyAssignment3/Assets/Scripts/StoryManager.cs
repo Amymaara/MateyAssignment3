@@ -11,6 +11,7 @@ using UnityEngine.Rendering;
 using System;
 using System.Collections;
 using System.Linq;
+using DG.Tweening;
 
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
 
@@ -261,7 +262,7 @@ public class StoryManager : MonoBehaviour
         
         continueButton.gameObject.SetActive(false);
         dialogueBox.text = "";
-        
+        typeSpeed = PlayerPrefs.GetFloat("TypeSpeed");
 
         foreach (char letter in line.ToCharArray())
         {
@@ -449,10 +450,16 @@ public class StoryManager : MonoBehaviour
             RoomObject.itemImage.transform.localScale = new Vector3(1, 1, 1);
             if (RoomObject.popupPanel != null)
             {
-                RoomObject.popupPanel.SetActive(false);
+                var panelAnimation = RoomObject.popupPanel.GetComponent<UIPanelAnimation>();
+                if (panelAnimation != null)
+                {
+                    panelAnimation.SlideOutAndDisable();
+                }
             }
             RoomObject = null; 
         }
+
+     
 
         
 

@@ -1,4 +1,4 @@
-INCLUDE Load_Globals.ink
+INCLUDE Globals.ink
 
 -> follow_shad_whisk
 === follow_shad_whisk ===

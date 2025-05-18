@@ -1,4 +1,4 @@
-INCLUDE Load_Globals.ink
+INCLUDE Globals.ink
 
 // HP variables
 VAR playerHP = 80
