@@ -1,5 +1,4 @@
-VAR playerName = "Captain"
-VAR shadAffection = 0
+INCLUDE Globals.ink
 
 -> shad_intro
 
@@ -7,7 +6,7 @@ VAR shadAffection = 0
 #speaker:Stu
 "Wait… What’s that smell. It smells like burning sugar and nightmares. Let’s go to the Galley. Shad should be there."
 
-#speaker:{playerName}
+#speaker:{Name}
 The door creaks open and I’m immediately hit with an odour.  
 I can’t quite place it. It’s sweet? Salty? Concerning?
 
@@ -17,14 +16,14 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 "Don’t step there! The pie’s cooling and it may be sentient."
 
 #speaker:Shad
-"Oh huh, {playerName}? I didn’t realise it was you. I wanted to make a welcome pie but it sort of started making itself halfway through. I'm a bit spooked but definitely proud of the lil guy."
+"Oh huh, {Name}? I didn’t realise it was you. I wanted to make a welcome pie but it sort of started making itself halfway through. I'm a bit spooked but definitely proud of the lil guy."
 
 (Why is he acting like this is completely normal kitchen behaviour?)  
 (I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.)
 
 * [React to the...science experiment]
-    ~ shadAffection += 10
-    #speaker:{playerName}
+    ~ Shad_Affection += 10
+    #speaker:{Name}
     "What in Poseidon’s name are you concocting down here?"
 
     #speaker:Shad
@@ -33,8 +32,8 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
     -> shad_kitchen_story
 
 * [Point out the bubbling terror]
-    ~ shadAffection += 0
-    #speaker:{playerName}
+    ~ Shad_Affection += 0
+    #speaker:{Name}
     "Should I be concerned about the bubbling jar of slime on the counter?"
 
     #speaker:Shad
@@ -43,8 +42,9 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
     -> shad_kitchen_story
 
 * [Comment on the chaos]
-    ~ shadAffection -= 10
-    #speaker:{playerName}
+    ~ Shad_Affection -= 10
+    
+    #speaker:{Name}
     "The galley’s in a state of chaos, what happened?"
 
     #speaker:Shad
@@ -56,7 +56,7 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 #speaker:Shad
 "The kitchen is great though! Way sturdier than my last one — that one exploded twice, on the same day."
 
-#speaker:{playerName}
+#speaker:{Name}
 "How does a kitchen explode twice?"
 
 #speaker:Shad
@@ -69,8 +69,9 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 "You hungry? I tried making something called 'soul' food. For your soul, you know?"
 
 * [Backhanded sunshine]
-    ~ shadAffection += 10
-    #speaker:{playerName}
+    ~ Shad_Affection += 10
+    
+    #speaker:{Name}
     "You’re like the sun if it put on an apron and caused mild property damage."
 
     #speaker:Shad
@@ -81,8 +82,9 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
     -> shad_exit
 
 * [Set your standards low]
-    ~ shadAffection += 0
-    #speaker:{playerName}
+    ~ Shad_Affection += 0
+    
+    #speaker:{Name}
     "As long as you don’t poison me, we’ll get along fine."
 
     #speaker:Shad
@@ -91,8 +93,9 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
     -> shad_exit
 
 * [A pie vs a kraken? Tough call]
-    ~ shadAffection -= 10
-    #speaker:{playerName}
+    ~ Shad_Affection-= 10
+    
+    #speaker:{Name}
     "I think you might be a bigger danger than the sea monster."
 
     #speaker:Shad
@@ -105,22 +108,24 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 "Anyway — I’m still setting up my spice altar. Come by later and I’ll show you a meal that’s unforgettable. Hopefully in a good way this time!"
 
 * [Wreck but charming]
-    ~ shadAffection += 10
-    #speaker:{playerName}
+    ~ Shad_Affection += 10
+    
+    #speaker:{Name}
     "You’re definitely a walking hazard, but you’re also kind of adorable."
  -> shad_exit_flirty
  
  * [seek culinary safety elsewhere]
-  ~ shadAffection -= 10
- #speaker:{playerName}
+  ~ Shad_Affection -= 10
+  
+ #speaker:{Name}
   "Good luck with whatever this is. I’m gonna try and find something to eat that’s not vaguely alive."
  -> shad_exit_disinterested
  
  === shad_exit_flirty ===
     #speaker:Shad
-    "Aw shucks, {playerName} — you can’t say that to a guy without making ‘em blush."
+    "Aw shucks, Captain {Name} — you can’t say that to a guy without making ‘em blush."
 
-    #speaker:{playerName}
+    #speaker:{Name}
     "Well, if your food ends up killing me — at least I’d die smiling."
 
     #speaker:Shad
@@ -132,7 +137,7 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
     #speaker:Stu
     "Squaaak — did he just try flirting back with a cooking pun?"
 
-    #speaker:{playerName}
+    #speaker:{Name}
     "I think he tried. Or maybe the fumes were getting to him."
 
     I look back one more time.  
@@ -146,7 +151,7 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 #speaker:Shad
 "Totally understandable, Cap’n — I did hope you could try my food but… maybe next time."
 
-#speaker:{playerName}
+#speaker:{Name}
 "That’s if the kitchen doesn’t explode before then."
 
 He gives me a thumbs up and I walk out before something stares at me with contempt again.
@@ -154,13 +159,13 @@ He gives me a thumbs up and I walk out before something stares at me with contem
 #speaker:Stu
 "Squaaak — I’m sure he means well… but he’s like a tsunami with an apron."
 
-#speaker:{playerName}
+#speaker:{Name}
 "I’d rather my chances with Hades than those meals."
 
 #speaker:Stu
 "Yet… he’s kind of lovable?"
 
-#speaker:{playerName}
+#speaker:{Name}
 "Maybe. But if he ever calls something mildly sentient again, I’m jumping ship."
 
 As I leave I hear Shad joyfully say: "Yay! It’s bubbling again!" Followed by a soft boom. 

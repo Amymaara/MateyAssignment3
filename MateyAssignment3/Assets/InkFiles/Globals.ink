@@ -15,5 +15,5 @@ VAR PronounHim = ""
 VAR PronounHisApple = ""
 VAR PronounHis = ""
 
-// battle VAR
-VAR Gifted = ""
+// exit type variables
+VAR rory_exit_type = ""

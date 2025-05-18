@@ -1,3 +1,5 @@
+INCLUDE Globals.ink
+
 -> storm_intro
 
 === storm_intro ===
