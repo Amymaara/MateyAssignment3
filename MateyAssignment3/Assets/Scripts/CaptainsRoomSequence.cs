@@ -6,38 +6,38 @@ using Unity.VisualScripting;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using System.IO;
 
 
 // this is the sequence of events for the Captains Room
 public class CaptainsRoomSequence : MonoBehaviour
 {
     [Header("Ink Files")]
-    [SerializeField] private TextAsset First; 
-    [SerializeField] private TextAsset Second;
-    [SerializeField] private TextAsset Third;
+    [SerializeField] private TextAsset StuIntro;
+    [SerializeField] private TextAsset CVText;
 
 
-    [Header("Game Objects")]
-    [SerializeField] private GameObject NamePanel; //player name input window
-    public Sprite[] CvList; //list of Cvs
-    [SerializeField] private GameObject CVS;
-    [SerializeField] private GameObject CVImage;
-    [SerializeField] private GameObject Book;
-    [SerializeField] private Button settings;
 
-    private int currentCV = 0;
+    [Header("Item")]
+    [SerializeField] private GameObject File;
+    public GameObject MapButton;
+
+    [Header("Tool tips")]
+    public GameObject ObjectToolTip;
+    public GameObject MapToolTip;
+    
+
 
     private void Start()
     {
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds; // add listener for a story ending
-        StoryManager.Instance.StartStory(First, "First"); // load first ink file, will start up dialogue system
-        NamePanel.SetActive(false); //hide name input window
-        CVS.SetActive(false); //hide cvs panel
-        RemoveTrigger(Book); //make book non clickable
-        settings = GameObject.Find("Settings icon").GetComponent<Button>();
-        settings.enabled = true;
-        settings.interactable = true;
-
+        StoryManager.Instance.StartStory(StuIntro, "StuIntro"); // load first ink file, will start up dialogue system
+        File.SetActive(false); //hide cvs panel
+        RemoveTrigger(File); //make book non clickable
+        ObjectToolTip.SetActive(false);
+        MapToolTip.SetActive(false);
+        MapButton.SetActive(false);
+       
     }
 
     // Makes all items in a game objects children, non interactable
@@ -75,65 +75,28 @@ public class CaptainsRoomSequence : MonoBehaviour
     // what should happen after each story has completed
     private void AfterStoryEnds(string finishedStory)
     {
-        if (finishedStory == "First")
+        if (finishedStory == "StuIntro")
         {
-            Debug.Log("story 1 finished");
-            NamePanel.SetActive(true); //panel that asks for the players name
+            Debug.Log("StuIntro finished");
+            ObjectToolTip.SetActive(true);
+            addTrigger(File);
         }
-        else if (finishedStory == "Second")
+        else
         {
-            Debug.Log("story 2 finished");
-            addTrigger(Book); //make the book interactable again
+            MapToolTip.SetActive(true);
+            MapButton.SetActive(true);
+            Debug.Log("Cvs Finished");
+            
         }
-        else if (finishedStory == "Third")
-        {
-            Debug.Log("story 3 finished");
-            StoryManager.Instance.OnStoryEnd -= AfterStoryEnds; //stop listening for stories that have ended
-        }
+
         Debug.Log("all stories in scene have finished");
     }
 
-    // UIInputField function that gets the string that the player has typed in and confirmed
-    public void ReadName(string x)
-    {
-        StoryManager.Instance.SetVarState("Name", x); // save the players name to the globals.ink file, makes it accesible later on.
-    }
-
-    // what happens when the players clicks the confirm button on their name
-    public void OnNameConfirm()
-    {
-        string name = NamePanel.GetComponentInChildren<TMP_InputField>().text; //get reference to the text field
-        ReadName(name); // gets player input
-        NamePanel.SetActive(false); //close the name input panel
-        StoryManager.Instance.StartStory(Second, "Second"); // start the second ink story
-
-    }
     
-    // when book object is clicked, open the cvs panel
-    public void OnBookPress()
-    {
-        CVS.SetActive(true); 
-        RemoveTrigger(Book);
-    }
 
-    // when the player clicks on the next cv button
-    public void OnCVNext()
-    {
-        currentCV++; // increase the index
-        if(currentCV >= CvList.Length) // checks if the index is greater than the array length
-        {
-            currentCV = 0; //reset index position
-        }
-        CVImage.GetComponentInChildren<Image>().sprite = CvList[currentCV]; // change sprite to the one at index
-    }
+    
+    
+    
 
-   // there should also be a OnCVPrev() function when there are more cvs, but for now its fine
-
-
-    // when player exits the cv panel
-    public void OnCVExit()
-    {
-        CVS.SetActive(false); // disable Cv panel
-        StoryManager.Instance.StartStory(Third, "Third"); // play the third story
-    }
+   
 }
