@@ -18,3 +18,4 @@ VAR PronounHis = ""
 // exit type variables
 VAR rory_exit_type = ""
 VAR shad_exit_type = ""
+VAR pearl_exit_type = ""
