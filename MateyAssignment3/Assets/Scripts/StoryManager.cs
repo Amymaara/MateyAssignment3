@@ -174,12 +174,14 @@ public class StoryManager : MonoBehaviour
        if(item.itemID == "CV")
         {
             cv = true;
+            storyID = item.itemID;
         }
         else
         {
             cv = false;
-        }
             storyID = null;
+        }
+           
 
 
         variablesInDialogue.StartListening(runningStory);
@@ -486,7 +488,9 @@ public class StoryManager : MonoBehaviour
 
         if (storyID != null)
         {
+            Debug.Log(storyID + "is ending");
             OnStoryEnd?.Invoke(storyID);
+
         }
 
         if (runningStory != null && variablesInDialogue != null)

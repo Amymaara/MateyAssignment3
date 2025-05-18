@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -9,14 +10,16 @@ public static class GameStateManager
         MainMenu,
         Day0,
         Argument,
+        Day1,
         Combat,
         
     }
 
-    public static int roomsVisited = 0;
+    public static int numRoomsVisited = 0;
     public static int DayCount = 0;
+    public static List<GameObject> RoomsVisited = new List<GameObject>();
 
- 
+
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;
     public static event Action<gameState> OnGameStateChanged;
 

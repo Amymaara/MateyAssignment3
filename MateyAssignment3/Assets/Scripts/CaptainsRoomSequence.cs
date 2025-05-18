@@ -21,6 +21,7 @@ public class CaptainsRoomSequence : MonoBehaviour
     [Header("Item")]
     [SerializeField] private GameObject File;
     public GameObject MapButton;
+    public GameObject Map;
 
     [Header("Tool tips")]
     public GameObject ObjectToolTip;
@@ -32,13 +33,14 @@ public class CaptainsRoomSequence : MonoBehaviour
     {
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds; // add listener for a story ending
         StoryManager.Instance.StartStory(StuIntro, "StuIntro"); // load first ink file, will start up dialogue system
-        File.SetActive(false); //hide cvs panel
+        
         RemoveTrigger(File); //make book non clickable
         ObjectToolTip.SetActive(false);
         MapToolTip.SetActive(false);
         MapButton.SetActive(false);
-       
-    }
+        Map.SetActive(false);
+
+}
 
     // Makes all items in a game objects children, non interactable
     private void RemoveTrigger(GameObject obj)
@@ -81,7 +83,7 @@ public class CaptainsRoomSequence : MonoBehaviour
             ObjectToolTip.SetActive(true);
             addTrigger(File);
         }
-        else
+        else if (finishedStory == "CV")
         {
             MapToolTip.SetActive(true);
             MapButton.SetActive(true);
@@ -89,11 +91,11 @@ public class CaptainsRoomSequence : MonoBehaviour
             
         }
 
-        Debug.Log("all stories in scene have finished");
+        
     }
 
     
-
+    
     
     
     
