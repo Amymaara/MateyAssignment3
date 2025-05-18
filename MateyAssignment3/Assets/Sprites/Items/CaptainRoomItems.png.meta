@@ -132,12 +132,12 @@ TextureImporter:
       name: CaptainRoomItems_0
       rect:
         serializedVersion: 2
-        x: 805
-        y: 624
-        width: 184
-        height: 83
+        x: 797
+        y: 613
+        width: 216
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: CaptainRoomItems_1
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 652
-        width: 80
-        height: 175
+        x: 1069
+        y: 628
+        width: 106
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 55c63ad3bb26c0b4aa90b4f53f2583db
     internalID: 0
     vertices: []
     indices: 
