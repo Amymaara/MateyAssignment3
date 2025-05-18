@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rory defult pose_0: -952244634229983930
+      Rory defult pose_1: 7873840163165887266
+      Rory defult pose_2: 8554239723787190970
+      Rory defult pose_3: -6603431346502735861
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

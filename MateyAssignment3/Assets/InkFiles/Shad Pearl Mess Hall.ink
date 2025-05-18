@@ -1,0 +1,111 @@
+INCLUDE Load_Globals.ink
+
+-> shad_pearl_octopus_scene
+
+=== shad_pearl_octopus_scene ===
+
+#speaker:{Name}
+The Mess Hall is in chaos. Again.
+
+Flour is sprinkled everywhere like a snowstorm just hit. Something is boiling that probably shouldn’t be, and in the middle of the culinary apocalypse — Pearl and Shad are arguing. Loudly.
+
+#speaker:Shad
+"I’m telling you, Pearl, that slimy thief reached right in and took my whisk — right off my hand! My favourite one — Mr Whisk!"
+
+#speaker:Pearl
+"Well, maybe it was just curious? It’s an octopus — they’re intelligent and fundamentally misunderstood."
+
+#speaker:Shad
+"That whisk is a relic to me! It’s seasoned with memories, and that 8-legged calamari is going in the pot to make up for it!"
+
+#speaker:Pearl
+"Absolutely NOT. You cannot and will not cook something just because it stole a kitchen tool!"
+
+#speaker:Shad
+"It’s NOT just a tool! It’s Mr Whisk!"
+
+#speaker:{Name}
+I step in just in time to see Pearl standing protectively in front of an octopus, shielding it like some kind of sea creature guardian.  
+Shad is wielding a skillet like it’s the blade of justice.
+
+#speaker:Pearl
+"We can lure it away or offer it a trade! I can negotiate!"
+
+#speaker:Shad
+"It’s an octopus, Pearl."
+
+#speaker:Pearl
+"I’m very persuasive!"
+
+* [Peace Talks] 
+    -> whisk_peace
+* [Justice Served] 
+    -> whisk_cook
+* [Neutral Strategy]
+    -> whisk_trap
+
+=== whisk_peace ===
+~ Pearl_Affection += 5
+~ Shad_Affection -= 5
+
+#speaker:{Name}
+"Let’s try and get it back peacefully — no need to escalate into seafood warfare."
+
+#speaker:Pearl
+(arms still outstretched)  
+"See! The Captain gets it. We’re not barbarians."
+
+#speaker:Shad
+(muttering)  
+"Speak for yourself..."
+
+(He lowers the pan... but not happily.)
+
+-> whisk_aftermath
+
+=== whisk_cook ===
+~ Pearl_Affection -= 5
+~ Shad_Affection += 10
+
+#speaker:{Name}
+"You mess with a man’s whisk and you might as well sign your marinade papers — let’s get the pan."
+
+#speaker:Shad
+(grinning)  
+"Thank you! Finally, someone who respects the sanctity of Mr Whisk."
+
+#speaker:Pearl
+*gasps*  
+"You — you’d cook Sardinella next, wouldn’t you?!"
+
+-> whisk_aftermath
+
+=== whisk_trap ===
+~ Pearl_Affection += 5
+~ Shad_Affection += 5
+
+#speaker:{Name}
+"Or, hear me out — we trap it using a decoy whisk and anchovies."
+
+(Both of them blink blankly.)
+
+#speaker:Pearl
+"That’s… actually not a terrible idea."
+
+#speaker:Shad
+"Yeah. That might have been the most pirate thing you’ve said yet."
+
+-> whisk_aftermath
+
+=== whisk_aftermath ===
+
+#speaker:{Name}
+Eventually their tempers settle.  
+
+Pearl storms off to her room to collect some “diplomatic” sea tools.  
+Shad heads to the Galley and starts dramatically flipping pancakes while mumbling about dishonourable molluscs.
+
+(Who should I follow?)
+
+-> END
+

@@ -498,6 +498,11 @@ public class StoryManager : MonoBehaviour
             variablesInDialogue.variables[nameOfVariable] = Ink.Runtime.Value.Create(value);
         }
     }
-    
+
+    //Allows other scripts to access current ink Story
+    public Story GetStory()
+    {
+        return runningStory;
+    }
 
 }
