@@ -273,10 +273,10 @@ public class StoryManager : MonoBehaviour
     //Types out letters one at a time
     private IEnumerator TypeEffect(string line)
     {
-        
+        typeSpeed = PlayerPrefs.GetFloat("typeSpeed", 0.4f); // default if not set
         continueButton.gameObject.SetActive(false);
         dialogueBox.text = "";
-        typeSpeed = PlayerPrefs.GetFloat("TypeSpeed");
+        
 
         foreach (char letter in line.ToCharArray())
         {
@@ -326,7 +326,7 @@ public class StoryManager : MonoBehaviour
         // Handle tags like speaker
         foreach (string tag in runningStory.currentTags)
         {
-            if (tag.StartsWith("speaker:"))
+            if (tag.StartsWith("Speaker:"))
             {
                 speakerName = tag.Substring("speaker:".Length).Trim();
                 nameTag.text = speakerName;
