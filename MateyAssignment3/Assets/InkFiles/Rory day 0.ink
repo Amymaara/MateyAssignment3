@@ -150,19 +150,8 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:{Name}
 "Oh, no chance. You and that desk have fried my brain."
 
-I turned around to leave, and I swear — *solemnly swear* — that I heard him say: "You’re welcome."
-
-#speaker:Stu
-"Squaaak, was that flirting or a verbal skirmish?"
-
-#speaker:{Name}
-"A little bit of both, I think? He complimented me with his eyes but insulted me with his tone."
-
-#speaker:Stu
-"High society courting terrifies me."
-
-I glance back one last time. He’s already adjusting and aligning new pieces of furniture. I’m not sure if I want to kiss him or throw him overboard.
-
+My eyes catch on something of his.
+(I wonder what this is about, let's try asking.)
 
 -> END
 
@@ -176,15 +165,8 @@ I glance back one last time. He’s already adjusting and aligning new pieces of
 #speaker:{Name}
 "Or you’ll get used to the brig. Let’s see who adapts first."
 
-(I was out before I associate that nauseating perfume with his ego. Nope — already done.)
-
-#speaker:Stu
-"You two get along as well as pirates and piranhas."
-
-#speaker:{Name}
-"Let’s just hope he’s better with a map than he is with decor."
-
-I glance back at the room. He didn’t follow, but I’m 97% sure he’s scheming something to spite me. I’ve survived worse — like tentacles and emotional vulnerability.
+As I head out I see something obnoxious, I decide to let him yap to me about it.
+(I should ask his what this is)
 
 -> END
 

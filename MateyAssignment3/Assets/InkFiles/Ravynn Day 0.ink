@@ -147,19 +147,12 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #speaker:Ravynn
 "You were thinking it though."
 
+#Speaker:{Name}
 (She returns to sharpening her harpoon, but I catch the faintest smile.)
 
-#speaker:Stu
-"Squaaak — was that flirting or an interrogation?"
+As I'm about to leave I catch a glance of one of her belongings.
 
-#speaker:{Name}
-"A little bit of both. Not sure who won."
-
-#speaker:Stu
-"Definitely her. You like the scary ones, don’t you?"
-
-(I glance back. She’s already reorganizing the ropes. I walk away. Respectfully.)
-
+(Let's try asking her about it)
 -> END
 
 === ravynn_dismiss ===
@@ -177,15 +170,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #speaker:Ravynn
 "Then they’ll break. But I won’t."
 
-(I turn and walk back. She doesn’t look back — and neither do I.)
+#Speaker:{Name}
+Sensing the tension my gaze awkwardly shifts until it lands upon an item.
 
-#speaker:Stu
-"Squaaak — she’s not just intense. She’s ferocious."
-
-#speaker:{Name}
-"Yeah. And if she ever snaps, we’ll all be going overboard... in alphabetical order probably."
-
-(I look back one more time — she’s still sharpening that harpoon.  
-I realize my hand is gripping the hem of my sleeve without even noticing.)
-
+(Let's try to change the topic and ask about this)
 -> END

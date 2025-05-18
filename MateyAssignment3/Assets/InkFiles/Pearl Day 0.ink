@@ -117,25 +117,16 @@ She proceeds to drop a seashell, pick it up, and immediately drop it again.
 #speaker:Pearl
 "ANYWAY! My seashells, yes, gotta place them just right, yup. This is a science, totally not me swooning — this is serious. Very serious!"
 
+#Speaker:{Name}
 I decided walking toward the door would be better than witnessing whatever this is.
 
-#speaker:Stu
-"Squaaak — what in the seven seas just happened?"
-
-#speaker:{Name}
-"I think I broke her… by flirting."
-
-#speaker:Stu
-"Remind me to keep you away from the emotional ones, you heartthrob."
-
-#speaker:{Name}
-"Too late. I think she tried to flirt back with that seashell."
-
-We stare at the door for a second, then decide to keep walking away. Fast.
+My hand catches on something, Oh? It's one of her belongings.
+(Let's ask about it)
 
 -> END
 
 === pearl_inspection ===
+~ pearl_exit_type = "disinterested"
 ~ Pearl_Affection -= 10
 
 #speaker:{Name}
@@ -148,15 +139,8 @@ We stare at the door for a second, then decide to keep walking away. Fast.
 #speaker:Pearl
 "Haha, yeah well — look at the time. I think I need to reorganise my sock drawer. Private business, you know, because you can’t let anyone see… your socks undrawered. I mean unorganised!"
 
-Stu leans in to whisper into my ear.
-
-#speaker:Stu
-"She seems a bit frazzled, {Name}. Let’s give her some space to, uh… organise her socks?"
-
-#speaker:{Name}
-"Yeah, agreed. Let’s get out of here."
-
-I left Pearl's room. She hummed and tossed things about.  
-(I wonder why she got so worked up over what I said?)
+#Speaker:{Name}
+Trying to get her to calm down, I reached for one of her items.
+(Let's try talking about this)
 
 -> END
