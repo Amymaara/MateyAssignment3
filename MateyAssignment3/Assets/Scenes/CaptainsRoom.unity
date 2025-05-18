@@ -3374,9 +3374,9 @@ MonoBehaviour:
   StuIntro: {fileID: 4900000, guid: 0674655463e814b418df0d79ebbecff3, type: 3}
   CVText: {fileID: 0}
   File: {fileID: 810218515}
-  MapButton: {fileID: 0}
+  MapButton: {fileID: 376734421}
   ObjectToolTip: {fileID: 1442662579}
-  MapToolTip: {fileID: 0}
+  MapToolTip: {fileID: 969682473}
 --- !u!1 &1727002161
 GameObject:
   m_ObjectHideFlags: 0

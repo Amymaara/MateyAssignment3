@@ -333,6 +333,13 @@ public class StoryManager : MonoBehaviour
                 currentTalkingCharacter(speakerName);
             }
 
+            else if (tag.StartsWith("speaker:"))
+            {
+                speakerName = tag.Substring("speaker:".Length).Trim();
+                nameTag.text = speakerName;
+                currentTalkingCharacter(speakerName);
+            }
+
             else if (tag.StartsWith("CGPanel:"))
             {
                 string cg = tag.Substring("CGPanel:".Length).Trim();
