@@ -37,7 +37,7 @@ public class StoryManager : MonoBehaviour
     public string storyID;
     public float typeSpeed;
     private Coroutine displayLineCouroutine;
-    
+    private bool cv;
 
     [Header("Character Handling")]
     public float BigWidth = 1.4f;
@@ -171,7 +171,16 @@ public class StoryManager : MonoBehaviour
     {
         runningStory = new Story(inkJSON.text);
         RoomObject = item;
-        storyID = null;
+       if(item.itemID == "CV")
+        {
+            cv = true;
+        }
+        else
+        {
+            cv = false;
+        }
+            storyID = null;
+
 
         variablesInDialogue.StartListening(runningStory);
         dialoguePanel.SetActive(true);
@@ -185,6 +194,7 @@ public class StoryManager : MonoBehaviour
     {
         runningStory = new Story(inkJSON.text);
         storyID = storyName;
+        cv = false;
       
         variablesInDialogue.StartListening(runningStory);
         dialoguePanel.SetActive(true);
@@ -199,6 +209,10 @@ public class StoryManager : MonoBehaviour
         Debug.Log("Continue button pressed");
             if (runningStory != null)
             {
+                if (cv)
+                {
+                RoomObject.ShowNextPopupImage();
+                }
                 DisplayNextLine();
             }
     }

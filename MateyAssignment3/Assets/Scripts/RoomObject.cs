@@ -5,20 +5,23 @@ using DG.Tweening;
 
 public class StoryItem : MonoBehaviour
 {
+    [Header("Item")]
     public string itemID;
     public TextAsset inkFile;
     public GameObject roomObjects;
     public GameObject itemImage;
     public Material defaultMaterial;
-    
 
+    [Header("Scale")]
     public float BigWidth;
     public float BigHeight;
 
     private int clickCounter = 0;
 
+    [Header("Pop Ups")]
     public GameObject popupPanel;
-    
+    public GameObject[] popupImages; 
+    private int currentImageIndex = 0;
 
 
     private void Start()
@@ -100,6 +103,23 @@ public class StoryItem : MonoBehaviour
         rt.DOKill(); // Cancel tween
         rt.DOScale(Vector3.one, 0.2f)
           .SetEase(Ease.InOutSine);
+    }
+
+   
+
+    public void ShowNextPopupImage()
+    {
+        if (popupImages == null || popupImages.Length == 0) return;
+
+        // Disable all
+        foreach (var img in popupImages)
+            img.SetActive(false);
+
+        // Enable current
+        popupImages[currentImageIndex].SetActive(true);
+
+        // Move to next
+        currentImageIndex++;
     }
 }
 
