@@ -1,4 +1,4 @@
-INCLUDE Load_Globals.ink
+INCLUDE Globals.ink
 
 -> shad_pearl_octopus_scene
 

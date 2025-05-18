@@ -1,4 +1,4 @@
-INCLUDE Load_Globals.ink
+INCLUDE Globals.ink
 
 -> follow_pearl_whisk
 
