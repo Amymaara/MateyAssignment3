@@ -27,10 +27,16 @@ public class MainMenuScript : MonoBehaviour
 
     public void OnCreditButtonExit()
     {
-     credits.SetActive(false);
+
         creditButton.interactable = true;
-        startButton.interactable = true; 
+        startButton.interactable = true;
         settingsButton.interactable = true;
+
+        //var panelAnimation = credits.GetComponent<UIPanelAnimation>();
+        //if (panelAnimation != null)
+        //{
+         //   panelAnimation.SlideOutAndDisable(); // You must define this in your UIPanelAnimation
+       // }
     }
 
     

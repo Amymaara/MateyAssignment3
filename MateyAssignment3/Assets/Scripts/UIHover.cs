@@ -29,4 +29,9 @@ public class UIHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         rectTransform.DOScale(originalScale, duration * 0.8f)
                      .SetEase(Ease.InOutSine);
     }
+
+    void OnDestroy()
+    {
+        DOTween.Kill(transform); 
+    }
 }
