@@ -36,7 +36,7 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 (Okay. Time to react to that name…)
 
 * ["That name sounds... character-building"]
-    ~ Rory_Affectionn -= 10
+    ~ Rory_Affection -= 10
     
     #speaker:{Name}
     "Yeah, I’m not gonna lie — that’s an awful name."

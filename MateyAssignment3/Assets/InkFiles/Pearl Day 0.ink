@@ -89,7 +89,7 @@ In the middle of the room, there she stood.
 "Anyways, I’m still deciding where my belongings should go. I need to place it so that they twinkle just right."
 
 #speaker:Pearl
-"What brought you to my little corner of controlled chaos, {playerName}?"
+"What brought you to my little corner of controlled chaos, Captain {Name}?"
 
 * ["Had to see it for myself"]
     -> pearl_flirt

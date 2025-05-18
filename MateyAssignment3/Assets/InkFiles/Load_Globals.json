@@ -1,1 +1,4 @@
-﻿{"inkVersion":21,"root":[["\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"global decl":["ev",0,{"VAR=":"Pearl_Affection"},0,{"VAR=":"Shad_Affection"},0,{"VAR=":"Rory_Affection"},0,{"VAR=":"Ravynn_Affection"},"str","^","/str",{"VAR=":"Name"},"str","^","/str",{"VAR=":"PronounHe"},"str","^","/str",{"VAR=":"PronounHim"},"str","^","/str",{"VAR=":"PronounHisApple"},"str","^","/str",{"VAR=":"PronounHis"},"str","^","/str",{"VAR=":"rory_exit_type"},"/ev","end",null],"#f":1}],"listDefs":{}}
+
+
+﻿{"inkVersion":21,"root":[["\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"global decl":["ev",0,{"VAR=":"Pearl_Affection"},0,{"VAR=":"Shad_Affection"},0,{"VAR=":"Rory_Affection"},0,{"VAR=":"Ravynn_Affection"},"str","^","/str",{"VAR=":"Name"},"str","^","/str",{"VAR=":"PronounHe"},"str","^","/str",{"VAR=":"PronounHim"},"str","^","/str",{"VAR=":"PronounHisApple"},"str","^","/str",{"VAR=":"PronounHis"},"str","^","/str",{"VAR=":"rory_exit_type"},"str","^","/str",{"VAR=":"shad_exit_type"},"str","^","/str",{"VAR=":"pearl_exit_type"},"/ev","end",null],"#f":1}],"listDefs":{}}
+
