@@ -1,0 +1,83 @@
+using System.Linq;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using static GameStateManager;
+
+
+public class MapButton : MonoBehaviour
+{
+    public GameObject thisRoom;
+    public GameObject Map;
+    public RoomLogic roomLogic;
+    public string roomSceneName;
+    private TextAsset inkFile;
+
+    public void onRoomButtonPress()
+    {
+        UIPanelAnimation uiPanelAnimation = Map.GetComponent<UIPanelAnimation>();
+        uiPanelAnimation.SlideOutAndDisable();
+
+
+        if (!RoomsVisited.Contains(thisRoom))
+        {
+            RoomsVisited.Add(thisRoom);
+            numRoomsVisited++;
+        }
+
+        if (CurrentState == gameState.Day0)
+        {
+            inkFile = roomLogic.Day0PostScript;
+            StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+            StoryManager.Instance.StartStory(inkFile, "Day0Script");
+        }
+
+        else if (CurrentState == gameState.Argument)
+        {
+            GameStateManager.SetState(gameState.Day1);
+            SceneManager.LoadScene(roomSceneName);
+        }
+
+        else if (CurrentState == gameState.Day1)
+        {
+            inkFile = roomLogic.Day1PostScript;
+            StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+            StoryManager.Instance.StartStory(inkFile, "Day1Script");
+
+            if (numRoomsVisited >= 5)
+            {
+                GameStateManager.SetState(gameState.Argument);
+                SceneManager.LoadScene(roomSceneName); 
+            }
+            else
+            {
+                GameStateManager.SetState(gameState.Combat);
+                SceneManager.LoadScene(roomSceneName);
+            }
+        }
+    }
+
+    private void AfterStoryEnds(string finishedStory)
+    {
+        if (finishedStory == "Day0Script")
+        {
+            SceneManager.LoadScene(roomSceneName);
+
+        }
+        else if (finishedStory == "Day1Script")
+        {
+
+            SceneManager.LoadScene(roomSceneName);
+        }
+        
+         Debug.Log("all stories in scene have finished");
+         
+        
+         
+    }
+
+    private void OnDestroy()
+    {
+        StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+    }
+}

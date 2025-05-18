@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &262663373895203840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8631822581989655348}
+  - component: {fileID: 137392818323457355}
+  - component: {fileID: 8508916714238769854}
+  - component: {fileID: 2219332372082986951}
+  m_Layer: 5
+  m_Name: Rory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8631822581989655348
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262663373895203840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 431.99994, y: -107.99999}
+  m_SizeDelta: {x: 332, y: 1042}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &137392818323457355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262663373895203840}
+  m_CullTransparentMesh: 1
+--- !u!114 &8508916714238769854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262663373895203840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: dbee802f13ed28048a8785ee608f424e, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -952244634229983930, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2219332372082986951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262663373895203840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c7b48f0fab84441a0b135f2b56a3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rory
+  characterImage: {fileID: 8508916714238769854}
+  sprites:
+  - {fileID: -952244634229983930, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
+  - {fileID: 7873840163165887266, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
+  - {fileID: 8554239723787190970, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
+  - {fileID: -6603431346502735861, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
+  - {fileID: 4883052108694497414, guid: 51a517dc4871ba14690ba4ede9b1458a, type: 3}
+  - {fileID: 4499713994248185189, guid: 51a517dc4871ba14690ba4ede9b1458a, type: 3}
+  - {fileID: -6294174059640075731, guid: 51a517dc4871ba14690ba4ede9b1458a, type: 3}
+  - {fileID: 5542951527050473418, guid: 51a517dc4871ba14690ba4ede9b1458a, type: 3}
+  - {fileID: 2423312469344989399, guid: 471357f72b52c8b4787dbb61b63be384, type: 3}
+  - {fileID: -4897692842521468931, guid: 471357f72b52c8b4787dbb61b63be384, type: 3}
+  - {fileID: 8401147661389686882, guid: 471357f72b52c8b4787dbb61b63be384, type: 3}
+  - {fileID: 2672717495086541928, guid: 471357f72b52c8b4787dbb61b63be384, type: 3}
