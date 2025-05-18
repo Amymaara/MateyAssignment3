@@ -45,8 +45,8 @@ Shad is wielding a skillet like it’s the blade of justice.
     -> whisk_trap
 
 === whisk_peace ===
-~ Pearl_Affection += 5
-~ Shad_Affection -= 5
+~ Pearl_Affection += 10
+~ Shad_Affection -= 10
 
 #speaker:{Name}
 "Let’s try and get it back peacefully — no need to escalate into seafood warfare."
@@ -64,7 +64,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 -> whisk_aftermath
 
 === whisk_cook ===
-~ Pearl_Affection -= 5
+~ Pearl_Affection -= 10
 ~ Shad_Affection += 10
 
 #speaker:{Name}
