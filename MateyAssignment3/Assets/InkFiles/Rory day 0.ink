@@ -1,5 +1,4 @@
-VAR playerName = "Captain"
-VAR roryAffection = 0
+INCLUDE Globals.ink
 
 -> rory_intro
 
@@ -7,7 +6,7 @@ VAR roryAffection = 0
 #speaker:Stu
 "We should definitely check out that suspicious guy. Hopefully he hasn’t royally fucked up or stolen anything."
 
-#speaker:{playerName}
+#speaker:{Name}
 I stepped into what used to be the ship’s study. Keyword: *used to*. Now it looked like a noble catalog threw up all over it with no restraints and a grudge against simplicity.
 
 And the cause of it? Yup — there he was, standing by the window like a painting brought to life, letting the sunlight wash over his stupidly perfect bone structure.
@@ -18,7 +17,7 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:Master Porthole
 "You’re the Captain I assume? A little tardy but fashionably so."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Not to be rude but who the hell are you?"
 
 #speaker:Master Porthole
@@ -27,19 +26,19 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:Master Porthole
 "My name is… Mast erhm Porthole. Yeah, that’ll do."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Master Porthole? You’re kidding, right?"
 
 #speaker:Master Porthole
 "Unfortunately no. My mother was quite fond of windows."
 
-#speaker:{playerName}
+#speaker:{Name}
 (Okay. Time to react to that name…)
 
 * ["That name sounds... character-building"]
-    ~ roryAffection -= 10
+    ~ Rory_Affectionn -= 10
     
-    #speaker:{playerName}
+    #speaker:{Name}
     "Yeah, I’m not gonna lie — that’s an awful name."
 
     He looks at me as if I murdered his child.
@@ -50,9 +49,9 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
     -> rory_flooring
 
 * ["Touching sentiment, truly"]
- ~ roryAffection += 10
+ ~ Rory_Affection += 10
  
-    #speaker:{playerName}
+    #speaker:{Name}
     "It’s heartwarming that she named you after something she loved so dearly."
 
     #speaker:Master Porthole
@@ -61,9 +60,9 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
     -> rory_flooring
 
 * ["Sounds fake, but alright"]
- ~ roryAffection += 0
+ ~ Rory_Affection += 0
  
-    #speaker:{playerName}
+    #speaker:{Name}
     "That sounds like a fake name."
 
     #speaker:Master Porthole
@@ -78,7 +77,7 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:Master Porthole
 "It’s absolutely tragic. That wood under my desk? It utterly cheapens it."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Easy there, it took me a lot to get this ship. It might not amount to much, but she’s mine."
 
 "Getting her was not easy. Just thinking about it is giving me war flashbacks."
@@ -91,31 +90,31 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
     -> rory_deed
 
 === rory_troll ===
-~ roryAffection += 0
+~ Rory_Affection += 0
 
-#speaker:{playerName}
+#speaker:{Name}
 "I had to wrestle a troll for it. That was quite the experience."
 
-#speaker:Rory
+#speaker:Master Porthole
 "A troll wrestling another troll? Must have been quite the sight."
 
 -> rory_tone
 
 === rory_drunk ===
-~ roryAffection -= 10
+~ Rory_Affection -= 10
 
-#speaker:{playerName}
+#speaker:{Name}
 "I bought this drunk off my mind. I think I traded my life savings... and possibly my soul."
 
-#speaker:Rory
+#speaker:Master Porthole
 "Well that’s laughably irresponsible of you. Are you even qualified for this job?"
 
 -> rory_tone
 
 === rory_deed ===
-~ roryAffection += 10
+~ Rory_Affection += 10
 
-#speaker:{playerName}
+#speaker:{Name}
 "I found the title deed on the floor. You know what they say — finders keepers."
 
 #speaker:Master Porthole
@@ -124,7 +123,7 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 -> rory_tone
 
 === rory_tone ===
-#speaker:{playerName}
+#speaker:{Name}
 "Ever consider speaking more kindly? Your tongue is as sharp as your jawline."
 
 (Did I just say that out loud?)
@@ -142,13 +141,13 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
     -> rory_exit_disinterested
 
 === rory_exit_flirty ===
-#speaker:{playerName}
+#speaker:{Name}
 "You’ve certainly left an impression, Master Porthole. One that I’ll need a strong glass of whiskey to process."
 
 #speaker:Master Porthole
 "Good. I’d be horrified if you forgot me that easily."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Oh, no chance. You and that desk have fried my brain."
 
 I turned around to leave, and I swear — *solemnly swear* — that I heard him say: "You’re welcome."
@@ -156,7 +155,7 @@ I turned around to leave, and I swear — *solemnly swear* — that I heard him 
 #speaker:Stu
 "Squaaak, was that flirting or a verbal skirmish?"
 
-#speaker:{playerName}
+#speaker:{Name}
 "A little bit of both, I think? He complimented me with his eyes but insulted me with his tone."
 
 #speaker:Stu
@@ -168,13 +167,13 @@ I glance back one last time. He’s already adjusting and aligning new pieces of
 -> END
 
 === rory_exit_disinterested ===
-#speaker:{playerName}
+#speaker:{Name}
 "Just try not to redecorate the entire ship before dinner. That desk’s already giving me a migraine."
 
 #speaker:Master Porthole
 "Tragic. I’m afraid you’ll never get used to elegance."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Or you’ll get used to the brig. Let’s see who adapts first."
 
 (I was out before I associate that nauseating perfume with his ego. Nope — already done.)
@@ -182,7 +181,7 @@ I glance back one last time. He’s already adjusting and aligning new pieces of
 #speaker:Stu
 "You two get along as well as pirates and piranhas."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Let’s just hope he’s better with a map than he is with decor."
 
 I glance back at the room. He didn’t follow, but I’m 97% sure he’s scheming something to spite me. I’ve survived worse — like tentacles and emotional vulnerability.

@@ -1,5 +1,4 @@
-VAR playerName = "Captain"
-VAR pearlAffection = 0
+INCLUDE Globals.ink
 
 -> pearl_visit 
 
@@ -7,7 +6,7 @@ VAR pearlAffection = 0
 #speaker:Stu
 "Why don’t we pay a visit to Pearl?"
 
-#speaker:{playerName}
+#speaker:{Name}
 I stepped into a room that smelled of lavender, salt and the local fish market on a good day. Trinkets were scattered about — if the sea had a souvenir market, this would be it.
 
 In the middle of the room, there she stood.
@@ -18,7 +17,7 @@ In the middle of the room, there she stood.
 #speaker:Stu
 "Is she talking to a… fish?"
 
-#speaker:{playerName}
+#speaker:{Name}
 "I think so…"
 
 (She suddenly turned around, bright eyed)
@@ -27,12 +26,12 @@ In the middle of the room, there she stood.
 "Oh! I didn’t hear you come in — you surprised me."
 
 #speaker:Pearl
-"You must be the new {playerName}! We were taking bets on what you’d be like. I guessed tall and grumpy, she said damp and confused."
+"You must be the new {Name}! We were taking bets on what you’d be like. I guessed tall and grumpy, she said damp and confused."
 
 #speaker:Stu
 "Honestly, fair guesses."
 
-#speaker:{playerName}
+#speaker:{Name}
 "We…?"
 
 (Wait, she can’t be talking about…)
@@ -41,7 +40,7 @@ In the middle of the room, there she stood.
 "This is Sardinella, she’s quite lazy. I have to give her that little push to get her to maintain her daily 1000 swims. She’s feeling a bit agitated today."
 
 #speaker:Pearl
-"So {playerName}. I need honest pirate feedback — how do I come across to you? I can take it! …probably."
+"So {Name}. I need honest pirate feedback — how do I come across to you? I can take it! …probably."
 
 (Okay, so we’re just gonna move past the fish? Fine by me.)
 
@@ -53,9 +52,9 @@ In the middle of the room, there she stood.
     -> crab_cult_response
 
 === compliment_unique ===
-~ pearlAffection += 10
+~ Pearl_Affection += 10
 
-#speaker:{playerName}
+#speaker:{Name}
 "You’re strange, really strange and honestly I don’t mind it."
 
 #speaker:Pearl
@@ -64,9 +63,9 @@ In the middle of the room, there she stood.
 -> pearl_belongings
 
 === reserve_judgment ===
-~ pearlAffection -= 10
+~ Pearl_Affection -= 10
 
-#speaker:{playerName}
+#speaker:{Name}
 "I’m reserving judgement for now."
 
 #speaker:Pearl
@@ -75,9 +74,9 @@ In the middle of the room, there she stood.
 -> pearl_belongings
 
 === crab_cult_response ===
-~ pearlAffection += 0
+~ Pearl_Affection += 0
 
-#speaker:{playerName}
+#speaker:{Name}
 "You’re a walking fever dream, but I've seen weirder. Like a crab cult. Long story."
 
 #speaker:Pearl
@@ -98,9 +97,9 @@ In the middle of the room, there she stood.
     -> pearl_inspection
 
 === pearl_flirt ===
-~ pearlAffection += 10
+~ Pearl_Affection += 10
 
-#speaker:{playerName}
+#speaker:{Name}
 "I wanted to see the ship's heart. I think I found it."
 
 She slow blinks, once, twice, thrice.
@@ -123,13 +122,13 @@ I decided walking toward the door would be better than witnessing whatever this 
 #speaker:Stu
 "Squaaak — what in the seven seas just happened?"
 
-#speaker:{playerName}
+#speaker:{Name}
 "I think I broke her… by flirting."
 
 #speaker:Stu
 "Remind me to keep you away from the emotional ones, you heartthrob."
 
-#speaker:{playerName}
+#speaker:{Name}
 "Too late. I think she tried to flirt back with that seashell."
 
 We stare at the door for a second, then decide to keep walking away. Fast.
@@ -137,9 +136,9 @@ We stare at the door for a second, then decide to keep walking away. Fast.
 -> END
 
 === pearl_inspection ===
-~ pearlAffection -= 10
+~ Pearl_Affection -= 10
 
-#speaker:{playerName}
+#speaker:{Name}
 
 "Routine inspection. Making sure there’s no funny business going on — and you’re screaming funny business."
 
@@ -152,9 +151,9 @@ We stare at the door for a second, then decide to keep walking away. Fast.
 Stu leans in to whisper into my ear.
 
 #speaker:Stu
-"She seems a bit frazzled, {playerName}. Let’s give her some space to, uh… organise her socks?"
+"She seems a bit frazzled, {Name}. Let’s give her some space to, uh… organise her socks?"
 
-#speaker:{playerName}
+#speaker:{Name}
 "Yeah, agreed. Let’s get out of here."
 
 I left Pearl's room. She hummed and tossed things about.  
