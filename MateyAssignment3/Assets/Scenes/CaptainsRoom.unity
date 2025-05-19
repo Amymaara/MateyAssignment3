@@ -3981,6 +3981,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 1647523202}
+    - target: {fileID: 3241144943762511631, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
+      propertyPath: m_Name
+      value: Captains
+      objectReference: {fileID: 0}
     - target: {fileID: 3661542344047175756, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_Camera
       value: 

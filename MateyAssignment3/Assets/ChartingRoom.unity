@@ -402,6 +402,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 1105794758}
+    - target: {fileID: 2753268209356433878, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: m_Name
+      value: Captains
+      objectReference: {fileID: 0}
     - target: {fileID: 2980183227978632900, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: m_Name
       value: MapPrefab
@@ -453,6 +457,10 @@ PrefabInstance:
     - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomSceneName
       value: DayTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759308238176845396, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
