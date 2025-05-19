@@ -43,18 +43,20 @@ public class AudioManager : MonoBehaviour
 
    public void PlaySFX(string fileName)
     {
-        AudioClip clip = Resources.Load<AudioClip>("Audio/" + fileName);
+        AudioClip clip = Resources.Load<AudioClip>("Audio/SFX/" + fileName);
         if (clip == null)
         {
             Debug.LogWarning("SFX not found: " + fileName);
             return;
         }
 
-        AudioSource sfxSource= new GameObject("SFX -" + clip.name).GetComponent<AudioSource>();
+        GameObject sfxObj = new GameObject("SFX -" + clip.name);
+        AudioSource sfxSource = sfxObj.AddComponent<AudioSource>();
         sfxSource.transform.SetParent(sfxRoot);
         sfxSource.clip = clip;
         sfxSource.playOnAwake = false;
         sfxSource.spatialBlend = 0; // 2D sound
+        sfxSource.outputAudioMixerGroup = sfxMixer;
         sfxSource.Play();
 
         Destroy(sfxSource.gameObject, clip.length + 0.5f);
@@ -62,21 +64,19 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(string fileName)
     {
-        AudioClip clip = Resources.Load<AudioClip>("Audio/" + fileName);
+        AudioClip clip = Resources.Load<AudioClip>("Audio/Music/" + fileName);
         if (clip == null)
         {
             Debug.LogWarning("Music not found: " + fileName);
             return;
         }
-        AudioSource musicSource = new GameObject("Music -" + clip.name).GetComponent<AudioSource>();
-        musicSource.clip = clip;
-        musicSource.spatialBlend = 0; // 2D sound
-        musicSource.Play();
-        musicSource.loop = true;
 
+        // Prevent restarting the same clip
         if (musicSource.clip == clip && musicSource.isPlaying)
             return;
 
+        musicSource.clip = clip;
+        musicSource.Play();
     }
     public void StopMusic()
     {

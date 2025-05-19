@@ -8,6 +8,30 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 8e889a923d5473640a5de660dc6703f1
+  - enabled: 1
+    path: Assets/Scenes/DreamScene.unity
+    guid: 452f3d67aa5b47c43912a20dbff3dffb
+  - enabled: 1
+    path: Assets/Scenes/CaptainsRoom.unity
+    guid: 7d785ed2cff4dd14c998b57ab5fd2c58
+  - enabled: 1
+    path: Assets/Scenes/PearlRoom.unity
+    guid: f49ccee05e59c744da303caf30fa8987
+  - enabled: 1
+    path: Assets/Scenes/RavynnRoom.unity
+    guid: 679c6534d84830e4e8900e436f71243d
+  - enabled: 1
+    path: Assets/Scenes/RoryRoom.unity
+    guid: 86161e35da961ae4db9c833678337f9d
+  - enabled: 1
+    path: Assets/Scenes/ShadRoom.unity
+    guid: 8ad8949ce4a0483499b82133446a2351
+  - enabled: 1
+    path: Assets/Scenes/MessHall.unity
+    guid: 3a588b7c8b1c3ec4a844b7b1d483838c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
