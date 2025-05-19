@@ -59,12 +59,6 @@ public class DayTransitionLogic : MonoBehaviour
         
         canvas.SetActive(false);
 
-        if (GameStateManager.AllRoomsVisited())
-        {
-            Debug.Log("All rooms visited. Loading BeforeKraken scene...");
-            GameStateManager.SetState(GameStateManager.gameState.Combat);
-            sceneChanger.LoadNextScene("BeforeKraken");
-            
-        }
+        
     }
 }

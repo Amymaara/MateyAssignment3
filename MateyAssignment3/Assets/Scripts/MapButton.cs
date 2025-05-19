@@ -53,6 +53,8 @@ public class MapButton : MonoBehaviour
             }
         }
 
+       
+
         // Continue room transition logic
         if (roomLogic != null)
         {
@@ -85,7 +87,7 @@ public class MapButton : MonoBehaviour
 
         else
         {
-            sceneChanger.LoadNextScene(roomSceneName);
+            //sceneChanger.LoadNextScene(roomSceneName);
         }
     }
 
@@ -98,17 +100,21 @@ public class MapButton : MonoBehaviour
         }
         else if (finishedStory == "Day1Script")
         {
+            Debug.Log("Checking room visit completion...");
+            Debug.Log("Rooms visited: " + string.Join(", ", GameStateManager.RoomsVisited));
+
             if (GameStateManager.AllRoomsVisited())
             {
-                Debug.Log("All rooms visited. Playing final sequence...");
-                GameStateManager.SetState(gameState.Combat);
+                Debug.Log("All rooms visited. Loading BeforeKraken scene...");
+                GameStateManager.SetState(GameStateManager.gameState.Combat);
                 sceneChanger.LoadNextScene("BeforeKraken");
             }
             else
             {
+                Debug.Log("Not all rooms visited yet. Loading " + roomSceneName);
                 SceneManager.LoadScene(roomSceneName);
             }
-                
+
         }
         
          Debug.Log("all stories in scene have finished");
