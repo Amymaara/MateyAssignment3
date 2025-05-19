@@ -55,6 +55,11 @@ public class MapLogic : MonoBehaviour
                 if (GameStateManager.numRoomsVisited == 4)
                 {
                     Captains.SetActive(true);
+                    
+                }
+                if (GameStateManager.numRoomsVisited > 4)
+                {
+                    
                     GameStateManager.SetState(GameStateManager.gameState.Argument);
                 }
                 else
