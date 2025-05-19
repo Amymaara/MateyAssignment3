@@ -1519,9 +1519,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Day0Script: {fileID: 4900000, guid: 2eada047fad7575408886ab482e0df57, type: 3}
-  Day0PostScript: {fileID: 4900000, guid: a851725ac5cb5ec49a46b02eb20de4f0, type: 3}
+  Day0PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   Day1Script: {fileID: 4900000, guid: a687df5d2a53cf84092c9dfe3b478fdb, type: 3}
-  Day1PostScript: {fileID: 4900000, guid: 489f4c7af70ebce45bd52554f6030f65, type: 3}
+  Day1PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   Blackscreen: {fileID: 1521250672}
   MainCharcater: {fileID: 1539607379}
   Stu: {fileID: 1247804870}
