@@ -16,10 +16,20 @@ public static class GameStateManager
         
     }
 
-    public static int numRoomsVisited = 0;
+ 
+    public static int numRoomsVisited => RoomsVisited.Count;
+
     public static int DayCount = 0;
     public static HashSet<string> RoomsVisited = new HashSet<string>();
 
+    public static void MarkRoomVisited(string roomID)
+    {
+        if (!RoomsVisited.Contains(roomID))
+        {
+            RoomsVisited.Add(roomID);
+            Debug.Log($"Room visited: {roomID} | Total: {RoomsVisited.Count}");
+        }
+    }
 
 
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;

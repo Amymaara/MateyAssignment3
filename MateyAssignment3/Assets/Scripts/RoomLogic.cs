@@ -124,6 +124,6 @@ public class RoomLogic : MonoBehaviour
 
     private void OnDestroy()
     {
-        StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+        StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
     }
 }

@@ -69,7 +69,6 @@ public class MapLogic : MonoBehaviour
 
                         if (!visited && !blocked)
                         {
-                            Debug.Log("Room activated: " + room.name);
                             room.SetActive(true);
                         }
                     }
