@@ -283,6 +283,9 @@ public class StoryManager : MonoBehaviour
             EndStory();
         }
 
+        // Handles audio tags
+        HandleTags(runningStory.currentTags);
+
     }
 
     /*
@@ -321,6 +324,34 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+
+    /*
+   Title: Unity Ink Audio Manager Integration via Tag Parsing
+   Author: Adapted by ChatGPT (based on user-provided structure and YouTube tutorials by Stellar Studio)
+   Date: 19 May 2025
+   Code Version: Custom integration
+   Availability: Based on concepts from:
+   https://www.youtube.com/watch?v=mKVWQLXlfP0 (Episode 15 – SFX in Visual Novels)
+
+   Research Guides: Computer Science & Computer Engineering: Citing Programming Code. 2022
+   */
+
+    void HandleTags(List<string> tags)
+    {
+        foreach (string tag in tags)
+        {
+            if (tag.StartsWith("sfx_"))
+                AudioManager.instance.PlaySFX(tag.Substring(4));
+
+            else if (tag.StartsWith("music_"))
+                AudioManager.instance.PlayMusic(tag.Substring(6));
+
+            else if (tag == "music_stop")
+                AudioManager.instance.StopMusic();
+        }
+    }
+
+
     //Types out letters one at a time
     // Title: Unity typing text effect for dialogue | Unity tutorial
     // Author: Shaped by Rain Studios
@@ -328,7 +359,7 @@ public class StoryManager : MonoBehaviour
     // Code Version: ?
     // Avaliability: https://www.youtube.com/watch?v=2I92egFvC80&list=PL3viUl9h9k78KsDxXoAzgQ1yRjhm7p8kl&index=4 
 
-    //Types out letters one at a time
+        //Types out letters one at a time
     private IEnumerator TypeEffect(string line)
     {
         typeSpeed = PlayerPrefs.GetFloat("typeSpeed", 0.4f); // default if not set

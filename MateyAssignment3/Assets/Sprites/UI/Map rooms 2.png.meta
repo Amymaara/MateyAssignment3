@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Map rooms 2_0: -7610646077931199304
+      Map rooms 2_1: -1429606188947630343
+      Map rooms 2_2: 7892647264238770212
+      Map rooms 2_3: -8108377965004498175
+      Map rooms 2_4: -3466526709475796995
+      Map rooms 2_5: 3355555965260393757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

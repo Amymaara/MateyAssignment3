@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ravynn CV_0: 4850029331792074963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
