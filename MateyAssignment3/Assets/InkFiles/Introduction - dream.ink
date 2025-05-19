@@ -76,7 +76,7 @@ I ran to the wheel, my boots slipping against the wet planks but I held on.
 
 I tried to steer, to guide my beauty out of this nightmare but neither the Kraken nor the sea had any intention of letting me go.
 
-#sfx_Thunder-207513
+#sfx_Thunder-307513
 Lightning again, A tentacle slamming down - it’s about to hit me.
 
 I…
