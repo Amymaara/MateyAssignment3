@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9031834593885203997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289813675048871285}
+  - component: {fileID: 4750702665761702017}
+  - component: {fileID: 5987230480160690300}
+  - component: {fileID: 5227197622168372050}
+  m_Layer: 5
+  m_Name: Ravynn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &289813675048871285
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031834593885203997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 89, y: -102}
+  m_SizeDelta: {x: 455, y: 1017}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4750702665761702017
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031834593885203997}
+  m_CullTransparentMesh: 1
+--- !u!114 &5987230480160690300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031834593885203997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: dbee802f13ed28048a8785ee608f424e, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7868131722697027881, guid: e068b568d140d98419e5651cee5d2924, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5227197622168372050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031834593885203997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c7b48f0fab84441a0b135f2b56a3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Ravynn
+  characterImage: {fileID: 5987230480160690300}
+  sprites:
+  - {fileID: 7868131722697027881, guid: e068b568d140d98419e5651cee5d2924, type: 3}
+  - {fileID: -7022075627425329576, guid: e068b568d140d98419e5651cee5d2924, type: 3}
+  - {fileID: 7868131722697027881, guid: e068b568d140d98419e5651cee5d2924, type: 3}
+  - {fileID: -1633310295867235899, guid: e068b568d140d98419e5651cee5d2924, type: 3}
+  - {fileID: -616164811865646582, guid: fd10b8112f0c7c248983b4f8bd88226d, type: 3}
+  - {fileID: 672730846090880340, guid: fd10b8112f0c7c248983b4f8bd88226d, type: 3}
+  - {fileID: -616164811865646582, guid: fd10b8112f0c7c248983b4f8bd88226d, type: 3}
+  - {fileID: -6802812037178301005, guid: fd10b8112f0c7c248983b4f8bd88226d, type: 3}
+  - {fileID: -3988198855250020103, guid: df512238ed0d55344bdc2fb89dfebb2e, type: 3}
+  - {fileID: 3694859679466024227, guid: df512238ed0d55344bdc2fb89dfebb2e, type: 3}
+  - {fileID: -3988198855250020103, guid: df512238ed0d55344bdc2fb89dfebb2e, type: 3}
+  - {fileID: -8428779556195657091, guid: df512238ed0d55344bdc2fb89dfebb2e, type: 3}

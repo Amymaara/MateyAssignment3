@@ -66,7 +66,7 @@ public class MapButton : MonoBehaviour
             StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
             StoryManager.Instance.StartStory(inkFile, "Day1Script");
 
-            if (numRoomsVisited >= 5)
+            if (numRoomsVisited <= 6)
             {
                 GameStateManager.SetState(gameState.Argument);
                 sceneChanger.LoadNextScene(roomSceneName);
@@ -74,7 +74,7 @@ public class MapButton : MonoBehaviour
             else
             {
                 GameStateManager.SetState(gameState.Combat);
-                sceneChanger.LoadNextScene(roomSceneName);
+                sceneChanger.LoadNextScene("BeforeKraken");
             }  
         }
     }
