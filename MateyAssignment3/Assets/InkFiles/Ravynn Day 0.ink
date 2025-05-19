@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> ravynn_visit
 
 === ravynn_visit ===
-
+#music_Celtic-moon-loop-1-284914
 #speaker:Stu
 "Let’s meet Ravynn. She got the most potential out of all the recruits. I bet my tail feathers she’ll be the real deal."
 
@@ -14,9 +14,13 @@ Every rope is perfectly coiled and every crate sealed and stacked like a warehou
 And yeah, there she is — sitting cross-legged, sharpening the harpoon like it personally insulted her.
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "Captain."
 
 #speaker:Ravynn
+#pose:Pose2
+#expression:Angry
 "I was wondering when you’d get up. You’re late — I already inspected the mast, adjusted the sails, and fixed three structural flaws in the hull."
 
 * [Discipline] 
@@ -33,6 +37,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 "Are you always this intense?"
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "Intensity keeps people alive. Comfort and sleeping in don’t."
 
 -> ravynn_continues
@@ -44,6 +50,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 "Already fixing the ship? I like the initiative."
 
 #speaker:Ravynn
+#pose:Default
+#expression:Blush
 "Initiative isn’t optional when lives are on the line."
 
 -> ravynn_continues
@@ -55,6 +63,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 "You could’ve waited for my orders."
 
 #speaker:Ravynn
+#pose:Pose3
+#expression:Angry
 "The sea doesn’t wait and neither do I."
 
 -> ravynn_continues
@@ -62,11 +72,15 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 === ravynn_continues ===
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "I’m Ravynn — strategist, realist, and problem solver. I don’t believe in chance or luck. I believe in plans, strategies, contingencies."
 
 (Ravynn gestures toward a perfectly arranged supply storage. They're labelled, stacked, and possibly blessed. Or cursed. Hard to tell.)
 
 #speaker:Ravynn
+#pose:Pose2
+#expression:Angry
 "And you? What kind of Captain are you?"
 
 * [Hands-on]
@@ -83,6 +97,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 "I lead by example. I get my hands dirty."
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "Good."
 
 -> ravynn_philosophy
@@ -96,6 +112,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 (Ravynn glances — disappointed — at a rope coil.)
 
 #speaker:Ravynn
+#pose:Pose3
+#expression:Angry
 "Delegation only works if the crew isn’t made of idiots."
 
 -> ravynn_philosophy
@@ -109,6 +127,8 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 (She exhales, looking as if I offended logic itself.)
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "Guts spill. Plans don’t."
 
 -> ravynn_philosophy
@@ -119,12 +139,18 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 "I understand your mindset, but part of the sea’s beauty is its unpredictability. The unknown and wild raw emotion of it — sometimes riding along with the waves is all you can do."
 
 #speaker:Ravynn
+#pose:Pose3
+#expression:Angry
 "Not for me. Structure is everything. The moment you surrender control is when chaos takes everything."
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "I’ll keep things running. But if anyone steps out of line? I’ll know — and deal with it my own way."
 
 #speaker:Ravynn
+#pose:Pose2
+#expression:Angry
 "Enjoy the calm while it lasts, Captain. Life and the seas are never always serene."
 
 * [Steady Admiration]
@@ -140,12 +166,16 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 "You're intense. Really intense. There’s something about it... it's solid. Reliable."
 
 #speaker:Ravynn
+#pose:Default
+#expression:Blush
 "Reliability is the foundation of survival. If that’s what impresses you — good."
 
 #speaker:{Name}
 "Impress? I didn’t say that."
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "You were thinking it though."
 
 #Speaker:{Name}
@@ -164,12 +194,16 @@ As I'm about to leave I catch a glance of one of her belongings.
 "Right, right — we get it. You’ve got the ship handled. Just make sure your grip doesn’t end up breaking the crew."
 
 #speaker:Ravynn
+#pose:Default
+#expression:Angry
 "If they can’t handle it, they shouldn’t be out here."
 
 #speaker:{Name}
 "Not everyone is built like steel, Ravynn."
 
 #speaker:Ravynn
+#pose:Pose2
+#expression:Angry
 "Then they’ll break. But I won’t."
 
 #Speaker:{Name}

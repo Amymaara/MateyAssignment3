@@ -2,6 +2,7 @@ INCLUDE Globals.ink
 
 -> charting_room
 === charting_room ===
+#music_Celtic-moon-loop-1-284914
 #speaker: {Name}
 The charting room is a disaster - not in the way the Galley is no. This disaster is split right down the middle of the room.
 
@@ -20,18 +21,26 @@ Everything smells like salt, leather and pending death. If a single speck of dus
 The middle? A map - torn, smudged ad the topic of a very aggressive...debate?
 
 #Speaker:Ravynn
+#pose:Default
+#expression:Angry
 " The wind has shifted, if we stay on your course we'll drift into stillwater by sunrise."
 
 #Speaker:{Name}
 He sips his tea before replying to her.
 
 #Speaker:Master Porthole
+#pose:Default
+#expression:Angry
 "And if we follow your direction, this ship will crawl along the current like a wounded snail. The stars offer direction. The wind? mood swings at best."
 
 #Speaker:Ravynn
+#pose:Pose2
+#expression:Angry
 'I'd rather bet on mood swings than astrology and flair.
 
 #Speaker:Master Porthole
+#pose:Pose2
+#expression:Angry
 "My flair happens to be historically accurate."
 
 #Speaker:{Name}
@@ -40,9 +49,13 @@ He sips his tea before replying to her.
 Ravynn points to the map with irritation.
 
 #Speaker:Ravynn
+#pose:Pose3
+#expression:Angry
 "Storm is due north, this crew cannot afford another close call."
 
 #Speaker:Master Porthole
+#pose:Pose2
+#expression:Angry
 "This crew can't afford to die of boredom either. This isn't a prison ship - it's an expedition for God's sake."
 
 #Speaker:{Name}
@@ -65,12 +78,16 @@ They both turn to me as if i'm some oracle. I glance at the compass, it's just a
 Master porthole preens as if I handed him an expensive jewel.
 
 #Speaker:Master Porthole
+#pose:Pose2
+#expression:Blush
 "Looks like someone does have taste, welcome to the celestial fold Captain {Name}."
 
 #Speaker:{Name}
 Ravynn snaps a map tube shut as if it just offended her whole lineage.
 
 #Speaker:Ravynn
+#pose:Pose2
+#expression:Angry
 "Remind me to prepare extra lifeboats."
 
 #Speaker:{Name}
@@ -78,6 +95,8 @@ She walks out, her tension trailing behind her.
 Master Porthole leans towards me to say something 
 
 #Speaker:Master Porthole
+#pose:Pose3
+#expression:Blush
 "Smart and loyal. You're going to be the death of me - or someone else."
 
 #Speaker:{Name}
@@ -97,6 +116,8 @@ Ravynn nods once at me, I feel like a kid finally getting their unimpressed pare
 (Sigh, I need to work on my mommy issues.)
 
 #Speaker:Ravynn
+#pose:Pose2
+#expression:Blush
 "Understood."
 
 #Speaker:{Name}
@@ -105,6 +126,8 @@ Ravynn leaves to confirm the winds direction and gather information about the se
 Master Porthole rises slowly and theatrically from his chair.
 
 #Speaker:Master Porthole
+#pose:Default
+#expression:Angry
 "Very well, lead us into the gale. I'll keep my telescope polished for your apology."
 
 #Speaker:{Name}
@@ -125,9 +148,13 @@ I decide the best choice for my mental state is to play mediatior.
 Both of them seem sort of stunned, not at my suggestion but rather that they weren't able to come to that conclusion themselves.
 
 #Speaker:Master Porthole
+#pose:Default
+#expression:Neutral
 "...I don't love it."
 
 #Speaker:Ravynn
+#pose:Default
+#expression:Neutral
 "I don't hate it."
 
 #Speaker:{Name}
