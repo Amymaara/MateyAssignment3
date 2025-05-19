@@ -59,7 +59,9 @@ public class MapButton : MonoBehaviour
             roomLogic.Blackscreen.SetActive(true);
             roomLogic.Stu.SetActive(true);
 
-            if (GameStateManager.CurrentState == GameStateManager.gameState.Day0)
+
+            if (numRoomsVisited <= 6)
+
             {
                 inkFile = roomLogic.Day0PostScript;
                 StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
@@ -67,14 +69,11 @@ public class MapButton : MonoBehaviour
             }
             else if (GameStateManager.CurrentState == GameStateManager.gameState.Day1)
             {
-                inkFile = roomLogic.Day1PostScript;
-                StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
-                StoryManager.Instance.StartStory(inkFile, "Day1Script");
-            }
-        }
-        else
-        {
-            sceneChanger.LoadNextScene(roomSceneName);
+
+                GameStateManager.SetState(gameState.Combat);
+                sceneChanger.LoadNextScene("BeforeKraken");
+            }  
+
         }
     }
 

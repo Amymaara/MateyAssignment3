@@ -15,14 +15,16 @@ Availability: https://chat.openai.com/
 public class DayTransitionLogic : MonoBehaviour
 {
     public GameObject DayTransition;
-    public GameObject MapButton;
+    
     public VideoPlayer videoPlayer; // Assign in Inspector
     public Image blackScreenImage;  // Fullscreen black UI image
+    public GameObject canvas;
 
     private void Start()
     {
+        
         DayTransition.SetActive(true);
-        MapButton.SetActive(false);
+       
         StartCoroutine(PlayDayTransition());
         
         
@@ -45,12 +47,13 @@ public class DayTransitionLogic : MonoBehaviour
 
         // Switch scenes or do other logic here if needed
         DayTransition.SetActive(false);
-
+        canvas.SetActive(false);
 
 
         // Fade out from black (alpha = 0)
         yield return blackScreenImage.DOFade(0f, 1f).WaitForCompletion();
 
-        MapButton.SetActive(true);
+        
+        canvas.SetActive(false);
     }
 }
