@@ -28,7 +28,7 @@ public class BattleUiSync : MonoBehaviour
             //reads the HP from ink and applies it to the slider
             playerHPSlider.value = (float)(int)inkStory.variablesState["playerHP"];
 
-            krakenHPSlider.value = (float)(int)inkStory.variablesState["KrakenHP"];
+            krakenHPSlider.value = (float)(int)inkStory.variablesState["krakenHP"];
 
         }
 
