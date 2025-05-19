@@ -39,7 +39,7 @@ public class CaptainsRoomSequence : MonoBehaviour
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds; // add listener for a story ending
         StoryManager.Instance.StartStory(StuIntro, "StuIntro"); // load first ink file, will start up dialogue system
         
-        //RemoveTrigger(File); //make book non clickable
+        RemoveTrigger(File); //make book non clickable
         ObjectToolTip.SetActive(false);
         MapToolTip.SetActive(false);
         MapButton.SetActive(false);
@@ -82,7 +82,7 @@ public class CaptainsRoomSequence : MonoBehaviour
         {
             Debug.Log("StuIntro finished");
             ObjectToolTip.SetActive(true);
-            //addTrigger(File);
+            addTrigger(File);
         }
         else if (finishedStory == "CV")
         {

@@ -14,6 +14,7 @@ public class MapLogic : MonoBehaviour
     public GameObject Captains;
 
     public GameObject[] rooms;
+    public string[] roomIDs;
 
     private void OnEnable()
     {
@@ -29,6 +30,7 @@ public class MapLogic : MonoBehaviour
     {
         map.SetActive(false);
         rooms = new GameObject[] { Deck, Study, Pearl, Galley, MessHall, Charting, Captains };
+        roomIDs = new string[] { "Deck", "Study", "Pearl", "Galley", "MessHall", "Charting", "Captains" };
         foreach (GameObject room in rooms)
         {
             room.SetActive(false);
@@ -57,9 +59,12 @@ public class MapLogic : MonoBehaviour
                 }
                 else
                 {
-                    foreach (GameObject room in rooms)
+                    for (int i = 0; i < rooms.Length; i++)
                     {
-                        bool visited = GameStateManager.RoomsVisited.Contains(room);
+                        string id = roomIDs[i];
+                        GameObject room = rooms[i];
+
+                        bool visited = GameStateManager.RoomsVisited.Contains(id);
                         bool blocked = room == MessHall || room == Charting || room == Captains;
 
                         if (!visited && !blocked)
@@ -72,9 +77,12 @@ public class MapLogic : MonoBehaviour
                 break;
 
             case GameStateManager.gameState.Argument:
-                foreach (GameObject room in rooms)
+                for (int i = 0; i < rooms.Length; i++)
                 {
-                    if (!GameStateManager.RoomsVisited.Contains(room))
+                    string id = roomIDs[i];
+                    GameObject room = rooms[i];
+
+                    if (!GameStateManager.RoomsVisited.Contains(id))
                     {
                         room.SetActive(true);
                     }
@@ -91,5 +99,6 @@ public class MapLogic : MonoBehaviour
     public void OnMapIcon()
     {
         map.SetActive(true);
+        OnGameStateChanged(GameStateManager.CurrentState);
     }
 }

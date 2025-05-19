@@ -57,6 +57,7 @@ MonoBehaviour:
   Charting: {fileID: 4578246089060778000}
   Captains: {fileID: 3241144943762511631}
   rooms: []
+  roomIDs: []
 --- !u!1 &3241144943762511631
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,9 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 3241144943762511631}
+  roomID: Captains
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: CaptainsRoom
 --- !u!114 &18787392636703908
 MonoBehaviour:
@@ -563,9 +565,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 4578246089060778000}
+  roomID: Charting
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: ChartingRoom
 --- !u!114 &86926821699660967
 MonoBehaviour:
@@ -902,9 +905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 5226349080589497737}
+  roomID: MessHall
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: MessHall
 --- !u!114 &4539285590562572703
 MonoBehaviour:
@@ -1039,9 +1043,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 5401804368164094371}
+  roomID: Galley
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: ShadRoom
 --- !u!114 &2653270894882999811
 MonoBehaviour:
@@ -1176,9 +1181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 6996951039126283572}
+  roomID: Deck
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: RavynnRoom
 --- !u!114 &3654264788193798230
 MonoBehaviour:
@@ -1313,9 +1319,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 7709235914567046737}
+  roomID: Study
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: RoryRoom
 --- !u!114 &1580367538226315883
 MonoBehaviour:
@@ -1450,9 +1457,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82c7acf55493dc4f881ce91a19edb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisRoom: {fileID: 8272456318101727544}
+  roomID: Pearl
   Map: {fileID: 4659148290197112719}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: PearlRoom
 --- !u!114 &4744298633197910700
 MonoBehaviour:
