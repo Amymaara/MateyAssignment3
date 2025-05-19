@@ -895,6 +895,7 @@ MonoBehaviour:
   videoPlayer: {fileID: 596048553}
   blackScreenImage: {fileID: 1978771435}
   canvas: {fileID: 1419770859}
+  sceneChanger: {fileID: 1215580581}
 --- !u!4 &1215580583
 Transform:
   m_ObjectHideFlags: 0
