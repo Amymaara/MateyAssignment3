@@ -39,7 +39,7 @@ public class CaptainsRoomSequence : MonoBehaviour
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds; // add listener for a story ending
         StoryManager.Instance.StartStory(StuIntro, "StuIntro"); // load first ink file, will start up dialogue system
         
-        RemoveTrigger(File); //make book non clickable
+        //RemoveTrigger(File); //make book non clickable
         ObjectToolTip.SetActive(false);
         MapToolTip.SetActive(false);
         MapButton.SetActive(false);
@@ -52,33 +52,27 @@ public class CaptainsRoomSequence : MonoBehaviour
     // Makes all items in a game objects children, non interactable
     private void RemoveTrigger(GameObject obj)
     {
-        // goes through every image (characters) in the game components children
-        // technically not necessary since there is only one item in this scene, but this way it can be expanded on
-        foreach (var item in obj.GetComponentsInChildren<Image>())
-        {
-            EventTrigger trigger = item.GetComponent<EventTrigger>(); //get the event triggers from the Image
+        
+            EventTrigger trigger = obj.GetComponent<EventTrigger>(); //get the event triggers from the Image
             if (trigger != null) //checks that there are triggers to disable
             {
                 trigger.enabled = false; // disable the triggers
                 Debug.Log("items click false");
             }
-        }
+        
     }
 
     // Makes all items in a game objects children, interactable
     public void addTrigger(GameObject obj)
     {
-        // goes through every image (book) in the game components children
-        // technically not necessary since there is only one item in this scene, but this way it can be expanded on
-        foreach (var item in obj.GetComponentsInChildren<Image>())
-        {
-            EventTrigger trigger = item.GetComponent<EventTrigger>(); //get the event triggers from the Image
+        
+            EventTrigger trigger = obj.GetComponent<EventTrigger>(); //get the event triggers from the Image
             if (trigger != null) //checks that there are triggers to activate
             {
                 trigger.enabled = true; //activates the triggers
                 Debug.Log("items click true");
             }
-        }
+        
     }
 
     // what should happen after each story has completed
@@ -88,7 +82,7 @@ public class CaptainsRoomSequence : MonoBehaviour
         {
             Debug.Log("StuIntro finished");
             ObjectToolTip.SetActive(true);
-            addTrigger(File);
+            //addTrigger(File);
         }
         else if (finishedStory == "CV")
         {
