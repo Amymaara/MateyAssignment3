@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 7da32c0a36bd04040aacbf81dcc62da0
+guid: 4e1e4b9a0c08b6a488e90ea976c6b0b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8316959013221050159
-    second: Stu - pose 2_0
+      213: 4145100776150910970
+    second: Bottle_0
+  - first:
+      213: -3901614142902349940
+    second: Bottle_1
+  - first:
+      213: -1301066665219632716
+    second: Bottle_2
+  - first:
+      213: 7525950633274523677
+    second: Bottle_3
+  - first:
+      213: -8822166993003989008
+    second: Bottle_4
+  - first:
+      213: 7813350248921180290
+    second: Bottle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +39,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -48,7 +63,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -126,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stu - pose 2_0
+      name: Bottle_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 40
-        width: 863
-        height: 1023
+        x: 666
+        y: 197
+        width: 564
+        height: 864
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d8d975b7d9349c80800000000000000
-      internalID: -8316959013221050159
+      spriteID: af7cba8b13b568930800000000000000
+      internalID: 4145100776150910970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottle_1
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1044
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f4aa1db9eaad9c0800000000000000
+      internalID: -3901614142902349940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottle_2
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1032
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b15b76e2cea1fde0800000000000000
+      internalID: -1301066665219632716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottle_3
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 493
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10447d0a3c817860800000000000000
+      internalID: 7525950633274523677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottle_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 380
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f732d89cdd519580800000000000000
+      internalID: -8822166993003989008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottle_5
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 98
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28828ac87a89e6c60800000000000000
+      internalID: 7813350248921180290
       vertices: []
       indices: 
       edges: []
@@ -160,8 +285,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Stu - pose 2_0: -8316959013221050159
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

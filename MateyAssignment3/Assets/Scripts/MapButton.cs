@@ -30,6 +30,7 @@ public class MapButton : MonoBehaviour
         {
             if (roomLogic != null)
             {
+                roomLogic.Blackscreen.SetActive(true);
                 inkFile = roomLogic.Day0PostScript;
                 StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
                 StoryManager.Instance.StartStory(inkFile, "Day0Script");
@@ -49,6 +50,7 @@ public class MapButton : MonoBehaviour
 
         else if (CurrentState == gameState.Day1)
         {
+            
             inkFile = roomLogic.Day1PostScript;
             StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
             StoryManager.Instance.StartStory(inkFile, "Day1Script");

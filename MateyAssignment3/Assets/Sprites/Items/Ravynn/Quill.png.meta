@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 7da32c0a36bd04040aacbf81dcc62da0
+guid: 2e44e7288e1b59246a9e12c0c6f68eab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8316959013221050159
-    second: Stu - pose 2_0
+      213: 9004100613553605129
+    second: Quill_0
+  - first:
+      213: -4449170054304461605
+    second: Quill_1
+  - first:
+      213: 1657876302351188994
+    second: Quill_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +30,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -48,7 +54,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stu - pose 2_0
+      name: Quill_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 40
-        width: 863
-        height: 1023
+        x: 571
+        y: 873
+        width: 11
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d8d975b7d9349c80800000000000000
-      internalID: -8316959013221050159
+      spriteID: 90a4db06dcdf4fc70800000000000000
+      internalID: 9004100613553605129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quill_1
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 108
+        width: 583
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc80e7886f5142c0800000000000000
+      internalID: -4449170054304461605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quill_2
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 857
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2044e2396b5f10710800000000000000
+      internalID: 1657876302351188994
       vertices: []
       indices: 
       edges: []
@@ -160,8 +210,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Stu - pose 2_0: -8316959013221050159
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

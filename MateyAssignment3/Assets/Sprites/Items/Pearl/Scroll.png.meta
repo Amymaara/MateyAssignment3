@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7da32c0a36bd04040aacbf81dcc62da0
+guid: 334e5c1060237c242ab6798742b84b53
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8316959013221050159
-    second: Stu - pose 2_0
+      213: 897710771807637462
+    second: Scroll_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stu - pose 2_0
+      name: Scroll_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 40
-        width: 863
-        height: 1023
+        x: 564
+        y: 343
+        width: 859
+        height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d8d975b7d9349c80800000000000000
-      internalID: -8316959013221050159
+      spriteID: 6dfc2a0d03f457c00800000000000000
+      internalID: 897710771807637462
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Stu - pose 2_0: -8316959013221050159
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
