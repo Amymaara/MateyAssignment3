@@ -17,6 +17,7 @@ public class RoomLogic : MonoBehaviour
     public GameObject Blackscreen;
     public GameObject MainCharcater;
     public GameObject Stu;
+    public GameObject Map;
 
     
     [SerializeField] private GameObject item1;
@@ -36,6 +37,7 @@ public class RoomLogic : MonoBehaviour
         if (GameStateManager.CurrentState == gameState.Day0)
         {
             Blackscreen.SetActive(false);
+            Map.SetActive(false);
             item1.SetActive(true);
             item2.SetActive(false);
             item3.SetActive(false);
@@ -74,6 +76,7 @@ public class RoomLogic : MonoBehaviour
             foreach (GameObject item in items)
             {
                 addTrigger(item);
+                Map.SetActive(true);
             }
             Debug.Log("Day 0 story finished");
            
@@ -84,6 +87,7 @@ public class RoomLogic : MonoBehaviour
             {
            
                 addTrigger(item);
+                Map.SetActive(true);
             }
             Debug.Log("Day 1 story finished");
             

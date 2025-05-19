@@ -18,9 +18,9 @@ public static class GameStateManager
 
     public static int numRoomsVisited = 0;
     public static int DayCount = 0;
-    public static List<GameObject> RoomsVisited = new List<GameObject>();
+    public static HashSet<string> RoomsVisited = new HashSet<string>();
 
-    
+
 
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;
     public static event Action<gameState> OnGameStateChanged;

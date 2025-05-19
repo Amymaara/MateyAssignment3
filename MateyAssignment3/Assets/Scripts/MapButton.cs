@@ -7,7 +7,7 @@ using static GameStateManager;
 
 public class MapButton : MonoBehaviour
 {
-    public GameObject thisRoom;
+    public string roomID;
     public GameObject Map;
     public RoomLogic roomLogic;
     public SceneChanger sceneChanger;
@@ -20,9 +20,9 @@ public class MapButton : MonoBehaviour
         uiPanelAnimation.SlideOutAndDisable();
 
 
-        if (!RoomsVisited.Contains(thisRoom))
+        if (!GameStateManager.RoomsVisited.Contains(roomID))
         {
-            RoomsVisited.Add(thisRoom);
+            GameStateManager.RoomsVisited.Add(roomID);
             numRoomsVisited++;
         }
 
@@ -31,6 +31,7 @@ public class MapButton : MonoBehaviour
             if (roomLogic != null)
             {
                 roomLogic.Blackscreen.SetActive(true);
+                roomLogic.Stu.SetActive(true);
                 inkFile = roomLogic.Day0PostScript;
                 StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
                 StoryManager.Instance.StartStory(inkFile, "Day0Script");
@@ -52,6 +53,8 @@ public class MapButton : MonoBehaviour
         {
             
             inkFile = roomLogic.Day1PostScript;
+            roomLogic.Blackscreen.SetActive(true);
+            roomLogic.Stu.SetActive(true);
             StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
             StoryManager.Instance.StartStory(inkFile, "Day1Script");
 
