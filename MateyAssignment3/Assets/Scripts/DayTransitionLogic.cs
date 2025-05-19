@@ -3,6 +3,8 @@ using UnityEngine.Video;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
+using static GameStateManager;
+using UnityEngine.SceneManagement;
 
 /*
 Title: DayTransitionLogic Unity Script Example
@@ -19,6 +21,7 @@ public class DayTransitionLogic : MonoBehaviour
     public VideoPlayer videoPlayer; // Assign in Inspector
     public Image blackScreenImage;  // Fullscreen black UI image
     public GameObject canvas;
+    public SceneChanger sceneChanger;
 
     private void Start()
     {
@@ -55,5 +58,13 @@ public class DayTransitionLogic : MonoBehaviour
 
         
         canvas.SetActive(false);
+
+        if (GameStateManager.AllRoomsVisited())
+        {
+            Debug.Log("All rooms visited. Loading BeforeKraken scene...");
+            GameStateManager.SetState(GameStateManager.gameState.Combat);
+            sceneChanger.LoadNextScene("BeforeKraken");
+            
+        }
     }
 }

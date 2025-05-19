@@ -49,7 +49,7 @@ public class MapButton : MonoBehaviour
             else
             {
                 Debug.Log("Captain's Quarters is locked until you've visited 4 rooms.");
-                return; // Optionally block entry
+                return; 
             }
         }
 
@@ -60,7 +60,7 @@ public class MapButton : MonoBehaviour
             roomLogic.Stu.SetActive(true);
 
 
-            if (numRoomsVisited <= 6)
+            if (GameStateManager.CurrentState == GameStateManager.gameState.Day0)
 
             {
                 inkFile = roomLogic.Day0PostScript;
@@ -69,11 +69,23 @@ public class MapButton : MonoBehaviour
             }
             else if (GameStateManager.CurrentState == GameStateManager.gameState.Day1)
             {
+                inkFile = roomLogic.Day1PostScript;
+                GameStateManager.SetState(gameState.Argument);
+                StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+                StoryManager.Instance.StartStory(inkFile, "Day1Script");
 
-                GameStateManager.SetState(gameState.Combat);
-                sceneChanger.LoadNextScene("BeforeKraken");
+
+
+
+                
             }  
 
+        }
+
+
+        else
+        {
+            sceneChanger.LoadNextScene(roomSceneName);
         }
     }
 
@@ -86,8 +98,17 @@ public class MapButton : MonoBehaviour
         }
         else if (finishedStory == "Day1Script")
         {
-
-            SceneManager.LoadScene(roomSceneName);
+            if (GameStateManager.AllRoomsVisited())
+            {
+                Debug.Log("All rooms visited. Playing final sequence...");
+                GameStateManager.SetState(gameState.Combat);
+                sceneChanger.LoadNextScene("BeforeKraken");
+            }
+            else
+            {
+                SceneManager.LoadScene(roomSceneName);
+            }
+                
         }
         
          Debug.Log("all stories in scene have finished");
@@ -98,6 +119,6 @@ public class MapButton : MonoBehaviour
 
     private void OnDestroy()
     {
-        StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+        StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
     }
 }

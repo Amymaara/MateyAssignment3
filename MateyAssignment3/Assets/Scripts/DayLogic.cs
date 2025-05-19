@@ -12,7 +12,7 @@ public class DayLogic : MonoBehaviour
 
 
   
-    private bool storyStarted = false;
+    
 
 
     void Start()
