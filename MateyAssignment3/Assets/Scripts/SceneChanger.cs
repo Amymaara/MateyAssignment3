@@ -48,4 +48,8 @@ public class SceneChanger : MonoBehaviour
         OnSceneStart();
     }
 
+    private void OnDestroy()
+    {
+        DOTween.KillAll();
+    }
 }

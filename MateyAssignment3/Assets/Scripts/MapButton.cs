@@ -14,16 +14,24 @@ public class MapButton : MonoBehaviour
     public string roomSceneName;
     private TextAsset inkFile;
 
+    void Awake()
+    {
+        if (string.IsNullOrEmpty(roomID))
+        {
+            roomID = gameObject.name; 
+        }
+    }
     public void onRoomButtonPress()
     {
         UIPanelAnimation uiPanelAnimation = Map.GetComponent<UIPanelAnimation>();
         uiPanelAnimation.SlideOutAndDisable();
 
-
+        
+        
         if (!GameStateManager.RoomsVisited.Contains(roomID))
         {
-            GameStateManager.RoomsVisited.Add(roomID);
-            numRoomsVisited++;
+            GameStateManager.MarkRoomVisited(roomID);
+            
         }
 
         if (CurrentState == gameState.Day0)
