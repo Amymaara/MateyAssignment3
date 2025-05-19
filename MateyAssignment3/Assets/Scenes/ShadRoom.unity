@@ -435,7 +435,7 @@ MonoBehaviour:
   Blackscreen: {fileID: 1612019119}
   MainCharcater: {fileID: 928535912}
   Stu: {fileID: 813569905}
-  Map: {fileID: 794193398}
+  Map: {fileID: 794193399}
   item1: {fileID: 1250384511}
   item2: {fileID: 1940759293}
   item3: {fileID: 279354872}
@@ -989,6 +989,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 172355801219042797, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 172355801219042797, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
     - target: {fileID: 985910828135128654, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1069,24 +1077,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1651104351867976300, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 1651104351867976300, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
+    - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
     - target: {fileID: 2980183227978632900, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: m_Name
       value: MapPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3090299282613162632, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 3090299282613162632, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
+    - target: {fileID: 3195408153782614120, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 794193398}
     - target: {fileID: 3669422300518860131, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3982681273460383471, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 3982681273460383471, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
     - target: {fileID: 5187392055192219586, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 97446532}
+    - target: {fileID: 6085122747178187806, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 6085122747178187806, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
+    - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
+    - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomSceneName
+      value: DayTransition
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
 --- !u!1 &794193398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3669422300518860131, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+  m_PrefabInstance: {fileID: 794193397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &794193399 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8759308238176845396, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
   m_PrefabInstance: {fileID: 794193397}
@@ -2373,7 +2442,7 @@ MonoBehaviour:
   CGPanel: {fileID: 1420006319}
   storyID: 
   typeSpeed: 0.04
-  BigWidth: 1.5
+  BigWidth: 1.4
   SmallWidth: 1.3
   charactersInScene: {fileID: 1577742972}
   loadGlobalsFile: {fileID: 4900000, guid: 3c8ec2b9b09a3ee40a0979491a3ea8ab, type: 3}

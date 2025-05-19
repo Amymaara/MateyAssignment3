@@ -421,6 +421,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8713237063645630377, guid: 943a21eb9783b154884636599b346201, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1072,6 +1076,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 916676198}
+    - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomSceneName
+      value: DayTransition
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1519,9 +1527,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Day0Script: {fileID: 4900000, guid: 2eada047fad7575408886ab482e0df57, type: 3}
-  Day0PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+  Day0PostScript: {fileID: 4900000, guid: a851725ac5cb5ec49a46b02eb20de4f0, type: 3}
   Day1Script: {fileID: 4900000, guid: a687df5d2a53cf84092c9dfe3b478fdb, type: 3}
-  Day1PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+  Day1PostScript: {fileID: 4900000, guid: 489f4c7af70ebce45bd52554f6030f65, type: 3}
   Blackscreen: {fileID: 1521250672}
   MainCharcater: {fileID: 1539607379}
   Stu: {fileID: 1247804870}
@@ -1806,7 +1814,7 @@ MonoBehaviour:
   CGPanel: {fileID: 2144816885622731575}
   storyID: 
   typeSpeed: 0.04
-  BigWidth: 1.5
+  BigWidth: 1.3
   SmallWidth: 1.2
   charactersInScene: {fileID: 505692442}
   loadGlobalsFile: {fileID: 4900000, guid: 3c8ec2b9b09a3ee40a0979491a3ea8ab, type: 3}

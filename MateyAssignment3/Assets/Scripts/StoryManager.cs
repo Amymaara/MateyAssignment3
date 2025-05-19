@@ -267,6 +267,9 @@ public class StoryManager : MonoBehaviour
             displayLineCouroutine = StartCoroutine(TypeEffect(runningStory.Continue()));
 
             TagHandler();
+
+            // Handles audio tags
+            HandleTags(runningStory.currentTags);
             if (speakerName != null && Pose != null && Expression != null)
             {
                 SpriteChange(speakerName, Pose, Expression);
@@ -284,7 +287,7 @@ public class StoryManager : MonoBehaviour
         }
 
         // Handles audio tags
-        HandleTags(runningStory.currentTags);
+        //HandleTags(runningStory.currentTags);
 
     }
 
