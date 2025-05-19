@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     // Assistance: Debugged with help from ChatGPT (OpenAI), https://chat.openai.com
     public static AudioManager instance {  get; private set; }
 
-    public AudioSource musicSource;
+    private AudioSource musicSource;
     public float sfxVolume = 1f;
     public float musicVolume = 1f;
 
@@ -49,6 +49,7 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = true;
         musicSource.spatialBlend = 0;
         musicSource.outputAudioMixerGroup = musicGroup;
+        musicSource.volume = musicVolume;
 
     }
 

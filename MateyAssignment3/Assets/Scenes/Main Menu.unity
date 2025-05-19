@@ -343,7 +343,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 740620620000781022, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
   m_PrefabInstance: {fileID: 1845436963}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1845436964}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
@@ -475,9 +475,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91cafcc276d7ff443bdb1dc53d6e9e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxVolume: 1
+  musicVolume: 1
   musicMixer: {fileID: -1922688890400818581, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
   sfxMixer: {fileID: 6575956945873244073, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
-  voiceMixer: {fileID: 8250282140915709768, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
+  musicGroup: {fileID: 0}
+  sfxGroup: {fileID: 0}
 --- !u!1 &742913772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,8 +1893,34 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 5567291167611139183, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1304977937272310104, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845436965}
   m_SourcePrefab: {fileID: 100100000, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
+--- !u!1 &1845436964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1304977937272310104, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
+  m_PrefabInstance: {fileID: 1845436963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845436965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845436964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91cafcc276d7ff443bdb1dc53d6e9e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxVolume: 0.5
+  musicVolume: 0.5
+  musicMixer: {fileID: 24100000, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
+  sfxMixer: {fileID: 24100000, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
+  musicGroup: {fileID: -1922688890400818581, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
+  sfxGroup: {fileID: 6575956945873244073, guid: a4f2e5bbf84796f45966ed85e9ebedaf, type: 2}
 --- !u!1 &1912738554
 GameObject:
   m_ObjectHideFlags: 0
