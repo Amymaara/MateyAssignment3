@@ -2,6 +2,7 @@ INCLUDE Globals.ink
 
 -> kraken_pre_battle
 === kraken_pre_battle ===
+#music_Rpg-medieval-animated-music-32058
 
 #Speaker:{Name}
 The sky is grey.
@@ -29,26 +30,38 @@ The crew starts gathering one by one. No orders needed.
 Pearl clutches a small satchel of seashells, like a talisman.
 
 #Speaker:Pearl  
+#pose:Pose3
+#expression:Angry
 "I can feel her pain, It's unbearable."
 
 #Speaker:{Name}  
 "The Kraken?"
 
-#Speaker:Pearl  
+#Speaker:Pearl 
+#pose:Pose3
+#expression:Sad
 "No — the ocean. She’s scared."
 
 Shad emerges from the galley, dual-wielding a frying pan and a lemon.
 
 #Speaker:Shad  
+#pose:Default
+#Expression:Angry
 "Alright team! Either we die heroes or I make the best calamari stew the world’s ever seen."
 
 #Speaker:Ravynn  
+#pose:Pose3
+#expression:Angry
 "Focus. This  unlike anything we’ve faced. If you hesitate, we all die."
 
 #Speaker:Master Porthole  
+#pose:Pose2
+#expression:Neutral
 "Mm. Uplifting. Remind me to invite you to my next gala."
 
 #Speaker:Ravynn  
+#pose:Deafult
+#expression:Angry
 "Remind me to bring a harpoon."
 
 #Speaker:{Name}
@@ -63,7 +76,9 @@ I almost smile. Almost.
 #Speaker:Stu  
 "Don’t forget the time Shad almost poisoned us with his french toast ."
 
-#Speaker:Shad  
+#Speaker:Shad 
+#pose:pose2
+#expression:Neutral
 "Hey! Those tasted great ignoring the side effects."
 
 #Speaker:{Name}  

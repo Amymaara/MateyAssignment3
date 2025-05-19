@@ -23,59 +23,57 @@ public class MapButton : MonoBehaviour
     }
     public void onRoomButtonPress()
     {
+        if (string.IsNullOrEmpty(roomID))
+        {
+            Debug.LogError("RoomID is not set!");
+            return;
+        }
+
         UIPanelAnimation uiPanelAnimation = Map.GetComponent<UIPanelAnimation>();
         uiPanelAnimation.SlideOutAndDisable();
 
-        
-        
+        // Mark room as visited
         if (!GameStateManager.RoomsVisited.Contains(roomID))
         {
             GameStateManager.MarkRoomVisited(roomID);
             
         }
 
-        if (CurrentState == gameState.Day0)
+        // Handle Captain's Quarters entry trigger
+        if (GameStateManager.CurrentState == GameStateManager.gameState.Day0 && roomID == "Captains")
         {
-            if (roomLogic != null)
+            if (GameStateManager.numRoomsVisited > 4)
             {
-                roomLogic.Blackscreen.SetActive(true);
-                roomLogic.Stu.SetActive(true);
+                GameStateManager.SetState(GameStateManager.gameState.Argument);
+            }
+            else
+            {
+                Debug.Log("Captain's Quarters is locked until you've visited 4 rooms.");
+                return; // Optionally block entry
+            }
+        }
+
+        // Continue room transition logic
+        if (roomLogic != null)
+        {
+            roomLogic.Blackscreen.SetActive(true);
+            roomLogic.Stu.SetActive(true);
+
+
+            if (numRoomsVisited <= 6)
+
+            {
                 inkFile = roomLogic.Day0PostScript;
                 StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
                 StoryManager.Instance.StartStory(inkFile, "Day0Script");
             }
-            else
+            else if (GameStateManager.CurrentState == GameStateManager.gameState.Day1)
             {
-                sceneChanger.LoadNextScene(roomSceneName);
-            }
-            
-        }
 
-        else if (CurrentState == gameState.Argument)
-        {
-            GameStateManager.SetState(gameState.Day1);
-            sceneChanger.LoadNextScene(roomSceneName);
-        }
-
-        else if (CurrentState == gameState.Day1)
-        {
-            
-            inkFile = roomLogic.Day1PostScript;
-            roomLogic.Blackscreen.SetActive(true);
-            roomLogic.Stu.SetActive(true);
-            StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
-            StoryManager.Instance.StartStory(inkFile, "Day1Script");
-
-            if (numRoomsVisited <= 6)
-            {
-                GameStateManager.SetState(gameState.Argument);
-                sceneChanger.LoadNextScene(roomSceneName);
-            }
-            else
-            {
                 GameStateManager.SetState(gameState.Combat);
                 sceneChanger.LoadNextScene("BeforeKraken");
             }  
+
         }
     }
 

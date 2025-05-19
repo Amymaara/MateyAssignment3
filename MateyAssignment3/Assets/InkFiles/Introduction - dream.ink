@@ -2,9 +2,12 @@ INCLUDE Globals.ink
 
 -> storm_intro
 
+
 === storm_intro ===
+#music_Atlantic-storm-58999
 #speaker: {Name}
-// sounds harsh waves, storm
+
+#sfx_Sea-waves-7131
 The sea cried that night. The winds howled like never before, and the waves like blades cutting into the ship. 
 
 My guiding stars were nowhere to be found, taking away my hope with it.
@@ -17,9 +20,8 @@ But I didn’t move, I just stood there drenched, clinging on to pride or stubbo
 
 … I don’t even know. 
 
-//scream SFX
 
-“AHH It got me! By Gods it got me!”
+“AHH It got me! By Gods it got me!” #sfx_Scream-85294
 
 I turned just in time to see him getting pulled overboard, disappearing and becoming one with the black waves.
 
@@ -65,14 +67,16 @@ And I solemnly swear to the heavenly beings cursing me that I will not go down w
 
 But thinking, idling. It costs everything.
 
-//scream SFX
-I hear another scream, another crewmate gone. In the blink of an eye.
 
-//Footsteps SFX
+I hear another scream, another crewmate gone. In the blink of an eye. #sfx_Scream-85294
+
+
+#sfx_Walking-on-a-wet-surface-41742
 I ran to the wheel, my boots slipping against the wet planks but I held on. 
 
 I tried to steer, to guide my beauty out of this nightmare but neither the Kraken nor the sea had any intention of letting me go.
-//Thunder SFX
+
+#sfx_Thunder-207513
 Lightning again, A tentacle slamming down - it’s about to hit me.
 
 I…
@@ -83,20 +87,21 @@ I…
     -> miss_shot
 
 === make_shot ===
-//arrow sfx
+#sfx_Arrow-hitting-target-83810
 I lifted my harpoon. I remembered all my training. Deep breath, I fired. Success - dead center.
 
 -> aftermath
 
+
 === miss_shot ===
-//arrow sfx
+#sfx_Arrow-hitting-target-83810
 My aim was off, I grazed it but not enough. 
 
 -> aftermath
 
 === aftermath ===
-// log split SFX
-The damage was done, I saved myself but the cost of it was losing my wheel. It was splintered, no two ways about it. 
+
+The damage was done, I saved myself but the cost of it was losing my wheel. It was splintered, no two ways about it. #sfx_Log-split-88986
 
 We were stuck here. 
 
@@ -117,8 +122,8 @@ She did it, the ship tilted violently. I was launched over the side, falling. Sh
 
 “NO!”
 
-//Scream SFX girl
-I saw her face, the horror, the realisation. She screamed my name, I tried reaching out, I tried saving her.
+
+I saw her face, the horror, the realisation. She screamed my name, I tried reaching out, I tried saving her. #sfx_Girl-screaming-sound-effect-259472
 
 I couldn’t. I lost my strength, my crew, my ship, my compass. All of it was gone.  
 
