@@ -14,7 +14,7 @@ public class RoomLogic : MonoBehaviour
     
 
     [Header("Game Objects")]
-    [SerializeField] private GameObject Blackscreen;
+    public GameObject Blackscreen;
     public GameObject MainCharcater;
     public GameObject Stu;
 

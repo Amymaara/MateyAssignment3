@@ -262,12 +262,15 @@ public class StoryManager : MonoBehaviour
                 StopCoroutine(displayLineCouroutine);
             }
 
-            TagHandler();
-            SpriteChange(speakerName, Pose, Expression);
+           
 
             displayLineCouroutine = StartCoroutine(TypeEffect(runningStory.Continue()));
-            
-            
+
+            TagHandler();
+            if (speakerName != null && Pose != null && Expression != null)
+            {
+                SpriteChange(speakerName, Pose, Expression);
+            }
         }
         else if (runningStory.currentChoices.Count > 0)
         {
