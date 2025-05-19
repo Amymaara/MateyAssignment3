@@ -468,6 +468,18 @@ PrefabInstance:
       value: 581.42
       objectReference: {fileID: 0}
     - target: {fileID: 543184546212435920, guid: 55711ea641980e447be4befc68bd3583, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543184546212435920, guid: 55711ea641980e447be4befc68bd3583, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543184546212435920, guid: 55711ea641980e447be4befc68bd3583, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543184546212435920, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.0000038147
       objectReference: {fileID: 0}
@@ -1981,7 +1993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &969682474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2349,7 +2361,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 393, y: 166}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 120, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1312023526
 MonoBehaviour:
@@ -3989,6 +4001,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 1647523202}
+    - target: {fileID: 8272456318101727544, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
+      propertyPath: m_Name
+      value: Pearl
+      objectReference: {fileID: 0}
     - target: {fileID: 8456464307781315743, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: sceneChanger
       value: 

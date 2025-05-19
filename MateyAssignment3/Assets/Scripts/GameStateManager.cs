@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -31,6 +32,15 @@ public static class GameStateManager
         }
     }
 
+    public static List<string> AllRoomIDs = new List<string> 
+    {
+    "Deck", "Study", "Pearl", "Galley", "MessHall", "Charting", "Captains"
+    };
+
+    public static bool AllRoomsVisited()
+    {
+        return AllRoomIDs.All(id => RoomsVisited.Contains(id));
+    }
 
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;
     public static event Action<gameState> OnGameStateChanged;

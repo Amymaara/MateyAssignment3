@@ -2,6 +2,7 @@ INCLUDE Globals.ink
 
 -> charting_room
 === charting_room ===
+#speaker: {Name}
 The charting room is a disaster - not in the way the Galley is no. This disaster is split right down the middle of the room.
 
 On the left, Master Porthole sat on a chair, telescope in hand. 

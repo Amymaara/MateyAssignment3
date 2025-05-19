@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 136297294}
     - target: {fileID: 44394112814096306, guid: 943a21eb9783b154884636599b346201, type: 3}
       propertyPath: m_SortingOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5105864229880740229, guid: 943a21eb9783b154884636599b346201, type: 3}
       propertyPath: m_Name
@@ -437,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8713237063645630377, guid: 943a21eb9783b154884636599b346201, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -892,9 +892,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DayTransition: {fileID: 1510265705}
-  MapButton: {fileID: 2063176211}
   videoPlayer: {fileID: 596048553}
   blackScreenImage: {fileID: 1978771435}
+  canvas: {fileID: 1419770859}
+  sceneChanger: {fileID: 1215580581}
 --- !u!4 &1215580583
 Transform:
   m_ObjectHideFlags: 0
@@ -1012,7 +1013,7 @@ PrefabInstance:
       objectReference: {fileID: 136297294}
     - target: {fileID: 3842563253648815191, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4659148290197112719, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_IsActive
@@ -1494,11 +1495,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978771433}
   m_CullTransparentMesh: 1
---- !u!1 &2063176211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3842563253648815191, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
-  m_PrefabInstance: {fileID: 1334286798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

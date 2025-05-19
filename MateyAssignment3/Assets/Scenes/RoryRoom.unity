@@ -1020,6 +1020,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 916676198}
+    - target: {fileID: 1928486778849266152, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: m_Name
+      value: Pearl
+      objectReference: {fileID: 0}
     - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
@@ -3051,7 +3055,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 262663373895203840, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: m_Name
-      value: Rory
+      value: Master Porthole
       objectReference: {fileID: 0}
     - target: {fileID: 8631822581989655348, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: m_Pivot.x
