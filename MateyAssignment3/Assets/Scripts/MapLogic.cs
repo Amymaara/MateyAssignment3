@@ -1,7 +1,4 @@
-using System.Linq;
 using UnityEngine;
-using static GameStateManager;
-
 
 public class MapLogic : MonoBehaviour
 {
@@ -18,6 +15,16 @@ public class MapLogic : MonoBehaviour
 
     public GameObject[] rooms;
 
+    private void OnEnable()
+    {
+        GameStateManager.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDisable()
+    {
+        GameStateManager.OnGameStateChanged -= OnGameStateChanged;
+    }
+
     private void Start()
     {
         map.SetActive(false);
@@ -27,65 +34,57 @@ public class MapLogic : MonoBehaviour
             room.SetActive(false);
         }
 
-        if (CurrentState == gameState.Day0)
-        {
-            if (GameStateManager.numRoomsVisited == 4)
-            {
-                Captains.SetActive(true);
-                SetState(gameState.Argument);
-            }
+        // Also call once in case GameState is already set
+        OnGameStateChanged(GameStateManager.CurrentState);
+    }
 
-            if (GameStateManager.numRoomsVisited < 4)
-            {
+    private void OnGameStateChanged(GameStateManager.gameState newState)
+    {
+        Debug.Log("MapLogic reacting to game state: " + newState);
+
+        foreach (GameObject room in rooms)
+        {
+            room.SetActive(false);
+        }
+
+        switch (newState)
+        {
+            case GameStateManager.gameState.Day0:
+                if (GameStateManager.numRoomsVisited == 4)
+                {
+                    Captains.SetActive(true);
+                    GameStateManager.SetState(GameStateManager.gameState.Argument);
+                }
+                else
+                {
+                    foreach (GameObject room in rooms)
+                    {
+                        bool visited = GameStateManager.RoomsVisited.Contains(room);
+                        bool blocked = room == MessHall || room == Charting || room == Captains;
+
+                        if (!visited && !blocked)
+                        {
+                            Debug.Log("Room activated: " + room.name);
+                            room.SetActive(true);
+                        }
+                    }
+                }
+                break;
+
+            case GameStateManager.gameState.Argument:
                 foreach (GameObject room in rooms)
                 {
-                    if (GameStateManager.RoomsVisited.Contains(room))
-                    {
-                        room.SetActive(false);
-                    }
-                    else if (room == MessHall)
-                    {
-                        room.SetActive(false);
-                    }
-                    else if (room == Charting)
-                    {
-                        room.SetActive(false);
-                    }
-                    else
+                    if (!GameStateManager.RoomsVisited.Contains(room))
                     {
                         room.SetActive(true);
                     }
                 }
-            }
-        }
-
-        if (CurrentState == gameState.Argument)
-        {
-             foreach (GameObject room in rooms)
-             {
-               if (GameStateManager.RoomsVisited.Contains(room))
-               {
-                   room.SetActive(false);
-               }
-               
-                    
-               else
-               {
-                   room.SetActive(true);
-               }
-
                 Captains.SetActive(false);
-            }
-        }
+                break;
 
-        if (CurrentState == gameState.Day1)
-        {
-            foreach (GameObject room in rooms)
-            {
-                room.SetActive(false) ;
-            }
-
-            Captains.SetActive(true) ;
+            case GameStateManager.gameState.Day1:
+                Captains.SetActive(true);
+                break;
         }
     }
 
@@ -93,5 +92,4 @@ public class MapLogic : MonoBehaviour
     {
         map.SetActive(true);
     }
-
 }

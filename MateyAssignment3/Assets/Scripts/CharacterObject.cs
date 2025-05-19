@@ -9,8 +9,8 @@ public class StoryCharacter : MonoBehaviour
     public enum Pose
     {
         Default,
-        Pose1,
-        Pose2
+        Pose2,
+        Pose3
     }
 
     public enum Expression

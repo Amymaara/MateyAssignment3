@@ -50,8 +50,10 @@ public class StoryManager : MonoBehaviour
 
 
     [Header("Global Variable Handling")]
-    [SerializeField] public DialogueVariables variablesInDialogue;
+    [SerializeField] public DialogueVariables variablesInDialogue { get; private set; }
     [SerializeField] private TextAsset loadGlobalsFile;
+   
+
 
 
     // Title: How to persist variables across multiple Ink stories (Variable Observer) | Unity + Ink tutorial
@@ -69,9 +71,13 @@ public class StoryManager : MonoBehaviour
         Instance = this;
         if (loadGlobalsFile != null)
         {
-            variablesInDialogue = new DialogueVariables(loadGlobalsFile); 
-
+            variablesInDialogue = new DialogueVariables(loadGlobalsFile);
         }
+        else
+        {
+            Debug.LogError("Globals file is missing!");
+        }
+    
         
         //DontDestroyOnLoad(gameObject);
         //DontDestroyOnLoad(dialogueCanvas.gameObject);
@@ -465,8 +471,7 @@ public class StoryManager : MonoBehaviour
         dialogueBox.text = "";
         dialoguePanel.SetActive(false);
         continueButton.gameObject.SetActive(false);
-  
-
+        variablesInDialogue.SaveVariables();
         if (RoomObject != null)
         {
             RoomObject.addTrigger();
@@ -483,8 +488,6 @@ public class StoryManager : MonoBehaviour
         }
 
      
-
-        
 
         if (storyID != null)
         {
@@ -525,9 +528,18 @@ public class StoryManager : MonoBehaviour
     // used when getting the player name from the inpu
     public void SetVarState(string nameOfVariable, object value)
     {
+        if (variablesInDialogue == null)
+        {
+            Debug.LogError("GlobalVariables not initialized when trying to set: " + name);
+            return;
+        }
         if (variablesInDialogue.variables.ContainsKey(nameOfVariable))
         {
             variablesInDialogue.variables[nameOfVariable] = Ink.Runtime.Value.Create(value);
+        }
+        if (runningStory != null)
+        {
+            runningStory.variablesState.SetGlobal(name, Ink.Runtime.Value.Create(value));
         }
     }
 

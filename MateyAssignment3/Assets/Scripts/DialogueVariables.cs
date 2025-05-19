@@ -24,18 +24,22 @@ public class DialogueVariables
     // creates dictionary with all variables
     public DialogueVariables(TextAsset loadGlobalsJSON)
     {
-        // create the story
         globalVariablesStory = new Story(loadGlobalsJSON.text);
-        
 
-        // initializes  dictionary
+        if (!string.IsNullOrEmpty(GlobalInkMemory.SavedStateJSON))
+        {
+            globalVariablesStory.state.LoadJson(GlobalInkMemory.SavedStateJSON);
+        }
+
+        // Initialize dictionary
         variables = new Dictionary<string, Ink.Runtime.Object>();
         foreach (string name in globalVariablesStory.variablesState)
         {
             Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
             variables.Add(name, value);
-            Debug.Log("Initialized global dialogue variable: " + name + " = " + value);
         }
+
+        
     }
 
     // saves variables to global file 

@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> storm_intro
 
 === storm_intro ===
+#speaker: {Name}
 // sounds harsh waves, storm
 The sea cried that night. The winds howled like never before, and the waves like blades cutting into the ship. 
 
