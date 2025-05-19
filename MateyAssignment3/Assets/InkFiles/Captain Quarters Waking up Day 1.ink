@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> wake_up
 
 === wake_up ===
+#music_Celtic-moon-loop-1-284914
 #Speaker:{Name}
 I woke up to the sound of...something.
 

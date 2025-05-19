@@ -9,6 +9,7 @@ INCLUDE Globals.ink
 }
 
 ==== stu_flirty ===
+#music_Medieval-star-188280
  # Speaker:{Name}
  
   I leave and he waves me off, spatula in hand.  
@@ -26,6 +27,7 @@ INCLUDE Globals.ink
 -> END
 
 === stu_disinterested ===
+#music_Medieval-star-188280
 #Speaker:{Name}
 He gives me a thumbs up and I walk out before something stares at me with contempt again.
 

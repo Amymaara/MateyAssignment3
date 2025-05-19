@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> follow_shad_whisk
 === follow_shad_whisk ===
-
+#music_Celtic-moon-loop-1-284914
 #speaker:{Name}
 I head to the Galley while Pearl disappears, talking to herself like she just failed a hostage negotiation.
 
@@ -13,17 +13,25 @@ He doesn’t even blink when it boils over — it’s like he’s somewhere else
 "Still mad?"
 
 #speaker:Shad
+#pose:Default
+#expression:Angry
+
 "No… well yeah maybe. I know it’s childish and I don’t want to feel this way but I just do."
 
 #speaker:{Name}
 "Didn’t know a whisk could cause so much emotional damage."
 
 #speaker:Shad
+#pose:Default
+#expression:Sad
 "Wasn’t just a whisk. I’ve had it since my first proper kitchen. Before all this — before the pirate stuff."
 
+#Speaker:{Name}
 (He pauses, then laughs a little.)
 
 #speaker:Shad
+#pose:Default
+#expression:Neutral
 "Yeah maybe it is a dumb reason to be upset. I’m not great at a lot of things, but cooking? That’s my thing. And that whisk was part of that, you know?"
 
 (For once, he doesn’t have his usual goofy smile. He’s just... kind of honest.)
@@ -35,6 +43,7 @@ He doesn’t even blink when it boils over — it’s like he’s somewhere else
 
 === shad_follow_flirt ===
 ~ Shad_Affection += 10
+~ shad_exit_type = "flirty"
 
 #speaker:{Name}
 "Well your food might be a mystery, but your heart? That’s seasoned just right."
@@ -42,18 +51,26 @@ He doesn’t even blink when it boils over — it’s like he’s somewhere else
 (His eyes widen. He breaks into a sheepish grin.)
 
 #speaker:Shad
+#pose:Pose2
+#expression:Blush
 "Really? Me? People usually call me a walking hazard or a kitchen apocalypse."
 
 #speaker:{Name}
 "Maybe. But you care — and that’s what counts. You’re the type of person who’d burn a cake trying to make someone feel better."
 
+ He lets out a hearty chuckle.
+ 
 #speaker:Shad
-(chuckling)  
+#pose:Pose2
+#expression:Blush
 "Guilty as charged. I have. Twice."
 
-(He pauses. The laughter fades into something softer, more intimate.)
+#Speaker:{Name}
+He pauses. The laughter fades into something softer, more intimate.
 
 #speaker:Shad
+#pose:Default
+#expression:Neutral
 "Thanks, Cap’n. I really appreciate being seen like that — as myself.  
 Not just a chaotic mess or the guy who’s comedic relief."
 
@@ -63,6 +80,8 @@ Not just a chaotic mess or the guy who’s comedic relief."
 (Shad grins, voice dropping just a little.)
 
 #speaker:Shad
+#pose:Neutral
+#expression:Blush
 "Careful Cap’n. You keep that up and I might start thinking you’re sweet on me."
 
 (He leans in to whisper.)
@@ -70,88 +89,46 @@ Not just a chaotic mess or the guy who’s comedic relief."
 #speaker:Shad
 "And if you are... well, I’m not exactly known for resisting temptation."
 
-(I smirk and step out of the galley, leaving him to wonder what my actions mean.)
+#Speaker:{Name}
 
--> shad_follow_stu_soft
+As i'm about to leave something catches my eye.
+
+(I should ask him about it.)
+
+-> END
 
 === shad_follow_disinterest ===
 ~ Shad_Affection -= 10
-
+~ shad_exit_type = "disinterested"
 #speaker:{Name}
 "I mean sure — but it’s also just a whisk. Not your childhood dog."
 
 (Shad blinks. His soft smile falters just a little.)
 
 #speaker:Shad
+#pose:Pose2
+#expression:Sad
 "Right... yeah. Just a whisk. Obviously."
 
-(He stirs the pot again — more out of habit.  
-The bubbling sounds a little too loud, but maybe it’s just the silence between us.)
 
 #speaker:{Name}
+
+He stirs the pot again — more out of habit.  
+The bubbling sounds a little too loud, but maybe it’s just the silence between us.
+
 "You’re an alright cook, Shad. Just save the emotional breakdowns for something that actually matters."
 
-(He doesn’t respond immediately. Instead, he gives a sharp nod and a tight smile that doesn’t reach his eyes.)
+He doesn’t respond immediately. Instead, he gives a sharp nod and a tight smile that doesn’t reach his eyes.
 
 #speaker:Shad
+#pose:Neutral
+#expression:Angry
+
 "Yup. Got it, Cap’n. Back to business."
 
-(I walk out before the quiet becomes even more awkward.  
-Behind me, a metal spoon hits the floor — he doesn’t pick it up right away.)
+#Speaker:{Name}
 
-(For a guy who always fills the room with noise, this silence feels heavier than anything he’s ever set on fire.)
-
--> shad_follow_stu_cold
-
-=== shad_follow_stu_soft ===
-
-#speaker:{Name}
-Stu’s perched just outside the galley, poorly pretending not to have been eavesdropping.
-
-#speaker:Stu
-"Squaaak — someone’s turning up the heat in more ways than one."
-
-#speaker:{Name}
-"He’s charming. In a reckless, flammable type of way."
-
-(I glance back toward the galley door where laughter and the clanging of pans still echo.)
-
-(We keep walking. The air is cooler out here, but it still feels like something’s heating up.)
+(Maybe I should change the subject by asking about his items?)
 
 -> END
 
-=== shad_follow_stu_cold ===
-
-#speaker:{Name}
-I step onto the upper deck. The air hits colder than before — or maybe I just feel colder.
-
-(Stu is perched on the railing, waiting for me.  
-He doesn’t say anything at first, just judges me with those birdy eyes.)
-
-#speaker:Stu
-"Squaaak — that was… something."
-
-#speaker:{Name}
-"It was a whisk. Not a tragedy. He’ll get over it."
-
-(I lean against the railing, eyes roaming anywhere but the galley.)
-
-#speaker:{Name}
-"I’m not here to coddle feelings."
-
-#speaker:Stu
-"No, you’re a leader.  
-But leading doesn’t mean leaving your crew bleeding on the inside."
-
-(The wind shifts. I instinctively rub my arms.)
-
-#speaker:Stu
-"You don’t have to love the guy. But you looked him right in the eye and kicked down the only thing he’s ever opened up about."
-
-#speaker:Stu
-"That kind of bruise doesn’t show on the surface — but it lingers."
-
-(I don’t respond. I grip the railing tighter and stare into the sea.  
-The waves sound louder than they should.)
-
--> END

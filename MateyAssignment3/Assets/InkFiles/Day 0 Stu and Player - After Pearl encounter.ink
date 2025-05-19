@@ -8,7 +8,7 @@ INCLUDE Globals.ink
 -> stu_disinterested
 }
 === stu_flirty ===
-
+#music_Medieval-star-188280
 #speaker:Stu
 "Squaaak — what in the seven seas just happened?"
 
@@ -26,7 +26,7 @@ We stare at the door for a second, then decide to keep walking away. Fast.
 -> END
 
  === stu_disinterested ===
- 
+ #music_Medieval-star-188280
 #speaker:Stu
 "She seems a bit frazzled,  Captain {Name}. Let’s give her some space to, uh… organise her socks?"
 

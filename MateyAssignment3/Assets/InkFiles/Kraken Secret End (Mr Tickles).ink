@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> kraken_secret_end
 === kraken_secret_end ===
-
+#music_Medieval-star-188280
 #Speaker:{Name}
 
 My crew, all gone.

@@ -18,8 +18,9 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 #speaker:Shad
 "Oh huh, {Name}? I didn’t realise it was you. I wanted to make a welcome pie but it sort of started making itself halfway through. I'm a bit spooked but definitely proud of the lil guy."
 
+#Speaker:{Name}
 (Why is he acting like this is completely normal kitchen behaviour?)  
-(I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.)
+I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
 * [React to the...science experiment]
     ~ Shad_Affection += 10
@@ -63,7 +64,11 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 "Soup is highly flammable when it has emotions."
 
 #speaker:Shad
-"Haha, anyways. I’m Shad! Pirate chef. Well, actually I read the ad wrong. I mix up my words sometimes. I thought it said 'Pie-rate chef' — you know, a chef that rates pies. But it’s okay! I figured I'd go with it. Improvisation is my strong point!"
+"Haha, anyways. I’m Shad! Pirate chef. "
+
+"Well, actually I read the ad wrong. I mix up my words sometimes. I thought it said 'Pie-rate chef' — you know, a chef that rates pies."
+
+"But it’s okay! I figured I'd go with it. Improvisation is my strong point!"
 
 #speaker:Shad
 "You hungry? I tried making something called 'soul' food. For your soul, you know?"

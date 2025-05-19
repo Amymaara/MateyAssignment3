@@ -4,15 +4,15 @@ INCLUDE Globals.ink
 
 === shad_pearl_octopus_scene ===
 
-#speaker:{Name}
+#Speaker:{Name}
 The Mess Hall is in chaos. Again.
 
 Flour is sprinkled everywhere like a snowstorm just hit. Something is boiling that probably shouldn’t be, and in the middle of the culinary apocalypse — Pearl and Shad are arguing. Loudly.
 
-#speaker:Shad
+#Speaker:Shad
 "I’m telling you, Pearl, that slimy thief reached right in and took my whisk — right off my hand! My favourite one — Mr Whisk!"
 
-#speaker:Pearl
+#Speaker:Pearl
 "Well, maybe it was just curious? It’s an octopus — they’re intelligent and fundamentally misunderstood."
 
 #speaker:Shad

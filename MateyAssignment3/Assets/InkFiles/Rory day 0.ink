@@ -141,6 +141,8 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
     -> rory_exit_disinterested
 
 === rory_exit_flirty ===
+~Rory_Affection += 10 
+~ rory_exit_type = "flirty"
 #speaker:{Name}
 "You’ve certainly left an impression, Master Porthole. One that I’ll need a strong glass of whiskey to process."
 
@@ -156,6 +158,9 @@ My eyes catch on something of his.
 -> END
 
 === rory_exit_disinterested ===
+~Rory_Affection -= 10 
+~ rory_exit_type = "disinterested"
+
 #speaker:{Name}
 "Just try not to redecorate the entire ship before dinner. That desk’s already giving me a migraine."
 

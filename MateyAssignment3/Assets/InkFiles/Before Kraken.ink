@@ -5,6 +5,7 @@ INCLUDE Globals.ink
 #music_Rpg-medieval-animated-music-32058
 
 #Speaker:{Name}
+
 The sky is grey.
 
 Not storm grey — a diffent kind of grey.
@@ -29,7 +30,7 @@ The crew starts gathering one by one. No orders needed.
 
 Pearl clutches a small satchel of seashells, like a talisman.
 
-#Speaker:Pearl  
+#Speaker:Pearl 
 #pose:Pose3
 #expression:Angry
 "I can feel her pain, It's unbearable."
@@ -37,30 +38,30 @@ Pearl clutches a small satchel of seashells, like a talisman.
 #Speaker:{Name}  
 "The Kraken?"
 
-#Speaker:Pearl 
-#pose:Pose3
-#expression:Sad
+#Speaker:Pearl  
+#pose:pose3
+#expression:sad
 "No — the ocean. She’s scared."
 
 Shad emerges from the galley, dual-wielding a frying pan and a lemon.
 
-#Speaker:Shad  
-#pose:Default
-#Expression:Angry
+#Speaker:Shad 
+#pose:Pose2
+#expression:Angry
 "Alright team! Either we die heroes or I make the best calamari stew the world’s ever seen."
 
 #Speaker:Ravynn  
-#pose:Pose3
+#pose:Pose2
 #expression:Angry
 "Focus. This  unlike anything we’ve faced. If you hesitate, we all die."
 
-#Speaker:Master Porthole  
-#pose:Pose2
+#Speaker:Master Porthole 
+#pose:Default
 #expression:Neutral
 "Mm. Uplifting. Remind me to invite you to my next gala."
 
 #Speaker:Ravynn  
-#pose:Deafult
+#pose:Pose2
 #expression:Angry
 "Remind me to bring a harpoon."
 
@@ -77,7 +78,7 @@ I almost smile. Almost.
 "Don’t forget the time Shad almost poisoned us with his french toast ."
 
 #Speaker:Shad 
-#pose:pose2
+#pose:Pose2
 #expression:Neutral
 "Hey! Those tasted great ignoring the side effects."
 

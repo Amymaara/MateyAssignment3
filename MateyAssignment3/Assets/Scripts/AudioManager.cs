@@ -5,6 +5,12 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    // Title: AudioManager Script (Modified)
+    // Author: Shaped by Rain Studios (Original), Ammaarah C. (Modifications), ChatGPT (Assistance)
+    // Date: 19 May 2025
+    // Code Version: Custom Unity Integration with AudioMixer support
+    // Availability: Adapted from https://www.youtube.com/watch?v=fA79neqH21s
+    // Assistance: Debugged with help from ChatGPT (OpenAI), https://chat.openai.com
     public static AudioManager instance {  get; private set; }
 
     public AudioSource musicSource;

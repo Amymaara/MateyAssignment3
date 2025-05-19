@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> kraken_death_scene
 === kraken_death_scene ===
-
+#music_Celtic-moon-loop-1-284914
 #Speaker:{Name}
 I should have seen it coming - the shift in the wind, the sudden deafening silence.
 

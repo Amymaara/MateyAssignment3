@@ -11,7 +11,7 @@ INCLUDE Globals.ink
 }
 
 === stu_flirty ===
-
+#music_Medieval-star-188280
 #speaker:Stu
 "Squaaak — was that flirting or an interrogation?"
 
@@ -26,7 +26,7 @@ INCLUDE Globals.ink
 -> END
 
 === stu_disinterested ===
-
+#music_Medieval-star-188280
 #Speaker:{Name}
 (I turn and walk back. She doesn’t look back — and neither do I.)
 

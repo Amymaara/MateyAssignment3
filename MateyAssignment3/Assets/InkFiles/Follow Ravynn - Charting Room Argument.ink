@@ -2,6 +2,7 @@ INCLUDE Globals.ink
 
 -> follow_ravynn
 === follow_ravynn ===
+#music_Celtic-moon-loop-1-284914
  #Speaker:{Name}
  The deck is spick an span, but also very quiet. 
  
@@ -10,12 +11,16 @@ INCLUDE Globals.ink
  She doesn't even glance my way when I walk up.
  
  #Speaker:Ravynn
+ #pose:Pose3
+ #expression:Angry
  "You followed, why?"
  
  #Speaker:{Name}
  Mainly out of curiousity, or I might just like being glared at."
  
  #Speaker:Ravynn
+ #pose:Pose2
+ #expression:Angry
  "You shouldn't waste your time here."
  
  #Speaker:{Name}
@@ -25,12 +30,16 @@ INCLUDE Globals.ink
  "I followed because you left before I could say anything."
  
  #Speaker:Ravynn
+ #pose:Default
+ #expression:Angry
  "I said what I needed to say"
  
  #Speaker:{Name}
  "I wanted to understand."
  
  #Speaker:Ravynn
+ #pose:Default
+ #expression;Angry
  "Understanding is earned, not gifted."
  
  #Speaker:{Name}
@@ -39,6 +48,9 @@ INCLUDE Globals.ink
  She finally looks at me, eyes sharp like a blade ready to cut you.
  
  #Speaker:
+ #pose:Pose2
+ #expression:Sad
+ 
  "Everyone keeps thinking I'm harsh, cold, even dangerous. But I've watched endless crews die because of these things I'm so strict about."
 
  "Order is how I survive, if that makes me hard to like."
@@ -64,6 +76,8 @@ INCLUDE Globals.ink
  She blinks one, maybe it's out of surprise or confusion. I can't read her facial expressions.
  
  #Speaker:Ravynn
+ #pose:Pose2
+ #expression:Blush
  "Keep talking like that and I'll take it as you want to cut on purpose."
  
  #Speaker:{Name}
@@ -72,6 +86,8 @@ INCLUDE Globals.ink
  She steps closer, just enough so that I can notice her warmth.
  
  #Speaker:Ravynn
+  #pose:Pose2
+ #expression:Angry
  "If you're flirting, you're playing with fire."
  
  #Speaker:{Name}
@@ -81,6 +97,8 @@ INCLUDE Globals.ink
  (It's as if she's amused with this whole situation)
 
 #Speaker:Ravynn
+#pose:Pose2
+ #expression:Angry
 "I don't melt, I don't burn easily either."
 
 #Speaker:{Name}
@@ -88,6 +106,8 @@ INCLUDE Globals.ink
 She brushes past me, her voice lower.
 
 #Speaker:Ravynn
+# #pose:Default
+ #expression:Blush
 "But if you wanna test heat...you better be prepared."
 
 #Speaker:{Name}
@@ -110,6 +130,8 @@ Feeling slightly flushed I begin to be more aware of my surroundings
 She pauses for a moment.
 
 #Speaker:Ravynn
+#pose:Default
+#expression:Angry
 "Good. Then I don't need to worry."
 
 #Speaker:{Name}
@@ -117,12 +139,16 @@ She pauses for a moment.
 She nods, professional and curt. Her gaurd not dropping for a second.
 
 #Speaker:Ravynn
+#pose:Default
+#expression:Angry
 "You should go, the wind's changing."
 
 #Speaker:{Name}
 "And you'd rather be alone for it?"
 
-#Speaker:Ravynn 
+#Speaker:Ravynn
+#pose:Pose3
+#expression:Angry
 "Always."
 
 #Speaker:{Name}
@@ -131,5 +157,3 @@ Feeling bitter, I try one last time to talk with her before heading out.
 (Maybe asking about her items would break the tension?)
 
 -> END
-
-_> END

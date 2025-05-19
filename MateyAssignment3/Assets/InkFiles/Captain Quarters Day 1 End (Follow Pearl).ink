@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 }
 
 === pearl_follow_stu_soft ===
-
+#music_Medieval-star-188280
 #speaker:{Name}
 I exit her room, and Stu flutters down to land on my shoulder, beak tilted like he knows exactly what I’ve done.
 
@@ -34,7 +34,7 @@ Somehow, things feel a little more peaceful tonight.)
 -> END
 
 === pearl_follow_stu_cold ===
-
+#music_Medieval-star-188280
 #speaker:{Name}
 I walk away. The ocean keeps moving — and so do we.
 

@@ -134,6 +134,7 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 
 === ravynn_flirt ===
 ~ Ravynn_Affection += 10
+~ ravynn_exit_type = "flirty"
 
 #speaker:{Name}
 "You're intense. Really intense. There’s something about it... it's solid. Reliable."
@@ -157,6 +158,7 @@ As I'm about to leave I catch a glance of one of her belongings.
 
 === ravynn_dismiss ===
 ~ Ravynn_Affection -= 10
+~ ravynn_exit_type = "disinterested"
 
 #speaker:{Name}
 "Right, right — we get it. You’ve got the ship handled. Just make sure your grip doesn’t end up breaking the crew."

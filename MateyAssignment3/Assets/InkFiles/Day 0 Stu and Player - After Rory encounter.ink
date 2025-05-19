@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 }
 
 === stu_flirty ===
-
+#music_Medieval-star-188280
  #Speaker:{Name}
 I turned around to leave, and I swear — *solemnly swear* — that I heard him say: "You’re welcome."
 
@@ -26,7 +26,9 @@ I glance back one last time. He’s already adjusting and aligning new pieces of
 
 -> END
  === stu_disinterested ===
-(I was out before I associate that nauseating perfume with his ego. Nope — already done.)
+ #music_Medieval-star-188280
+ #Speaker:{Name}
+I was out before I associate that nauseating perfume with his ego. Nope — already done.
 
 #speaker:Stu
 "You two get along as well as pirates and piranhas."

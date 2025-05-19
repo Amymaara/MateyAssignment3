@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> Wake_up
 
 ===Wake_up
+#music_Celtic-moon-loop-1-284914
 #Speaker: {Name}  
 If the sea had a grudge against me, it was really playing into the dramatics.
 
