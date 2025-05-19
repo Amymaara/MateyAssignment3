@@ -1,5 +1,10 @@
 using TMPro;
 using UnityEngine;
+using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+
+
 
 public class DreamLogic : MonoBehaviour
 {
@@ -8,20 +13,26 @@ public class DreamLogic : MonoBehaviour
 
     [Header("Game Objects")]
     [SerializeField] private GameObject NamePanel; //player name input window
+    public GameObject PronounPanel;
+
     public GameObject CCWindow;
+
+    public SceneChanger SceneChanger;
 
     private void Start()
     {
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+        SceneChanger.OnSceneStart();
     }
 
     private void AfterStoryEnds(string finishedStory)
     {
         if (finishedStory == "Dream")
         {
-            Debug.Log("story 1 finished");
-            StoryManager.Instance.OnStoryEnd -= AfterStoryEnds; //stop listening for stories that have ended
             
+            Debug.Log("dream finished");
+            StoryManager.Instance.OnStoryEnd -= AfterStoryEnds; //stop listening for stories that have ended
+            SceneChanger.LoadNextScene("CaptainsRoom");
         }
     }
 
@@ -36,10 +47,47 @@ public class DreamLogic : MonoBehaviour
     {
         string name = NamePanel.GetComponentInChildren<TMP_InputField>().text; //get reference to the text field
         ReadName(name); // gets player input
-        NamePanel.SetActive(false); //close the name input panel
+        //NamePanel.SetActive(false); //close the name input panel
         //StoryManager.Instance.StartStory(Second, "Second"); // start the second ink story
 
     }
+    /* VAR PronounHe = ""
+        VAR PronounHim = ""
+        VAR PronounHisApple = ""
+        VAR PronounHis = ""
+    */
+    public void PronounChoice(int pronoun)
+    {
+        if (pronoun == 0)
+        {
+            StoryManager.Instance.SetVarState("PronounHe", "they");
+            StoryManager.Instance.SetVarState("PronounHim", "them");
+            StoryManager.Instance.SetVarState("PronounHisApple", "their");
+            StoryManager.Instance.SetVarState("PronounHis", "theirs");
+        }
+        if (pronoun == 1)
+        {
+            StoryManager.Instance.SetVarState("PronounHe", "she");
+            StoryManager.Instance.SetVarState("PronounHim", "her");
+            StoryManager.Instance.SetVarState("PronounHisApple", "her");
+            StoryManager.Instance.SetVarState("PronounHis", "hers");
+        }
+        if (pronoun == 2)
+        {
+            StoryManager.Instance.SetVarState("PronounHe", "he");
+            StoryManager.Instance.SetVarState("PronounHim", "him");
+            StoryManager.Instance.SetVarState("PronounHisApple", "his");
+            StoryManager.Instance.SetVarState("PronounHis", "his");
+        }
+    }
 
+    public void OnCCDone()
+    {
+        OnNameConfirm();
+        int pronoun = PronounPanel.GetComponentInChildren<TMP_Dropdown>().value;
+        PronounChoice(pronoun);
+        StoryManager.Instance.StartStory(Dream, "Dream");
+        
+    }
 
 }

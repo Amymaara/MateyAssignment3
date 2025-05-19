@@ -10,6 +10,7 @@ public class MapButton : MonoBehaviour
     public GameObject thisRoom;
     public GameObject Map;
     public RoomLogic roomLogic;
+    public SceneChanger sceneChanger;
     public string roomSceneName;
     private TextAsset inkFile;
 
@@ -27,15 +28,23 @@ public class MapButton : MonoBehaviour
 
         if (CurrentState == gameState.Day0)
         {
-            inkFile = roomLogic.Day0PostScript;
-            StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
-            StoryManager.Instance.StartStory(inkFile, "Day0Script");
+            if (roomLogic != null)
+            {
+                inkFile = roomLogic.Day0PostScript;
+                StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+                StoryManager.Instance.StartStory(inkFile, "Day0Script");
+            }
+            else
+            {
+                sceneChanger.LoadNextScene(roomSceneName);
+            }
+            
         }
 
         else if (CurrentState == gameState.Argument)
         {
             GameStateManager.SetState(gameState.Day1);
-            SceneManager.LoadScene(roomSceneName);
+            sceneChanger.LoadNextScene(roomSceneName);
         }
 
         else if (CurrentState == gameState.Day1)
@@ -47,13 +56,13 @@ public class MapButton : MonoBehaviour
             if (numRoomsVisited >= 5)
             {
                 GameStateManager.SetState(gameState.Argument);
-                SceneManager.LoadScene(roomSceneName); 
+                sceneChanger.LoadNextScene(roomSceneName);
             }
             else
             {
                 GameStateManager.SetState(gameState.Combat);
-                SceneManager.LoadScene(roomSceneName);
-            }
+                sceneChanger.LoadNextScene(roomSceneName);
+            }  
         }
     }
 

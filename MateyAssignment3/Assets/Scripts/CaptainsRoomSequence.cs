@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 using System.IO;
+using static GameStateManager;
 
 
 // this is the sequence of events for the Captains Room
@@ -22,6 +23,8 @@ public class CaptainsRoomSequence : MonoBehaviour
     [SerializeField] private GameObject File;
     public GameObject MapButton;
     public GameObject Map;
+    public SceneChanger sceneChanger;
+    
 
     [Header("Tool tips")]
     public GameObject ObjectToolTip;
@@ -31,6 +34,8 @@ public class CaptainsRoomSequence : MonoBehaviour
 
     private void Start()
     {
+        sceneChanger.OnSceneStart();
+        GameStateManager.SetState(gameState.Day0);
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds; // add listener for a story ending
         StoryManager.Instance.StartStory(StuIntro, "StuIntro"); // load first ink file, will start up dialogue system
         
@@ -39,6 +44,8 @@ public class CaptainsRoomSequence : MonoBehaviour
         MapToolTip.SetActive(false);
         MapButton.SetActive(false);
         Map.SetActive(false);
+
+        
 
 }
 
