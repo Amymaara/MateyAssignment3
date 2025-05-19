@@ -5,14 +5,19 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance {  get; private set; }  
-    
-    public AudioMixerGroup musicMixer;
-    public AudioMixerGroup sfxMixer;
-    public AudioMixerGroup voiceMixer;
+    public static AudioManager instance {  get; private set; }
+
+    public AudioSource musicSource;
+    public float sfxVolume = 1f;
+    public float musicVolume = 1f;
+
+    public AudioMixer musicMixer;
+    public AudioMixer sfxMixer;
+    public AudioMixerGroup musicGroup;
+    public AudioMixerGroup sfxGroup;
+
 
     private Transform sfxRoot;
-    private AudioSource musicSource;
 
     private void Awake()
     {
@@ -37,7 +42,7 @@ public class AudioManager : MonoBehaviour
         musicSource = musicObj.AddComponent<AudioSource>();
         musicSource.loop = true;
         musicSource.spatialBlend = 0;
-        musicSource.outputAudioMixerGroup = musicMixer;
+        musicSource.outputAudioMixerGroup = musicGroup;
 
     }
 
@@ -56,12 +61,26 @@ public class AudioManager : MonoBehaviour
         sfxSource.clip = clip;
         sfxSource.playOnAwake = false;
         sfxSource.spatialBlend = 0; // 2D sound
-        sfxSource.outputAudioMixerGroup = sfxMixer;
+        sfxSource.outputAudioMixerGroup = sfxGroup;
         sfxSource.Play();
+        sfxSource.volume = sfxVolume;
+
+
 
         Destroy(sfxSource.gameObject, clip.length + 0.5f);
     }
 
+    public void SetMasterVolume(float sliderValue)
+    {
+        
+        float volume = Mathf.Log10(Mathf.Clamp(sliderValue, 0.0001f, 1f)) * 20;
+
+        musicMixer.SetFloat("MusicVolume", volume);
+        sfxMixer.SetFloat("SFXVolume", volume);
+
+        PlayerPrefs.SetFloat("masterVolume", sliderValue);
+        PlayerPrefs.Save();
+    }
     public void PlayMusic(string fileName)
     {
         AudioClip clip = Resources.Load<AudioClip>("Audio/Music/" + fileName);
