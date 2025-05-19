@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -39,7 +40,10 @@ public static class GameStateManager
 
     public static bool AllRoomsVisited()
     {
-        return AllRoomIDs.All(id => RoomsVisited.Contains(id));
+        //return AllRoomIDs.All(id =>  RoomsVisited.Contains(id));
+       return AllRoomIDs.Count == RoomsVisited.Count;
+       
+
     }
 
     public static gameState CurrentState { get; private set; } = gameState.MainMenu;

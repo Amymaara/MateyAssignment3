@@ -58,26 +58,22 @@ public class MapButton : MonoBehaviour
         {
             roomLogic.Blackscreen.SetActive(true);
             roomLogic.Stu.SetActive(true);
-
+            StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
 
             if (GameStateManager.CurrentState == GameStateManager.gameState.Day0)
 
             {
                 inkFile = roomLogic.Day0PostScript;
-                StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+                
                 StoryManager.Instance.StartStory(inkFile, "Day0Script");
             }
             else if (GameStateManager.CurrentState == GameStateManager.gameState.Day1)
             {
                 inkFile = roomLogic.Day1PostScript;
                 GameStateManager.SetState(gameState.Argument);
-                StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+           
                 StoryManager.Instance.StartStory(inkFile, "Day1Script");
 
-
-
-
-                
             }  
 
         }
