@@ -46,11 +46,7 @@ public class MapButton : MonoBehaviour
             {
                 GameStateManager.SetState(GameStateManager.gameState.Argument);
             }
-            else
-            {
-                Debug.Log("Captain's Quarters is locked until you've visited 4 rooms.");
-                return; 
-            }
+            
         }
 
        
