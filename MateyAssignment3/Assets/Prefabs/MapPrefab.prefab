@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7067653721966158098, guid: 7c7b91635f07c9b469e6afc49e3e160d, type: 3}
+  m_Sprite: {fileID: -1127417622825126363, guid: dcac5a37bcb287440bc3eabf693cc542, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93,6 +93,7 @@ MonoBehaviour:
   thisRoom: {fileID: 1838852838684830876}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: RavynnRoom
 --- !u!114 &5384985622907400324
 MonoBehaviour:
@@ -230,6 +231,7 @@ MonoBehaviour:
   thisRoom: {fileID: 1928486778849266152}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: PearlRoom
 --- !u!114 &3703264766839331190
 MonoBehaviour:
@@ -367,6 +369,7 @@ MonoBehaviour:
   thisRoom: {fileID: 2753268209356433878}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: CaptainsRoom
 --- !u!114 &4053629713602046232
 MonoBehaviour:
@@ -608,6 +611,7 @@ MonoBehaviour:
   thisRoom: {fileID: 3151591761407631073}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: ShadRoom
 --- !u!114 &34918131732702797
 MonoBehaviour:
@@ -990,6 +994,7 @@ MonoBehaviour:
   thisRoom: {fileID: 4125958252002623108}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: ChartingRoom
 --- !u!114 &8389676768106313920
 MonoBehaviour:
@@ -1184,6 +1189,7 @@ MonoBehaviour:
   thisRoom: {fileID: 4793251820160654513}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: MessHall
 --- !u!114 &3190311464602662457
 MonoBehaviour:
@@ -1321,6 +1327,7 @@ MonoBehaviour:
   thisRoom: {fileID: 8273392467195379608}
   Map: {fileID: 3669422300518860131}
   roomLogic: {fileID: 0}
+  sceneChanger: {fileID: 0}
   roomSceneName: RoryRoom
 --- !u!114 &8449838841149698845
 MonoBehaviour:

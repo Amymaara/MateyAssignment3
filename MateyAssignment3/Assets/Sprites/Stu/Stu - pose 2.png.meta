@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dcac5a37bcb287440bc3eabf693cc542
+guid: 7da32c0a36bd04040aacbf81dcc62da0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1127417622825126363
-    second: Nautical star v2_0
+      213: -8316959013221050159
+    second: Stu - pose 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nautical star v2_0
+      name: Stu - pose 2_0
       rect:
         serializedVersion: 2
-        x: 573
-        y: 59
-        width: 738
-        height: 516
+        x: 675
+        y: 40
+        width: 863
+        height: 1023
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5263ef535ab9a50f0800000000000000
-      internalID: -1127417622825126363
+      spriteID: 1d8d975b7d9349c80800000000000000
+      internalID: -8316959013221050159
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4c0cf85bdd5074f46b2b575c4bf6d16a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Nautical star v2_0: -1127417622825126363
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

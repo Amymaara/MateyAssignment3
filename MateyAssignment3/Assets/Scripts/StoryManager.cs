@@ -12,6 +12,8 @@ using System;
 using System.Collections;
 using System.Linq;
 using DG.Tweening;
+using Mono.Cecil.Cil;
+using static Unity.VisualScripting.Member;
 
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
 
@@ -44,6 +46,7 @@ public class StoryManager : MonoBehaviour
     public float SmallWidth = 1.2f;
     private StoryItem RoomObject;
     public GameObject charactersInScene;
+    private Dictionary<string, StoryCharacter> characterLookup = new Dictionary<string, StoryCharacter>();
     string speakerName = "???";
     //[SerializeField] private Animator animator;
 
@@ -77,8 +80,12 @@ public class StoryManager : MonoBehaviour
         {
             Debug.LogError("Globals file is missing!");
         }
-    
-        
+
+        foreach (var character in charactersInScene.GetComponentsInChildren<StoryCharacter>(true))
+        {
+            characterLookup[character.characterName.ToLower()] = character;
+        }
+
         //DontDestroyOnLoad(gameObject);
         //DontDestroyOnLoad(dialogueCanvas.gameObject);
     }
@@ -254,9 +261,13 @@ public class StoryManager : MonoBehaviour
             {
                 StopCoroutine(displayLineCouroutine);
             }
+
+            TagHandler();
+            SpriteChange(speakerName, Pose, Expression);
+
             displayLineCouroutine = StartCoroutine(TypeEffect(runningStory.Continue()));
             
-            TagHandler();
+            
         }
         else if (runningStory.currentChoices.Count > 0)
         {
@@ -269,6 +280,42 @@ public class StoryManager : MonoBehaviour
             EndStory();
         }
 
+    }
+
+    /*
+    Title: Unity Ink Character Sprite Management via Tag Parsing and Enum Mapping
+    Author: Adapted by ChatGPT (based on user-provided structure and YouTube tutorials by Shaped by Rain Studios)
+    Date: 19 May 2025
+    Code Version: Custom integration
+    Availability: Based on concepts from:
+    https://www.youtube.com/watch?v=tVrxeUIEV9E (Ink Tags Tutorial)
+    https://www.youtube.com/watch?v=2I92egFvC80 (Typewriter Text Tutorial)
+
+    Research Guides: Computer Science & Computer Engineering: Citing Programming Code. 2022
+    */
+    private void SpriteChange(string speaker, string poseStr, string expStr)
+    {
+        if (string.IsNullOrEmpty(speaker) || string.IsNullOrEmpty(poseStr) || string.IsNullOrEmpty(expStr))
+        {
+            Debug.LogWarning("SpriteChange called with null or empty values.");
+            return;
+        }
+
+        if (!characterLookup.TryGetValue(speaker.ToLower(), out StoryCharacter character))
+        {
+            Debug.LogWarning($"Character '{speaker}' not found in scene.");
+            return;
+        }
+
+        if (System.Enum.TryParse(poseStr, true, out StoryCharacter.Pose pose) &&
+            System.Enum.TryParse(expStr, true, out StoryCharacter.Expression expression))
+        {
+            character.SetSprite(pose, expression);
+        }
+        else
+        {
+            Debug.LogWarning($"Failed to parse pose or expression: Pose='{poseStr}', Expression='{expStr}'");
+        }
     }
 
     //Types out letters one at a time
@@ -294,33 +341,7 @@ public class StoryManager : MonoBehaviour
         continueButton.gameObject.SetActive(true);
     }
 
-    //public Slider TextSpeedSlider;
-    void Start()
-
-    {
-       //if (PlayerPrefs.HasKey("typeSpeed"))
-       //     LoadTextSpeed();
-       // else
-        //    {
-        //        PlayerPrefs.SetFloat("typeSpeed", 0.4f);
-         //   }
-    }
-
-    //public void SetTextSpeed()
-    //{
-    //    typeSpeed = TextSpeedSlider.value;
-    //    SaveTextSpeed();
-    //}
-
-   // public void SaveTextSpeed()
-    //{
-    //    PlayerPrefs.SetFloat("typeSpeed", TextSpeedSlider.value);
-    //}
-
-   // public void LoadTextSpeed()
-   // {
-   //     TextSpeedSlider.value = PlayerPrefs.GetFloat("typeSpeed");
-   // }
+    
 
     // Title: Unity2D Dialogue System - Names, Portraits, and Layouts using Ink Tags | Unity + Ink tutorial
     // Author: Shaped by Rain Studios
@@ -328,6 +349,8 @@ public class StoryManager : MonoBehaviour
     // Code Version: ?
     // Avaliability: https://www.youtube.com/watch?v=tVrxeUIEV9E&list=PL3viUl9h9k78KsDxXoAzgQ1yRjhm7p8kl&index=3
 
+    string Pose;
+    string Expression;
     //determines what to do based on the tag that is read in from the unity file
     private void TagHandler()
     {
@@ -348,6 +371,16 @@ public class StoryManager : MonoBehaviour
                 currentTalkingCharacter(speakerName);
             }
 
+            else if (tag.StartsWith("pose:"))
+            {
+                Pose = tag.Substring("pose:".Length).Trim();
+            }
+
+            else if (tag.StartsWith("expression:"))
+            {
+                Expression = tag.Substring("expression:".Length).Trim();
+            }
+
             else if (tag.StartsWith("CGPanel:"))
             {
                 string cg = tag.Substring("CGPanel:".Length).Trim();
@@ -362,11 +395,11 @@ public class StoryManager : MonoBehaviour
                 }
             }
             //else if (tag.StartsWith("animation:"))
-           // {
-               //string animation = tag.Substring("animation:".Length).Trim();
-                //animator = charactersInScene.GetComponent<Animator>();
-                //animator.Play(animation);
-                
+            // {
+            //string animation = tag.Substring("animation:".Length).Trim();
+            //animator = charactersInScene.GetComponent<Animator>();
+            //animator.Play(animation);
+
             //}
             else if (tag.StartsWith("activate:"))
             {
@@ -380,9 +413,9 @@ public class StoryManager : MonoBehaviour
                     {
                         item.gameObject.SetActive(true);
                     }
-                    
+
                 }
-                
+
             }
             
         }
@@ -397,16 +430,11 @@ public class StoryManager : MonoBehaviour
 
             if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
             {
-                
-                item.transform.localScale = new Vector3(BigWidth, BigWidth, 1f); // Makes image larger Slightly bigger
-                
-
+                item.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
             }
             else
             {
-                // Dim or normalize other characters
-                item.transform.localScale = new Vector3(SmallWidth, SmallWidth, 1f);
-                
+                item.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
             }
         }
        
@@ -472,6 +500,11 @@ public class StoryManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         continueButton.gameObject.SetActive(false);
         variablesInDialogue.SaveVariables();
+        foreach (Transform child in charactersInScene.transform)
+        {
+            child.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+        }
+        
         if (RoomObject != null)
         {
             RoomObject.addTrigger();
