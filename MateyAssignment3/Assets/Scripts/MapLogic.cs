@@ -23,6 +23,7 @@ public class MapLogic : MonoBehaviour
 
     private void OnDisable()
     {
+        
         GameStateManager.OnGameStateChanged -= OnGameStateChanged;
     }
 
