@@ -30,6 +30,9 @@ public class SceneChanger : MonoBehaviour
         {
             blackScreen.SetActive(false); 
         });
+
+        
+        
     }
 
     // for the buttons that load inthe next scene
