@@ -1622,6 +1622,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnContinueButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1699260426845770650, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
+      propertyPath: m_StartCorner
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3669807858050606017, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
@@ -1630,6 +1634,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1837305446}
+    - target: {fileID: 9133890077459408703, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133890077459408703, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
