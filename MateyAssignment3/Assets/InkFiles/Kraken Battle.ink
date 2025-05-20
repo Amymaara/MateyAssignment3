@@ -18,6 +18,7 @@ VAR helpUsedRavynn = false
 -> start
 #music_Horror-258261
 === start ===
+#Speaker:Stu
 
 The Kraken rising from the depths trashes his tentacles towards your ship.
 
@@ -71,12 +72,13 @@ The Kraken thrashes its tentacles and smashes into you!
 }
 
 === kraken_defeated ===
-#tag: win
-
+#win
+//You have defeated the kraken
 -> END
 
 === player_defeated ===
-#tag: lose
+#lose
+//You have Lost
 
 -> END
 
@@ -285,7 +287,8 @@ You stand, you watch. You feel no fear, no remorse.
 
 There only exists devotion.
 
-#tag: krakenEnd
+#krakenEnd
+//You have found the Secret
 
 -> END
     

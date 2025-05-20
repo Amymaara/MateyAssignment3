@@ -129,10 +129,10 @@ TextureImporter:
       name: Ravynn CV_0
       rect:
         serializedVersion: 2
-        x: 604
-        y: 24
-        width: 701
-        height: 1024
+        x: 622
+        y: 0
+        width: 736
+        height: 1072
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Ravynn CV_0: 4850029331792074963
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
