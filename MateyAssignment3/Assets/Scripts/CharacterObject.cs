@@ -68,10 +68,11 @@ public class StoryCharacter : MonoBehaviour
     private IEnumerator CrossFadeToSprite(Sprite newSprite)
     {
         characterImage.CrossFadeAlpha(0f, 0.5f, false); // Fade out over 0.5s
-        yield return new WaitForSeconds(0.001f);
+        
         characterImage.sprite = newSprite;
         characterImage.SetNativeSize();
         characterImage.CrossFadeAlpha(1f, 0.5f, false); // Fade in over 0.5s
+        yield return new WaitForSeconds(0.001f);
     }
 
     public void PlayAffectionChange(bool isPositive)
