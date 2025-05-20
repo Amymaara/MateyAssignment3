@@ -26,7 +26,7 @@ public class MapButton : MonoBehaviour
         if (string.IsNullOrEmpty(roomID))
         {
             Debug.LogError("RoomID is not set!");
-            return;
+            //return;
         }
 
         UIPanelAnimation uiPanelAnimation = Map.GetComponent<UIPanelAnimation>();
@@ -40,11 +40,12 @@ public class MapButton : MonoBehaviour
         }
 
         // Handle Captain's Quarters entry trigger
-        if (GameStateManager.CurrentState == GameStateManager.gameState.Day0 && roomID == "Captains")
+        if (GameStateManager.CurrentState == GameStateManager.gameState.Day0 )
         {
             if (GameStateManager.numRoomsVisited > 4)
             {
                 GameStateManager.SetState(GameStateManager.gameState.Argument);
+                
             }
             
         }
@@ -87,7 +88,16 @@ public class MapButton : MonoBehaviour
     {
         if (finishedStory == "Day0Script")
         {
-            SceneManager.LoadScene(roomSceneName);
+            if (GameStateManager.numRoomsVisited >= 4)
+            {
+                SceneManager.LoadScene("DayTransition");
+
+            }
+            else
+            {
+                SceneManager.LoadScene(roomSceneName);
+            }
+                
 
         }
         else if (finishedStory == "Day1Script")
