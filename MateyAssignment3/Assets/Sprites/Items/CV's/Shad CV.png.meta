@@ -129,10 +129,10 @@ TextureImporter:
       name: Shad CV_0
       rect:
         serializedVersion: 2
-        x: 604
-        y: 24
-        width: 701
-        height: 1024
+        x: 564
+        y: 4
+        width: 730
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Shad CV_0: 2351378003408256419
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
