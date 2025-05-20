@@ -1305,6 +1305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Stu
   characterImage: {fileID: 657893699}
+  affectionGainParticles: {fileID: 0}
+  affectionLossParticles: {fileID: 0}
   sprites:
   - {fileID: -8316959013221050159, guid: 7da32c0a36bd04040aacbf81dcc62da0, type: 3}
   - {fileID: 4472951075969095266, guid: 729390c39cfb4a7488697f81ae8cfd42, type: 3}
@@ -1993,7 +1995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &969682474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3579,6 +3581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8713237063645630377, guid: 943a21eb9783b154884636599b346201, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3989,6 +3995,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 525907812}
+    - target: {fileID: 4659148290197112719, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4684244184864003118, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_Name
       value: MapCanvas

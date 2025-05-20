@@ -3057,6 +3057,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Master Porthole
       objectReference: {fileID: 0}
+    - target: {fileID: 2219332372082986951, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+      propertyPath: characterName
+      value: Master Porthole
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219332372082986951, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+      propertyPath: affectionGainParticles
+      value: 
+      objectReference: {fileID: 7021049902849042342}
+    - target: {fileID: 2219332372082986951, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+      propertyPath: affectionLossParticles
+      value: 
+      objectReference: {fileID: 7021049902849042343}
     - target: {fileID: 8631822581989655348, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3142,6 +3154,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+--- !u!198 &7021049902849042342 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1907344821911375234, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+  m_PrefabInstance: {fileID: 7021049902849042341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7021049902849042343 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7148822817642660736, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+  m_PrefabInstance: {fileID: 7021049902849042341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7411679323376884661
 PrefabInstance:
   m_ObjectHideFlags: 0

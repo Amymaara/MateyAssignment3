@@ -3278,6 +3278,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1095058842470699957, guid: f50858f641c20c84f878dc354d7b3e1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095058842470699957, guid: f50858f641c20c84f878dc354d7b3e1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 189
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007325252071015118, guid: f50858f641c20c84f878dc354d7b3e1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 188
+      objectReference: {fileID: 0}
     - target: {fileID: 9031834593885203997, guid: f50858f641c20c84f878dc354d7b3e1a, type: 3}
       propertyPath: m_Name
       value: Ravynn
