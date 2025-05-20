@@ -73,12 +73,12 @@ The Kraken thrashes its tentacles and smashes into you!
 
 === kraken_defeated ===
 #win
-//You have defeated the kraken
+You have defeated the kraken
 -> END
 
 === player_defeated ===
 #lose
-//You have Lost
+You have Lost
 
 -> END
 
