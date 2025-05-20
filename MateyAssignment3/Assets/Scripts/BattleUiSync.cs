@@ -9,11 +9,16 @@ public class BattleUiSync : MonoBehaviour
     public Slider krakenHPSlider;
 
     private Story inkStory;
+    public TextAsset BattleFile;
+    
 
     private void Start()
     {
+        StoryManager.Instance.StartStory(BattleFile, "BattleFile");
+
         // This finds the story manager in scene and gets active ink story
         inkStory = FindFirstObjectByType<StoryManager>().GetStory();
+
 
         //sets the sliders values
 
@@ -30,7 +35,11 @@ public class BattleUiSync : MonoBehaviour
 
             krakenHPSlider.value = (float)(int)inkStory.variablesState["krakenHP"];
 
+            Debug.Log($"Kraken HP: {inkStory.variablesState["krakenHP"]}, Player HP: {inkStory.variablesState["playerHP"]}");
+
         }
+
+        
 
         if (inkStory != null && !inkStory.canContinue)
         {
