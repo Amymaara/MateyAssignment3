@@ -5,7 +5,7 @@ INCLUDE Globals.ink
 === rory_intro ===
 #music_Celtic-moon-loop-1-284914
 #speaker:Stu
-"We should definitely check out that suspicious guy. Hopefully he hasn’t royally fucked up or stolen anything."
+"We should definitely check out that suspicious guy. Hopefully he hasn’t royally messed up or stolen anything."
 
 #speaker:{Name}
 I stepped into what used to be the ship’s study. Keyword: *used to*. Now it looked like a noble catalog threw up all over it with no restraints and a grudge against simplicity.

@@ -92,7 +92,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 #expression:Neutral
 "You hungry? I tried making something called 'soul' food. For your soul, you know?"
 
-* [Backhanded sunshine]
+* [Sure]
     ~ Shad_Affection += 10
     
     #speaker:{Name}
@@ -105,10 +105,14 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
 #Speaker:{Name}
     (I watch as he scrambles to jot something down in his book.)
-
+    
+    #Speaker:Shad
+#pose:Pose3
+#expression:Blush
+"Also I didn't hear a no! You can be the first person to every try my soul food...maybe the last."
     -> shad_exit
 
-* [Set your standards low]
+* [Well...alright]
     ~ Shad_Affection += 0
     
     #speaker:{Name}
@@ -121,11 +125,11 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     -> shad_exit
 
-* [A pie vs a kraken? Tough call]
+* [Rather take my chances with the ocean]
     ~ Shad_Affection-= 10
     
     #speaker:{Name}
-    "I think you might be a bigger danger than the sea monster."
+    "I think you might be a bigger danger than any sea monster."
 
     #speaker:Shad
     #pose:Default
