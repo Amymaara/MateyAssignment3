@@ -15,6 +15,8 @@ using DG.Tweening;
 using Mono.Cecil.Cil;
 using static Unity.VisualScripting.Member;
 using static GameStateManager;
+using static UnityEditor.Progress;
+
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
 
 
@@ -257,7 +259,8 @@ public class StoryManager : MonoBehaviour
 
         if (runningStory.canContinue)
         {
-           if (displayLineCouroutine != null)
+            GetCurrentAffection();
+            if (displayLineCouroutine != null)
             {
                 StopCoroutine(displayLineCouroutine);
             }
@@ -265,13 +268,15 @@ public class StoryManager : MonoBehaviour
            
 
             displayLineCouroutine = StartCoroutine(TypeEffect(runningStory.Continue()));
+            
+            CheckAffectionChange();
 
             TagHandler();
 
             // Handles audio tags
             HandleTags(runningStory.currentTags);
 
-            PlayParticle();
+            
 
             if (speakerName != null && Pose != null && Expression != null)
             {
@@ -463,9 +468,29 @@ public class StoryManager : MonoBehaviour
         }
     }
 
-    public void PlayParticle()
-    {
 
+
+    
+
+    public int GetIntVar(string nameOfVariable)
+    {
+        Ink.Runtime.Object varObject = GetVarState(nameOfVariable);
+
+        if (varObject == null)
+        {
+            Debug.LogWarning($"Variable '{nameOfVariable}' was null.");
+            return 0; 
+        }
+
+        if (varObject is Ink.Runtime.IntValue intValue)
+        {
+            return intValue.value;
+        }
+        else
+        {
+            Debug.LogWarning($"Variable '{nameOfVariable}' is not an int. Actual type: {varObject.GetType()}");
+            return 0; 
+        }
     }
 
     // makes the character that is currently talking bigger
@@ -491,7 +516,24 @@ public class StoryManager : MonoBehaviour
        
     }
 
+    /*
+VAR Pearl_Affection = 0
+VAR Shad_Affection = 0
+VAR Rory_Affection = 0
+VAR Ravynn_Affection = 0
+get varstate(nameofvariable)
+*/
+    int PearlAffectionNew;
+    int PearlAffectionOld;
+    int RoryAffectionNew;
+    int RoryAffectionOld;
+    int RavynnAffectionNew;
+    int RavynnAffectionOld;
+    int ShadAffectionNew;
+    int ShadAffectionOld;
+    // will optimize for the final
 
+    
 
     // Title: (Part 3) Choices: Unity Visual Novel.
     // Author: Rivertune Games
@@ -504,6 +546,8 @@ public class StoryManager : MonoBehaviour
         RemoveChoices();
         continueButton.gameObject.SetActive(false);
 
+        GetCurrentAffection();
+
         foreach (Choice choice in runningStory.currentChoices)
         {
             var choiceButton = Instantiate(choicePrefab, choicesGrid.transform);
@@ -512,6 +556,62 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    
+
+    private void GetCurrentAffection()
+    {
+        PearlAffectionOld = GetIntVar("Pearl_Affection");
+        RoryAffectionOld = GetIntVar("Rory_Affection");
+        RavynnAffectionOld = GetIntVar("Ravynn_Affection");
+        ShadAffectionOld = GetIntVar("Shad_Affection");
+    }
+
+   
+
+    private void CheckAffectionChange()
+    {
+        PearlAffectionNew = GetIntVar("Pearl_Affection");
+        RoryAffectionNew = GetIntVar("Rory_Affection");
+        RavynnAffectionNew = GetIntVar("Ravynn_Affection");
+        ShadAffectionNew = GetIntVar("Shad_Affection");
+
+        AffectionCompare(PearlAffectionNew, PearlAffectionOld, "Pearl");
+        AffectionCompare(RoryAffectionNew, RoryAffectionOld, "Master Porthole");
+        AffectionCompare(RavynnAffectionNew, RavynnAffectionOld, "Ravynn");
+        AffectionCompare(ShadAffectionNew, ShadAffectionOld, "Shad");
+    }
+
+    private void AffectionCompare(int newVal, int oldVal, string characterName)
+    {
+        if (newVal == oldVal)
+        {
+            Debug.Log($"{characterName} affection stayed the same");
+        }
+        else
+        {
+            bool increased = newVal > oldVal;
+            Debug.Log($"{characterName} affection {(increased ? "increased" : "decreased")}");
+            PlayCharacterParticle(characterName, increased);
+        }
+    }
+
+
+
+    private void PlayCharacterParticle(string characterName, bool isPositive)
+    {
+        StoryCharacter[] characters = charactersInScene.GetComponentsInChildren<StoryCharacter>();
+
+        foreach (StoryCharacter character in characters)
+        {
+            if (character.characterName.Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
+            {
+                character.PlayAffectionChange(isPositive);
+                return;
+            }
+        }
+
+        Debug.LogWarning("StoryCharacter not found: " + characterName);
+    }
 
     // Title: (Part 3) Choices: Unity Visual Novel.
     // Author: Rivertune Games
@@ -524,6 +624,7 @@ public class StoryManager : MonoBehaviour
         runningStory.ChooseChoiceIndex(choice.index);
         continueButton.gameObject.SetActive(true);
         RemoveChoices();
+        CheckAffectionChange();
         if (runningStory.canContinue)
         {
             DisplayNextLine();
@@ -627,13 +728,7 @@ public class StoryManager : MonoBehaviour
         }
     }
 
-    /*
-    VAR Pearl_Affection = 0
-    VAR Shad_Affection = 0
-    VAR Rory_Affection = 0
-    VAR Ravynn_Affection = 0
 
-    */
 
     //Allows other scripts to access current ink Story
     public Story GetStory()

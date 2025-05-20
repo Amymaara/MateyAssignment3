@@ -8,6 +8,8 @@ public class StoryCharacter : MonoBehaviour
 {
     public string characterName;
     public Image characterImage;
+    public ParticleSystem affectionGainParticles;
+    public ParticleSystem affectionLossParticles;
     public enum Pose
     {
         Default,
@@ -66,9 +68,17 @@ public class StoryCharacter : MonoBehaviour
     private IEnumerator CrossFadeToSprite(Sprite newSprite)
     {
         characterImage.CrossFadeAlpha(0f, 0.5f, false); // Fade out over 0.5s
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.0f);
         characterImage.sprite = newSprite;
         characterImage.SetNativeSize();
         characterImage.CrossFadeAlpha(1f, 0.5f, false); // Fade in over 0.5s
+    }
+
+    public void PlayAffectionChange(bool isPositive)
+    {
+        if (isPositive && affectionGainParticles != null)
+            affectionGainParticles.Play();
+        else if (!isPositive && affectionLossParticles != null)
+            affectionLossParticles.Play();
     }
 }
