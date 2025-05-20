@@ -19,7 +19,7 @@ VAR helpUsedRavynn = false
 #music_Horror-258261
 === start ===
 #Speaker:Stu
-
+#music_Horror-258261
 The Kraken rising from the depths trashes his tentacles towards your ship.
 
 #Speaker:Stu

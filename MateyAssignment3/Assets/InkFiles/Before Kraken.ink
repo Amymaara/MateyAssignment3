@@ -2,12 +2,12 @@ INCLUDE Globals.ink
 
 -> kraken_pre_battle
 === kraken_pre_battle ===
-#music_Rpg-medieval-animated-music-32058
+
 
 #Speaker:{Name}
 
 The sky is grey.
-
+#music_Rpg-medieval-animated-music-320583
 Not storm grey — a diffent kind of grey.
 
 The kind that makes it known something unsettling is about to happen.
