@@ -79,7 +79,7 @@ public class MapButton : MonoBehaviour
 
         else
         {
-            //sceneChanger.LoadNextScene(roomSceneName);
+            sceneChanger.LoadNextScene(roomSceneName);
         }
     }
 

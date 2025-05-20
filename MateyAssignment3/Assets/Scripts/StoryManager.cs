@@ -14,7 +14,7 @@ using System.Linq;
 using DG.Tweening;
 using Mono.Cecil.Cil;
 using static Unity.VisualScripting.Member;
-
+using static GameStateManager;
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
 
 
@@ -270,6 +270,9 @@ public class StoryManager : MonoBehaviour
 
             // Handles audio tags
             HandleTags(runningStory.currentTags);
+
+            PlayParticle();
+
             if (speakerName != null && Pose != null && Expression != null)
             {
                 SpriteChange(speakerName, Pose, Expression);
@@ -290,6 +293,8 @@ public class StoryManager : MonoBehaviour
         //HandleTags(runningStory.currentTags);
 
     }
+
+    
 
     /*
     Title: Unity Ink Character Sprite Management via Tag Parsing and Enum Mapping
@@ -458,22 +463,31 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    public void PlayParticle()
+    {
+
+    }
+
     // makes the character that is currently talking bigger
     private void currentTalkingCharacter(string CurrentSpeaker)
     {
-        foreach( var item in charactersInScene.GetComponentsInChildren<Image>())
+        if (GameStateManager.CurrentState == gameState.Argument)
         {
-            string imageName = item.gameObject.name;
+            foreach (var item in charactersInScene.GetComponentsInChildren<Image>())
+            {
+                string imageName = item.gameObject.name;
 
-            if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
-            {
-                item.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
-            }
-            else
-            {
-                item.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
+                {
+                    item.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                }
+                else
+                {
+                    item.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                }
             }
         }
+        
        
     }
 
@@ -612,6 +626,14 @@ public class StoryManager : MonoBehaviour
             runningStory.variablesState.SetGlobal(name, Ink.Runtime.Value.Create(value));
         }
     }
+
+    /*
+    VAR Pearl_Affection = 0
+    VAR Shad_Affection = 0
+    VAR Rory_Affection = 0
+    VAR Ravynn_Affection = 0
+
+    */
 
     //Allows other scripts to access current ink Story
     public Story GetStory()
