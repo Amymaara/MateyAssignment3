@@ -90,6 +90,7 @@ public class MapButton : MonoBehaviour
         {
             if (GameStateManager.numRoomsVisited >= 4)
             {
+                GameStateManager.SetState(GameStateManager.gameState.Argument);
                 SceneManager.LoadScene("DayTransition");
 
             }
