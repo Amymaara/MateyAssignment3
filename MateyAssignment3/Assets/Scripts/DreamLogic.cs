@@ -80,14 +80,22 @@ public class DreamLogic : MonoBehaviour
             StoryManager.Instance.SetVarState("PronounHis", "his");
         }
     }
-
+    /*
+VAR Pearl_Affection = 0
+VAR Shad_Affection = 0
+VAR Rory_Affection = 0
+VAR Ravynn_Affection = 0
+*/
     public void OnCCDone()
     {
         OnNameConfirm();
         int pronoun = PronounPanel.GetComponentInChildren<TMP_Dropdown>().value;
         PronounChoice(pronoun);
         StoryManager.Instance.StartStory(Dream, "Dream");
-        
+        StoryManager.Instance.SetVarState("Pearl_Affection", 0);
+        StoryManager.Instance.SetVarState("Shad_Affection", 0);
+        StoryManager.Instance.SetVarState("Rory_Affection", 0);
+        StoryManager.Instance.SetVarState("Ravynn_Affection", 0);
     }
 
 }

@@ -105,47 +105,10 @@ public class StoryManager : MonoBehaviour
     // determines what the state of the dialogue system should be when a new scene is loaded in.
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name.StartsWith("Captains Room"))
-        {
-            HandleIntroScene();
-        }
-        else 
-        {
-            HandleRoomExampleScene();
-        }
+        HandleRoomExampleScene();
     }
 
-    //start state of intro scene
-    private void HandleIntroScene()
-    {
-        if (dialoguePanel != null)
-        {
-            dialoguePanel.SetActive(true);
 
-        }
-
-        if (CGPanel != null)
-        {
-            CGPanel.SetActive(true);
-
-        }
-
-        
-        runningStory = null;
-
-        if (continueButton != null)
-        {
-            continueButton.gameObject.SetActive(true);
-            continueButton.onClick.RemoveAllListeners();
-
-        }
-
-        if (charactersInScene == null)
-        {
-            charactersInScene = GameObject.Find("CharactersInScene");
-            
-        }
-    }
 
     //start state of all other scenes (for now), can add more cases if needed
     private void HandleRoomExampleScene()
@@ -162,7 +125,6 @@ public class StoryManager : MonoBehaviour
             CGPanel.SetActive(false);
 
         }
-
         
         runningStory = null;
 
@@ -469,9 +431,6 @@ public class StoryManager : MonoBehaviour
     }
 
 
-
-    
-
     public int GetIntVar(string nameOfVariable)
     {
         Ink.Runtime.Object varObject = GetVarState(nameOfVariable);
@@ -547,6 +506,7 @@ get varstate(nameofvariable)
         continueButton.gameObject.SetActive(false);
 
         GetCurrentAffection();
+        TagHandler();
 
         foreach (Choice choice in runningStory.currentChoices)
         {
@@ -575,6 +535,8 @@ get varstate(nameofvariable)
         RavynnAffectionNew = GetIntVar("Ravynn_Affection");
         ShadAffectionNew = GetIntVar("Shad_Affection");
 
+        Debug.Log($"[Affection - NEW] Pearl: {PearlAffectionNew}, Rory: {RoryAffectionNew}, Ravynn: {RavynnAffectionNew}, Shad: {ShadAffectionNew}");
+
         AffectionCompare(PearlAffectionNew, PearlAffectionOld, "Pearl");
         AffectionCompare(RoryAffectionNew, RoryAffectionOld, "Master Porthole");
         AffectionCompare(RavynnAffectionNew, RavynnAffectionOld, "Ravynn");
@@ -585,12 +547,12 @@ get varstate(nameofvariable)
     {
         if (newVal == oldVal)
         {
-            Debug.Log($"{characterName} affection stayed the same");
+            //Debug.Log($"{characterName} affection stayed the same");
         }
         else
         {
             bool increased = newVal > oldVal;
-            Debug.Log($"{characterName} affection {(increased ? "increased" : "decreased")}");
+            //Debug.Log($"{characterName} affection {(increased ? "increased" : "decreased")}");
             PlayCharacterParticle(characterName, increased);
         }
     }
@@ -625,6 +587,7 @@ get varstate(nameofvariable)
         continueButton.gameObject.SetActive(true);
         RemoveChoices();
         CheckAffectionChange();
+        TagHandler();
         if (runningStory.canContinue)
         {
             DisplayNextLine();
