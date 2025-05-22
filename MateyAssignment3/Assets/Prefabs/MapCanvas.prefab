@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 18787392636703908}
   - component: {fileID: 7170052230700266042}
   m_Layer: 5
-  m_Name: CaptainsHeadquarters
+  m_Name: Captains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,9 +150,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: Captains
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 3842563253648815191}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
-  roomSceneName: CaptainsRoom
+  roomSceneName: DayTransition
 --- !u!114 &18787392636703908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,6 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: Charting
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 3842563253648815191}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
   roomSceneName: ChartingRoom
@@ -631,7 +633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3484883280778579570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -907,6 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: MessHall
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 3842563253648815191}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
   roomSceneName: MessHall
@@ -1045,6 +1048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: Galley
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 3842563253648815191}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
   roomSceneName: ShadRoom
@@ -1183,6 +1187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: Deck
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 6996951039126283572}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
   roomSceneName: RavynnRoom
@@ -1321,6 +1326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: Study
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 3842563253648815191}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
   roomSceneName: RoryRoom
@@ -1382,7 +1388,7 @@ GameObject:
   - component: {fileID: 4744298633197910700}
   - component: {fileID: 6520994480126988778}
   m_Layer: 5
-  m_Name: PearlRoom
+  m_Name: Pearl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1459,6 +1465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomID: Pearl
   Map: {fileID: 4659148290197112719}
+  mapButton: {fileID: 3842563253648815191}
   roomLogic: {fileID: 0}
   sceneChanger: {fileID: 0}
   roomSceneName: PearlRoom

@@ -3987,18 +3987,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 1647523202}
-    - target: {fileID: 3241144943762511631, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
-      propertyPath: m_Name
-      value: Captains
-      objectReference: {fileID: 0}
     - target: {fileID: 3661542344047175756, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 525907812}
-    - target: {fileID: 4659148290197112719, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4684244184864003118, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_Name
       value: MapCanvas
@@ -4015,10 +4007,6 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 1647523202}
-    - target: {fileID: 8272456318101727544, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
-      propertyPath: m_Name
-      value: Pearl
-      objectReference: {fileID: 0}
     - target: {fileID: 8456464307781315743, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: sceneChanger
       value: 

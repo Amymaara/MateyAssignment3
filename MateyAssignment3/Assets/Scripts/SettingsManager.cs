@@ -20,7 +20,7 @@ public class SettingsManager : MonoBehaviour
              
          else
             {
-               PlayerPrefs.SetFloat("typeSpeed", 0.4f);
+               PlayerPrefs.SetFloat("typeSpeed", 0.04f);
            }
 
         if (PlayerPrefs.HasKey("soundVolume"))

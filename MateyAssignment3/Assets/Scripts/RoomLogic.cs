@@ -79,7 +79,7 @@ public class RoomLogic : MonoBehaviour
                 Map.SetActive(true);
             }
             Debug.Log("Day 0 story finished");
-           
+            StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
         }
         else if (finishedStory == "Day1Script")
         {
@@ -90,10 +90,8 @@ public class RoomLogic : MonoBehaviour
                 Map.SetActive(true);
             }
             Debug.Log("Day 1 story finished");
-            
+            StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
         }
-       
-        Debug.Log("all stories in scene have finished");
     }
 
     // Makes all items in a game objects children, non interactable
@@ -124,6 +122,6 @@ public class RoomLogic : MonoBehaviour
 
     private void OnDestroy()
     {
-        StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
+        
     }
 }

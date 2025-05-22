@@ -9,6 +9,7 @@ public class MapButton : MonoBehaviour
 {
     public string roomID;
     public GameObject Map;
+    public GameObject mapButton;
     public RoomLogic roomLogic;
     public SceneChanger sceneChanger;
     public string roomSceneName;
@@ -23,6 +24,7 @@ public class MapButton : MonoBehaviour
     }
     public void onRoomButtonPress()
     {
+        mapButton.SetActive(false);
         if (string.IsNullOrEmpty(roomID))
         {
             Debug.LogError("RoomID is not set!");
@@ -92,11 +94,13 @@ public class MapButton : MonoBehaviour
             if (GameStateManager.numRoomsVisited >= 5)
             {
                 GameStateManager.SetState(GameStateManager.gameState.Argument);
+                
                 SceneManager.LoadScene("DayTransition");
 
             }
             else
             {
+
                 SceneManager.LoadScene(roomSceneName);
             }
                 

@@ -2129,6 +2129,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 172355801219042797, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
+    - target: {fileID: 172355801219042797, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
       objectReference: {fileID: 975941504}
@@ -2217,6 +2221,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1651104351867976300, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
+    - target: {fileID: 1651104351867976300, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
       objectReference: {fileID: 975941504}
@@ -2229,6 +2237,10 @@ PrefabInstance:
       value: Pearl
       objectReference: {fileID: 0}
     - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
+    - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
       objectReference: {fileID: 975941504}
@@ -2240,6 +2252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3090299282613162632, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
     - target: {fileID: 3090299282613162632, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
@@ -2257,6 +2273,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3982681273460383471, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
+    - target: {fileID: 3982681273460383471, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
       objectReference: {fileID: 975941504}
@@ -2269,6 +2289,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1536114670}
     - target: {fileID: 6085122747178187806, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
+    - target: {fileID: 6085122747178187806, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
       objectReference: {fileID: 975941504}
@@ -2276,6 +2300,10 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 975941505}
+    - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: mapButton
+      value: 
+      objectReference: {fileID: 1502815320}
     - target: {fileID: 6974769331366359700, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: roomLogic
       value: 
