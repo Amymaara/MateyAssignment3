@@ -40,6 +40,7 @@ public class MapButton : MonoBehaviour
         }
 
         // Handle Captain's Quarters entry trigger
+        /*
         if (GameStateManager.CurrentState == GameStateManager.gameState.Day0 )
         {
             if (GameStateManager.numRoomsVisited > 4)
@@ -49,7 +50,7 @@ public class MapButton : MonoBehaviour
             }
             
         }
-
+        */
        
 
         // Continue room transition logic
@@ -88,7 +89,7 @@ public class MapButton : MonoBehaviour
     {
         if (finishedStory == "Day0Script")
         {
-            if (GameStateManager.numRoomsVisited >= 4)
+            if (GameStateManager.numRoomsVisited >= 5)
             {
                 GameStateManager.SetState(GameStateManager.gameState.Argument);
                 SceneManager.LoadScene("DayTransition");

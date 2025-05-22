@@ -32,6 +32,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MessHall.unity
     guid: 3a588b7c8b1c3ec4a844b7b1d483838c
+  - enabled: 1
+    path: Assets/Scenes/DayTransition.unity
+    guid: d2ce7401a17dbbe41bb799e741ba82b8
+  - enabled: 1
+    path: Assets/ChartingRoom.unity
+    guid: fd2ddcc16bdb3224fa191dd267e0101d
+  - enabled: 1
+    path: Assets/Scenes/BeforeKraken.unity
+    guid: 699f0286c60cbfc41bb0d096c04d2a42
+  - enabled: 1
+    path: Assets/Scenes/KrakenBattle.unity
+    guid: 73f78b62f27a8bb43bcdfc2a043961d3
+  - enabled: 1
+    path: Assets/Scenes/KrakenDefeatScene.unity
+    guid: 381d14c2dc0154e4ea7a6358d904f162
+  - enabled: 1
+    path: Assets/Scenes/KrakenSecretEnd.unity
+    guid: 450617ca86ef7c6409d52918e20e9cdd
+  - enabled: 1
+    path: Assets/Scenes/CelebrationScene.unity
+    guid: a16e9479bfcc23348b07c43e603460dc
+  - enabled: 1
+    path: Assets/Scenes/GameEnd.unity
+    guid: fd03dbba9eb7d304aa6f650cdca41eb2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

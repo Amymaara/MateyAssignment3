@@ -12,10 +12,10 @@ using System;
 using System.Collections;
 using System.Linq;
 using DG.Tweening;
-using Mono.Cecil.Cil;
+
 using static Unity.VisualScripting.Member;
 using static GameStateManager;
-using static UnityEditor.Progress;
+
 
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
 
