@@ -3,37 +3,41 @@ INCLUDE Globals.ink
 -> celebration
 === celebration ===
 #music_Celtic-moon-loop-1-284914
-#Speaker:{Name}
 
+#Speaker:{Name}
 We did it.
 
+#Speaker:{Name}
 Holy sea soaked shit - we actually did it.
 
+#Speaker:{Name}
 The Kraken let out a scream, flailed those cursed limbs one last time...and then sank.
 
+#Speaker:{Name}
 Not dramatically, not slow. It just...sank.
 
+#Speaker:{Name}
 It seemed that even it was surprised we won.
 
-The ship somehow intact rocks gently, the ocean waves carressing the ship as if to say good job.
+#Speaker:{Name}
+The ship somehow intact rocks gently, the ocean waves caressing the ship as if to say good job.
 
 #Speaker:Stu
-#pose:Pose2
-#expression:Sad
-
-"Squaak - Cap'n {Name}...I'm not crying, you;'re crying!"
+"Squaak - Cap'n {Name}...I'm not crying, you're crying!"
 
 #Speaker:{Name}
-I lean against the mast, soaked, battered abd bruised. Possibly half deaf from all the screeches and screams - but i'm alive.
+I lean against the mast, soaked, battered and bruised. Possibly half deaf from all the screeches and screams - but I'm alive.
 
+#Speaker:{Name}
 I'm.... alive. Holy hell, I'M ALIVE?
 
+#Speaker:{Name}
 Master Porthole was the first to speak up, brushing a cut on his cheek.
 
 #Speaker:Master Porthole
 #pose:Pose2
 #expression:Neutral
-"Victory always looks better when it's bloodstained. You may qoute me."
+"Victory always looks better when it's bloodstained. You may quote me."
 
 #Speaker:Pearl
 #pose:Default
@@ -46,13 +50,12 @@ Master Porthole was the first to speak up, brushing a cut on his cheek.
 "And we were. I simply changed the plot."
 
 #Speaker:{Name}
-
 Shad stumbles out of the Galley with plates of something that actually looks edible. Hell, it looks downright delicious.
 
 #Speaker:Shad
 #pose:Pose3
 #expression:Neutral
-"I made victory muffins! They're structually confusing... but filled with celebratory spirit!"
+"I made victory muffins! They're structurally confusing... but filled with celebratory spirit!"
 
 #Speaker:Ravynn
 #pose:Default
@@ -65,9 +68,9 @@ Shad stumbles out of the Galley with plates of something that actually looks edi
 "Both emotional and physical damage require carbs!"
 
 #Speaker:{Name}
-
 Pearl starts laughing, uncontrollable, and then I'm laughing, hell even Ravynn cracks something dangerously close to a smile.
 
+#Speaker:{Name}
 She sheaths her dagger and nods towards me.
 
 #Speaker:Ravynn
@@ -83,11 +86,14 @@ She sheaths her dagger and nods towards me.
 #Speaker:{Name}
 "I couldn't have done it alone."
 
+#Speaker:{Name}
 I look around. This crew, this mess of a crew is all grinning, hugging, limping but somehow still standing.
 
-They were stangers just a few days ago. No they're something else, something stronger.
+#Speaker:{Name}
+They were strangers just a few days ago. No they're something else, something stronger.
 
-Master Porthole raises a flask of something sparking and probably expensive.
+#Speaker:{Name}
+Master Porthole raises a flask of something sparkling and probably expensive.
 
 #Speaker:Master Porthole
 #pose:Pose2
@@ -107,13 +113,13 @@ Master Porthole raises a flask of something sparking and probably expensive.
 #Speaker:Ravynn
 #pose:Pose2
 #expression:angry
-"... and somewhat strategy."
+"... and some amount of strategy."
 
 #Speaker:{Name}
-
 Everyone laughs again, I swear this is the only crew who would poke fun at their Captain after surviving a battle against a sea demon.
 
-We clink cups as the sun breaks through the cloud for the first time in what feels like years.
+#Speaker:{Name}
+We clink cups as the sun breaks through the clouds for the first time in what feels like years.
 
 #Speaker:Stu
 "Squaak - Alright, you fate defying misfits. Let's clean this mess up before someone drunkenly passes out and falls into the wrecks."
@@ -121,16 +127,22 @@ We clink cups as the sun breaks through the cloud for the first time in what fee
 #Speaker:{Name}
 "Yeah."
 
+#Speaker:{Name}
 We lived.
 
+#Speaker:{Name}
 The Kraken's dead.
 
+#Speaker:{Name}
 And somehow so has my excuses.
 
+#Speaker:{Name}
 This is my crew.
 
+#Speaker:{Name}
 My ship.
 
+#Speaker:{Name}
 And the sea - it's ours.
 
 -> END

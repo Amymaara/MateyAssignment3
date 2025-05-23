@@ -10,8 +10,9 @@ INCLUDE Globals.ink
 
 === stu_flirty ===
 #music_Medieval-star-188280
+
  #Speaker:{Name}
-I turned around to leave, and I swear — *solemnly swear* — that I heard him say: "You’re welcome."
+I turn around to leave, and I swear — solemnly swear — that I heard him say: "You’re welcome."
 
 #speaker:Stu
 "Squaaak, was that flirting or a verbal skirmish?"
@@ -22,13 +23,21 @@ I turned around to leave, and I swear — *solemnly swear* — that I heard him 
 #speaker:Stu
 "High society courting terrifies me."
 
-I glance back one last time. He’s already adjusting and aligning new pieces of furniture. I’m not sure if I want to kiss him or throw him overboard.
+#speaker:{Name}
+I glance back one last time. He’s already adjusting and aligning new pieces of furniture. 
+
+#speaker:{Name}
+I’m not sure if I want to kiss him or throw him overboard.
 
 -> END
  === stu_disinterested ===
  #music_Medieval-star-188280
+ 
  #Speaker:{Name}
-I was out before I associate that nauseating perfume with his ego. Nope — already done.
+I'm out before I associate that nauseating perfume with his ego. 
+
+#speaker:{Name}
+Nope. Already done.
 
 #speaker:Stu
 "You two get along as well as pirates and piranhas."
@@ -36,6 +45,10 @@ I was out before I associate that nauseating perfume with his ego. Nope — alre
 #speaker:{Name}
 "Let’s just hope he’s better with a map than he is with decor."
 
-I glance back at the room. He didn’t follow, but I’m 97% sure he’s scheming something to spite me. I’ve survived worse — like tentacles and emotional vulnerability.
+#speaker:{Name}
+I glance back at the room. He didn’t follow, but I’m 97% sure he’s scheming something to spite me. 
+
+#speaker:{Name}
+I’ve survived worse — like tentacles and emotional vulnerability.
 
 -> END

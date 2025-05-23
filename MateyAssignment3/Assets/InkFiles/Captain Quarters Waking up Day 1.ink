@@ -7,9 +7,11 @@ INCLUDE Globals.ink
 #Speaker:{Name}
 I woke up to the sound of...something.
 
+#Speaker:{Name}
 Crashing, shouting, something sizzling?
 
-But defintely something screaming.
+#Speaker:{Name}
+But definitely something screaming.
 
 #Speaker:Stu
 "Squaaak - either the Galley's on fire or Shad's trying to make another sentient baked good."
@@ -23,5 +25,6 @@ I groan and sit up. It's too early for explosions.
 #Speaker:{Name}
 "Depends, do we like the smell of questionable cooking and regret in the morning?"
 
-The chaos continues, whatver it is - it's not stopping itself.
+#Speaker:{Name}
+The chaos continues, whatever it is - it's not stopping itself.
 -> END

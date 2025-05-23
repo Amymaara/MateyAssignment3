@@ -20,31 +20,33 @@ I exit her room, and Stu flutters down to land on my shoulder, beak tilted like 
 "Shut up."
 
 #speaker:Stu
-"Sparkly. Sings to fish. Blushes when you flirt — it’s practically a siren’s résumé."
+"Sparkly, sings to fish, blushes when you flirt — it’s practically a siren’s résumé."
 
 #speaker:{Name}
 "She’s got a good heart. Even if it’s wrapped in emotional support glitter."
 
 #speaker:Stu
-"Well, at least she hasn’t tried to hex you yet. This is going better than your last endeavours."
+"Well, at least she hasn’t tried to hex you yet. This is already going better than your last endeavours."
 
-(I glance at the water. The stars are starting to show.  
-Somehow, things feel a little more peaceful tonight.)
+#speaker:{Name}
+I glance at the water. The stars are starting to show. Somehow, things feel a little more peaceful tonight.
 
 -> END
 
 === pearl_follow_stu_cold ===
 #music_Medieval-star-188280
+
 #speaker:{Name}
 I walk away. The ocean keeps moving — and so do we.
 
-(Stu lands beside me. His talons clink softly on the railing.)
+#speaker:{Name}
+Stu lands beside me. His talons clink softly on the railing.
 
 #speaker:Stu
 "Squaaak — that sure went well."
 
 #speaker:{Name}
-"I wasn’t in the mood for whimsy tonight. Especially not sea metaphors."
+"I wasn’t in the mood for whimsy tonight, especially not sea metaphors."
 
 #speaker:Stu
 "She’s not just metaphors, you know. That girl’s got more heart than half this crew put together."
@@ -55,7 +57,7 @@ I walk away. The ocean keeps moving — and so do we.
 #speaker:Stu
 "So does being cold. Let’s hope yours doesn’t freeze over before we reach our destination."
 
-(I don’t answer. The waves crash against the ship.  
-Tonight, they feel louder than they should.)
+#speaker:{Name}
+I don’t answer. The waves crash against the ship. Tonight, they feel louder than they should.
 
 -> END

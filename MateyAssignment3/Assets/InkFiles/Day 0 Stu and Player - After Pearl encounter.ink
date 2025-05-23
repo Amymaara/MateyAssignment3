@@ -9,6 +9,7 @@ INCLUDE Globals.ink
 }
 === stu_flirty ===
 #music_Medieval-star-188280
+
 #speaker:Stu
 "Squaaak — what in the seven seas just happened?"
 
@@ -21,19 +22,24 @@ INCLUDE Globals.ink
 #speaker:{Name}
 "Too late. I think she tried to flirt back with that seashell."
 
-We stare at the door for a second, then decide to keep walking away. Fast.
+#speaker:{Name}
+We stare at the door for a second, then decide to keep walking away, fast.
 
 -> END
 
  === stu_disinterested ===
- #music_Medieval-star-188280
+#music_Medieval-star-188280
+
 #speaker:Stu
-"She seems a bit frazzled,  Captain {Name}. Let’s give her some space to, uh… organise her socks?"
+"She seems a bit frazzled, Captain {Name}. Let’s give her some space to, uh… organise her socks?"
 
 #speaker:{Name}
 "Yeah, agreed. Let’s get out of here."
 
-I left Pearl's room. She hummed and tossed things about.  
-(I wonder why she got so worked up over what I said?)
+#speaker:{Name}
+I left Pearl's room. She hums and tosses things about.  
+
+#speaker:{Name}
+I wonder why she got so worked up over what I said?
 
 -> END

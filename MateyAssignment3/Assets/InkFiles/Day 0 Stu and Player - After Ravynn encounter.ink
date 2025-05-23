@@ -12,6 +12,7 @@ INCLUDE Globals.ink
 
 === stu_flirty ===
 #music_Medieval-star-188280
+
 #speaker:Stu
 "Squaaak — was that flirting or an interrogation?"
 
@@ -21,12 +22,14 @@ INCLUDE Globals.ink
 #speaker:Stu
 "Definitely her. You like the scary ones, don’t you?"
 
-(I glance back. She’s already reorganizing the ropes. I walk away. Respectfully.)
+#speaker:{Name}
+I glance back. She’s already reorganising the ropes. I walk away. Respectfully.
 
 -> END
 
 === stu_disinterested ===
 #music_Medieval-star-188280
+
 #Speaker:{Name}
 (I turn and walk back. She doesn’t look back — and neither do I.)
 
@@ -34,9 +37,12 @@ INCLUDE Globals.ink
 "Squaaak — she’s not just intense. She’s ferocious."
 
 #speaker:{Name}
-"Yeah. And if she ever snaps, we’ll all be going overboard... in alphabetical order probably."
+"Yeah. And if she ever snaps, we’ll all be going overboard... in alphabetical order, probably."
 
-(I look back one more time — she’s still sharpening that harpoon.  
-I realize my hand is gripping the hem of my sleeve without even noticing.)
+#speaker:{Name}
+I look back one more time — she’s still sharpening that harpoon.  
+
+#speaker:{Name}
+I realise my hand is gripping the hem of my sleeve.
 
 -> END

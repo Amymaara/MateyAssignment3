@@ -3,9 +3,9 @@ INCLUDE Globals.ink
 -> review_cvs
 === review_cvs ===
 #music_Celtic-moon-loop-1-284914
-#Speaker:Stu
 
-"Alright Cap'n {Name}. Let's size up the crew on paper here before you meet em.
+#Speaker:Stu
+"Alright Cap'n {Name}. Let's size up the crew on paper here before you meet 'em.
 
 -> cv_pearl
 
@@ -23,7 +23,7 @@ INCLUDE Globals.ink
 
 === cv_shad ===
 #Speaker:Stu
-"Well don’t he have quite the body. Shad — big heart, even bigger biceps."
+"Well doesn’t he have quite the body. Shad — big heart, even bigger biceps."
 
 -> cv_ravynn
 

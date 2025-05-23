@@ -27,7 +27,7 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 "We need all types of brains on deck — even if his is ginger flavoured."
 
 #Speaker:{Name}
-(She doesn’t laugh, but rather smiles gently.)
+She doesn’t laugh, but rather smiles gently.
 
 #speaker:Pearl
 #pose:Pose2
@@ -53,7 +53,7 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 "And besides, I know what it feels like to be misunderstood."
 
 #Speaker:{Name}
-(She dips her fingers into the bowl and watches the ripples, her face tinted with sorrow.)
+She dips her fingers into the bowl and watches the ripples, her face tinted with sorrow.
 
 * [You're strange]
     -> pearl_follow_flirt
@@ -67,7 +67,8 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 #speaker:{Name}
 "I trust you. And I happen to think you’re exactly the kind of strange that makes this ship worth sailing."
 
-(Her eyes widen. A real blush blooms across her cheeks.)
+#speaker:{Name}
+Her eyes widen. A real blush blooms across her cheeks.
 
 #speaker:Pearl
 #pose:Pose3
@@ -82,8 +83,11 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 #expression:Blush
 "Short. But you’ve won yourself first place. Followed by nautilus shells and poems."
 
-(She nudges a bit closer to me. There’s laughter in her voice again — and a hint of something else.)
+#speaker:{Name}
+She nudges a bit closer to me. There’s laughter in her voice again — and a hint of something else.
 
+#speaker:{Name}
+(Something sparkles and catches my attention, let's try asking what that is.)
 -> END
 
 === pearl_follow_disinterest ===
@@ -93,7 +97,8 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 #speaker:{Name}
 "It’s an octopus. I don’t think it can be 'misunderstood.'"
 
-(She blinks. Her usual spark is nowhere to be found.)
+#speaker:{Name}
+She blinks. Her usual spark is nowhere to be found.
 
 #speaker:Pearl
 #pose:Pose2
@@ -103,7 +108,8 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 #speaker:{Name}
 "As long as it doesn’t interfere with the actual sailing of the ship, I don’t really care what you get up to."
 
-(She pauses for just a moment.)
+#speaker:{Name}
+She pauses for just a moment.
 
 #speaker:Pearl
 #pose:Pose2
@@ -111,14 +117,20 @@ I find Pearl in her room, sitting on her chair watching Sardinella float calmly 
 "Oh. Right. Well... I guess it’s good to know I’m just efficient cargo."
 
 #speaker:{Name}
-"Well you’re not the worst we got."
+"Well, you’re not the worst we got."
 
 #speaker:Pearl
 #pose:Pose2
 #expression:Angry
 "Mmh. I’ll take it, I guess."
 
-(She glances away, adjusting her trinkets like she’s building a barrier between us.  
-The wind sways her hair and — for the first time since I’ve met her — she doesn’t say anything strange or magical. Just... nothing.)
+#speaker:{Name}
+She glances away, adjusting her trinkets like she’s building a barrier between us.  
+
+#speaker:{Name}
+The wind sways her hair and — for the first time since I’ve met her — she doesn’t say anything strange or magical. Just... nothing.
+
+#speaker:{Name}
+(The silence is unbearable, maybe I should ask about her new trinket?)
 
 -> END
