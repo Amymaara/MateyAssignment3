@@ -11,7 +11,9 @@ public class RoomLogic : MonoBehaviour
     [SerializeField] public TextAsset Day0PostScript;
     [SerializeField] private TextAsset Day1Script;
     [SerializeField] public TextAsset Day1PostScript;
-    
+    [SerializeField] private TextAsset Day2Script;
+    [SerializeField] public TextAsset Day2PostScript;
+
 
     [Header("Game Objects")]
     public GameObject Blackscreen;
@@ -39,8 +41,8 @@ public class RoomLogic : MonoBehaviour
             Blackscreen.SetActive(false);
             Map.SetActive(false);
             item1.SetActive(true);
-            item2.SetActive(false);
-            item3.SetActive(false);
+            item2.SetActive(true);
+            item3.SetActive(true);
             item4.SetActive(false);
             item5.SetActive(false);
             foreach (GameObject item in items)
@@ -55,9 +57,23 @@ public class RoomLogic : MonoBehaviour
             Blackscreen.SetActive(false);
             item1.SetActive(true);
             item2.SetActive(true);
-            item3.SetActive(false);
-            item4.SetActive(false);
+            item3.SetActive(true);
+            item4.SetActive(true);
             item5.SetActive(false);
+            foreach (GameObject item in items)
+            {
+                RemoveTrigger(item);
+            }
+            StoryManager.Instance.StartStory(Day1Script, "Day1Script");
+        }
+        if (GameStateManager.CurrentState == gameState.Day2)
+        {
+            Blackscreen.SetActive(false);
+            item1.SetActive(true);
+            item2.SetActive(true);
+            item3.SetActive(true);
+            item4.SetActive(true);
+            item5.SetActive(true);
             foreach (GameObject item in items)
             {
                 RemoveTrigger(item);
@@ -90,6 +106,17 @@ public class RoomLogic : MonoBehaviour
                 Map.SetActive(true);
             }
             Debug.Log("Day 1 story finished");
+            StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
+        }
+        else if (finishedStory == "Day2Script")
+        {
+            foreach (GameObject item in items)
+            {
+
+                addTrigger(item);
+                Map.SetActive(true);
+            }
+            Debug.Log("Day 2 story finished");
             StoryManager.Instance.OnStoryEnd -= AfterStoryEnds;
         }
     }

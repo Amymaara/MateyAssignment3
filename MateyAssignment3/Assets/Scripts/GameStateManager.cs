@@ -14,6 +14,8 @@ public static class GameStateManager
         Day0,
         Argument,
         Day1,
+        Day2,
+        Argument1,
         Combat,
         
     }
