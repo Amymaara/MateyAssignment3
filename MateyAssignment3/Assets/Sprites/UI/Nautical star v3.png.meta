@@ -129,12 +129,12 @@ TextureImporter:
       name: Nautical star v3_0
       rect:
         serializedVersion: 2
-        x: 834
-        y: 466
-        width: 223
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 811
+        y: 446
+        width: 258
+        height: 253
+      alignment: 9
+      pivot: {x: 0.48202404, y: 0.48318243}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f547e38ff3be6fa41879cfc05ca43302
     internalID: 0
     vertices: []
     indices: 

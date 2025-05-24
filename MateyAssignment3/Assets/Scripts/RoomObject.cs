@@ -28,6 +28,11 @@ public class StoryItem : MonoBehaviour
     {
         clickCounter = ClickTracker.GetClickCount(itemID);
         GetComponent<Image>().alphaHitTestMinimumThreshold = 0.1f;
+        if (clickCounter >= 1)
+        {
+            Image temp = itemImage.GetComponent<Image>();
+            temp.material = defaultMaterial;
+        }
     }
 
     public void OnItemClick()
