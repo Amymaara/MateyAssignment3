@@ -1019,6 +1019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1626279474720943307, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 1215580581}
     - target: {fileID: 1660809870789505861, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: sceneChanger
       value: 
@@ -1035,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4406492050761053789, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 1215580581}
     - target: {fileID: 4659148290197112719, guid: f777ed655e8cc6a4a8d1b200872121e4, type: 3}
       propertyPath: m_IsActive
       value: 0

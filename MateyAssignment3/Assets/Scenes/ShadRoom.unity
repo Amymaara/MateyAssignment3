@@ -432,6 +432,8 @@ MonoBehaviour:
   Day0PostScript: {fileID: 4900000, guid: ab253a73671b8ef4090aae3035844ae7, type: 3}
   Day1Script: {fileID: 4900000, guid: 4b504915b6860794bab060403b8d74ee, type: 3}
   Day1PostScript: {fileID: 4900000, guid: 939ad4e2263bc3848b54bd35c4052611, type: 3}
+  Day2Script: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+  Day2PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   Blackscreen: {fileID: 1612019119}
   MainCharcater: {fileID: 928535912}
   Stu: {fileID: 813569905}
@@ -1093,6 +1095,14 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 133579994}
+    - target: {fileID: 1949367427687775030, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 1949367427687775030, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
     - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: mapButton
       value: 
@@ -1145,6 +1155,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 97446532}
+    - target: {fileID: 5822043961096114681, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: roomLogic
+      value: 
+      objectReference: {fileID: 133579993}
+    - target: {fileID: 5822043961096114681, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 133579994}
     - target: {fileID: 6085122747178187806, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: mapButton
       value: 

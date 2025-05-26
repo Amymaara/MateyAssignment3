@@ -15,7 +15,7 @@ public static class GameStateManager
         Argument,
         Day1,
         Day2,
-        Argument1,
+        Argument2,
         Combat,
         
     }
@@ -37,7 +37,7 @@ public static class GameStateManager
 
     public static List<string> AllRoomIDs = new List<string> 
     {
-    "Deck", "Study", "Pearl", "Galley", "MessHall", "Charting", "Captains"
+    "Deck", "Study", "Pearl", "Galley", "MessHall", "Charting", "Captains" , "GalleyDay" , "DeckDay"
     };
 
     public static bool AllRoomsVisited()

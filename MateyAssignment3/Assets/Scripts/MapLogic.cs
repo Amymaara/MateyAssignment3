@@ -12,6 +12,8 @@ public class MapLogic : MonoBehaviour
     public GameObject MessHall;
     public GameObject Charting;
     public GameObject Captains;
+    public GameObject GalleyDay;
+    public GameObject DeckDay;
 
     public GameObject[] rooms;
     public string[] roomIDs;
@@ -30,8 +32,8 @@ public class MapLogic : MonoBehaviour
     private void Start()
     {
         map.SetActive(false);
-        rooms = new GameObject[] { Deck, Study, Pearl, Galley, MessHall, Charting, Captains };
-        roomIDs = new string[] { "Deck", "Study", "Pearl", "Galley", "MessHall", "Charting", "Captains" };
+        rooms = new GameObject[] { Deck, Study, Pearl, Galley, MessHall, Charting, Captains, GalleyDay, DeckDay };
+        roomIDs = new string[] { "Deck", "Study", "Pearl", "Galley", "MessHall", "Charting", "Captains" , "GalleyDay" , "DeckDay"};
         foreach (GameObject room in rooms)
         {
             room.SetActive(false);
@@ -43,7 +45,7 @@ public class MapLogic : MonoBehaviour
 
     private void OnGameStateChanged(GameStateManager.gameState newState)
     {
-        Debug.Log("MapLogic reacting to game state: " + newState);
+        //Debug.Log("MapLogic reacting to game state: " + newState);
 
         foreach (GameObject room in rooms)
         {
@@ -71,7 +73,7 @@ public class MapLogic : MonoBehaviour
                         GameObject room = rooms[i];
 
                         bool visited = GameStateManager.RoomsVisited.Contains(id);
-                        bool blocked = room == MessHall || room == Charting || room == Captains;
+                        bool blocked = room == MessHall || room == Charting || room == Captains || room == DeckDay || room == GalleyDay;
 
                         if (!visited && !blocked)
                         {
@@ -87,7 +89,10 @@ public class MapLogic : MonoBehaviour
                     string id = roomIDs[i];
                     GameObject room = rooms[i];
 
-                    if (!GameStateManager.RoomsVisited.Contains(id))
+                    bool visited = GameStateManager.RoomsVisited.Contains(id);
+                    bool blocked = room == DeckDay || room == GalleyDay;
+
+                    if (!visited && !blocked)
                     {
                         room.SetActive(true);
                     }
@@ -96,6 +101,24 @@ public class MapLogic : MonoBehaviour
                 break;
 
             case GameStateManager.gameState.Day1:
+                Captains.SetActive(true);
+                break;
+
+            case GameStateManager.gameState.Argument2:
+                for (int i = 0; i < rooms.Length; i++)
+                {
+                    string id = roomIDs[i];
+                    GameObject room = rooms[i];
+
+                    if (!GameStateManager.RoomsVisited.Contains(id))
+                    {
+                        room.SetActive(true);
+                    }
+                }
+                Captains.SetActive(false);
+                break;
+
+            case GameStateManager.gameState.Day2:
                 Captains.SetActive(true);
                 break;
         }
