@@ -35,8 +35,7 @@ public class BattleUiSync : MonoBehaviour
 
             krakenHPSlider.value = (float)(int)inkStory.variablesState["krakenHP"];
 
-            Debug.Log($"Kraken HP: {inkStory.variablesState["krakenHP"]}, Player HP: {inkStory.variablesState["playerHP"]}");
-
+           
         }
 
         

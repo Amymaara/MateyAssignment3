@@ -78,7 +78,7 @@ public class RoomLogic : MonoBehaviour
             {
                 RemoveTrigger(item);
             }
-            StoryManager.Instance.StartStory(Day1Script, "Day1Script");
+            StoryManager.Instance.StartStory(Day2Script, "Day2Script");
         }
     } 
 

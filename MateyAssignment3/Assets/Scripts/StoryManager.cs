@@ -455,7 +455,7 @@ public class StoryManager : MonoBehaviour
     // makes the character that is currently talking bigger
     private void currentTalkingCharacter(string CurrentSpeaker)
     {
-        if (GameStateManager.CurrentState == gameState.Argument)
+        if (GameStateManager.CurrentState == gameState.Argument || GameStateManager.CurrentState == gameState.Argument2)
         {
             foreach (var item in charactersInScene.GetComponentsInChildren<Image>())
             {

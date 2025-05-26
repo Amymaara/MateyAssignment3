@@ -221,7 +221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3669807858050606017, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_Name
-      value: DialogueCanvas (1)
+      value: DialogueCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 5850792235805905990, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_Camera
@@ -402,6 +402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pearl
       objectReference: {fileID: 0}
+    - target: {fileID: 1949367427687775030, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 1105794758}
     - target: {fileID: 1972713617818761588, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: mapButton
       value: 
@@ -458,6 +462,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 636740349}
+    - target: {fileID: 5822043961096114681, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 1105794758}
     - target: {fileID: 6085122747178187806, guid: beb12f4c1f60136479efb332741fb2a5, type: 3}
       propertyPath: mapButton
       value: 
@@ -1454,7 +1462,7 @@ GameObject:
   - component: {fileID: 1526044308}
   - component: {fileID: 1526044307}
   m_Layer: 5
-  m_Name: SceneObjectsCanvas (1)
+  m_Name: SceneObjectsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

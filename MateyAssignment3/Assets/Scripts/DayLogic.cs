@@ -50,21 +50,44 @@ public class DayLogic : MonoBehaviour
         sceneChanger.LoadNextScene("PearlRoom");
     }
 
+    public void OnPearl2Click()
+    {
+        GameStateManager.SetState(GameStateManager.gameState.Day2);
+        sceneChanger.LoadNextScene("PearlRoom");
+    }
+
     public void OnRoryClick()
     {
         GameStateManager.SetState(GameStateManager.gameState.Day1);
         sceneChanger.LoadNextScene("RoryRoom");
     }
 
+    public void OnRory2Click()
+    {
+        GameStateManager.SetState(GameStateManager.gameState.Day2);
+        sceneChanger.LoadNextScene("RoryRoom");
+    }
     public void OnShadClick()
     {
         GameStateManager.SetState(GameStateManager.gameState.Day1);
         sceneChanger.LoadNextScene("ShadRoom");
     }
 
+    public void OnShad2Click()
+    {
+        GameStateManager.SetState(GameStateManager.gameState.Day2);
+        sceneChanger.LoadNextScene("ShadRoom");
+    }
+
     public void OnRavynnClick()
     {
         GameStateManager.SetState(GameStateManager.gameState.Day1);
+        sceneChanger.LoadNextScene("RavynnRoom");
+    }
+
+    public void OnRavynn2Click()
+    {
+        GameStateManager.SetState(GameStateManager.gameState.Day2);
         sceneChanger.LoadNextScene("RavynnRoom");
     }
 

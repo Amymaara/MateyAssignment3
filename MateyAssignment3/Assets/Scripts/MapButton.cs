@@ -41,19 +41,6 @@ public class MapButton : MonoBehaviour
             
         }
 
-        // Handle Captain's Quarters entry trigger
-        /*
-        if (GameStateManager.CurrentState == GameStateManager.gameState.Day0 )
-        {
-            if (GameStateManager.numRoomsVisited > 4)
-            {
-                GameStateManager.SetState(GameStateManager.gameState.Argument);
-                
-            }
-            
-        }
-        */
-       
 
         // Continue room transition logic
         if (roomLogic != null)
@@ -76,8 +63,15 @@ public class MapButton : MonoBehaviour
            
                 StoryManager.Instance.StartStory(inkFile, "Day1Script");
 
-            }  
+            }
+            else if (GameStateManager.CurrentState == GameStateManager.gameState.Day2)
+            {
+                inkFile = roomLogic.Day2PostScript;
+                GameStateManager.SetState(gameState.Argument2);
 
+                StoryManager.Instance.StartStory(inkFile, "Day2Script");
+
+            }
         }
 
 
@@ -94,8 +88,8 @@ public class MapButton : MonoBehaviour
             if (GameStateManager.numRoomsVisited >= 5)
             {
                 GameStateManager.SetState(GameStateManager.gameState.Argument);
-                
-                SceneManager.LoadScene("DayTransition");
+
+                sceneChanger.LoadNextScene("DayTransition");
 
             }
             else
@@ -103,10 +97,23 @@ public class MapButton : MonoBehaviour
 
                 SceneManager.LoadScene(roomSceneName);
             }
-                
-
         }
         else if (finishedStory == "Day1Script")
+        {
+            if (GameStateManager.numRoomsVisited >= 7)
+            {
+                GameStateManager.SetState(GameStateManager.gameState.Argument2);
+
+                sceneChanger.LoadNextScene("DayTransition");
+
+            }
+            else
+            {
+
+                sceneChanger.LoadNextScene(roomSceneName);
+            }
+        }
+        else if (finishedStory == "Day2Script")
         {
             Debug.Log("Checking room visit completion...");
             Debug.Log("Rooms visited: " + string.Join(", ", GameStateManager.RoomsVisited));
