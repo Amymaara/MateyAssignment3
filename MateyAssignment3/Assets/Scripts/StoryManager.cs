@@ -3,18 +3,14 @@ using TMPro;
 using UnityEngine.UI;
 using Ink.Runtime;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
-using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
-using System.Runtime.CompilerServices;
-using UnityEngine.Rendering;
 using System;
 using System.Collections;
-using System.Linq;
 using DG.Tweening;
 
 using static Unity.VisualScripting.Member;
 using static GameStateManager;
+using UnityEditor.Rendering;
 
 
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
@@ -697,6 +693,13 @@ get varstate(nameofvariable)
     public Story GetStory()
     {
         return runningStory;
+    }
+
+    public void OnSkipButton()
+    {
+        StopAllCoroutines(); // Stops any ongoing coroutines, such as the typewriter effect
+        EndStory();
+
     }
 
 }
