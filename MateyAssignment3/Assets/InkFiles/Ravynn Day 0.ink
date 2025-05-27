@@ -4,14 +4,18 @@ INCLUDE Globals.ink
 
 === ravynn_visit ===
 #music_Celtic-moon-loop-1-284914
+
 #speaker:Stu
 "Let’s meet Ravynn. She got the most potential out of all the recruits. I bet my tail feathers she’ll be the real deal."
 
 #speaker:{Name}
 I step onto the stern deck. The air feels rigid — maybe it’s the salt or maybe it’s the sheer pressure from someone who looks like they coordinate stress.
 
-Every rope is perfectly coiled and every crate sealed and stacked like a warehouse.  
-And yeah, there she is — sitting cross-legged, sharpening the harpoon like it personally insulted her.
+#speaker:{Name}
+Every rope is perfectly coiled, every crate sealed and stacked like a warehouse.  
+
+#speaker:{Name}
+And yeah, there she is — sitting cross-legged, sharpening a harpoon like it personally insulted her.
 
 #speaker:Ravynn
 #pose:Default
@@ -23,11 +27,12 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #expression:Angry
 "I was wondering when you’d get up. You’re late — I already inspected the mast, adjusted the sails, and fixed three structural flaws in the hull."
 
-* [Discipline] 
+#speaker:{Name}
+* ["Are you always this intense?"] 
     -> ravynn_intro_intense
-* [Approval] 
+* ["Already fixing the ship? I like the initiative."] 
     -> ravynn_intro_approve
-* [Chain of Command] 
+* [You could’ve waited for my orders."] 
     -> ravynn_intro_direct
 
 === ravynn_intro_intense ===
@@ -76,6 +81,7 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #expression:Angry
 "I’m Ravynn — strategist, realist, and problem solver. I don’t believe in chance or luck. I believe in plans, strategies, contingencies."
 
+#speaker:{Name}
 (Ravynn gestures toward a perfectly arranged supply storage. They're labelled, stacked, and possibly blessed. Or cursed. Hard to tell.)
 
 #speaker:Ravynn
@@ -83,11 +89,11 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #expression:Angry
 "And you? What kind of Captain are you?"
 
-* [Hands-on]
+* ["I lead by example. I get my hands dirty."]
     -> ravynn_style_lead
-* [Delegator] 
+* ["I delegate. That’s what having a crew is for."] 
     -> ravynn_style_delegate
-* [Instinct]
+* ["I go with my gut."]
     -> ravynn_style_gut
 
 === ravynn_style_lead ===
@@ -109,6 +115,7 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #speaker:{Name}
 "I delegate. That’s what having a crew is for."
 
+#speaker:{Name}
 (Ravynn glances — disappointed — at a rope coil.)
 
 #speaker:Ravynn
@@ -124,6 +131,7 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #speaker:{Name}
 "I go with my gut."
 
+#speaker:{Name}
 (She exhales, looking as if I offended logic itself.)
 
 #speaker:Ravynn
@@ -153,9 +161,10 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #expression:Angry
 "Enjoy the calm while it lasts, Captain. Life and the seas are never always serene."
 
-* [Steady Admiration]
+#speaker:{Name}
+* ["You're intense. Really intense. There’s something about it... it's solid. Reliable."]
     -> ravynn_flirt
-* [Pushback] 
+* ["Right, right — we get it. You’ve got the ship handled. Just make sure your grip doesn’t end up breaking the crew."] 
     -> ravynn_dismiss
 
 === ravynn_flirt ===
@@ -181,8 +190,10 @@ And yeah, there she is — sitting cross-legged, sharpening the harpoon like it 
 #Speaker:{Name}
 (She returns to sharpening her harpoon, but I catch the faintest smile.)
 
+#speaker:{Name}
 As I'm about to leave I catch a glance of one of her belongings.
 
+#speaker:{Name}
 (Let's try asking her about it)
 -> END
 
@@ -207,7 +218,8 @@ As I'm about to leave I catch a glance of one of her belongings.
 "Then they’ll break. But I won’t."
 
 #Speaker:{Name}
-Sensing the tension my gaze awkwardly shifts until it lands upon an item.
+Sensing the tension my gaze shifts awkwardly until it lands upon an item.
 
+#speaker:{Name}
 (Let's try to change the topic and ask about this)
 -> END

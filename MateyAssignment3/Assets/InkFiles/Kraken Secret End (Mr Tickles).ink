@@ -3,24 +3,32 @@ INCLUDE Globals.ink
 -> kraken_secret_end
 === kraken_secret_end ===
 #music_Medieval-star-188280
-#Speaker:{Name}
 
+#Speaker:{Name}
 My crew, all gone.
 
+#Speaker:{Name}
 And me? Still standing, still smiling.
 
+#Speaker:{Name}
 Because this wasn’t a tragedy.
 
-No, It was strategy.
+#Speaker:{Name}
+No, it was strategy.
 
-Tentacle's rise from the depths like loving arms, because they are. 
+#Speaker:{Name}
+Tentacles rise from the depths like loving arms, because they are. 
 
+#Speaker:{Name}
 The Kraken.
 
+#Speaker:{Name}
 Mr. Tickles.
 
-Eldrich Sea God. Devourer of Ship.
+#Speaker:{Name}
+Eldritch Sea God. Devourer of Ship.
 
+#Speaker:{Name}
 My Cuddly Bug from the Deep.
 
 #Speaker:Mr. Tickles  
@@ -29,6 +37,7 @@ My Cuddly Bug from the Deep.
 #Speaker:{Name}  
 "I brought snacks. Hope you’re hungry."
 
+#Speaker:{Name}
 His voice wraps around me like a current — warm, wicked, velvety smooth.
 
 #Speaker:Mr. Tickles  
@@ -38,7 +47,7 @@ His voice wraps around me like a current — warm, wicked, velvety smooth.
 "Well. They did trust me, that was their first mistake."
 
 #Speaker:Mr. Tickles  
-"And now its their last."
+"And now it's their last."
 
 #Speaker:{Name} 
 He slithers closer — tentacles gripping gently around my waist.
@@ -70,7 +79,7 @@ He leans down, eyes glowing like bioluminescent sinful orbs.
 He laughs — the kind of laugh that causes minor earthquakes.
 
 #Speaker:Mr. Tickles  
-"Come now, my monstrous muse. Let give you your hard earned reward."
+"Come now, my monstrous muse. Let give you your hard-earned reward."
 
 #Speaker:{Name}  
 "And pray tell, what is my reward?"
@@ -81,19 +90,25 @@ He laughs — the kind of laugh that causes minor earthquakes.
 #Speaker:{Name}  
 He coils tighter — not enough to crush. Just enough to remind me what's holding me, that he owns not just my body but my heart as well.
 
-"I guess I do deserve to be spoiled since I did all the work"
+#Speaker:{Name}
+"I guess I do deserve to be spoiled, since I did all the work"
 
 #Speaker:Mr. Tickles  
 "And I’ll do all the wrapping or should I say unwrapping."
 
+#Speaker:{Name}
 The sea swells. The world tilts.
 
+#Speaker:{Name}
 And I sink, not in fear, not in regret, but in glee.
 
+#Speaker:{Name}
 Into the arms of my eldritch boyfriend.  
 
+#Speaker:{Name}
 Into the deep dark depths.  
 
+#Speaker:{Name}
 Into forbidden love.
 
 -> END

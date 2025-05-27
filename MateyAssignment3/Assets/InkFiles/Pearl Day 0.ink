@@ -4,12 +4,14 @@ INCLUDE Globals.ink
 
 === pearl_visit ===
 #music_Celtic-moon-loop-1-284914
+
 #speaker:Stu
 "Why don’t we pay a visit to Pearl?"
 
 #speaker:{Name}
 I stepped into a room that smelled of lavender, salt and the local fish market on a good day. Trinkets were scattered about — if the sea had a souvenir market, this would be it.
 
+#speaker:{Name}
 In the middle of the room, there she stood.
 
 #speaker:Pearl
@@ -17,13 +19,11 @@ In the middle of the room, there she stood.
 #expression:Neutral
 "...no Sardinella, clockwise bubble bursts. Don’t sass me."
 
-#speaker:Stu
-"Is she talking to a… fish?"
+#speaker:{Name}
+(Is she talking to a… fish?)
 
 #speaker:{Name}
-"I think so…"
-
-(She suddenly turned around, bright eyed)
+She suddenly turned around, bright eyed.
 
 #speaker:Pearl
 #pose:Pose2
@@ -33,14 +33,12 @@ In the middle of the room, there she stood.
 #speaker:Pearl
 #pose:Default
 #expression:Neutral
-"You must be the new {Name}! We were taking bets on what you’d be like. I guessed tall and grumpy, she said damp and confused."
-
-#speaker:Stu
-"Honestly, fair guesses."
+"You must be the new Captain, {Name}! We were taking bets on what you’d be like. I guessed tall and grumpy, she said damp and confused."
 
 #speaker:{Name}
 "We…?"
 
+#speaker:{Name}
 (Wait, she can’t be talking about…)
 
 #speaker:Pearl
@@ -53,13 +51,15 @@ In the middle of the room, there she stood.
 #expression:Neutral
 "So {Name}. I need honest pirate feedback — how do I come across to you? I can take it! …probably."
 
+#speaker:{Name}
 (Okay, so we’re just gonna move past the fish? Fine by me.)
 
-* ["You’re… definitely *something*"]
+#speaker:{Name}
+* ["You’re strange, really strange and honestly I don’t mind it."]
     -> compliment_unique
-* ["I’ll decide later"]
+* ["I’m reserving judgement for now."]
     -> reserve_judgment
-* ["You remind me of... a cult"]
+* ["You’re a walking fever dream, but I've seen weirder. Like a crab cult. Long story."]
     -> crab_cult_response
 
 === compliment_unique ===
@@ -112,9 +112,10 @@ In the middle of the room, there she stood.
 #expression:Neutral
 "What brought you to my little corner of controlled chaos, Captain {Name}?"
 
-* ["Had to see it for myself"]
+#speaker:{Name}
+* ["I wanted to see the ship's heart. I think I found it."]
     -> pearl_flirt
-* ["All seems... *suspiciously* normal"]
+* ["Routine inspection. Making sure there’s no funny business going on — and you’re screaming funny business."]
     -> pearl_inspection
 
 === pearl_flirt ===
@@ -123,6 +124,7 @@ In the middle of the room, there she stood.
 #speaker:{Name}
 "I wanted to see the ship's heart. I think I found it."
 
+#speaker:{Name}
 She slow blinks, once, twice, thrice.
 
 #speaker:Pearl
@@ -149,7 +151,10 @@ She proceeds to drop a seashell, pick it up, and immediately drop it again.
 #Speaker:{Name}
 I decided walking toward the door would be better than witnessing whatever this is.
 
+#speaker:{Name}
 My hand catches on something, Oh? It's one of her belongings.
+
+#speaker:{Name}
 (Let's ask about it)
 
 -> END
@@ -159,7 +164,6 @@ My hand catches on something, Oh? It's one of her belongings.
 ~ Pearl_Affection -= 10
 
 #speaker:{Name}
-
 "Routine inspection. Making sure there’s no funny business going on — and you’re screaming funny business."
 
 #speaker:Pearl
@@ -170,10 +174,12 @@ My hand catches on something, Oh? It's one of her belongings.
 #speaker:Pearl
 #pose:Default
 #expression:Neutral
-"Haha, yeah well — look at the time. I think I need to reorganise my sock drawer. Private business, you know, because you can’t let anyone see… your socks undrawered. I mean unorganised!"
+"Haha, yeah well — look at the time. I think I need to reorganise my sock drawer. Private business, you know, because you can’t let anyone see… your socks un-drawered. I mean unorganised!"
 
 #Speaker:{Name}
 Trying to get her to calm down, I reached for one of her items.
+
+#speaker:{Name}
 (Let's try talking about this)
 
 -> END

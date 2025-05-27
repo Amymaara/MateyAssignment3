@@ -11,10 +11,12 @@ INCLUDE Globals.ink
 
 === windchime_flirty ===
 #Speaker:{Name}
-I pause infront of something dangling - a seaglass windchime. The pieces vary widely in colour and they're strung with pearls and copper wire.
+I pause in front of something dangling - a sea glass windchime. The pieces vary widely in colour, strung with pearls and copper wire.
 
+#Speaker:{Name}
 They sway gently, as if they're dancing to a song only she and they can hear.
 
+#Speaker:{Name}
 She notices me staring and smiles softly.
 
 #Speaker:Pearl
@@ -49,6 +51,7 @@ I glance at the chimes again, they're still gently swaying.
 #Speaker:{Name}
 She gently smiles at me, I return it. We both pause for a moment to watch the soft sway of the beads. 
 
+#Speaker:{Name}
 I think I can faintly hear the song they're swaying to.
 
 -> END
@@ -58,7 +61,8 @@ I think I can faintly hear the song they're swaying to.
 #Speaker:{Name}
 I glance at the windchimes that were strung from driftwood. Seaglass pieces clinking together.
 
-"Looks like a ocean thrift store strung itself together."
+#Speaker:{Name}
+"Looks like an ocean thrift store strung itself together."
 
 #Speaker:Pearl
 "That's...kind of the point."
@@ -67,9 +71,9 @@ I glance at the windchimes that were strung from driftwood. Seaglass pieces clin
 "You always collect things like this?"
 
 #Speaker:Pearl
-"Yeah, I like things the from the sea."
+"Yeah, I like things from the sea."
 
 #Speaker:{Name}
-
 Her voice is quiet, distant. I decide not to engage further.
+
 -> END
