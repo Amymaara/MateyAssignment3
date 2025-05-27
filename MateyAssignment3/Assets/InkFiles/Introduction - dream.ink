@@ -5,33 +5,31 @@ INCLUDE Globals.ink
 
 === storm_intro ===
 #music_Atlantic-storm-58999
-#speaker: {Name}
 
 #sfx_Sea-waves-7131
-The sea cried that night. The winds howled like never before, and the waves like blades cutting into the ship. 
+The sea cried that night. Winds howled, waves like blades, cutting into the ship. 
 
-My guiding stars were nowhere to be found, taking away my hope with it.
+
+My stars - gone and with them my hope.
 
 Everything felt wrong.
 
-“Captain this isn’t right! We should turn back!”
-
-But I didn’t move, I just stood there drenched, clinging on to pride or stubbornness
+But I didn’t move, I just stood there drenched, clinging to pride or stubbornness
 
 … I don’t even know. 
 
 
-“AHH It got me! By Gods it got me!” #sfx_Scream-85294
+Then came the first scream. #sfx_Scream-85294
 
-I turned just in time to see him getting pulled overboard, disappearing and becoming one with the black waves.
+Gone, pulled into the sea, another name lost to the ocean.
 
-My stomach dropped, this wasn’t the sea that I knew, the one that I call my home. 
+This wasn’t the sea that I knew.
 
 No, tonight it’s a deathbed. 
 
-Before I could even process the confusion and loss, the ship violently jerked. I was thrown back - my shoulders slammed against the harsh plants. 
+The ship jerked, I hit the deck - hard. 
 
-Rain stinging my face, the deck in utter chaos. 
+The stinging of rain, chaos, even more screams.
 
 How did I react again?  
 Oh yes...
@@ -53,19 +51,18 @@ I fell, my legs gave out again and again, my hands slipping on the soaked terrai
 -> kraken_attack
 
 === kraken_attack ===
-“Cap’n quick - steer her!”
 
-Before I could react to that callout, another tentacle. But this one was bigger, meaner. I can’t even call it a tentacle, the same thing that comes from squids. 
+ Another tentacle. But this one was bigger, meaner. Not squid like, no...
 
-No this was something different, something violent, something malevolent. 
+this was different - violent, malevolent. 
 
 I gripped my compass, knuckles going white. 
 
-Luck never favoured me. No, I fought for everything I had. Every scar I had, every trinket and respect earned was all me.
+Luck never favoured me. No, I fought for everything I had. Every scar, every coin, every bit of respect.
 
 And I solemnly swear to the heavenly beings cursing me that I will not go down with this ship.
 
-But thinking, idling. It costs everything.
+But thinking, idling - costs everything.
 
 
 I hear another scream, another crewmate gone. In the blink of an eye. #sfx_Scream-85294
@@ -77,7 +74,7 @@ I ran to the wheel, my boots slipping against the wet planks but I held on.
 I tried to steer, to guide my beauty out of this nightmare but neither the Kraken nor the sea had any intention of letting me go.
 
 #sfx_Thunder-307513
-Lightning again, A tentacle slamming down - it’s about to hit me.
+Lightning again. A tentacle slamming down - it’s about to hit me.
 
 I…
 
@@ -101,32 +98,32 @@ My aim was off, I grazed it but not enough.
 
 === aftermath ===
 
-The damage was done, I saved myself but the cost of it was losing my wheel. It was splintered, no two ways about it. #sfx_Log-split-88986
+The damage was done, I saved myself but the wheel was gone - splintered.  #sfx_Log-split-88986
 
-We were stuck here. 
+We were stuck. 
 
-“We’re not gonna make it out of here.. Are we?”
+There were only two of us and one thing left to try.
 
-I turned - my last crewmate. Her eyes filled with tears, but also the truth. She knew it as much as I did. 
+I released the ballast.
 
-The blood, the screams, the wreckage.
+The ship tilted violently. I was thrown overboard.
 
-I couldn’t save anyone, but maybe her?
+But so was she - my last crewmate.
 
-“Release the ballast!”  
-“We’ve got a better chance with the deep than with this beast!”
+Falling towards the beast.
 
-She nodded, “It was an honour, Captain.”
+I tried reaching out, I tried saving her. #sfx_Girl-screaming-sound-effect-259472
 
-She did it, the ship tilted violently. I was launched over the side, falling. She was ahead of me, but falling towards the beast.
+I couldn’t save her.
 
-“NO!”
+I lost her.
 
+My strength, my crew, my ship, my compass. 
 
-I saw her face, the horror, the realisation. She screamed my name, I tried reaching out, I tried saving her. #sfx_Girl-screaming-sound-effect-259472
+All of it was gone.  
 
-I couldn’t. I lost my strength, my crew, my ship, my compass. All of it was gone.  
+I hit the ocean.
 
-I hit the ocean, the force of it jolting my body - the immense pain caused everything around me to darken as I sank into the abyss.
+Everything went dark as I sank into the abyss.
 
 -> END

@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rooms with Stars_0: 899194765289034669
+      Rooms with Stars_1: 1132499609106456525
+      Rooms with Stars_2: -8602976859312364010
+      Rooms with Stars_3: 5325519564343209562
+      Rooms with Stars_4: -5247928458928882087
+      Rooms with Stars_5: 5349984244721808638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

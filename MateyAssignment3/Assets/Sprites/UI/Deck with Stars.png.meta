@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Deck with Stars_0: -6260930152170782052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

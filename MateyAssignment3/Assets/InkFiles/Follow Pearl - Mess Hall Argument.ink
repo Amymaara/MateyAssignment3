@@ -55,9 +55,9 @@ She doesn’t laugh, but rather smiles gently.
 #Speaker:{Name}
 She dips her fingers into the bowl and watches the ripples, her face tinted with sorrow.
 
-* [You're strange]
+* ["I trust you. And I happen to think you’re exactly the kind of strange that makes this ship worth sailing."]
     -> pearl_follow_flirt
-* [Misunderstood?]
+* ["It’s an octopus. I don’t think it can be 'misunderstood."]
     -> pearl_follow_disinterest
 
 === pearl_follow_flirt ===
@@ -95,7 +95,7 @@ She nudges a bit closer to me. There’s laughter in her voice again — and a h
 ~ pearl_exit_type = "disinterested"
 
 #speaker:{Name}
-"It’s an octopus. I don’t think it can be 'misunderstood.'"
+"It’s an octopus. I don’t think it can be 'misunderstood."
 
 #speaker:{Name}
 She blinks. Her usual spark is nowhere to be found.
