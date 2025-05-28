@@ -2285,7 +2285,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pearl
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6238839154041778611, guid: a42402496967bdc49afdc97fcf9690cd, type: 3}
+    - {fileID: 2337794925839491758, guid: a42402496967bdc49afdc97fcf9690cd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -37,9 +37,9 @@ RectTransform:
   - {fileID: 8471732717339900902}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -539, y: -163}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -539, y: -703}
   m_SizeDelta: {x: 364, y: 1059}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3760437487520493536
@@ -96,6 +96,7 @@ MonoBehaviour:
   characterImage: {fileID: 2920458854544276661}
   affectionGainParticles: {fileID: 2210591058626649682}
   affectionLossParticles: {fileID: 7080753844158727853}
+  fadeDuration: 0.5
   sprites:
   - {fileID: 7378887998649782684, guid: 8154057746697434c99ca21ceea78be1, type: 3}
   - {fileID: -428410560555328353, guid: 8154057746697434c99ca21ceea78be1, type: 3}
@@ -163,6 +164,10 @@ PrefabInstance:
     - target: {fileID: 2591744528915650676, guid: 51dc1bb83387fe6419d58090bca194f3, type: 3}
       propertyPath: m_Name
       value: AffectionLossParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720740306401464836, guid: 51dc1bb83387fe6419d58090bca194f3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5550074805403863586, guid: 51dc1bb83387fe6419d58090bca194f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -270,6 +275,10 @@ PrefabInstance:
     - target: {fileID: 6145445291530771619, guid: d02aa395429293f4f800495ab47a5bf2, type: 3}
       propertyPath: m_Name
       value: AffectionGainParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154718131396315560, guid: d02aa395429293f4f800495ab47a5bf2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

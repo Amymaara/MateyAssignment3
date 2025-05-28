@@ -35,9 +35,9 @@ RectTransform:
   - {fileID: 7217628803578772674}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 219, y: -100}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 219, y: -673}
   m_SizeDelta: {x: 512, y: 983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5086781056338604548
@@ -94,6 +94,7 @@ MonoBehaviour:
   characterImage: {fileID: 2306172951063693637}
   affectionGainParticles: {fileID: 20092943717162374}
   affectionLossParticles: {fileID: 8356547003760099721}
+  fadeDuration: 1
   sprites:
   - {fileID: -4429332104298338020, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
   - {fileID: -6229151044237644542, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
