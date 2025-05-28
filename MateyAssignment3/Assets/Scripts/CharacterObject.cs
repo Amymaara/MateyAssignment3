@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using System.Collections;
+using DG.Tweening;
+using UnityEditor.SceneManagement;
 
 public class StoryCharacter : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class StoryCharacter : MonoBehaviour
     public Image characterImage;
     public ParticleSystem affectionGainParticles;
     public ParticleSystem affectionLossParticles;
+    public float fadeDuration = 1.0f;
     public enum Pose
     {
         Default,
@@ -50,7 +53,9 @@ public class StoryCharacter : MonoBehaviour
         int index = GetIndex(pose, expression);
         if (index >= 0 && index < sprites.Length && sprites[index] != null)
         {
-            StartCoroutine(CrossFadeToSprite(sprites[index]));
+            characterImage.sprite = sprites[index];
+            characterImage.SetNativeSize();
+            //StartCoroutine(CrossFadeToSprite(sprites[index]));
         }
         else
         {
@@ -64,16 +69,48 @@ public class StoryCharacter : MonoBehaviour
     Date: 2025-05-19
     Code version: 1.0 (custom example)
     Availability: Generated in conversation with ChatGPT, OpenAI platform
-    */
+    
     private IEnumerator CrossFadeToSprite(Sprite newSprite)
     {
-        characterImage.CrossFadeAlpha(0f, 0.5f, false); // Fade out over 0.5s
+       
+        transitionImage.sprite = characterImage.sprite;
+        transitionImage.SetNativeSize();
+        transitionImage.color = new Color(1f, 1f, 1f, 1f); // fully visible
+
         
         characterImage.sprite = newSprite;
         characterImage.SetNativeSize();
-        characterImage.CrossFadeAlpha(1f, 0.5f, false); // Fade in over 0.5s
-        yield return new WaitForSeconds(0.001f);
+        characterImage.color = new Color(1f, 1f, 1f, 0f); // fully transparent
+
+        float fadeInPartialDuration = fadeDuration * 0.6f;
+        float fadeOverlapDuration = fadeDuration * 0.4f;
+
+       
+        yield return characterImage
+            .DOFade(0.8f, fadeInPartialDuration)
+            .SetEase(Ease.Linear)
+            .WaitForCompletion();
+
+        
+        Tween finalFadeIn = characterImage
+            .DOFade(1f, fadeOverlapDuration)
+            .SetEase(Ease.Linear);
+
+        Tween fadeOutOld = transitionImage
+            .DOFade(0f, fadeOverlapDuration)
+            .SetEase(Ease.Linear);
+
+        yield return DOTween.Sequence()
+            .Join(finalFadeIn)
+            .Join(fadeOutOld)
+            .WaitForCompletion();
+
+        
+        characterImage.color = new Color(1f, 1f, 1f, 1f);
+        transitionImage.color = new Color(1f, 1f, 1f, 0f);
     }
+
+    */
 
     public void PlayAffectionChange(bool isPositive)
     {
