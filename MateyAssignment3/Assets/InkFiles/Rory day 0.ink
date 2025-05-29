@@ -4,12 +4,14 @@ INCLUDE Globals.ink
 
 === rory_intro ===
 #music_Celtic-moon-loop-1-284914
+
 #speaker:Stu
 "We should definitely check out that suspicious guy. Hopefully he hasn’t royally messed up or stolen anything."
 
 #speaker:{Name}
 I stepped into what used to be the ship’s study. Keyword: *used to*. Now it looked like a noble catalog threw up all over it with no restraints and a grudge against simplicity.
 
+#speaker:{Name}
 And the cause of it? Yup — there he was, standing by the window like a painting brought to life, letting the sunlight wash over his stupidly perfect bone structure.
 
 #speaker:Master Porthole
@@ -36,7 +38,7 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 "My name is… Mast erhm Porthole. Yeah, that’ll do."
 
 #speaker:{Name}
-"Master Porthole? You’re kidding, right?"
+"Master Porthole? You’re joking, right?"
 
 #speaker:Master Porthole
 #pose:Pose2
@@ -46,44 +48,45 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:{Name}
 (Okay. Time to react to that name…)
 
-* ["That name sounds... character-building"]
+* ["That name sounds... character-building."]
     ~ Rory_Affection -= 10
     
-    #speaker:{Name}
-    "Yeah, I’m not gonna lie — that’s an awful name."
+#speaker:{Name}
+"That name sounds... character-building."
 
-    He looks at me as if I murdered his child.
+#speaker:{Name}
+He looks at me as if I murdered his child.
 
-    #speaker:Master Porthole
-    #pose:Pose2
+#speaker:Master Porthole
+#pose:Pose2
 #expression:Angry
-    "Well I suppose you’re not burdened with taste."
+"Well, I suppose you’re not burdened with taste."
 
     -> rory_flooring
 
-* ["Touching sentiment, truly"]
+* ["It’s heartwarming that she named you after something she loved so dearly."]
  ~ Rory_Affection += 10
  
-    #speaker:{Name}
-    "It’s heartwarming that she named you after something she loved so dearly."
+#speaker:{Name}
+"It’s heartwarming that she named you after something she loved so dearly."
 
-    #speaker:Master Porthole
-    #pose:Pose2
+#speaker:Master Porthole
+#pose:Pose2
 #expression:Blush
-    "How strangely sincere of you."
+"How strangely sincere of you."
    
     -> rory_flooring
 
 * ["Sounds fake, but alright"]
  ~ Rory_Affection += 0
  
-    #speaker:{Name}
-    "That sounds like a fake name."
+#speaker:{Name}
+"Sounds fake, but alright"
 
-    #speaker:Master Porthole
-    #pose:Pose2
+#speaker:Master Porthole
+#pose:Pose2
 #expression:Neutral
-    "Touché. Let’s just say it’s a… placeholder, for now."
+Touché. Let’s just say it’s a… placeholder, for now."
    
     -> rory_flooring
 
@@ -96,18 +99,20 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:Master Porthole
 #pose:Pose2
 #expression:Neutral
-"It’s absolutely tragic. That wood under my desk? It utterly cheapens it."
+"It’s absolutely tragic. That wood beneath my desk? It completely cheapens it."
 
 #speaker:{Name}
 "Easy there, it took me a lot to get this ship. It might not amount to much, but she’s mine."
 
-"Getting her was not easy. Just thinking about it is giving me war flashbacks."
+#speaker:{Name}
+"Getting her was not easy. Just thinking about it gives me war flashbacks."
 
-* ["There was… a troll involved"]
+#speaker:{Name}
+* ["I had to wrestle a troll for it. That was quite the experience."]
     -> rory_troll
-* ["Wasn’t sober, wasn’t smart"]
+* ["I bought this drunk off my mind. I think I traded my life savings... and possibly my soul."]
     -> rory_drunk
-* ["Found it. Claimed it. Ship happens."]
+* ["I found the title deed on the floor. You know what they say — finders keepers."]
     -> rory_deed
 
 === rory_troll ===
@@ -151,8 +156,9 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 
 === rory_tone ===
 #speaker:{Name}
-"Ever consider speaking more kindly? Your tongue is as sharp as your jawline."
+"Ever consider speaking more kindly? Your tongue's as sharp as your jawline."
 
+#speaker:{Name}
 (Did I just say that out loud?)
 
 #speaker:Master Porthole
@@ -163,12 +169,13 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:Master Porthole
 #pose:Pose3
 #expression:Neutral
-"I handle disaster best when dressed and surrounded by elegance and competence. I’d appreciate if you provided both."
+"I handle disaster best when draped in elegance and surrounded by competence. I’d appreciate if you provided both."
 
-* ["Gonna need a drink after this"]
+#speaker:{Name}
+* ["You’ve certainly left an impression, Master Porthole. One that I’ll need a strong glass of whiskey to process."]
     -> rory_exit_flirty
     
-* ["Let's..not do this."]
+* ["Just try not to redecorate the entire ship before dinner. That desk’s already giving me a migraine."]
     -> rory_exit_disinterested
 
 === rory_exit_flirty ===
@@ -185,7 +192,10 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:{Name}
 "Oh, no chance. You and that desk have fried my brain."
 
+#speaker:{Name}
 My eyes catch on something of his.
+
+#speaker:{Name}
 (I wonder what this is about, let's try asking.)
 
 -> END
@@ -195,7 +205,7 @@ My eyes catch on something of his.
 ~ rory_exit_type = "disinterested"
 
 #speaker:{Name}
-"Just try not to redecorate the entire ship before dinner. That desk’s already giving me a migraine."
+"Just try not to redecorate the entire ship before dinner, yeah? That desk’s already giving me a migraine."
 
 #speaker:Master Porthole
 #pose:Pose3
@@ -203,9 +213,12 @@ My eyes catch on something of his.
 "Tragic. I’m afraid you’ll never get used to elegance."
 
 #speaker:{Name}
-"Or you’ll get used to the brig. Let’s see who adapts first."
+"Or you’ll get used to the brig. We'll see who adapts first."
 
+#speaker:{Name}
 As I head out I see something obnoxious, I decide to let him yap to me about it.
+
+#speaker:{Name}
 (I should ask his what this is)
 
 -> END

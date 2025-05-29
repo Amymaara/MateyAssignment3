@@ -10,8 +10,10 @@ INCLUDE Globals.ink
 
 === chess_flirty ===
 #Speaker:{Name}
+The board's already mid-game. Ivory and ebony pieces, no fingerprints but his own. 
 
-The board's already mid-game. Ivory and ebony pieces, no fingerprints but his own. I don't think he's playing to win - more so playing to unveil the methods.
+#Speaker:{Name}
+I don't think he's playing to win - more like playing to uncover the method behind the moves.
 
 #Speaker:Master Porthole 
 "I was wondering if you noticed."
@@ -19,12 +21,14 @@ The board's already mid-game. Ivory and ebony pieces, no fingerprints but his ow
 #Speaker:{Name}
 "Hard to miss something so extravagant."
 
-He runs a finger along the white knight, then tips it over.
+#Speaker:{Name}
+He runs a finger along the white knight, then slowly tips it over.
 
 #Speaker:Master Porthole
 "I find symmetry quite comforting. The board always stays the same, only the players change."
 
-"I alawys win, and lose. Balance, I suppose - that's what happens in a battle against yourself."
+#Speaker:Master Porthole
+"I always win, and lose. Balance, I suppose - that's the way of it when you're battling yourself."
 
 #Speaker:{Name}
 "That sounds lonely."
@@ -35,7 +39,10 @@ He runs a finger along the white knight, then tips it over.
 #Speaker:{Name}
 "And are you winning?"
 
-He just smiles at me, I don't think he knows. 
+#Speaker:{Name}
+He just smiles at me. I don't think he knows. 
+
+#Speaker:{Name}
 I hope he finds solace in talking to me about it, and maybe one day - he can open up about his past.
 
 
@@ -43,16 +50,20 @@ I hope he finds solace in talking to me about it, and maybe one day - he can ope
 
 === chess_disinterested ===
 #Speaker:{Name}
+The board is pristine, of course it is. Every piece is exactly where it's meant to be - no surprises there.
 
-The board is pristine, of course it is. Every piece is exactly where it's meant to be. It's like a physical representation of its pretentious owner.
+#Speaker:{Name}
+It's like a physical representation of its pretentious owner.
 
+
+#Speaker:{Name}
 He doesn't even bother to look up at me, just blandly replies.
 
 #Speaker:Master Porthole
 "It's meant to be like that, it's not broken."
 
 #Speaker:{Name}
-"Didn't say it ws. Just surprised you're playing by yourself."
+"Didn't say it was. Just surprised you're playing by yourself."
 
 #Speaker:Master Porthole
 "Better to argue with myself than lose to someone else."
@@ -63,8 +74,7 @@ He doesn't even bother to look up at me, just blandly replies.
 #Speaker:Master Porthole
 "Some things are best understood alone."
 
-#Speake:{Name}
-
+#Speaker:{Name}
 He resets the board in silence.
 
 -> END

@@ -4,13 +4,15 @@ INCLUDE Globals.ink
 
 === shad_intro ===
 #music_Celtic-moon-loop-1-284914
+
 #speaker:Stu
-"Wait… What’s that smell. It smells like burning sugar and nightmares. Let’s go to the Galley. Shad should be there."
+"Wait… What’s that smell? It smells like burning sugar and nightmares. Let’s go to the Galley. Shad should be there."
 
 #speaker:{Name}
 The door creaks open and I’m immediately hit with an odour.  
 I can’t quite place it. It’s sweet? Salty? Concerning?
 
+#speaker:{Name}
 There’s a big guy in the middle of what seems to be a culinary experiment gone wrong. There’s sugar, anchovies, and burnt remnants of something I’d rather not guess.
 
 #speaker:Shad
@@ -24,22 +26,25 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 "Oh huh, {Name}? I didn’t realise it was you. I wanted to make a welcome pie but it sort of started making itself halfway through. I'm a bit spooked but definitely proud of the lil guy."
 
 #Speaker:{Name}
-(Why is he acting like this is completely normal kitchen behaviour?)  
+(Why is he acting like this is completely normal kitchen behaviour?) 
+
+#speaker:{Name}
 I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
-* [React to the...science experiment]
+
+* ["What in Poseidon’s name are you concocting down here?"]
     ~ Shad_Affection += 10
     #speaker:{Name}
     "What in Poseidon’s name are you concocting down here?"
 
     #speaker:Shad
-    #pose:Default
+ #pose:Default
 #expression:Blush
     "A lot of food with a pinch of love, and sometimes consciousness."
 
     -> shad_kitchen_story
 
-* [Point out the bubbling terror]
+* ["Should I be concerned about the bubbling jar of slime on the counter?"]
     ~ Shad_Affection += 0
     #speaker:{Name}
     "Should I be concerned about the bubbling jar of slime on the counter?"
@@ -51,7 +56,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     -> shad_kitchen_story
 
-* [Comment on the chaos]
+* [ "The galley’s in a state of chaos, what happened?"]
     ~ Shad_Affection -= 10
     
     #speaker:{Name}
@@ -83,8 +88,14 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 #expression:Neutral
 "Haha, anyways. I’m Shad! Pirate chef. "
 
+#speaker:Shad
+#pose:Default
+#expression:Neutral
 "Well, actually I read the ad wrong. I mix up my words sometimes. I thought it said 'Pie-rate chef' — you know, a chef that rates pies."
 
+#speaker:Shad
+#pose:Default
+#expression:Neutral
 "But it’s okay! I figured I'd go with it. Improvisation is my strong point!"
 
 #speaker:Shad
@@ -92,11 +103,12 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 #expression:Neutral
 "You hungry? I tried making something called 'soul' food. For your soul, you know?"
 
-* [Sure]
+#speaker:{Name}
+* [ "You’re like the sun if it wore an apron and caused mild property damage."]
     ~ Shad_Affection += 10
     
     #speaker:{Name}
-    "You’re like the sun if it put on an apron and caused mild property damage."
+    "You’re like the sun if it wore an apron and caused mild property damage."
 
     #speaker:Shad
     #pose:Default
@@ -109,10 +121,11 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
     #Speaker:Shad
 #pose:Pose3
 #expression:Blush
-"Also I didn't hear a no! You can be the first person to every try my soul food...maybe the last."
+"Also I didn't hear a no! You can be the first person to ever try my soul food...maybe the last."
     -> shad_exit
 
-* [Well...alright]
+#speaker:{Name}
+* ["As long as you don’t poison me, we’ll get along fine."]
     ~ Shad_Affection += 0
     
     #speaker:{Name}
@@ -125,7 +138,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     -> shad_exit
 
-* [Rather take my chances with the ocean]
+* ["I think you might be a bigger danger than any sea monster."]
     ~ Shad_Affection-= 10
     
     #speaker:{Name}
@@ -173,7 +186,9 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
     "Huh, a romantic and a risk taker — you’re making my heart skip a beet."
 
 #Speaker:{Name}
-My eyes casually wonder around, it catches a glimpse of something.
+My eyes casually wander around, and they catch a glimpse of something.
+
+#Speaker:{Name}
 (I should ask him what that item is)
 
 -> END
@@ -189,8 +204,10 @@ My eyes casually wonder around, it catches a glimpse of something.
 #speaker:{Name}
 "That’s if the kitchen doesn’t explode before then."
 
+#Speaker:{Name}
 I look at something, somewhat normal. I wonder what use or value it has.
 
+#Speaker:{Name}
 (Ask him about the object)
 
 -> END

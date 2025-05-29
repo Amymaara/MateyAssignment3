@@ -12,10 +12,10 @@ INCLUDE Globals.ink
 === history_flirty ===
 
 #Speaker:{Name}
+The red leather cover practically begs to be opened. I don't know what's heavier, the pages or the implications.
 
-The red leather covers practically begs to be opened. I don't know what's heavier, the pages or the implications.
-
-I hear Master Porthole's soft voice behind me
+#Speaker:{Name}
+I hear Master Porthole's soft voice behind me.
 
 #Speaker:Master Porthole
 "That's not just history to me, you know? It's everything I plan to do differently."
@@ -24,7 +24,7 @@ I hear Master Porthole's soft voice behind me
 "So... like strategic bedtime reading?"
 
 #Speaker:Master Porthole
-"A roadmap, writtem by tyrants. I plant to correct it, one empire mistake at a time."
+"A roadmap, written by tyrants. I plan to correct it, one imperial mistake at a time."
 
 #Speaker:{Name}
 "Sounds personal."
@@ -33,7 +33,6 @@ I hear Master Porthole's soft voice behind me
 "Everything worth fighting for always is."
 
 #Speaker:{Name}
-
 I close the book gently, like it's a sacred tome.
 
 -> END
@@ -41,8 +40,9 @@ I close the book gently, like it's a sacred tome.
 === history_disinterested ===
 
 #Speaker:{Name}
-"This book practically screams dramatics at me."
+"This book practically screams theatrics at me."
 
+#Speaker:{Name}
 He replies flatly.
 
 #Speaker:Master Porthole
@@ -52,11 +52,12 @@ He replies flatly.
 "It's just... a lot of drama for something with footnotes."
 
 #Speaker:Master Porthole
-"Why bother touching or talking about it if it bores you."
+"Why bother touching it, or talking about it — if it bores you?"
 
 #Speaker:{Name}
-He takes the book from my hands, a little too quickly.
+He snatches the book from my hands, just a little too quickly.
 
-He turns away before I can reply.
+#Speaker:{Name}
+He turns away before I can respond.
 
 -> END

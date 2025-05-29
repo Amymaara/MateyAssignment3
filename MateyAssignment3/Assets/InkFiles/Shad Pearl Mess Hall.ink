@@ -4,15 +4,17 @@ INCLUDE Globals.ink
 
 === shad_pearl_octopus_scene ===
 #music_Celtic-moon-loop-1-284914
+
 #Speaker:{Name}
 The Mess Hall is in chaos. Again.
 
-Flour is sprinkled everywhere like a snowstorm just hit. Something is boiling that probably shouldn’t be, and in the middle of the culinary apocalypse — Pearl and Shad are arguing. Loudly.
+#Speaker:{Name}
+Flour is scattered everywhere like a snowstorm just hit. Something is boiling that probably shouldn’t be, and in the middle of the culinary apocalypse — Pearl and Shad are arguing. Loudly.
 
 #Speaker:Shad
 #pose:Pose3
 #expression:Angry
-"I’m telling you, Pearl, that slimy thief reached right in and took my whisk — right off my hand! My favourite one — Mr Whisk!"
+"I’m telling you, Pearl, that slimy thief reached right in and took my whisk — right off of my hand! My favourite one — Mr Whisk!"
 
 #Speaker:Pearl
 #pose:Default
@@ -35,7 +37,8 @@ Flour is sprinkled everywhere like a snowstorm just hit. Something is boiling th
 "It’s NOT just a tool! It’s Mr Whisk!"
 
 #speaker:{Name}
-I step in just in time to see Pearl standing protectively in front of an octopus, shielding it like some kind of sea creature guardian.  
+I step in just in time to see Pearl standing protectively in front of an octopus, shielding it like some kind of sea creature guardian. 
+#Speaker:{Name}
 Shad is wielding a skillet like it’s the blade of justice.
 
 #speaker:Pearl
@@ -77,7 +80,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 #expression:Angry
 "Speak for yourself..."
 
-#Speaeker:{Name}
+#speaker:{Name}
 (He lowers the pan... but not happily.)
 
 -> whisk_aftermath
@@ -108,6 +111,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 #speaker:{Name}
 "Or, hear me out — we trap it using a decoy whisk and anchovies."
 
+#speaker:{Name}
 (Both of them blink blankly.)
 
 #speaker:Pearl
@@ -127,9 +131,13 @@ Shad is wielding a skillet like it’s the blade of justice.
 #speaker:{Name}
 Eventually their tempers settle.  
 
-Pearl storms off to her room to collect some “diplomatic” sea tools.  
+#speaker:{Name}
+Pearl storms off to her room to collect some “diplomatic” sea tools. 
+
+#speaker:{Name}
 Shad heads to the Galley and starts dramatically flipping pancakes while mumbling about dishonourable molluscs.
 
+#speaker:{Name}
 (Who should I follow?)
 
 -> END
