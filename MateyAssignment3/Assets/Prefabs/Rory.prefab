@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8508916714238769854}
   - component: {fileID: 2219332372082986951}
   m_Layer: 5
-  m_Name: Master Porthole
+  m_Name: Rory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,6 @@ MonoBehaviour:
   characterImage: {fileID: 8508916714238769854}
   affectionGainParticles: {fileID: 0}
   affectionLossParticles: {fileID: 0}
-  fadeDuration: 1
   sprites:
   - {fileID: -952244634229983930, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
   - {fileID: 7873840163165887266, guid: 75b143a973df13a4d8fcebd95e2ca202, type: 3}
