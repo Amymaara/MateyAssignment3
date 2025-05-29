@@ -7,10 +7,9 @@ using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
 using DG.Tweening;
-
-using static Unity.VisualScripting.Member;
 using static GameStateManager;
-using UnityEditor.Rendering;
+
+
 
 
 // this code is a little scary, it combines aspects from a few online tutorials, as well as some adjustments i made
@@ -567,8 +566,6 @@ get varstate(nameofvariable)
                 return;
             }
         }
-
-        Debug.LogWarning("StoryCharacter not found: " + characterName);
     }
 
     // Title: (Part 3) Choices: Unity Visual Novel.
@@ -695,11 +692,44 @@ get varstate(nameofvariable)
         return runningStory;
     }
 
+    private bool isSkipping = false;
+
     public void OnSkipButton()
     {
-        StopAllCoroutines(); // Stops any ongoing coroutines, such as the typewriter effect
-        EndStory();
+        //StopAllCoroutines(); 
+        // EndStory();
+        if (!isSkipping)
+        {
+            StartCoroutine(SkipToNextChoice());
+        }
+    }
 
+    private IEnumerator SkipToNextChoice()
+    {
+        isSkipping = true;
+        continueButton.gameObject.SetActive(false);
+
+        // Stop typewriter effect mid-line, if needed
+        //isTyping = false;
+
+        while (runningStory.canContinue && runningStory.currentChoices.Count == 0)
+        {
+            string nextLine = runningStory.Continue();
+            dialogueBox.text = nextLine;
+            yield return null; // just wait a frame
+        }
+
+        if (runningStory.currentChoices.Count > 0)
+        {
+            ShowChoices();
+        }
+        else if (!runningStory.canContinue)
+        {
+            EndStory();
+        }
+
+        isSkipping = false;
+        continueButton.gameObject.SetActive(true);
     }
 
 }
