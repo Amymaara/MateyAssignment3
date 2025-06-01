@@ -31,14 +31,13 @@ public class StoryCharacter : MonoBehaviour
         Neutral,
         Blush,
         Angry,
-        Tears,
         Smile,
         Sad
     }
 
 
-    [Tooltip("Order: Default (Neutral, Blush, Angry, Tears, Smile, Sad) Pose1 (neutral, blush, angry, tears, smile, sad) Pose2 (neutral, blush, angry, tears, smile, sad)")]
-    public Sprite[] sprites = new Sprite[18];
+    [Tooltip("Order: Default (Neutral, Blush, Angry, Smile, Sad) Pose1 (neutral, blush, angry, smile, sad) Pose2 (neutral, blush, angry, smile, sad)")]
+    public Sprite[] sprites = new Sprite[15];
 
     private void Start()
     {
@@ -47,7 +46,7 @@ public class StoryCharacter : MonoBehaviour
 
     private int GetIndex(Pose pose, Expression expression)
     {
-        return ((int)pose * 6) + (int)expression;
+        return ((int)pose * 5) + (int)expression;
     }
 
     /*

@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: df4f9c6929a6f2d469a96f367cebcae8
+guid: f89b11c80fef685478e3240b779bfe36
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -952244634229983930
-    second: Rory defult pose_0
+      213: -5247967937326223570
+    second: Shad - sad (no tears)_0
   - first:
-      213: 7873840163165887266
-    second: Rory defult pose_1
+      213: 6823168650243821875
+    second: Shad - sad (no tears)_1
   - first:
-      213: 8554239723787190970
-    second: Rory defult pose_2
+      213: 3137433937222892847
+    second: Shad - sad (no tears)_2
   - first:
-      213: -6603431346502735861
-    second: Rory defult pose_3
+      213: 2267472552802026584
+    second: Shad - sad (no tears)_3
   - first:
-      213: -2321938773880677202
-    second: Rory defult pose_4
+      213: -3899326028744189146
+    second: Shad - sad (no tears)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rory defult pose_0
+      name: Shad - sad (no tears)_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 19
-        width: 334
-        height: 1042
+        x: 101
+        y: 46
+        width: 585
+        height: 1015
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6453375ec82f8c2f0800000000000000
-      internalID: -952244634229983930
+      spriteID: e2fe70747f87b27b0800000000000000
+      internalID: -5247967937326223570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_1
+      name: Shad - sad (no tears)_1
       rect:
         serializedVersion: 2
-        x: 395
-        y: 19
-        width: 332
-        height: 1039
+        x: 586
+        y: 1058
+        width: 22
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22bd4b739ef754d60800000000000000
-      internalID: 7873840163165887266
+      spriteID: 3315d589cb3c0be50800000000000000
+      internalID: 6823168650243821875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_2
+      name: Shad - sad (no tears)_2
       rect:
         serializedVersion: 2
-        x: 767
-        y: 19
-        width: 332
-        height: 1039
+        x: 1354
+        y: 46
+        width: 392
+        height: 1015
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab20fdbd4b3c6b670800000000000000
-      internalID: 8554239723787190970
+      spriteID: f2dfc660b876a8b20800000000000000
+      internalID: 3137433937222892847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_3
+      name: Shad - sad (no tears)_3
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 18
-        width: 330
-        height: 1040
+        x: 1778
+        y: 1058
+        width: 22
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0866054d26eb54a0800000000000000
-      internalID: -6603431346502735861
+      spriteID: 85486bfe54ea77f10800000000000000
+      internalID: 2267472552802026584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_4
+      name: Shad - sad (no tears)_4
       rect:
         serializedVersion: 2
-        x: 1543
-        y: 17
-        width: 334
-        height: 1040
+        x: 725
+        y: 39
+        width: 438
+        height: 989
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eacd2a0ccf0d6cfd0800000000000000
-      internalID: -2321938773880677202
+      spriteID: 62b9449e2afc2e9c0800000000000000
+      internalID: -3899326028744189146
       vertices: []
       indices: 
       edges: []
@@ -261,11 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rory defult pose_0: -952244634229983930
-      Rory defult pose_1: 7873840163165887266
-      Rory defult pose_2: 8554239723787190970
-      Rory defult pose_3: -6603431346502735861
-      Rory defult pose_4: -2321938773880677202
+      Shad - sad (no tears)_0: -5247967937326223570
+      Shad - sad (no tears)_1: 6823168650243821875
+      Shad - sad (no tears)_2: 3137433937222892847
+      Shad - sad (no tears)_3: 2267472552802026584
+      Shad - sad (no tears)_4: -3899326028744189146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

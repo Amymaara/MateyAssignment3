@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 4573968631359626720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3876969575014564309}
@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 219, y: -673}
-  m_SizeDelta: {x: 512, y: 983}
+  m_AnchoredPosition: {x: 507, y: -654}
+  m_SizeDelta: {x: 585, y: 1015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5086781056338604548
 CanvasRenderer:
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4429332104298338020, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
+  m_Sprite: {fileID: 3588608342627333561, guid: b4d15819322519e41bed22ba4e70756a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -94,20 +94,22 @@ MonoBehaviour:
   characterImage: {fileID: 2306172951063693637}
   affectionGainParticles: {fileID: 20092943717162374}
   affectionLossParticles: {fileID: 8356547003760099721}
-  fadeDuration: 1
   sprites:
-  - {fileID: -4429332104298338020, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
-  - {fileID: -6229151044237644542, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
-  - {fileID: -3913292440031513854, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
-  - {fileID: -7370244853752237665, guid: 56a9d79e4f1ef3a4e9d264f891e5604e, type: 3}
-  - {fileID: 2370958517557947865, guid: c0d44312918925a439a1bcba9ec2dba3, type: 3}
-  - {fileID: -2031281424103136463, guid: c0d44312918925a439a1bcba9ec2dba3, type: 3}
-  - {fileID: -4086912466898602513, guid: c0d44312918925a439a1bcba9ec2dba3, type: 3}
-  - {fileID: 1321804063594673842, guid: c0d44312918925a439a1bcba9ec2dba3, type: 3}
-  - {fileID: -612102988788311114, guid: 726623f53a32a3e428ea495d7e73ffcc, type: 3}
-  - {fileID: 8030804302730475441, guid: 8b7a3f709a43d3742b7a93228a28ebc4, type: 3}
-  - {fileID: 3588608342627333561, guid: 8b7a3f709a43d3742b7a93228a28ebc4, type: 3}
-  - {fileID: -3731421595761315894, guid: 726623f53a32a3e428ea495d7e73ffcc, type: 3}
+  - {fileID: -7370244853752237665, guid: d5a7b8615e38e05479ee395505a9cef5, type: 3}
+  - {fileID: 7395261321997904506, guid: d5a7b8615e38e05479ee395505a9cef5, type: 3}
+  - {fileID: 8680813967195289670, guid: d5a7b8615e38e05479ee395505a9cef5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &2598722741866682262
 PrefabInstance:
   m_ObjectHideFlags: 0
