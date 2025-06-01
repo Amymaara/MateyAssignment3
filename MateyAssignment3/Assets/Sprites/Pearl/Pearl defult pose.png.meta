@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8154057746697434c99ca21ceea78be1
+guid: 57464155531e531499323de78036ef03
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -9131954658644789096
     second: Pearl defult pose_3
+  - first:
+      213: -5148695411813561811
+    second: Pearl defult pose_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,7 +141,7 @@ TextureImporter:
       name: Pearl defult pose_0
       rect:
         serializedVersion: 2
-        x: 250
+        x: 6
         y: 11
         width: 364
         height: 1059
@@ -160,7 +163,7 @@ TextureImporter:
       name: Pearl defult pose_1
       rect:
         serializedVersion: 2
-        x: 653
+        x: 383
         y: 11
         width: 364
         height: 1057
@@ -182,10 +185,10 @@ TextureImporter:
       name: Pearl defult pose_2
       rect:
         serializedVersion: 2
-        x: 1052
-        y: 10
+        x: 785
+        y: 11
         width: 364
-        height: 1056
+        height: 1057
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +207,10 @@ TextureImporter:
       name: Pearl defult pose_3
       rect:
         serializedVersion: 2
-        x: 1451
+        x: 1191
         y: 10
         width: 364
-        height: 1057
+        height: 1056
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,6 +221,28 @@ TextureImporter:
       bones: []
       spriteID: 898f0820f97c44180800000000000000
       internalID: -9131954658644789096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pearl defult pose_4
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 10
+        width: 354
+        height: 1057
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a4b2a4dc82c88b0800000000000000
+      internalID: -5148695411813561811
       vertices: []
       indices: 
       edges: []
@@ -240,6 +265,7 @@ TextureImporter:
       Pearl defult pose_1: -428410560555328353
       Pearl defult pose_2: 6568354374373082453
       Pearl defult pose_3: -9131954658644789096
+      Pearl defult pose_4: -5148695411813561811
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

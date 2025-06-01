@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b7a3f709a43d3742b7a93228a28ebc4
+guid: b4d15819322519e41bed22ba4e70756a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -7506191989663292076
     second: Shad - pose 2 (1)_4
+  - first:
+      213: -6207816891302894062
+    second: Shad - pose 2 (1)_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +66,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,7 +144,7 @@ TextureImporter:
       name: Shad - pose 2 (1)_0
       rect:
         serializedVersion: 2
-        x: 314
+        x: 48
         y: 45
         width: 585
         height: 1015
@@ -163,7 +166,7 @@ TextureImporter:
       name: Shad - pose 2 (1)_1
       rect:
         serializedVersion: 2
-        x: 800
+        x: 534
         y: 1058
         width: 19
         height: 7
@@ -185,9 +188,9 @@ TextureImporter:
       name: Shad - pose 2 (1)_2
       rect:
         serializedVersion: 2
-        x: 987
+        x: 671
         y: 45
-        width: 643
+        width: 585
         height: 1016
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -207,7 +210,7 @@ TextureImporter:
       name: Shad - pose 2 (1)_3
       rect:
         serializedVersion: 2
-        x: 1532
+        x: 1158
         y: 1059
         width: 19
         height: 7
@@ -229,10 +232,10 @@ TextureImporter:
       name: Shad - pose 2 (1)_4
       rect:
         serializedVersion: 2
-        x: 255
-        y: 357
-        width: 6
-        height: 6
+        x: 1294
+        y: 44
+        width: 585
+        height: 1016
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,6 +246,28 @@ TextureImporter:
       bones: []
       spriteID: 455ac38a726a4d790800000000000000
       internalID: -7506191989663292076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shad - pose 2 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 1058
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216a8338d6769d9a0800000000000000
+      internalID: -6207816891302894062
       vertices: []
       indices: 
       edges: []
@@ -266,6 +291,7 @@ TextureImporter:
       Shad - pose 2 (1)_2: 8030804302730475441
       Shad - pose 2 (1)_3: 5991273924648406356
       Shad - pose 2 (1)_4: -7506191989663292076
+      Shad - pose 2 (1)_5: -6207816891302894062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

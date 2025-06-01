@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56a9d79e4f1ef3a4e9d264f891e5604e
+guid: d5a7b8615e38e05479ee395505a9cef5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -4429332104298338020
     second: Shad defult pose_6
+  - first:
+      213: 149240111374067896
+    second: Shad defult pose_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,12 +150,12 @@ TextureImporter:
       name: Shad defult pose_0
       rect:
         serializedVersion: 2
-        x: 566
+        x: 429
         y: 46
-        width: 392
+        width: 424
         height: 1015
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +172,12 @@ TextureImporter:
       name: Shad defult pose_1
       rect:
         serializedVersion: 2
-        x: 990
-        y: 1058
-        width: 22
-        height: 8
+        x: 862
+        y: 46
+        width: 428
+        height: 1015
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +194,12 @@ TextureImporter:
       name: Shad defult pose_2
       rect:
         serializedVersion: 2
-        x: 991
-        y: 46
-        width: 392
-        height: 1015
+        x: 810
+        y: 1058
+        width: 22
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +216,12 @@ TextureImporter:
       name: Shad defult pose_3
       rect:
         serializedVersion: 2
-        x: 1418
-        y: 1059
-        width: 19
-        height: 7
+        x: 1303
+        y: 50
+        width: 422
+        height: 996
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +238,12 @@ TextureImporter:
       name: Shad defult pose_4
       rect:
         serializedVersion: 2
-        x: 1427
-        y: 46
-        width: 392
-        height: 1015
+        x: 1187
+        y: 1059
+        width: 19
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +260,12 @@ TextureImporter:
       name: Shad defult pose_5
       rect:
         serializedVersion: 2
-        x: 1854
-        y: 1059
-        width: 19
-        height: 7
+        x: 1732
+        y: 45
+        width: 425
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +282,12 @@ TextureImporter:
       name: Shad defult pose_6
       rect:
         serializedVersion: 2
-        x: 19
-        y: 46
-        width: 512
-        height: 983
+        x: 1573
+        y: 1059
+        width: 19
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,11 +300,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Shad defult pose_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 422
+        height: 1030
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8e0b03715321200800000000000000
+      internalID: 149240111374067896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: faa7f3694d4fa5a4087341422994b284
     internalID: 0
     vertices: []
     indices: 
@@ -318,6 +343,7 @@ TextureImporter:
       Shad defult pose_4: -6229151044237644542
       Shad defult pose_5: 7395261321997904506
       Shad defult pose_6: -4429332104298338020
+      Shad defult pose_7: 149240111374067896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

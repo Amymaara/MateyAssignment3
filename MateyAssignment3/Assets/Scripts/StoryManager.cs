@@ -452,22 +452,31 @@ public class StoryManager : MonoBehaviour
     {
         if (GameStateManager.CurrentState == gameState.Argument || GameStateManager.CurrentState == gameState.Argument2)
         {
-            foreach (var item in charactersInScene.GetComponentsInChildren<Image>())
+            foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
             {
-                string imageName = item.gameObject.name;
+                string imageName = item.GetDisplayName();
 
                 if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
                 {
-                    item.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
                 }
                 else
                 {
-                    item.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
                 }
             }
         }
-        
-       
+        else if (GameStateManager.CurrentState == gameState.Day0 || GameStateManager.CurrentState == gameState.Day1 || GameStateManager.CurrentState == gameState.Day2)
+        {
+            foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
+            {
+                string imageName = item.GetDisplayName();
+
+                    item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                
+            }
+        }
+
     }
 
     /*
@@ -531,9 +540,12 @@ get varstate(nameofvariable)
         ShadAffectionNew = GetIntVar("Shad_Affection");
 
         Debug.Log($"[Affection - NEW] Pearl: {PearlAffectionNew}, Rory: {RoryAffectionNew}, Ravynn: {RavynnAffectionNew}, Shad: {ShadAffectionNew}");
-
+       
+         // Get this reference in advance
+       
         AffectionCompare(PearlAffectionNew, PearlAffectionOld, "Pearl");
-        AffectionCompare(RoryAffectionNew, RoryAffectionOld, "Master Porthole");
+        AffectionCompare(RoryAffectionNew, RoryAffectionOld, "Rory");
+
         AffectionCompare(RavynnAffectionNew, RavynnAffectionOld, "Ravynn");
         AffectionCompare(ShadAffectionNew, ShadAffectionOld, "Shad");
     }
@@ -560,7 +572,7 @@ get varstate(nameofvariable)
 
         foreach (StoryCharacter character in characters)
         {
-            if (character.characterName.Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
+            if (character.GetDisplayName().Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
             {
                 character.PlayAffectionChange(isPositive);
                 return;

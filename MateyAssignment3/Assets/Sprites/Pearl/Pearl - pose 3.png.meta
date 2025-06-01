@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9daf542cbd421774098c8f5c5660fe51
+guid: 9a6683f7bd9a7df40b897289735400a9
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -1426979183493931205
     second: Pearl - pose 3_3
+  - first:
+      213: 6915652523048534254
+    second: Pearl - pose 3_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,9 +141,9 @@ TextureImporter:
       name: Pearl - pose 3_0
       rect:
         serializedVersion: 2
-        x: 151
+        x: 22
         y: 11
-        width: 389
+        width: 352
         height: 1059
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,10 +163,10 @@ TextureImporter:
       name: Pearl - pose 3_1
       rect:
         serializedVersion: 2
-        x: 562
+        x: 389
         y: 10
-        width: 402
-        height: 1058
+        width: 364
+        height: 1057
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +185,10 @@ TextureImporter:
       name: Pearl - pose 3_2
       rect:
         serializedVersion: 2
-        x: 985
-        y: 8
-        width: 385
-        height: 1058
+        x: 769
+        y: 9
+        width: 386
+        height: 1057
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +207,10 @@ TextureImporter:
       name: Pearl - pose 3_3
       rect:
         serializedVersion: 2
-        x: 1391
+        x: 1176
         y: 7
-        width: 364
-        height: 1060
+        width: 373
+        height: 1058
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,6 +221,28 @@ TextureImporter:
       bones: []
       spriteID: b3f97f93ef9523ce0800000000000000
       internalID: -1426979183493931205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pearl - pose 3_4
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 6
+        width: 352
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0875a345559ff50800000000000000
+      internalID: 6915652523048534254
       vertices: []
       indices: 
       edges: []
@@ -240,6 +265,7 @@ TextureImporter:
       Pearl - pose 3_1: -3048904913066203721
       Pearl - pose 3_2: 3381913042557418991
       Pearl - pose 3_3: -1426979183493931205
+      Pearl - pose 3_4: 6915652523048534254
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

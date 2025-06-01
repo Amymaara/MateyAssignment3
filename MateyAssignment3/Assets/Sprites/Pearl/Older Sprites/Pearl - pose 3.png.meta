@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: df4f9c6929a6f2d469a96f367cebcae8
+guid: 9daf542cbd421774098c8f5c5660fe51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -952244634229983930
-    second: Rory defult pose_0
+      213: 5572344457141118080
+    second: Pearl - pose 3_0
   - first:
-      213: 7873840163165887266
-    second: Rory defult pose_1
+      213: -3048904913066203721
+    second: Pearl - pose 3_1
   - first:
-      213: 8554239723787190970
-    second: Rory defult pose_2
+      213: 3381913042557418991
+    second: Pearl - pose 3_2
   - first:
-      213: -6603431346502735861
-    second: Rory defult pose_3
-  - first:
-      213: -2321938773880677202
-    second: Rory defult pose_4
+      213: -1426979183493931205
+    second: Pearl - pose 3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rory defult pose_0
+      name: Pearl - pose 3_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 19
-        width: 334
-        height: 1042
+        x: 151
+        y: 11
+        width: 389
+        height: 1059
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6453375ec82f8c2f0800000000000000
-      internalID: -952244634229983930
+      spriteID: 084630e92c1f45d40800000000000000
+      internalID: 5572344457141118080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_1
+      name: Pearl - pose 3_1
       rect:
         serializedVersion: 2
-        x: 395
-        y: 19
-        width: 332
-        height: 1039
+        x: 562
+        y: 10
+        width: 402
+        height: 1058
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22bd4b739ef754d60800000000000000
-      internalID: 7873840163165887266
+      spriteID: 7b5eeb6a22d10b5d0800000000000000
+      internalID: -3048904913066203721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_2
+      name: Pearl - pose 3_2
       rect:
         serializedVersion: 2
-        x: 767
-        y: 19
-        width: 332
-        height: 1039
+        x: 985
+        y: 8
+        width: 385
+        height: 1058
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab20fdbd4b3c6b670800000000000000
-      internalID: 8554239723787190970
+      spriteID: fed35ea7ef7feee20800000000000000
+      internalID: 3381913042557418991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory defult pose_3
+      name: Pearl - pose 3_3
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 18
-        width: 330
-        height: 1040
+        x: 1391
+        y: 7
+        width: 364
+        height: 1060
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,30 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0866054d26eb54a0800000000000000
-      internalID: -6603431346502735861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rory defult pose_4
-      rect:
-        serializedVersion: 2
-        x: 1543
-        y: 17
-        width: 334
-        height: 1040
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eacd2a0ccf0d6cfd0800000000000000
-      internalID: -2321938773880677202
+      spriteID: b3f97f93ef9523ce0800000000000000
+      internalID: -1426979183493931205
       vertices: []
       indices: 
       edges: []
@@ -261,11 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rory defult pose_0: -952244634229983930
-      Rory defult pose_1: 7873840163165887266
-      Rory defult pose_2: 8554239723787190970
-      Rory defult pose_3: -6603431346502735861
-      Rory defult pose_4: -2321938773880677202
+      Pearl - pose 3_0: 5572344457141118080
+      Pearl - pose 3_1: -3048904913066203721
+      Pearl - pose 3_2: 3381913042557418991
+      Pearl - pose 3_3: -1426979183493931205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

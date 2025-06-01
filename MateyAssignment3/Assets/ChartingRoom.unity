@@ -982,7 +982,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 262663373895203840, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: m_Name
-      value: Master Porthole
+      value: Rory
       objectReference: {fileID: 0}
     - target: {fileID: 1907344821911375234, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: lengthInSec
@@ -990,7 +990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219332372082986951, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: characterName
-      value: Master Porthole
+      value: Rory
       objectReference: {fileID: 0}
     - target: {fileID: 2219332372082986951, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: affectionGainParticles

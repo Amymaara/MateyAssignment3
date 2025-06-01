@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 726623f53a32a3e428ea495d7e73ffcc
+guid: 4e936e17607eb7042bdb0720ea5af075
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,9 +135,9 @@ TextureImporter:
       name: Shad - pose 2 (2)_0
       rect:
         serializedVersion: 2
-        x: 347
+        x: 348
         y: 46
-        width: 586
+        width: 585
         height: 1015
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,9 +157,9 @@ TextureImporter:
       name: Shad - pose 2 (2)_1
       rect:
         serializedVersion: 2
-        x: 1007
+        x: 1066
         y: 46
-        width: 644
+        width: 585
         height: 1015
       alignment: 0
       pivot: {x: 0, y: 0}

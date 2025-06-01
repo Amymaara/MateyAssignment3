@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4100098994763533355}
   - component: {fileID: 3760437487520493536}
   - component: {fileID: 2920458854544276661}
-  - component: {fileID: 1453332841575889998}
+  - component: {fileID: 4696293029755632214}
   - component: {fileID: 7356775989702492146}
   - component: {fileID: 6238839154041778611}
   m_Layer: 5
@@ -39,7 +39,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -539, y: -703}
+  m_AnchoredPosition: {x: -542, y: -745}
   m_SizeDelta: {x: 364, y: 1059}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3760437487520493536
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7378887998649782684, guid: 8154057746697434c99ca21ceea78be1, type: 3}
+  m_Sprite: {fileID: 7378887998649782684, guid: 57464155531e531499323de78036ef03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1453332841575889998
+--- !u!114 &4696293029755632214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,27 +89,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 6252015459890610421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44c7b48f0fab84441a0b135f2b56a3bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cfb6a2dcb53be543baa71b4349caf62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Pearl
   characterImage: {fileID: 2920458854544276661}
   affectionGainParticles: {fileID: 2210591058626649682}
   affectionLossParticles: {fileID: 7080753844158727853}
-  fadeDuration: 0.5
   sprites:
-  - {fileID: 7378887998649782684, guid: 8154057746697434c99ca21ceea78be1, type: 3}
-  - {fileID: -428410560555328353, guid: 8154057746697434c99ca21ceea78be1, type: 3}
-  - {fileID: 6568354374373082453, guid: 8154057746697434c99ca21ceea78be1, type: 3}
-  - {fileID: -9131954658644789096, guid: 8154057746697434c99ca21ceea78be1, type: 3}
-  - {fileID: -6884150899298032739, guid: 0315e8babeb722c499a63932217a1c8d, type: 3}
-  - {fileID: -2545525029099972962, guid: 0315e8babeb722c499a63932217a1c8d, type: 3}
-  - {fileID: 3294078593712566655, guid: 0315e8babeb722c499a63932217a1c8d, type: 3}
-  - {fileID: -3054058569986193975, guid: 0315e8babeb722c499a63932217a1c8d, type: 3}
-  - {fileID: 5572344457141118080, guid: 9daf542cbd421774098c8f5c5660fe51, type: 3}
-  - {fileID: -3048904913066203721, guid: 9daf542cbd421774098c8f5c5660fe51, type: 3}
-  - {fileID: 3381913042557418991, guid: 9daf542cbd421774098c8f5c5660fe51, type: 3}
-  - {fileID: -1426979183493931205, guid: 9daf542cbd421774098c8f5c5660fe51, type: 3}
+  - {fileID: 7378887998649782684, guid: 57464155531e531499323de78036ef03, type: 3}
+  - {fileID: -428410560555328353, guid: 57464155531e531499323de78036ef03, type: 3}
+  - {fileID: -9131954658644789096, guid: 57464155531e531499323de78036ef03, type: 3}
+  - {fileID: 6568354374373082453, guid: 57464155531e531499323de78036ef03, type: 3}
+  - {fileID: -5148695411813561811, guid: 57464155531e531499323de78036ef03, type: 3}
+  - {fileID: -8059648845484930685, guid: 8adaf24d2be6b7342bf53ae35498c858, type: 3}
+  - {fileID: -6879774743508390245, guid: 8adaf24d2be6b7342bf53ae35498c858, type: 3}
+  - {fileID: -5011698751769085321, guid: 8adaf24d2be6b7342bf53ae35498c858, type: 3}
+  - {fileID: 4267936258541380962, guid: 8adaf24d2be6b7342bf53ae35498c858, type: 3}
+  - {fileID: -3673707428978888739, guid: 8adaf24d2be6b7342bf53ae35498c858, type: 3}
+  - {fileID: 5572344457141118080, guid: 9a6683f7bd9a7df40b897289735400a9, type: 3}
+  - {fileID: -3048904913066203721, guid: 9a6683f7bd9a7df40b897289735400a9, type: 3}
+  - {fileID: -1426979183493931205, guid: 9a6683f7bd9a7df40b897289735400a9, type: 3}
+  - {fileID: 3381913042557418991, guid: 9a6683f7bd9a7df40b897289735400a9, type: 3}
+  - {fileID: 6915652523048534254, guid: 9a6683f7bd9a7df40b897289735400a9, type: 3}
+  MermaidSprite: {fileID: 8507701494327319733, guid: bf32ebf16cb09b94580a649b0353df8a, type: 3}
 --- !u!114 &7356775989702492146
 MonoBehaviour:
   m_ObjectHideFlags: 0
