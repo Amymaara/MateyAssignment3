@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f39b8f6a8b289346afca7b7b03767f3
+guid: 816f711e0229a6f409097a468546cff2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9154846439255169817
-    second: MessHallRoom_0
+      213: -8730315813085780967
+    second: DeckRoom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,20 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MessHallRoom_0
+      name: DeckRoom_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e422fefaa373f080800000000000000
-      internalID: -9154846439255169817
+      spriteID: 914eb00f500b7d680800000000000000
+      internalID: -8730315813085780967
       vertices: []
       indices: 
       edges: []
@@ -147,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeckRoom_0: -8730315813085780967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
