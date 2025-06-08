@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 507, y: -654}
-  m_SizeDelta: {x: 585, y: 1015}
+  m_AnchoredPosition: {x: 507, y: -666}
+  m_SizeDelta: {x: 412.6316, y: 1034.7368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5086781056338604548
 CanvasRenderer:
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3588608342627333561, guid: b4d15819322519e41bed22ba4e70756a, type: 3}
+  m_Sprite: {fileID: 3838353697099240977, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -95,21 +95,21 @@ MonoBehaviour:
   affectionGainParticles: {fileID: 20092943717162374}
   affectionLossParticles: {fileID: 8356547003760099721}
   sprites:
-  - {fileID: -7370244853752237665, guid: d5a7b8615e38e05479ee395505a9cef5, type: 3}
-  - {fileID: 7395261321997904506, guid: d5a7b8615e38e05479ee395505a9cef5, type: 3}
-  - {fileID: 8680813967195289670, guid: d5a7b8615e38e05479ee395505a9cef5, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3838353697099240977, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
+  - {fileID: -2319299133036744299, guid: f7dcea712409dfe4a87c26136ff75d5d, type: 3}
+  - {fileID: -566303796596657625, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
+  - {fileID: 3024158971766148651, guid: f7dcea712409dfe4a87c26136ff75d5d, type: 3}
+  - {fileID: -4727991858129765546, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
+  - {fileID: -612102988788311114, guid: ed9ccea7cde80f643a6c313fd0b2244a, type: 3}
+  - {fileID: 8030804302730475441, guid: 70e228338d972554a8176f64d69e97b8, type: 3}
+  - {fileID: 3588608342627333561, guid: 70e228338d972554a8176f64d69e97b8, type: 3}
+  - {fileID: -7506191989663292076, guid: 70e228338d972554a8176f64d69e97b8, type: 3}
+  - {fileID: -3731421595761315894, guid: ed9ccea7cde80f643a6c313fd0b2244a, type: 3}
+  - {fileID: -2169424376759394326, guid: cd2894e73a69e904a9fd3dfe679c9be3, type: 3}
+  - {fileID: 2689454866238964620, guid: cd2894e73a69e904a9fd3dfe679c9be3, type: 3}
+  - {fileID: 193806757906274937, guid: cd2894e73a69e904a9fd3dfe679c9be3, type: 3}
+  - {fileID: -2989174429532980511, guid: ac8b5baf2ef5fe344a73a840c2195f51, type: 3}
+  - {fileID: -5905035889635685425, guid: cd2894e73a69e904a9fd3dfe679c9be3, type: 3}
 --- !u!1001 &2598722741866682262
 PrefabInstance:
   m_ObjectHideFlags: 0

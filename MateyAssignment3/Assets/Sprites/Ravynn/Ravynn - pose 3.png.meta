@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c55acd3644c1ba44c916180f4d450177
+guid: 903269498e2b6dc4297e07b45551a847
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7398670516264169590
-    second: Rory - pose 2 (1)_0
+      213: 4016966883851757954
+    second: Ravynn - pose 3_0
   - first:
-      213: -5860531205385796405
-    second: Rory - pose 2 (1)_1
+      213: -8759932870664089331
+    second: Ravynn - pose 3_1
   - first:
-      213: -3716949317863836134
-    second: Rory - pose 2 (1)_2
+      213: 2595978327364314900
+    second: Ravynn - pose 3_2
   - first:
-      213: -2026535211324453815
-    second: Rory - pose 2 (1)_3
+      213: -2773143197446045310
+    second: Ravynn - pose 3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rory - pose 2 (1)_0
+      name: Ravynn - pose 3_0
       rect:
         serializedVersion: 2
-        x: 51
+        x: 56
         y: 18
-        width: 425
-        height: 1034
+        width: 455
+        height: 1017
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 670f41c72ab5da660800000000000000
-      internalID: 7398670516264169590
+      spriteID: 289ed7a19122fb730800000000000000
+      internalID: 4016966883851757954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory - pose 2 (1)_1
+      name: Ravynn - pose 3_1
       rect:
         serializedVersion: 2
-        x: 517
-        y: 18
-        width: 425
-        height: 1034
+        x: 540
+        y: 17
+        width: 454
+        height: 1019
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc443eb4be53baea0800000000000000
-      internalID: -5860531205385796405
+      spriteID: d019ccb57777e6680800000000000000
+      internalID: -8759932870664089331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory - pose 2 (1)_2
+      name: Ravynn - pose 3_2
       rect:
         serializedVersion: 2
-        x: 984
-        y: 18
-        width: 425
-        height: 1034
+        x: 1018
+        y: 17
+        width: 455
+        height: 1019
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a167894e94eba6cc0800000000000000
-      internalID: -3716949317863836134
+      spriteID: 417a92fd884c60420800000000000000
+      internalID: 2595978327364314900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rory - pose 2 (1)_3
+      name: Ravynn - pose 3_3
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 18
-        width: 425
-        height: 1034
+        x: 1511
+        y: 17
+        width: 455
+        height: 1019
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94c4f2c56fc40e3e0800000000000000
-      internalID: -2026535211324453815
+      spriteID: 28100f464f0d389d0800000000000000
+      internalID: -2773143197446045310
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rory - pose 2 (1)_0: 7398670516264169590
-      Rory - pose 2 (1)_1: -5860531205385796405
-      Rory - pose 2 (1)_2: -3716949317863836134
-      Rory - pose 2 (1)_3: -2026535211324453815
+      Ravynn - pose 3_0: 4016966883851757954
+      Ravynn - pose 3_1: -8759932870664089331
+      Ravynn - pose 3_2: 2595978327364314900
+      Ravynn - pose 3_3: -2773143197446045310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
