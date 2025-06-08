@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pearl headshot_0: 8949658976032771903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
