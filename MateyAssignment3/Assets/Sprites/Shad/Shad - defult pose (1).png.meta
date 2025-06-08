@@ -1,31 +1,22 @@
 fileFormatVersion: 2
-guid: d5a7b8615e38e05479ee395505a9cef5
+guid: 0c41de02eb434124b8a8fec2bf63c0bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7370244853752237665
-    second: Shad defult pose_0
+      213: -4727991858129765546
+    second: Shad - defult pose (1)_0
   - first:
-      213: -3057726243918658702
-    second: Shad defult pose_1
+      213: -1307064474343849513
+    second: Shad - defult pose (1)_1
   - first:
-      213: -3913292440031513854
-    second: Shad defult pose_2
+      213: -566303796596657625
+    second: Shad - defult pose (1)_2
   - first:
-      213: 8680813967195289670
-    second: Shad defult pose_3
+      213: -4961626910662971771
+    second: Shad - defult pose (1)_3
   - first:
-      213: -6229151044237644542
-    second: Shad defult pose_4
-  - first:
-      213: 7395261321997904506
-    second: Shad defult pose_5
-  - first:
-      213: -4429332104298338020
-    second: Shad defult pose_6
-  - first:
-      213: 149240111374067896
-    second: Shad defult pose_7
+      213: 3838353697099240977
+    second: Shad - defult pose (1)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +63,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 90
+  spritePixelsToUnits: 95
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,20 +109,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -147,12 +125,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shad defult pose_0
+      name: Shad - defult pose (1)_1
       rect:
         serializedVersion: 2
-        x: 429
+        x: 723
         y: 46
-        width: 424
+        width: 392
         height: 1015
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -162,39 +140,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f917270da51a7b990800000000000000
-      internalID: -7370244853752237665
+      spriteID: 65b7c3b747cc26eb0800000000000000
+      internalID: -4727991858129765546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shad defult pose_1
+      name: Shad - defult pose (1)_7
       rect:
         serializedVersion: 2
-        x: 862
-        y: 46
-        width: 428
-        height: 1015
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 273c6d28e26c095d0800000000000000
-      internalID: -3057726243918658702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shad defult pose_2
-      rect:
-        serializedVersion: 2
-        x: 810
+        x: 1147
         y: 1058
         width: 22
         height: 8
@@ -206,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20333b1624131b9c0800000000000000
-      internalID: -3913292440031513854
+      spriteID: 7d1c33429cf5cdde0800000000000000
+      internalID: -1307064474343849513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shad defult pose_3
+      name: Shad - defult pose (1)_2
       rect:
         serializedVersion: 2
-        x: 1303
-        y: 50
-        width: 422
-        height: 996
+        x: 1330
+        y: 46
+        width: 392
+        height: 1015
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,17 +184,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 648bceb6f42787870800000000000000
-      internalID: 8680813967195289670
+      spriteID: 722b6e882b51428f0800000000000000
+      internalID: -566303796596657625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shad defult pose_4
+      name: Shad - defult pose (1)_3
       rect:
         serializedVersion: 2
-        x: 1187
+        x: 1757
         y: 1059
         width: 19
         height: 7
@@ -250,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20d26f3f02c9d89a0800000000000000
-      internalID: -6229151044237644542
+      spriteID: 58e2ae1dc92c42bb0800000000000000
+      internalID: -4961626910662971771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shad defult pose_5
+      name: Shad - defult pose (1)_0
       rect:
         serializedVersion: 2
-        x: 1732
-        y: 45
-        width: 425
-        height: 1000
+        x: 164
+        y: 46
+        width: 392
+        height: 983
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,52 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7aeed69dfe31a660800000000000000
-      internalID: 7395261321997904506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shad defult pose_6
-      rect:
-        serializedVersion: 2
-        x: 1573
-        y: 1059
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1960133be9d782c0800000000000000
-      internalID: -4429332104298338020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shad defult pose_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 34
-        width: 422
-        height: 1030
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b8e0b03715321200800000000000000
-      internalID: 149240111374067896
+      spriteID: 11658edd952944530800000000000000
+      internalID: 3838353697099240977
       vertices: []
       indices: 
       edges: []
@@ -326,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: faa7f3694d4fa5a4087341422994b284
+    spriteID: babe5a39185565a4aa0ebd457543a26b
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shad defult pose_0: -7370244853752237665
-      Shad defult pose_1: -3057726243918658702
-      Shad defult pose_2: -3913292440031513854
-      Shad defult pose_3: 8680813967195289670
-      Shad defult pose_4: -6229151044237644542
-      Shad defult pose_5: 7395261321997904506
-      Shad defult pose_6: -4429332104298338020
-      Shad defult pose_7: 149240111374067896
+      Shad - defult pose (1)_0: 3838353697099240977
+      Shad - defult pose (1)_1: -4727991858129765546
+      Shad - defult pose (1)_2: -566303796596657625
+      Shad - defult pose (1)_3: -4961626910662971771
+      Shad - defult pose (1)_7: -1307064474343849513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
