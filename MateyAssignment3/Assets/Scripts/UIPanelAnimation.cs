@@ -18,7 +18,7 @@ public class UIPanelAnimation : MonoBehaviour
     private void OnEnable()
     {
         // Move panel above screen 
-        rectTransform.anchoredPosition = new Vector2(originalPosition.x, Screen.height);
+        rectTransform.anchoredPosition = new Vector2(originalPosition.x, -(Screen.height));
 
         // Tweeens back to og position
         rectTransform.DOAnchorPos(originalPosition, animationDuration).SetEase(easing);
@@ -27,8 +27,10 @@ public class UIPanelAnimation : MonoBehaviour
     public void SlideOutAndDisable()
     {
         rectTransform
-            .DOAnchorPos(new Vector2(originalPosition.x, Screen.height), animationDuration)
+            .DOAnchorPos(new Vector2(originalPosition.x, -(Screen.height)), animationDuration)
             .SetEase(Ease.InBack)
             .OnComplete(() => gameObject.SetActive(false));
     }
+
+   
 }

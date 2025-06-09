@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DayTransition.unity
     guid: d2ce7401a17dbbe41bb799e741ba82b8
   - enabled: 1
-    path: Assets/ChartingRoom.unity
+    path: Assets/Scenes/ChartingRoom.unity
     guid: fd2ddcc16bdb3224fa191dd267e0101d
   - enabled: 1
     path: Assets/Scenes/BeforeKraken.unity
