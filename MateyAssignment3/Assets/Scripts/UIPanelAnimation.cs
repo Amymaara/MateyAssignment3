@@ -61,7 +61,7 @@ public class UIPanelAnimation : MonoBehaviour
         {
             rectTransform
                 .DOAnchorPos(new Vector2(originalPosition.x, -(Screen.height)), animationDuration)
-                .SetEase(Ease.InBack)
+                .SetEase(Ease.InOutQuad)
                 .OnComplete(() => gameObject.SetActive(false));
         }
       

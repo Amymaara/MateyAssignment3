@@ -129,6 +129,12 @@ public class StoryManager : MonoBehaviour
             continueButton.onClick.RemoveAllListeners();
 
         }
+        if (choicesGrid != null)
+        {
+            //choicesGrid.gameObject.SetActive(false);
+            
+
+        }
     }
 
     // for in the rooms/clicking
@@ -514,7 +520,8 @@ get varstate(nameofvariable)
     // Avaliability:https://www.youtube.com/watch?v=aBZvivlq4vY&list=PL3O3s_uSvQxGcUR2E6vjxBTWqA-xT05AK&index=5
     private void ShowChoices()
     {
-
+        //choicesGrid.gameObject.SetActive(true);
+        choicesGrid.enabled = true;
         RemoveChoices();
         continueButton.gameObject.SetActive(false);
 
@@ -581,7 +588,7 @@ get varstate(nameofvariable)
 
         foreach (StoryCharacter character in characters)
         {
-            if (character.GetDisplayName().Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
+            if (character.characterName.Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
             {
                 character.PlayAffectionChange(isPositive);
                 return;
@@ -599,6 +606,7 @@ get varstate(nameofvariable)
 
         runningStory.ChooseChoiceIndex(choice.index);
         continueButton.gameObject.SetActive(true);
+       
         RemoveChoices();
         CheckAffectionChange();
         TagHandler();

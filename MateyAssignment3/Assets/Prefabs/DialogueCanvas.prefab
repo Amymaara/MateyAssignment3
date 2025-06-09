@@ -1174,6 +1174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationDuration: 0.5
-  easing: 3
+  easing: 7
   introOn: 1
   FromTop: 0
