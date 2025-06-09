@@ -315,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8730315813085780967, guid: 816f711e0229a6f409097a468546cff2, type: 3}
+  m_Sprite: {fileID: -5571817825009575444, guid: 17744918027751d4ab2c9c70dfadf0ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -910,9 +910,9 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.67939186, b: 0.4039216, a: 1}
-  m_Intensity: 1.15
+  m_FalloffIntensity: 0.575
+  m_Color: {r: 1, g: 0.6096604, b: 0.18679237, a: 1}
+  m_Intensity: 1.06
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -1495,7 +1495,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.6094339, g: 0.6569089, b: 1, a: 1}
+  m_Color: {r: 0.7754717, g: 0.8046604, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2782,8 +2782,8 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.63148093, b: 0.20943397, a: 1}
-  m_Intensity: 0.5
+  m_Color: {r: 1, g: 0.68796927, b: 0.2245282, a: 1}
+  m_Intensity: 1.49
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
