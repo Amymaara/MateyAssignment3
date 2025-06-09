@@ -306,18 +306,23 @@ public class StoryManager : MonoBehaviour
    Research Guides: Computer Science & Computer Engineering: Citing Programming Code. 2022
    */
 
+    // Looks for audio related tags from the ink scrip
     void HandleTags(List<string> tags)
     {
+        if (NewAudioManager.instance == null)
+        {
+            Debug.LogError("NewAudioManager is STILL NULL when HandleTags runs!");
+            return;
+        }
+
         foreach (string tag in tags)
         {
             if (tag.StartsWith("sfx_"))
-                AudioManager.instance.PlaySFX(tag.Substring(4));
-
+                NewAudioManager.instance.PlaySFX(tag.Substring(4));
             else if (tag.StartsWith("music_"))
-                AudioManager.instance.PlayMusic(tag.Substring(6));
-
+                NewAudioManager.instance.PlayMusic(tag.Substring(6));
             else if (tag == "music_stop")
-                AudioManager.instance.StopMusic();
+                NewAudioManager.instance.StopMusic();
         }
     }
 
@@ -329,7 +334,7 @@ public class StoryManager : MonoBehaviour
     // Code Version: ?
     // Avaliability: https://www.youtube.com/watch?v=2I92egFvC80&list=PL3viUl9h9k78KsDxXoAzgQ1yRjhm7p8kl&index=4 
 
-        //Types out letters one at a time
+    //Types out letters one at a time
     private IEnumerator TypeEffect(string line)
     {
         typeSpeed = PlayerPrefs.GetFloat("typeSpeed", 0.4f); // default if not set
@@ -680,7 +685,7 @@ get varstate(nameofvariable)
         return valueOfVariable;
     }
 
-    // used when getting the player name from the inpu
+    // used when getting the player name from the input
     public void SetVarState(string nameOfVariable, object value)
     {
         if (variablesInDialogue == null)
