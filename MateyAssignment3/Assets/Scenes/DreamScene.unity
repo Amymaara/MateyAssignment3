@@ -1134,6 +1134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationDuration: 0.5
   easing: 27
+  introOn: 0
+  FromTop: 1
 --- !u!114 &776635951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1700,6 +1702,10 @@ PrefabInstance:
     - target: {fileID: 1607398477660462677, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
       propertyPath: m_Name
       value: SettingsPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668345607660359980, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
+      propertyPath: FromTop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3001665144907785019, guid: 3a3f3d35283e4fc48b341e39c27bee5c, type: 3}
       propertyPath: m_Pivot.x

@@ -9,27 +9,62 @@ public class UIPanelAnimation : MonoBehaviour
     public float animationDuration = 0.5f;
     public Ease easing = Ease.OutBack;
 
+    public bool introOn = true;
+
+    public bool FromTop;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         originalPosition = rectTransform.anchoredPosition;
+        if (gameObject.name == "DialoguePanel")
+        {
+            FromTop = false;
+        }
+        else
+        {
+            FromTop = true;
+        }
     }
 
     private void OnEnable()
     {
-        // Move panel above screen 
-        rectTransform.anchoredPosition = new Vector2(originalPosition.x, -(Screen.height));
-
-        // Tweeens back to og position
-        rectTransform.DOAnchorPos(originalPosition, animationDuration).SetEase(easing);
+        if (introOn)
+        {
+            SlideIn();
+        }
     }
-
+    public void SlideIn()
+    {
+        if (FromTop)
+        {
+            // Move panel above screen 
+            rectTransform.anchoredPosition = new Vector2(originalPosition.x, (Screen.height));
+        }
+        else
+        {
+            rectTransform.anchoredPosition = new Vector2(originalPosition.x, -(Screen.height));
+        }
+            // Tweeens back to og position
+            rectTransform.DOAnchorPos(originalPosition, animationDuration).SetEase(easing);
+    }
     public void SlideOutAndDisable()
     {
-        rectTransform
-            .DOAnchorPos(new Vector2(originalPosition.x, -(Screen.height)), animationDuration)
+        if (FromTop)
+        {
+            rectTransform
+            .DOAnchorPos(new Vector2(originalPosition.x, (Screen.height)), animationDuration)
             .SetEase(Ease.InBack)
             .OnComplete(() => gameObject.SetActive(false));
+        }
+        else
+        {
+            rectTransform
+                .DOAnchorPos(new Vector2(originalPosition.x, -(Screen.height)), animationDuration)
+                .SetEase(Ease.InBack)
+                .OnComplete(() => gameObject.SetActive(false));
+        }
+      
     }
 
    
