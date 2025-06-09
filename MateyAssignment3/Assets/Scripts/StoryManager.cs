@@ -279,7 +279,7 @@ public class StoryManager : MonoBehaviour
 
         if (!characterLookup.TryGetValue(speaker.ToLower(), out StoryCharacter character))
         {
-            Debug.LogWarning($"Character '{speaker}' not found in scene.");
+            
             return;
         }
 
@@ -617,7 +617,9 @@ get varstate(nameofvariable)
     private void EndStory()
     {
         dialogueBox.text = "";
-        dialoguePanel.SetActive(false);
+        var dialogueAnimation = dialoguePanel.GetComponent<UIPanelAnimation>();
+        dialogueAnimation.SlideOutAndDisable();
+        //dialoguePanel.SetActive(false);
         continueButton.gameObject.SetActive(false);
         variablesInDialogue.SaveVariables();
         foreach (Transform child in charactersInScene.transform)

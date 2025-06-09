@@ -284,8 +284,8 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.5783749, b: 0.40566033, a: 1}
-  m_Intensity: 0.16
+  m_Color: {r: 1, g: 0.9396691, b: 0.64716977, a: 1}
+  m_Intensity: 0.85
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -515,7 +515,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1539607380}
-  - {fileID: 1521250673}
   - {fileID: 1247804869}
   m_Father: {fileID: 1650938160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -557,7 +556,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.8283019, b: 0.8283019, a: 1}
+  m_Color: {r: 0.40314686, g: 0.26203626, b: 0.5622641, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -1301,7 +1300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1271918754083619793, guid: bbe194deaa3e95a42aac9d7c8d9dddd5, type: 3}
+  m_Sprite: {fileID: 3079721088408700616, guid: ba5324072c2d03943bf1ce5a5dc990ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1653,8 +1652,8 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.5783749, b: 0.40566033, a: 1}
-  m_Intensity: 0.61
+  m_Color: {r: 1, g: 0.9069661, b: 0.4039216, a: 1}
+  m_Intensity: 1.16
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -2035,7 +2034,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 505692443}
+  m_Father: {fileID: 1650938160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2350,6 +2349,7 @@ RectTransform:
   m_Children:
   - {fileID: 734755629}
   - {fileID: 1587410462}
+  - {fileID: 1521250673}
   - {fileID: 505692443}
   - {fileID: 2034787137}
   m_Father: {fileID: 0}
