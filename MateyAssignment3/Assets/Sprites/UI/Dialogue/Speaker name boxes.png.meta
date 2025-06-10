@@ -200,8 +200,8 @@ TextureImporter:
       name: Speaker name boxes_3
       rect:
         serializedVersion: 2
-        x: 735
-        y: 633
+        x: 730
+        y: 636
         width: 420
         height: 136
       alignment: 0
