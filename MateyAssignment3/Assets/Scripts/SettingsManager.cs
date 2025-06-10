@@ -8,10 +8,11 @@ public class SettingsManager : MonoBehaviour
     public GameObject settingsPanel;
     public GameObject choiceHelpPanel;
     public GameObject exitGameWarning;
+    public Button pauseExit;
 
     public Slider volumeSlider;
     // add the other sliders here if you need owo
-
+    
     public Slider textSpeedSlider;
     public float typeSpeed;
 
@@ -61,24 +62,38 @@ public class SettingsManager : MonoBehaviour
     public void OnPauseButton()
     {
         pauseMenu.SetActive(true);
+        pauseExit.enabled = true;
+        pauseExit.GetComponent<UIHover>().enabled = true;
     }
 
     public void OnSettingsButton()
     {
         //pauseMenu.SetActive(false);
         settingsPanel.SetActive(true);
+        pauseExit.GetComponent<UIHover>().enabled = false;
+        pauseExit.enabled = false;
 
     }
 
     public void OnExitButton() 
     { 
         exitGameWarning.SetActive(true);
+        pauseExit.GetComponent<UIHover>().enabled = false;
+        pauseExit.enabled = false;
     }
     
 
     public void OnChoiceHelpButton()
     {
         choiceHelpPanel.SetActive(true);
+        pauseExit.GetComponent<UIHover>().enabled = false;
+        pauseExit.enabled = false;
+    }
+
+    public void EnablePauseExit()
+    {
+        pauseExit.enabled = true;
+        pauseExit.GetComponent<UIHover>().enabled = true;
     }
 
     public void OpenGoogleDoc()
