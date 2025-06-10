@@ -1,12 +1,12 @@
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
+using DG.Tweening;
 using Ink.Runtime;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
-using DG.Tweening;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using static GameStateManager;
 
 
@@ -23,6 +23,7 @@ public class StoryManager : MonoBehaviour
     public GameObject dialoguePanel;
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
+    public NameTagChange nameTagImage;
     public Button continueButton;
     public bool canContinue;
     public GridLayoutGroup choicesGrid;
@@ -388,6 +389,7 @@ public class StoryManager : MonoBehaviour
             {
                 speakerName = tag.Substring("speaker:".Length).Trim();
                 nameTag.text = speakerName;
+                nameTagImage.UpdateNameTag(speakerName);
                 currentTalkingCharacter(speakerName);
             }
 
@@ -395,6 +397,7 @@ public class StoryManager : MonoBehaviour
             {
                 speakerName = tag.Substring("speaker:".Length).Trim();
                 nameTag.text = speakerName;
+                nameTagImage.UpdateNameTag(speakerName);
                 currentTalkingCharacter(speakerName);
             }
 
@@ -479,7 +482,9 @@ public class StoryManager : MonoBehaviour
     // makes the character that is currently talking bigger
     private void currentTalkingCharacter(string CurrentSpeaker)
     {
-        if (GameStateManager.CurrentState == gameState.Argument || GameStateManager.CurrentState == gameState.Argument2)
+        
+
+            if (GameStateManager.CurrentState == gameState.Argument || GameStateManager.CurrentState == gameState.Argument2)
         {
             foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
             {
@@ -507,6 +512,7 @@ public class StoryManager : MonoBehaviour
             }
         }
         */
+
     }
 
 
