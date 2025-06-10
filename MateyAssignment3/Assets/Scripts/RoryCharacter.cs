@@ -12,7 +12,7 @@ public class RoryCharacter : StoryCharacter
         var globalVars = StoryManager.Instance.variablesInDialogue;
 
         if (globalVars != null &&
-            globalVars.variables.TryGetValue("rory_true_name_revealed", out Ink.Runtime.Object value) &&
+            globalVars.variables.TryGetValue("roryTrueName", out Ink.Runtime.Object value) &&
             value is Ink.Runtime.BoolValue boolValue &&
             boolValue.value)
         {

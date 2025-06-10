@@ -4,8 +4,15 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    public GameObject pauseMenu;
     public GameObject settingsPanel;
+    public GameObject choiceHelpPanel;
+    public GameObject exitGameWarning;
+    public Button pauseExit;
+
     public Slider volumeSlider;
+    // add the other sliders here if you need owo
+    
     public Slider textSpeedSlider;
     public float typeSpeed;
 
@@ -13,6 +20,10 @@ public class SettingsManager : MonoBehaviour
     void Start()
     {
         settingsPanel.SetActive(false);
+        choiceHelpPanel.SetActive(false);
+        pauseMenu.SetActive(false);
+        exitGameWarning.SetActive(false);
+
         if (PlayerPrefs.HasKey("typeSpeed"))
         {
             LoadTextSpeed();
@@ -48,21 +59,55 @@ public class SettingsManager : MonoBehaviour
          textSpeedSlider.value = PlayerPrefs.GetFloat("typeSpeed");
      }
 
+    public void OnPauseButton()
+    {
+        pauseMenu.SetActive(true);
+        pauseExit.enabled = true;
+        pauseExit.GetComponent<UIHover>().enabled = true;
+    }
+
     public void OnSettingsButton()
     {
+        //pauseMenu.SetActive(false);
         settingsPanel.SetActive(true);
+        pauseExit.GetComponent<UIHover>().enabled = false;
+        pauseExit.enabled = false;
 
     }
 
+    public void OnExitButton() 
+    { 
+        exitGameWarning.SetActive(true);
+        pauseExit.GetComponent<UIHover>().enabled = false;
+        pauseExit.enabled = false;
+    }
     
+
+    public void OnChoiceHelpButton()
+    {
+        choiceHelpPanel.SetActive(true);
+        pauseExit.GetComponent<UIHover>().enabled = false;
+        pauseExit.enabled = false;
+    }
+
+    public void EnablePauseExit()
+    {
+        pauseExit.enabled = true;
+        pauseExit.GetComponent<UIHover>().enabled = true;
+    }
+
+    public void OpenGoogleDoc()
+    {
+        Application.OpenURL("https://www.google.com/");
+    }
 
     //Title:VOLUME SLIDER IN UNITY
     //Author: Solo Game Dev
     //Date: 24 April 2024
     //Code version: unknown
     //Availability: https://www.youtube.com/watch?v=prT-PMl4JSA&ab_channel=SoloGameDev
-       
-        public void SetVolume()
+
+    public void SetVolume()
         {
             AudioListener.volume = volumeSlider.value;
             SaveVolume();
