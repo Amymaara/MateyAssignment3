@@ -91,6 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationDuration: 0.5
   easing: 27
+  introOn: 1
+  FromTop: 1
 --- !u!1 &7502949053543376733
 GameObject:
   m_ObjectHideFlags: 0

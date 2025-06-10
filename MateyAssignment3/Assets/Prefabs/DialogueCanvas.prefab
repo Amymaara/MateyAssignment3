@@ -1173,5 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d68f97447b8164f9247eb9ffe7dc8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationDuration: 0.7
-  easing: 27
+  animationDuration: 0.5
+  easing: 7
+  introOn: 1
+  FromTop: 0

@@ -306,7 +306,7 @@ MonoBehaviour:
   nextScene: DreamScene
   screenFader: {fileID: 1637620997081270527}
   blackScreen: {fileID: 2084442428}
-  fadeDuration: 1
+  fadeDuration: 2
 --- !u!4 &343873015
 Transform:
   m_ObjectHideFlags: 0
@@ -2017,6 +2017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationDuration: 0.5
   easing: 27
+  introOn: 1
+  FromTop: 0
 --- !u!1001 &1845436963
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -29,6 +29,7 @@ public class StoryManager : MonoBehaviour
     public Button choicePrefab;
     //public Canvas dialogueCanvas;
     public GameObject CGPanel;
+    private bool waitingForContinue = false;
 
     [Header("Story Objects")]
     public Story runningStory;
@@ -108,7 +109,6 @@ public class StoryManager : MonoBehaviour
     //start state of all other scenes (for now), can add more cases if needed
     private void HandleRoomExampleScene()
     {
-
         if (dialoguePanel != null)
         {
             dialoguePanel.SetActive(false);
@@ -129,13 +129,12 @@ public class StoryManager : MonoBehaviour
             continueButton.onClick.RemoveAllListeners();
 
         }
+        if (choicesGrid != null)
+        {
+            //choicesGrid.gameObject.SetActive(false);
+            
 
-        //if (charactersInScene == null)
-        //{
-           // charactersInScene = GameObject.Find("CharactersInScene");
-        //}
-
-        
+        }
     }
 
     // for in the rooms/clicking
@@ -189,10 +188,19 @@ public class StoryManager : MonoBehaviour
                 }
                 DisplayNextLine();
             }
+        
+    }
+
+    void Update()
+    {
+        if (waitingForContinue && Input.GetKeyDown(KeyCode.Space))
+        {
+            OnContinueButton(); // or whatever method you're already using
+        }
     }
 
     // watched two videos on this one and merged them to work for our game
-    
+
     // Title: (Part 1) Dialogue: Unity Visual Novel.
     // Author: Rivertune Games
     // Date: 4 November 2021
@@ -204,7 +212,7 @@ public class StoryManager : MonoBehaviour
     // Date: 15 November 2021
     // Code Version: ?
     // Avaliability: https://www.youtube.com/watch?v=2I92egFvC80&list=PL3viUl9h9k78KsDxXoAzgQ1yRjhm7p8kl&index=4
-    
+
     //displays the next line in the dialogue
     private void DisplayNextLine()
     {
@@ -222,8 +230,6 @@ public class StoryManager : MonoBehaviour
                 StopCoroutine(displayLineCouroutine);
             }
 
-           
-
             displayLineCouroutine = StartCoroutine(TypeEffect(runningStory.Continue()));
             
             CheckAffectionChange();
@@ -233,30 +239,52 @@ public class StoryManager : MonoBehaviour
             // Handles audio tags
             HandleTags(runningStory.currentTags);
 
-            
 
             if (speakerName != null && Pose != null && Expression != null)
             {
                 SpriteChange(speakerName, Pose, Expression);
             }
         }
+
         else if (runningStory.currentChoices.Count > 0)
         {
             Debug.Log("showing choices");
             ShowChoices();
         }
+
         else
         {
             Debug.Log("story ended");
             EndStory();
         }
 
-        // Handles audio tags
-        //HandleTags(runningStory.currentTags);
 
     }
 
-    
+    //Types out letters one at a time
+    // Title: Unity typing text effect for dialogue | Unity tutorial
+    // Author: Shaped by Rain Studios
+    // Date: 15 November 2021
+    // Code Version: ?
+    // Avaliability: https://www.youtube.com/watch?v=2I92egFvC80&list=PL3viUl9h9k78KsDxXoAzgQ1yRjhm7p8kl&index=4 
+
+    //Types out letters one at a time
+    private IEnumerator TypeEffect(string line)
+    {
+        typeSpeed = PlayerPrefs.GetFloat("typeSpeed", 0.4f); // default if not set
+        continueButton.gameObject.SetActive(false);
+        waitingForContinue = false;
+        dialogueBox.text = "";
+
+
+        foreach (char letter in line.ToCharArray())
+        {
+            dialogueBox.text += letter;
+            yield return new WaitForSeconds(typeSpeed);
+        }
+        waitingForContinue = true;
+        continueButton.gameObject.SetActive(true);
+    }
 
     /*
     Title: Unity Ink Character Sprite Management via Tag Parsing and Enum Mapping
@@ -301,7 +329,7 @@ public class StoryManager : MonoBehaviour
    Date: 19 May 2025
    Code Version: Custom integration
    Availability: Based on concepts from:
-   https://www.youtube.com/watch?v=mKVWQLXlfP0 (Episode 15 – SFX in Visual Novels)
+   https://www.youtube.com/watch?v=mKVWQLXlfP0 (Episode 15 Â– SFX in Visual Novels)
 
    Research Guides: Computer Science & Computer Engineering: Citing Programming Code. 2022
    */
@@ -327,30 +355,6 @@ public class StoryManager : MonoBehaviour
     }
 
 
-    //Types out letters one at a time
-    // Title: Unity typing text effect for dialogue | Unity tutorial
-    // Author: Shaped by Rain Studios
-    // Date: 15 November 2021
-    // Code Version: ?
-    // Avaliability: https://www.youtube.com/watch?v=2I92egFvC80&list=PL3viUl9h9k78KsDxXoAzgQ1yRjhm7p8kl&index=4 
-
-    //Types out letters one at a time
-    private IEnumerator TypeEffect(string line)
-    {
-        typeSpeed = PlayerPrefs.GetFloat("typeSpeed", 0.4f); // default if not set
-        continueButton.gameObject.SetActive(false);
-        dialogueBox.text = "";
-        
-
-        foreach (char letter in line.ToCharArray())
-        {
-            dialogueBox.text += letter;
-            yield return new WaitForSeconds(typeSpeed);
-        }
-        continueButton.gameObject.SetActive(true);
-    }
-
-    
 
     // Title: Unity2D Dialogue System - Names, Portraits, and Layouts using Ink Tags | Unity + Ink tutorial
     // Author: Shaped by Rain Studios
@@ -403,30 +407,36 @@ public class StoryManager : MonoBehaviour
                     CGPanel.SetActive(false);
                 }
             }
-            //else if (tag.StartsWith("animation:"))
-            // {
-            //string animation = tag.Substring("animation:".Length).Trim();
-            //animator = charactersInScene.GetComponent<Animator>();
-            //animator.Play(animation);
-
-            //}
+            
             else if (tag.StartsWith("activate:"))
             {
                 string active = tag.Substring("activate:".Length).Trim();
 
-                foreach (var item in charactersInScene.GetComponentsInChildren<Image>())
+                foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
                 {
-                    string imageName = item.gameObject.name;
+                    string imageName = item.GetDisplayName();
 
-                    if (item.name.Equals(active, System.StringComparison.OrdinalIgnoreCase))
+                    if (imageName.Equals(active, System.StringComparison.OrdinalIgnoreCase))
                     {
-                        item.gameObject.SetActive(true);
+                        item.characterImage.DOFade(1f, 0.3f).SetEase(Ease.OutQuad); // make opaque
                     }
-
                 }
-
             }
-            
+
+            else if (tag.StartsWith("disable:"))
+            {
+                string active = tag.Substring("disable:".Length).Trim();
+
+                foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
+                {
+                    string imageName = item.GetDisplayName();
+
+                    if (imageName.Equals(active, System.StringComparison.OrdinalIgnoreCase))
+                    {
+                        item.characterImage.DOFade(0f, 0.3f).SetEase(Ease.OutQuad); // make invisible
+                    }
+                }
+            }
         }
     }
 
@@ -471,6 +481,7 @@ public class StoryManager : MonoBehaviour
                 }
             }
         }
+        /*
         else if (GameStateManager.CurrentState == gameState.Day0 || GameStateManager.CurrentState == gameState.Day1 || GameStateManager.CurrentState == gameState.Day2)
         {
             foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
@@ -481,8 +492,9 @@ public class StoryManager : MonoBehaviour
                 
             }
         }
-
+        */
     }
+
 
     /*
 VAR Pearl_Affection = 0
@@ -510,7 +522,8 @@ get varstate(nameofvariable)
     // Avaliability:https://www.youtube.com/watch?v=aBZvivlq4vY&list=PL3O3s_uSvQxGcUR2E6vjxBTWqA-xT05AK&index=5
     private void ShowChoices()
     {
-
+        //choicesGrid.gameObject.SetActive(true);
+        choicesGrid.enabled = true;
         RemoveChoices();
         continueButton.gameObject.SetActive(false);
 
@@ -577,7 +590,7 @@ get varstate(nameofvariable)
 
         foreach (StoryCharacter character in characters)
         {
-            if (character.GetDisplayName().Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
+            if (character.characterName.Equals(characterName, System.StringComparison.OrdinalIgnoreCase))
             {
                 character.PlayAffectionChange(isPositive);
                 return;
@@ -595,6 +608,7 @@ get varstate(nameofvariable)
 
         runningStory.ChooseChoiceIndex(choice.index);
         continueButton.gameObject.SetActive(true);
+       
         RemoveChoices();
         CheckAffectionChange();
         TagHandler();
