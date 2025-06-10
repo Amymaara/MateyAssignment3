@@ -9,7 +9,7 @@ public class SceneChanger : MonoBehaviour
     public string nextScene;
     public  Image screenFader;
     public GameObject blackScreen;
-    public float fadeDuration = 2f;
+    public float fadeDuration = 1.5f;
 
     // loads in a new scene based on the next scene name
     public void LoadNextScene(string sceneName)

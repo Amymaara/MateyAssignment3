@@ -46,6 +46,7 @@ public class StoryManager : MonoBehaviour
     public GameObject charactersInScene;
     private Dictionary<string, StoryCharacter> characterLookup = new Dictionary<string, StoryCharacter>();
     string speakerName = "???";
+    public AffectionUI affectionUI;
     //[SerializeField] private Animator animator;
 
 
@@ -83,6 +84,7 @@ public class StoryManager : MonoBehaviour
         {
             characterLookup[character.characterName.ToLower()] = character;
         }
+
 
         //DontDestroyOnLoad(gameObject);
         //DontDestroyOnLoad(dialogueCanvas.gameObject);
@@ -132,9 +134,21 @@ public class StoryManager : MonoBehaviour
         if (choicesGrid != null)
         {
             //choicesGrid.gameObject.SetActive(false);
-            
-
         }
+        if(affectionUI != null)
+        {
+            GetCurrentAffection();
+            AffectionMeterSet(PearlAffectionOld, "Pearl");
+            AffectionMeterSet(RoryAffectionOld, "Rory");
+            AffectionMeterSet( RavynnAffectionOld, "Ravynn");
+            AffectionMeterSet(ShadAffectionOld, "Shad");
+           
+        }
+    }
+
+    private void AffectionMeterSet(int affection, string name)
+    {
+        affectionUI.UpdateAffectionUI(name, affection);
     }
 
     // for in the rooms/clicking
@@ -469,7 +483,7 @@ public class StoryManager : MonoBehaviour
         {
             foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
             {
-                string imageName = item.GetDisplayName();
+                string imageName = item.characterName;
 
                 if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
                 {
@@ -570,6 +584,7 @@ get varstate(nameofvariable)
 
     private void AffectionCompare(int newVal, int oldVal, string characterName)
     {
+        
         if (newVal == oldVal)
         {
             //Debug.Log($"{characterName} affection stayed the same");
@@ -577,8 +592,10 @@ get varstate(nameofvariable)
         else
         {
             bool increased = newVal > oldVal;
-            //Debug.Log($"{characterName} affection {(increased ? "increased" : "decreased")}");
+            
             PlayCharacterParticle(characterName, increased);
+
+            affectionUI.UpdateAffectionUI(characterName, newVal);
         }
     }
 
