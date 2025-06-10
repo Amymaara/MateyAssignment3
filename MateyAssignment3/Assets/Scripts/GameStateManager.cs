@@ -24,6 +24,7 @@ public static class GameStateManager
     public static int numRoomsVisited => RoomsVisited.Count;
 
     public static int DayCount = 0;
+
     public static HashSet<string> RoomsVisited = new HashSet<string>();
 
     public static void MarkRoomVisited(string roomID)
@@ -54,6 +55,27 @@ public static class GameStateManager
     public static void SetState(gameState newState)
     {
         if (CurrentState == newState) return;
+
+        // Increase the day counter
+        if (newState == gameState.Argument ||
+            newState == gameState.Argument2 ||
+            newState == gameState.Combat)
+        {
+            if (newState == gameState.Argument && DayCount == 2)
+            {
+                DayCount = 2;
+            }
+            else if (newState == gameState.Argument2 && DayCount == 4)
+            {
+                DayCount = 4;
+            }
+            else
+            {
+                DayCount++;
+            }
+                
+            Debug.Log("Day Count increased to: " + DayCount);
+        }
 
         CurrentState = newState;
         Debug.Log("Game State now: " + newState);
