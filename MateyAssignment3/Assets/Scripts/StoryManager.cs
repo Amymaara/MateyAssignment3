@@ -329,30 +329,32 @@ public class StoryManager : MonoBehaviour
    Date: 19 May 2025
    Code Version: Custom integration
    Availability: Based on concepts from:
-   https://www.youtube.com/watch?v=mKVWQLXlfP0 (Episode 15 – SFX in Visual Novels)
+   https://www.youtube.com/watch?v=mKVWQLXlfP0 (Episode 15 Â– SFX in Visual Novels)
 
    Research Guides: Computer Science & Computer Engineering: Citing Programming Code. 2022
    */
 
+    // Looks for audio related tags from the ink scrip
     void HandleTags(List<string> tags)
     {
+        if (NewAudioManager.instance == null)
+        {
+            Debug.LogError("NewAudioManager is STILL NULL when HandleTags runs!");
+            return;
+        }
+
         foreach (string tag in tags)
         {
             if (tag.StartsWith("sfx_"))
-                AudioManager.instance.PlaySFX(tag.Substring(4));
-
+                NewAudioManager.instance.PlaySFX(tag.Substring(4));
             else if (tag.StartsWith("music_"))
-                AudioManager.instance.PlayMusic(tag.Substring(6));
-
+                NewAudioManager.instance.PlayMusic(tag.Substring(6));
             else if (tag == "music_stop")
-                AudioManager.instance.StopMusic();
+                NewAudioManager.instance.StopMusic();
         }
     }
 
 
-   
-
-    
 
     // Title: Unity2D Dialogue System - Names, Portraits, and Layouts using Ink Tags | Unity + Ink tutorial
     // Author: Shaped by Rain Studios
@@ -697,7 +699,7 @@ get varstate(nameofvariable)
         return valueOfVariable;
     }
 
-    // used when getting the player name from the inpu
+    // used when getting the player name from the input
     public void SetVarState(string nameOfVariable, object value)
     {
         if (variablesInDialogue == null)

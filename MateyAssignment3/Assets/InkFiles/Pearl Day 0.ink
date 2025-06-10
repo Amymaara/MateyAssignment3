@@ -73,7 +73,7 @@ She suddenly turned around, bright eyed.
 #expression:Blush
 "That’s the nicest compliment I’ve ever gotten!"
 
--> pearl_belongings
+-> pearl_island
 
 === reserve_judgment ===
 ~ Pearl_Affection -= 10
@@ -86,7 +86,7 @@ She suddenly turned around, bright eyed.
 #expression:Neutral
 "Oh, okay. Can’t say I'm not a little disappointed."
 
--> pearl_belongings
+-> pearl_island
 
 === crab_cult_response ===
 ~ Pearl_Affection += 0
@@ -99,18 +99,157 @@ She suddenly turned around, bright eyed.
 #expression:Neutral
 "You've heard of the Clawsome Crab Cult?! I gotta renew my membership sometime…"
 
--> pearl_belongings
+-> pearl_island
 
-=== pearl_belongings ===
+=== pearl_island ===
 #speaker:Pearl
 #pose:Pose3
 #expression:Neutral
-"Anyways, I’m still deciding where my belongings should go. I need to place it so that they twinkle just right."
+"Oh! You know, recently I've been really into those newspaper questions like, if you were a fruit what would you be. Have you heard of them?"
+
+#Speaker:{Name}
+"Yeah, I don't pay much mind to them though."
+
+#Speaker:Pearl
+"Well, I'm stumped on todays question, would you mind telling me your answer for it?"
+
+#Speaker:{Name}
+"Uhh, sure"
+
+#Speaker:Peal
+"If you had to pick one thing to keep on a deserted island, what would it be?"
+
+#speaker:{Name}
+(Where is this going?)
+
+#Speaker:{Name}
+* ["Something practical like a knife."]
+    -> pearl_island_knife
+* ["A book. Entertainment and kindling."]
+    -> pearl_island_book
+* ["A bottle of seawater that screams at night."] 
+    -> pearl_screaming_water
+    
+=== pearl_island_knife ===
+~ Pearl_Affection += 0
+
+#speaker:{Name}
+"Something practical like a knife."
 
 #speaker:Pearl
 #pose:Pose2
 #expression:Neutral
-"What brought you to my little corner of controlled chaos, Captain {Name}?"
+"Classic. Very pirate. Very stabby. I respect it."
+
+#speaker:Pearl
+#pose:Pose2
+#expression:Neutral
+"I’d probably bring sea sparkles. Not helpful at all — but morale is important."
+
+-> continue_to_belongings
+
+=== pearl_island_book ===
+~ Pearl_Affection += 10
+#speaker:{Name}
+"A book. Entertainment and kindling."
+
+#speaker:Pearl
+#pose:Pose3
+#expression:Blush
+"Ooh, multi-purpose! Smart and slightly chaotic — I like it."
+
+#speaker:Pearl
+#pose:Pose2
+#expression:Neutral
+"I’d bring a romance novel. Something with pirates, obviously."
+
+-> continue_to_belongings
+
+=== pearl_screaming_water ===
+~ Pearl_Affection -= 10
+
+#speaker:{Name}
+"A bottle of seawater that screams at night."
+
+#speaker:Pearl
+#pose:Pose2
+#expression:Neutral
+"...Excuse me?"
+
+#speaker:{Name}
+"Yeah. I figured it could ward off evil spirits. Or, you know, attract them for conversation."
+
+#speaker:Pearl
+#pose:Pose3
+#expression:Angry
+"You’d trap seawater spirits like that? And let it suffer? That’s... disturbing."
+
+#speaker:Pearl
+#pose:Default
+#expression:Neutral
+"You know the ocean’s and its spirits are alive, right? Stuff like that - it’s wrong. No wonder the waves avoid some people..."
+
+#speaker:{Name}
+She turns away, busying herself with rearranging shells.
+
+-> continue_to_belongings
+
+=== continue_to_belongings ===
+#speaker:Pearl
+#pose:Pose2
+#expression:Neutral
+"Anyway — as I was saying earlier..."
+
+-> pearl_belongings
+
+=== pearl_belongings ===
+#speaker:{Name}
+The room settles into a softer kind of quiet. Pearl’s eyes scan her belongings like she’s seeing memories, not just objects.
+
+#speaker:Pearl
+#pose:Pose3
+#expression:Neutral
+"Most people think I collect junk. But to me? These are memories of places I loved... or tried to love."
+
+#speaker:{Name}
+"Seems like they’ve been loved back. Everything feels like its been placed with intention."
+
+#speaker:Pearl
+#pose:Pose2
+#expression:Blush
+"That’s because they matter. Even the cracked ones."
+
+#speaker:{Name}
+"I get it. Sometimes it’s the broken things that stick around the longest."
+
+#speaker:Pearl
+#pose:Default
+#expression:Neutral
+"Yeah. Sometimes I wonder if I’ve lived too many lives already. Maybe that’s why things follow me."
+
+#speaker:{Name}
+"Things, or people?"
+
+#speaker:{Name}
+She laughs but it doesn’t quite reach her eyes.
+
+#speaker:Pearl
+#pose:Default
+#expression:Neutral
+"But enough emotional excavation for today! Let’s talk practical magic."
+
+#speaker:{Name}
+"You mean... like shell placement?"
+
+#speaker:Pearl
+#pose:Pose3
+#expression:Blush
+"Exactly! I need to decide where my belongings go. They need to twinkle just right. The moonlight shifts to different angles when you're on sea. They all need to shine their brightest."
+
+#speaker:Pearl
+#pose:Pose2
+#expression:Neutral
+"So, what brought you to my little corner of controlled chaos, Captain {Name}?"
 
 #speaker:{Name}
 * ["I wanted to see the ship's heart. I think I found it."]
