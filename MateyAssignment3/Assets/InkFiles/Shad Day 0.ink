@@ -32,10 +32,8 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
 
-* ["What in Poseidon’s name are you concocting down here?"]
+* "What in Poseidon’s name are you concocting down here?"
     ~ Shad_Affection += 10
-    #speaker:{Name}
-    "What in Poseidon’s name are you concocting down here?"
 
     #speaker:Shad
  #pose:Default
@@ -44,10 +42,8 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     -> shad_kitchen_story
 
-* ["Should I be concerned about the bubbling jar of slime on the counter?"]
+* "Should I be concerned about the bubbling jar of slime on the counter?"
     ~ Shad_Affection += 0
-    #speaker:{Name}
-    "Should I be concerned about the bubbling jar of slime on the counter?"
 
     #speaker:Shad
     #pose:Default
@@ -56,11 +52,9 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     -> shad_kitchen_story
 
-* [ "The galley’s in a state of chaos, what happened?"]
+* "The galley’s in a state of chaos, what happened?"
     ~ Shad_Affection -= 10
-    
-    #speaker:{Name}
-    "The galley’s in a state of chaos, what happened?"
+
 
     #speaker:Shad
     #pose:Default
@@ -104,11 +98,9 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 "You hungry? I tried making something called 'soul' food. For your soul, you know?"
 
 #speaker:{Name}
-* [ "You’re like the sun if it wore an apron and caused mild property damage."]
+* "You’re like the sun if it wore an apron and caused mild property damage."
     ~ Shad_Affection += 10
-    
-    #speaker:{Name}
-    "You’re like the sun if it wore an apron and caused mild property damage."
+  
 
     #speaker:Shad
     #pose:Default
@@ -125,11 +117,8 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
     -> shad_exit
 
 #speaker:{Name}
-* ["As long as you don’t poison me, we’ll get along fine."]
+* "As long as you don’t poison me, we’ll get along fine."
     ~ Shad_Affection += 0
-    
-    #speaker:{Name}
-    "As long as you don’t poison me, we’ll get along fine."
 
     #speaker:Shad
     #pose:Default
@@ -138,11 +127,8 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     -> shad_exit
 
-* ["I think you might be a bigger danger than any sea monster."]
+* "I think you might be a bigger danger than any sea monster."
     ~ Shad_Affection-= 10
-    
-    #speaker:{Name}
-    "I think you might be a bigger danger than any sea monster."
 
     #speaker:Shad
     #pose:Default
@@ -157,21 +143,16 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 #expression:Neutral
 "Anyway — I’m still setting up my spice altar. Come by later and I’ll show you a meal that’s unforgettable. Hopefully in a good way this time!"
 
-* [Wreck but charming]
+* "You’re definitely a walking hazard, but you’re also kind of adorable."
     ~ Shad_Affection += 10
-    
-    #speaker:{Name}
-    "You’re definitely a walking hazard, but you’re also kind of adorable."
  -> shad_exit_flirty
  
- * [seek culinary safety elsewhere]
+ * "Good luck with whatever this is. I’m gonna try and find something to eat that’s not vaguely alive."
   ~ Shad_Affection -= 10
-  
- #speaker:{Name}
-  "Good luck with whatever this is. I’m gonna try and find something to eat that’s not vaguely alive."
  -> shad_exit_disinterested
  
  === shad_exit_flirty ===
+ ~shad_exit_type = "flirty"
     #speaker:Shad
     #pose:Default
 #expression:Blush
@@ -194,7 +175,7 @@ My eyes casually wander around, and they catch a glimpse of something.
 -> END
 
 === shad_exit_disinterested ===
-
+~shad_exit_type = "disinterested"
 
 #speaker:Shad
   #pose:Pose2

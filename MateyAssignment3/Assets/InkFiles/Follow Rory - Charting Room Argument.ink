@@ -46,17 +46,14 @@ He gets up and walks to the edge of the desk, his fingers trailing the edges of 
 #Speaker:{Name}
 He turns to face me now, something lies between us — something unspoken in the air.
 
-*["The one who wants control, but craves emotional connections."]
+*"The one who wants control, but craves emotional connections."
 -> exit_flirty
-*["You remind me of someone I shouldn't trust."]
+*"You remind me of someone I shouldn't trust."
 -> exit_disinterested
 
 === exit_flirty ===
 ~ rory_exit_type = "flirty"
 ~ Rory_Affection +=10
-
-#Speaker:{Name}
-"The one who wants control, but craves emotional connections."
 
 #Speaker:{Name}
 Master Porthole steps closer towards me.
@@ -111,9 +108,6 @@ Master Porthole steps closer towards me.
  === exit_disinterested ===
 ~ rory_exit_type = "disinterested"
 ~ Rory_Affection -= 10
-
-#Speaker:{Name}
-"You remind me of someone I shouldn't trust."
 
 #Speaker:{Name}
 I watch as his jaw tenses, only for a moment, but it's enough to notice.

@@ -36,17 +36,14 @@ He pauses, then laughs a little.
 #Speaker:{Name}
 For once, he doesn’t have his usual goofy smile. He’s just... kind of honest.
 
-* ["Well your food might be a mystery, but your heart? That’s seasoned just right."]
+* "Well your food might be a mystery, but your heart? That’s seasoned just right."
     -> shad_follow_flirt
-* ["I mean sure — but it’s also just a whisk. Not your childhood dog."]
+* "I mean sure — but it’s also just a whisk. Not your childhood dog."
     -> shad_follow_disinterest
 
 === shad_follow_flirt ===
 ~ Shad_Affection += 10
 ~ shad_exit_type = "flirty"
-
-#speaker:{Name}
-"Well your food might be a mystery, but your heart? That’s seasoned just right."
 
 #Speaker:{Name}
 His eyes widen. He breaks into a sheepish grin.
@@ -104,8 +101,6 @@ As I'm about to leave something catches my eye.
 === shad_follow_disinterest ===
 ~ Shad_Affection -= 10
 ~ shad_exit_type = "disinterested"
-#speaker:{Name}
-"I mean sure — but it’s also just a whisk. Not your childhood dog."
 
 #Speaker:{Name}
 (Shad blinks. His soft smile falters just a little.)

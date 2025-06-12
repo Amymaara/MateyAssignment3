@@ -48,12 +48,9 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 #speaker:{Name}
 (Okay. Time to react to that name…)
 
-* ["That name sounds... character-building."]
+* "That name sounds... character-building."
     ~ Rory_Affection -= 10
     
-#speaker:{Name}
-"That name sounds... character-building."
-
 #speaker:{Name}
 He looks at me as if I murdered his child.
 
@@ -64,11 +61,8 @@ He looks at me as if I murdered his child.
 
     -> rory_flooring
 
-* ["It’s heartwarming that she named you after something she loved so dearly."]
+* "It’s heartwarming that she named you after something she loved so dearly."
  ~ Rory_Affection += 10
- 
-#speaker:{Name}
-"It’s heartwarming that she named you after something she loved so dearly."
 
 #speaker:Master Porthole
 #pose:Pose2
@@ -77,11 +71,8 @@ He looks at me as if I murdered his child.
    
     -> rory_flooring
 
-* ["Sounds fake, but alright"]
+* "Sounds fake, but alright"
  ~ Rory_Affection += 0
- 
-#speaker:{Name}
-"Sounds fake, but alright"
 
 #speaker:Master Porthole
 #pose:Pose2
@@ -108,18 +99,15 @@ Touché. Let’s just say it’s a… placeholder, for now."
 "Getting her was not easy. Just thinking about it gives me war flashbacks."
 
 #speaker:{Name}
-* ["I had to wrestle a troll for it. That was quite the experience."]
+* "I had to wrestle a troll for it. That was quite the experience."
     -> rory_troll
-* ["I bought this drunk off my mind. I think I traded my life savings... and possibly my soul."]
+* "I bought this drunk off my mind. I think I traded my life savings... and possibly my soul."
     -> rory_drunk
-* ["I found the title deed on the floor. You know what they say — finders keepers."]
+* "I found the title deed on the floor. You know what they say — finders keepers."
     -> rory_deed
 
 === rory_troll ===
 ~ Rory_Affection += 0
-
-#speaker:{Name}
-"I had to wrestle a troll for it. That was quite the experience."
 
 #speaker:Master Porthole
 #pose:Pose3
@@ -131,9 +119,6 @@ Touché. Let’s just say it’s a… placeholder, for now."
 === rory_drunk ===
 ~ Rory_Affection -= 10
 
-#speaker:{Name}
-"I bought this drunk off my mind. I think I traded my life savings... and possibly my soul."
-
 #speaker:Master Porthole
 #pose:Pose3
 #expression:Angry
@@ -143,9 +128,6 @@ Touché. Let’s just say it’s a… placeholder, for now."
 
 === rory_deed ===
 ~ Rory_Affection += 10
-
-#speaker:{Name}
-"I found the title deed on the floor. You know what they say — finders keepers."
 
 #speaker:Master Porthole
 #pose:Pose3
@@ -172,17 +154,15 @@ Touché. Let’s just say it’s a… placeholder, for now."
 "I handle disaster best when draped in elegance and surrounded by competence. I’d appreciate if you provided both."
 
 #speaker:{Name}
-* ["You’ve certainly left an impression, Master Porthole. One that I’ll need a strong glass of whiskey to process."]
+* "You’ve certainly left an impression, Master Porthole. One that I’ll need a strong glass of whiskey to process."
     -> rory_exit_flirty
     
-* ["Just try not to redecorate the entire ship before dinner. That desk’s already giving me a migraine."]
+* "Just try not to redecorate the entire ship before dinner. That desk’s already giving me a migraine."
     -> rory_exit_disinterested
 
 === rory_exit_flirty ===
 ~Rory_Affection += 10 
 ~ rory_exit_type = "flirty"
-#speaker:{Name}
-"You’ve certainly left an impression, Master Porthole. One that I’ll need a strong glass of whiskey to process."
 
 #speaker:Master Porthole
 #pose:Pose3
@@ -203,9 +183,6 @@ My eyes catch on something of his.
 === rory_exit_disinterested ===
 ~Rory_Affection -= 10 
 ~ rory_exit_type = "disinterested"
-
-#speaker:{Name}
-"Just try not to redecorate the entire ship before dinner, yeah? That desk’s already giving me a migraine."
 
 #speaker:Master Porthole
 #pose:Pose3

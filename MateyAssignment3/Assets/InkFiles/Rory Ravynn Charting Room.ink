@@ -74,19 +74,16 @@ Ravynn points to the map with irritation.
 They both turn to me as if I'm some oracle. I glance at the compass, it's just as lost as I am.
 
 #Speaker:{Name}
-*["We'll use the stars. Your route keeps us moving, and fast."]
+*"We'll use the stars. Your route keeps us moving, and fast."
 -> side_with_rory
-*["We follow the wind, it's our safest shot."]
+*"We follow the wind, it's our safest shot."
 -> side_with_ravynn
-*["We'll combine both methods. We use the winds to guide us short term and the stars for longer trajectories."]
+*"We'll combine both methods. We use the winds to guide us short term and the stars for longer trajectories."
 -> compromise 
 
 === side_with_rory ===
 ~Rory_Affection += 10
 ~Ravynn_Affection -= 10
-
-#Speaker:{Name}
-"We'll use the stars. Your route keeps us moving, and fast."
 
 #Speaker:{Name}
 Master Porthole preens as if I handed him an expensive jewel.
@@ -125,9 +122,6 @@ He proudly prances out since he achieved what he wanted.
 ~ Rory_Affection -= 10
 
 #Speaker:{Name}
-"We follow the wind, it's our safest shot."
-
-#Speaker:{Name}
 Ravynn nods once at me, I feel like a kid finally getting their unimpressed parents approval.
 
 #Speaker:{Name}
@@ -157,9 +151,6 @@ He leaves in a flourish, like he's storming off a theatre stage - only he's less
 === compromise ===
 ~ Rory_Affection += 5
 ~ Ravynn_Affection += 5
-
-#Speaker:{Name}
-I decide the best choice for my mental state is to play mediator.
 
 #Speaker:{Name}
 "We'll combine both methods. We use the winds to guide us short term and the stars for longer trajectories."

@@ -28,18 +28,17 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 "I was wondering when you’d get up. You’re late — I already inspected the mast, adjusted the sails, and fixed three structural flaws in the hull."
 
 #speaker:{Name}
-* ["Are you always this intense?"] 
+(Hmm...)
+
+* "Are you always this intense?" 
     -> ravynn_intro_intense
-* ["Already fixing the ship? I like the initiative."] 
+* "Already fixing the ship? I like the initiative." 
     -> ravynn_intro_approve
-* [You could’ve waited for my orders."] 
+* "You could’ve waited for my orders." 
     -> ravynn_intro_direct
 
 === ravynn_intro_intense ===
 ~ Ravynn_Affection -= 10
-
-#speaker:{Name}
-"Are you always this intense?"
 
 #speaker:Ravynn
 #pose:Default
@@ -51,9 +50,6 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 === ravynn_intro_approve ===
 ~ Ravynn_Affection += 10
 
-#speaker:{Name}
-"Already fixing the ship? I like the initiative."
-
 #speaker:Ravynn
 #pose:Default
 #expression:Blush
@@ -63,9 +59,6 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 
 === ravynn_intro_direct ===
 ~ Ravynn_Affection += 0
-
-#speaker:{Name}
-"You could’ve waited for my orders."
 
 #speaker:Ravynn
 #pose:Pose3
@@ -89,18 +82,15 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 #expression:Angry
 "And you? What kind of Captain are you?"
 
-* ["I lead by example. I get my hands dirty."]
+* "I lead by example. I get my hands dirty."
     -> ravynn_style_lead
-* ["I delegate. That’s what having a crew is for."] 
+* "I delegate. That’s what having a crew is for."
     -> ravynn_style_delegate
-* ["I go with my gut."]
+* "I go with my gut."
     -> ravynn_style_gut
 
 === ravynn_style_lead ===
 ~ Ravynn_Affection += 10
-
-#speaker:{Name}
-"I lead by example. I get my hands dirty."
 
 #speaker:Ravynn
 #pose:Default
@@ -111,9 +101,6 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 
 === ravynn_style_delegate ===
 ~ Ravynn_Affection += 0
-
-#speaker:{Name}
-"I delegate. That’s what having a crew is for."
 
 #speaker:{Name}
 (Ravynn glances — disappointed — at a rope coil.)
@@ -127,9 +114,6 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 
 === ravynn_style_gut ===
 ~ Ravynn_Affection -= 10
-
-#speaker:{Name}
-"I go with my gut."
 
 #speaker:{Name}
 (She exhales, looking as if I offended logic itself.)
@@ -162,17 +146,16 @@ And yeah, there she is — sitting cross-legged, sharpening a harpoon like it pe
 "Enjoy the calm while it lasts, Captain. Life and the seas are never always serene."
 
 #speaker:{Name}
-* ["You're intense. Really intense. There’s something about it... it's solid. Reliable."]
+(Oh? How should I reply to that?)
+
+* "You're intense. Really intense. There’s something about it... it's solid. Reliable."
     -> ravynn_flirt
-* ["Right, right — we get it. You’ve got the ship handled. Just make sure your grip doesn’t end up breaking the crew."] 
+* "Right, right — we get it. You’ve got the ship handled. Just make sure your grip doesn’t end up breaking the crew."
     -> ravynn_dismiss
 
 === ravynn_flirt ===
 ~ Ravynn_Affection += 10
 ~ ravynn_exit_type = "flirty"
-
-#speaker:{Name}
-"You're intense. Really intense. There’s something about it... it's solid. Reliable."
 
 #speaker:Ravynn
 #pose:Default
@@ -200,9 +183,6 @@ As I'm about to leave I catch a glance of one of her belongings.
 === ravynn_dismiss ===
 ~ Ravynn_Affection -= 10
 ~ ravynn_exit_type = "disinterested"
-
-#speaker:{Name}
-"Right, right — we get it. You’ve got the ship handled. Just make sure your grip doesn’t end up breaking the crew."
 
 #speaker:Ravynn
 #pose:Default

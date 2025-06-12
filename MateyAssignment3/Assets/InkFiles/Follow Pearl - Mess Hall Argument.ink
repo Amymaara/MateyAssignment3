@@ -55,17 +55,14 @@ She doesn’t laugh, but rather smiles gently.
 #Speaker:{Name}
 She dips her fingers into the bowl and watches the ripples, her face tinted with sorrow.
 
-* ["I trust you. And I happen to think you’re exactly the kind of strange that makes this ship worth sailing."]
+* "I trust you. And I happen to think you’re exactly the kind of strange that makes this ship worth sailing."
     -> pearl_follow_flirt
-* ["It’s an octopus. I don’t think it can be 'misunderstood."]
+* "It’s an octopus. I don’t think it can be 'misunderstood."
     -> pearl_follow_disinterest
 
 === pearl_follow_flirt ===
 ~ Pearl_Affection += 10
 ~ pearl_exit_type = "flirty"
-
-#speaker:{Name}
-"I trust you. And I happen to think you’re exactly the kind of strange that makes this ship worth sailing."
 
 #speaker:{Name}
 Her eyes widen. A real blush blooms across her cheeks.
@@ -93,9 +90,6 @@ She nudges a bit closer to me. There’s laughter in her voice again — and a h
 === pearl_follow_disinterest ===
 ~ Pearl_Affection -= 10
 ~ pearl_exit_type = "disinterested"
-
-#speaker:{Name}
-"It’s an octopus. I don’t think it can be 'misunderstood."
 
 #speaker:{Name}
 She blinks. Her usual spark is nowhere to be found.

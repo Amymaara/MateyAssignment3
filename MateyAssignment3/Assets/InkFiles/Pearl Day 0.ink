@@ -54,19 +54,16 @@ She suddenly turned around, bright eyed.
 #speaker:{Name}
 (Okay, so we’re just gonna move past the fish? Fine by me.)
 
-#speaker:{Name}
-* ["You’re strange, really strange and honestly I don’t mind it."]
+
+* "You’re strange, really strange and honestly I don’t mind it."
     -> compliment_unique
-* ["I’m reserving judgement for now."]
+* "I’m reserving judgement for now."
     -> reserve_judgment
-* ["You’re a walking fever dream, but I've seen weirder. Like a crab cult. Long story."]
+* "You’re a walking fever dream, but I've seen weirder. Like a crab cult. Long story."
     -> crab_cult_response
 
 === compliment_unique ===
 ~ Pearl_Affection += 10
-
-#speaker:{Name}
-"You’re strange, really strange and honestly I don’t mind it."
 
 #speaker:Pearl
 #pose:Default
@@ -78,9 +75,6 @@ She suddenly turned around, bright eyed.
 === reserve_judgment ===
 ~ Pearl_Affection -= 10
 
-#speaker:{Name}
-"I’m reserving judgement for now."
-
 #speaker:Pearl
 #pose:Default
 #expression:Neutral
@@ -90,9 +84,6 @@ She suddenly turned around, bright eyed.
 
 === crab_cult_response ===
 ~ Pearl_Affection += 0
-
-#speaker:{Name}
-"You’re a walking fever dream, but I've seen weirder. Like a crab cult. Long story."
 
 #speaker:Pearl
 #pose:Default
@@ -122,19 +113,17 @@ She suddenly turned around, bright eyed.
 #speaker:{Name}
 (Where is this going?)
 
-#Speaker:{Name}
-* ["Something practical like a knife."]
+
+* "Something practical like a knife."
     -> pearl_island_knife
-* ["A book. Entertainment and kindling."]
+* "A book. Entertainment and kindling."
     -> pearl_island_book
-* ["A bottle of seawater that screams at night."] 
+* "A bottle of seawater that screams at night."
     -> pearl_screaming_water
     
 === pearl_island_knife ===
 ~ Pearl_Affection += 0
 
-#speaker:{Name}
-"Something practical like a knife."
 
 #speaker:Pearl
 #pose:Pose2
@@ -150,8 +139,6 @@ She suddenly turned around, bright eyed.
 
 === pearl_island_book ===
 ~ Pearl_Affection += 10
-#speaker:{Name}
-"A book. Entertainment and kindling."
 
 #speaker:Pearl
 #pose:Pose3
@@ -167,9 +154,6 @@ She suddenly turned around, bright eyed.
 
 === pearl_screaming_water ===
 ~ Pearl_Affection -= 10
-
-#speaker:{Name}
-"A bottle of seawater that screams at night."
 
 #speaker:Pearl
 #pose:Pose2
@@ -252,16 +236,13 @@ She laughs but it doesn’t quite reach her eyes.
 "So, what brought you to my little corner of controlled chaos, Captain {Name}?"
 
 #speaker:{Name}
-* ["I wanted to see the ship's heart. I think I found it."]
+* "I wanted to see the ship's heart. I think I found it."
     -> pearl_flirt
-* ["Routine inspection. Making sure there’s no funny business going on — and you’re screaming funny business."]
+* "Routine inspection. Making sure there’s no funny business going on — and you’re screaming funny business."
     -> pearl_inspection
 
 === pearl_flirt ===
 ~ Pearl_Affection += 10
-
-#speaker:{Name}
-"I wanted to see the ship's heart. I think I found it."
 
 #speaker:{Name}
 She slow blinks, once, twice, thrice.
@@ -301,9 +282,6 @@ My hand catches on something, Oh? It's one of her belongings.
 === pearl_inspection ===
 ~ pearl_exit_type = "disinterested"
 ~ Pearl_Affection -= 10
-
-#speaker:{Name}
-"Routine inspection. Making sure there’s no funny business going on — and you’re screaming funny business."
 
 #speaker:Pearl
 #pose:Default

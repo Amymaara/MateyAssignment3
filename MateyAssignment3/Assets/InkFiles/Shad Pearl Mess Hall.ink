@@ -56,19 +56,16 @@ Shad is wielding a skillet like it’s the blade of justice.
 #expression:Angry
 "I’m very persuasive!"
 
-* [Peace Talks] 
+* "Let’s try and get it back peacefully — no need to escalate into seafood warfare." 
     -> whisk_peace
-* [Justice Served] 
+* "You mess with a man’s whisk and you might as well sign your marinade papers — let’s get the pan." 
     -> whisk_cook
-* [Neutral Strategy]
+* "Or, hear me out — we trap it using a decoy whisk and anchovies."
     -> whisk_trap
 
 === whisk_peace ===
 ~ Pearl_Affection += 10
 ~ Shad_Affection -= 10
-
-#speaker:{Name}
-"Let’s try and get it back peacefully — no need to escalate into seafood warfare."
 
 #speaker:Pearl
 #pose:Pose3
@@ -89,9 +86,6 @@ Shad is wielding a skillet like it’s the blade of justice.
 ~ Pearl_Affection -= 10
 ~ Shad_Affection += 10
 
-#speaker:{Name}
-"You mess with a man’s whisk and you might as well sign your marinade papers — let’s get the pan."
-
 #speaker:Shad
 #pose:Default
 #expression:Blush
@@ -107,9 +101,6 @@ Shad is wielding a skillet like it’s the blade of justice.
 === whisk_trap ===
 ~ Pearl_Affection += 5
 ~ Shad_Affection += 5
-
-#speaker:{Name}
-"Or, hear me out — we trap it using a decoy whisk and anchovies."
 
 #speaker:{Name}
 (Both of them blink blankly.)

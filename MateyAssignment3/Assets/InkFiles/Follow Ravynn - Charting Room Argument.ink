@@ -66,18 +66,15 @@ INCLUDE Globals.ink
  #expression:Sad
  "Then so be it."
  
- *["You're not hard to like, Ravynn."]
+ *"You're not hard to like, Ravynn."
  -> ravynn_flirty
- *["That might be your way of surviving but you're not the only one who's lost people."]
+ *"That might be your way of surviving but you're not the only one who's lost people."
  ->ravynn_disinterested
  
  === ravynn_flirty ===
  ~ Ravynn_Affection +=10
  ~ ravynn_exit_type = "flirty"
- 
- #Speaker:{Name}
- "You're not hard to like, Ravynn."
- 
+
   #Speaker:{Name}
  "You're just...sharp edged."
  
@@ -139,9 +136,6 @@ Feeling slightly flushed, I begin to be more aware of my surroundings.
 === ravynn_disinterested ===
 ~ Ravynn_Affection -= 10
 ~ ravynn_exit_type = "disinterested"
-
-#Speaker:{Name}
-"That might be your way of surviving but you're not the only one who's lost people."
 
  #Speaker:{Name}
 She pauses for a moment.
