@@ -53,4 +53,10 @@ public class NewAudioManager : MonoBehaviour
         musicSource.Stop();
         musicSource.clip = null;
     }
+
+    public void StopSFX()
+    {
+        sfxSource.Stop();
+        sfxSource.clip = null;
+    }
 }

@@ -161,4 +161,6 @@ I hit the ocean.
 #Speaker:{Name}
 Everything went dark as I sank into the abyss.
 
+#sfx_stop
+
 -> END

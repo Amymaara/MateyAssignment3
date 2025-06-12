@@ -366,6 +366,8 @@ public class StoryManager : MonoBehaviour
                 NewAudioManager.instance.PlayMusic(tag.Substring(6));
             else if (tag == "music_stop")
                 NewAudioManager.instance.StopMusic();
+            else if (tag == "sfx_stop")
+                NewAudioManager.instance.StopSFX();
         }
     }
 
