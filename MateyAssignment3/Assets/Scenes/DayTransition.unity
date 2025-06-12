@@ -407,6 +407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AffectionCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1679687098033486441, guid: bb5c798aa3e1633438a1f1e04aab6f26, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 136297294}
     - target: {fileID: 4450102576671718228, guid: bb5c798aa3e1633438a1f1e04aab6f26, type: 3}
       propertyPath: m_Pivot.x
       value: 0
