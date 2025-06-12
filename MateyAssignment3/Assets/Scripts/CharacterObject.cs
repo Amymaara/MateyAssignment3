@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 using System.Collections;
 using DG.Tweening;
-using UnityEditor.SceneManagement;
+
 
 public class StoryCharacter : MonoBehaviour
 {
