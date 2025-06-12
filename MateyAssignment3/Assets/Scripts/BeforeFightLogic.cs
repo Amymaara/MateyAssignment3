@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class BeforeFightLogic : MonoBehaviour
 {
     public SceneChanger SceneChanger;
     public TextAsset beforeFight;

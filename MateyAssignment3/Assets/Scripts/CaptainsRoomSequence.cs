@@ -29,7 +29,8 @@ public class CaptainsRoomSequence : MonoBehaviour
     [Header("Tool tips")]
     public GameObject ObjectToolTip;
     public GameObject MapToolTip;
-    
+    public GameObject AffectionToolTip;
+
 
 
     private void Start()
@@ -42,6 +43,7 @@ public class CaptainsRoomSequence : MonoBehaviour
         RemoveTrigger(File); //make book non clickable
         ObjectToolTip.SetActive(false);
         MapToolTip.SetActive(false);
+        AffectionToolTip.SetActive(false);
         MapButton.SetActive(false);
         Map.SetActive(false);
 
@@ -96,7 +98,10 @@ public class CaptainsRoomSequence : MonoBehaviour
     }
 
     
-    
+    public void MapToolTipClose()
+    {
+        AffectionToolTip.SetActive(true);
+    }
     
     
     

@@ -23,6 +23,7 @@ public class DayTransitionLogic : MonoBehaviour
     public GameObject canvas;
     public SceneChanger sceneChanger;
 
+
     private void Start()
     {
         

@@ -19,10 +19,14 @@ public class DreamLogic : MonoBehaviour
 
     public SceneChanger SceneChanger;
 
+    public GameObject toolTip;
+
     private void Start()
     {
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
-        SceneChanger.OnSceneStart();
+        toolTip.SetActive(false);
+
+        //SceneChanger.OnSceneStart();
     }
 
     private void AfterStoryEnds(string finishedStory)
@@ -91,11 +95,16 @@ VAR Ravynn_Affection = 0
         OnNameConfirm();
         int pronoun = PronounPanel.GetComponentInChildren<TMP_Dropdown>().value;
         PronounChoice(pronoun);
+        toolTip.SetActive(true);
+        
+    }
+
+    public void OnToolTipClose()
+    {
         StoryManager.Instance.StartStory(Dream, "Dream");
         StoryManager.Instance.SetVarState("Pearl_Affection", 0);
         StoryManager.Instance.SetVarState("Shad_Affection", 0);
         StoryManager.Instance.SetVarState("Rory_Affection", 0);
         StoryManager.Instance.SetVarState("Ravynn_Affection", 0);
     }
-
 }
