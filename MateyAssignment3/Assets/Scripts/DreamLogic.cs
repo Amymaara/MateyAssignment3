@@ -19,7 +19,15 @@ public class DreamLogic : MonoBehaviour
 
     public SceneChanger SceneChanger;
 
+
+    [Header("Pop Ups")]
+    public GameObject popupPanel;
+    public GameObject[] popupImages;
+    private int currentImageIndex = 0;
+    private int dialogueClicks = 0;
     public GameObject toolTip;
+    public Sprite[] lightingTransitionSprites;
+    public float frameDuration = 0.05f; // Duration of each lighting frame
 
     private void Start()
     {
@@ -37,6 +45,46 @@ public class DreamLogic : MonoBehaviour
             Debug.Log("dream finished");
             StoryManager.Instance.OnStoryEnd -= AfterStoryEnds; //stop listening for stories that have ended
             SceneChanger.LoadNextScene("CaptainsRoom");
+        }
+    }
+
+    public void ShowNextPopupImage()
+    {
+        if (popupImages == null || popupImages.Length == 0) return;
+
+
+        dialogueClicks++;
+        Debug.Log("clicks =" + dialogueClicks);
+
+        if (dialogueClicks == 1 || dialogueClicks == 5 || dialogueClicks == 9 || dialogueClicks == 22 || dialogueClicks == 24 || dialogueClicks == 33 || dialogueClicks == 40)
+        {
+            popupImages[currentImageIndex].SetActive(false);
+            // Move to next
+            currentImageIndex++;
+            popupImages[currentImageIndex].SetActive(true);
+            Debug.Log("new image");
+        }
+
+
+    }
+
+    public void onskip()
+    {
+        if (dialogueClicks < 20)
+        {
+            dialogueClicks = 12;
+            currentImageIndex = 3;
+            ShowNextPopupImage();
+        }
+        else if (dialogueClicks < 33)
+        {
+            dialogueClicks = 25;
+            currentImageIndex = 5;
+            ShowNextPopupImage();
+        }
+        else
+        {
+            return;
         }
     }
 

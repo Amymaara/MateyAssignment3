@@ -5,6 +5,7 @@ public class BeforeFightLogic : MonoBehaviour
     public SceneChanger SceneChanger;
     public TextAsset beforeFight;
     public string nextScene;
+    
 
     private void Start()
     {

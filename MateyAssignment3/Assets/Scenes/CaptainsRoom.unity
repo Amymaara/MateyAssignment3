@@ -1385,41 +1385,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
   m_PrefabInstance: {fileID: 5591642762339263991}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &657893698 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1921615436661302046, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
-  m_PrefabInstance: {fileID: 5591642762339263991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &657893699 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3780195285145946228, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
-  m_PrefabInstance: {fileID: 5591642762339263991}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657893698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &657893701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657893698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44c7b48f0fab84441a0b135f2b56a3bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Stu
-  characterImage: {fileID: 657893699}
-  affectionGainParticles: {fileID: 0}
-  affectionLossParticles: {fileID: 0}
-  sprites:
-  - {fileID: -8316959013221050159, guid: 7da32c0a36bd04040aacbf81dcc62da0, type: 3}
-  - {fileID: 4472951075969095266, guid: 729390c39cfb4a7488697f81ae8cfd42, type: 3}
 --- !u!1 &683514677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,11 +4906,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 863
+      value: 828
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1023
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4977,11 +4942,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 692
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -385
+      value: -27.999998
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4998,10 +4963,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1921615436661302046, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 657893701}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
 --- !u!1001 &5753628062293916336
 PrefabInstance:
