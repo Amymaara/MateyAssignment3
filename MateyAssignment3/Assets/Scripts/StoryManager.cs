@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static GameStateManager;
+using static UnityEditor.Progress;
 
 
 
@@ -39,6 +40,7 @@ public class StoryManager : MonoBehaviour
     public float typeSpeed;
     private Coroutine displayLineCouroutine;
     private bool cv;
+
 
     [Header("Character Handling")]
     public float BigWidth = 1.4f;
@@ -167,8 +169,8 @@ public class StoryManager : MonoBehaviour
             cv = false;
             storyID = null;
         }
-           
 
+       
 
         variablesInDialogue.StartListening(runningStory);
         dialoguePanel.SetActive(true);
@@ -182,8 +184,9 @@ public class StoryManager : MonoBehaviour
     {
         runningStory = new Story(inkJSON.text);
         storyID = storyName;
+        
+
         cv = false;
-      
         variablesInDialogue.StartListening(runningStory);
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);

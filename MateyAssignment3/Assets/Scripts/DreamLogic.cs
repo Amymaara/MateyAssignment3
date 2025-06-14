@@ -19,6 +19,11 @@ public class DreamLogic : MonoBehaviour
 
     public SceneChanger SceneChanger;
 
+
+    [Header("Pop Ups")]
+    public GameObject popupPanel;
+    public GameObject[] popupImages;
+    private int currentImageIndex = 0;
     public GameObject toolTip;
 
     private void Start()
@@ -39,6 +44,22 @@ public class DreamLogic : MonoBehaviour
             SceneChanger.LoadNextScene("CaptainsRoom");
         }
     }
+
+    public void ShowNextPopupImage()
+    {
+        if (popupImages == null || popupImages.Length == 0) return;
+
+        // Disable all
+        foreach (var img in popupImages)
+            img.SetActive(false);
+
+        // Enable current
+        popupImages[currentImageIndex].SetActive(true);
+
+        // Move to next
+        currentImageIndex++;
+    }
+
 
     // UIInputField function that gets the string that the player has typed in and confirmed
     public void ReadName(string x)
