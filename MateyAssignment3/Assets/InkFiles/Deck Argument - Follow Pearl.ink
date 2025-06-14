@@ -321,6 +321,12 @@ She gives me a coy wink, and I feel the air in my throat hitch.
 #Speaker:{Name}
 "...Looking forward to it."
 
+#Speaker:{Name}
+Wanting to stretch this moment even longer, my eyes dart around her rom.
+
+#Speaker:{Name}
+(Oh, that's new. Let's ask about it.)
+
 -> END
 
 === pearl_exit_disinterested ===
@@ -345,5 +351,11 @@ She gives me a coy wink, and I feel the air in my throat hitch.
 
 #Speaker:{Name}
 She picks up a glass bead and goes to string it. The silence returns but this time it's quiet, not heavy.
+
+#Speaker:{Name}
+Trying to lighten the mood I notice she displayed new items.
+
+#Speaker:{Name}
+(Let's see if she'll talk about them.)
 
 -> END

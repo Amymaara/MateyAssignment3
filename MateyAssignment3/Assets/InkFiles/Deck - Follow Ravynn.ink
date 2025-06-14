@@ -304,6 +304,11 @@ I'm not sure if it's the sun or her words that are burning me up. She smirks and
 #Speaker:{Name}
 I'm not one for asking fate for help, but I pray we win this battle.
 
+#Speaker:{Name}
+Looking for an excuse to stay longer, my eyes linger on new items she's acquired
+
+#Speaker:{Name}
+(Let's try asking about them.)
 -> END
 
 === ravynn_exit_disinterested ===
@@ -333,6 +338,13 @@ I'm not one for asking fate for help, but I pray we win this battle.
 
 #Speaker:{Name}
 She goes back to her ledger. She doesn't stop me as I leave.
+
+#Speaker:{Name}
+As I leave I notice she has new items out.
+
+#Speaker:{Name}
+(Let's ask about them.)
+
 
 -> END
  
