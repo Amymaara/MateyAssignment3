@@ -19,9 +19,13 @@ public class StoryItem : MonoBehaviour
     private int clickCounter = 0;
 
     [Header("Pop Ups")]
-    public GameObject popupPanel;
-    public GameObject[] popupImages; 
+    public GameObject popupPanel; //panel holding all key frames
+    public GameObject[] popupImages; // key frames
     private int currentImageIndex = 0;
+    
+    public Image characterImage;
+    public Sprite[] lightingTransitionSprites; 
+    public float frameDuration = 0.05f; // Duration of each lighting frame
 
 
     private void Start()
@@ -33,6 +37,9 @@ public class StoryItem : MonoBehaviour
             Image temp = itemImage.GetComponent<Image>();
             temp.material = defaultMaterial;
         }
+        foreach (var img in popupImages)
+            img.SetActive(false);
+       
     }
 
     public void OnItemClick()
@@ -109,6 +116,8 @@ public class StoryItem : MonoBehaviour
         rt.DOScale(Vector3.one, 0.2f)
           .SetEase(Ease.InOutSine);
     }
+
+   
 
    
 
