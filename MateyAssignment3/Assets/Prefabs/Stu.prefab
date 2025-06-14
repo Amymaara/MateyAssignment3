@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8649470345883301784}
   - component: {fileID: 2943553849974578935}
   - component: {fileID: 3780195285145946228}
+  - component: {fileID: 8557608201294873146}
   m_Layer: 5
   m_Name: Stu
   m_TagString: Untagged
@@ -34,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 696, y: -385}
-  m_SizeDelta: {x: 863, y: 1023}
+  m_AnchoredPosition: {x: 414, y: -28}
+  m_SizeDelta: {x: 828, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2943553849974578935
 CanvasRenderer:
@@ -65,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8316959013221050159, guid: 7da32c0a36bd04040aacbf81dcc62da0, type: 3}
+  m_Sprite: {fileID: -6948298680974755865, guid: 8b8b7f7caf2d0dc46837d564f2d36d27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75,3 +76,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8557608201294873146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921615436661302046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d28d830c3c26444b35a03c1768c2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Stu
+  characterImage: {fileID: 3780195285145946228}
+  affectionGainParticles: {fileID: 0}
+  affectionLossParticles: {fileID: 0}
+  sprites:
+  - {fileID: -6948298680974755865, guid: 8b8b7f7caf2d0dc46837d564f2d36d27, type: 3}
+  - {fileID: 4719656446326347438, guid: 6c20f49d663da6e498d50972ccb8a0f7, type: 3}

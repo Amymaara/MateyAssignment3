@@ -24,8 +24,7 @@ public class StoryItem : MonoBehaviour
     private int currentImageIndex = 0;
     
     public Image characterImage;
-    public Sprite[] lightingTransitionSprites; 
-    public float frameDuration = 0.05f; // Duration of each lighting frame
+   
 
 
     private void Start()
