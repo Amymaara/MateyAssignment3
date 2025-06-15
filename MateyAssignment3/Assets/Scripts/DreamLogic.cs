@@ -70,17 +70,19 @@ public class DreamLogic : MonoBehaviour
 
     public void onskip()
     {
-        if (dialogueClicks < 20)
+        if (dialogueClicks < 12)
         {
-            dialogueClicks = 12;
+            dialogueClicks = 8;
             currentImageIndex = 3;
             ShowNextPopupImage();
+            dialogueClicks = 12;
         }
         else if (dialogueClicks < 33)
         {
-            dialogueClicks = 25;
-            currentImageIndex = 5;
+            dialogueClicks = 21;
+            currentImageIndex = 4;
             ShowNextPopupImage();
+            dialogueClicks = 25;
         }
         else
         {
