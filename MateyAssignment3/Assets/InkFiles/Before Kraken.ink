@@ -114,6 +114,9 @@ I step forward, heart hammering, palms sweating.
 "All hands on deck! Let’s show the Kraken what we’re made of!"
 
 #Speaker:{Name}
+I draw my blade and brace for what's to come. The crew readies themselves as well.
+
+#Speaker:{Name}
 The ship shakes as a roar echoes from below.
 
 #Speaker:{Name}
