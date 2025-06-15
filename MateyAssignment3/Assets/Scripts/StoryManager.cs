@@ -639,7 +639,8 @@ get varstate(nameofvariable)
         
         if (newVal == oldVal)
         {
-            //Debug.Log($"{characterName} affection stayed the same");
+            // idk
+
         }
         else
         {
@@ -710,6 +711,11 @@ get varstate(nameofvariable)
         //dialoguePanel.SetActive(false);
         continueButton.gameObject.SetActive(false);
         variablesInDialogue.SaveVariables();
+
+        //CheckAffectionChange();
+
+
+
         foreach (Transform child in charactersInScene.transform)
         {
             if (child.gameObject.name != "Stu")
@@ -812,8 +818,10 @@ get varstate(nameofvariable)
 
     private IEnumerator SkipToNextChoice()
     {
+        GetCurrentAffection();
         isSkipping = true;
         continueButton.gameObject.SetActive(false);
+        
 
         // Stop typewriter effect mid-line, if needed
         //isTyping = false;
@@ -827,13 +835,15 @@ get varstate(nameofvariable)
 
         if (runningStory.currentChoices.Count > 0)
         {
+            CheckAffectionChange();
             ShowChoices();
         }
         else if (!runningStory.canContinue)
         {
+            CheckAffectionChange();
             EndStory();
         }
-
+        
         isSkipping = false;
         continueButton.gameObject.SetActive(true);
     }
