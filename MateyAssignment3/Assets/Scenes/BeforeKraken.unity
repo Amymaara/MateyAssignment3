@@ -2406,7 +2406,7 @@ MonoBehaviour:
   nextScene: 
   screenFader: {fileID: 1085768394}
   blackScreen: {fileID: 1085768393}
-  fadeDuration: 1
+  fadeDuration: 1.5
 --- !u!4 &1872124697
 Transform:
   m_ObjectHideFlags: 0
