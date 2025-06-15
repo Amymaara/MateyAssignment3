@@ -95,7 +95,7 @@ public class MapButton : MonoBehaviour
             else
             {
 
-                SceneManager.LoadScene(roomSceneName);
+                sceneChanger.LoadNextScene(roomSceneName);
             }
         }
         else if (finishedStory == "Day1Script")
@@ -127,7 +127,7 @@ public class MapButton : MonoBehaviour
             else
             {
                 Debug.Log("Not all rooms visited yet. Loading " + roomSceneName);
-                SceneManager.LoadScene(roomSceneName);
+                sceneChanger.LoadNextScene(roomSceneName);
             }
 
         }

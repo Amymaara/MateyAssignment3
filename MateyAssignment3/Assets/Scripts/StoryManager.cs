@@ -530,11 +530,19 @@ public class StoryManager : MonoBehaviour
 
                 if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
                 {
-                    item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    if (imageName != "Stu")
+                    {
+                        item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    }
+                    
                 }
                 else
                 {
-                    item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    if (imageName != "Stu")
+                    {
+                        item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    }
+                        
                 }
             }
         }

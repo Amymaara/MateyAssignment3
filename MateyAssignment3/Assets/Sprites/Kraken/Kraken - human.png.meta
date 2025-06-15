@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ecb6496099b3b0542a8eab0c3d5c4f89
+guid: 8ff37c41a840c4141a3bb5177c6e0c79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2485513379951069522
-    second: Kraken - neutral_0
+      213: 7075686923373092260
+    second: Kraken - human_0
+  - first:
+      213: -8865095826670462606
+    second: Kraken - human_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,32 +100,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kraken - neutral_0
+      name: Kraken - human_0
       rect:
         serializedVersion: 2
-        x: 414
-        y: 78
-        width: 1223
-        height: 929
+        x: 294
+        y: 12
+        width: 509
+        height: 1060
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 259c67010415e7220800000000000000
-      internalID: 2485513379951069522
+      spriteID: 4ad9789a4c3e13260800000000000000
+      internalID: 7075686923373092260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraken - human_1
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 11
+        width: 509
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279528f905ad8f480800000000000000
+      internalID: -8865095826670462606
       vertices: []
       indices: 
       edges: []
@@ -174,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kraken - neutral_0: 2485513379951069522
+      Kraken - human_0: 7075686923373092260
+      Kraken - human_1: -8865095826670462606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
