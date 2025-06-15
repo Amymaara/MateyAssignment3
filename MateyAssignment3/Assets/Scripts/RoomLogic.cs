@@ -35,6 +35,7 @@ public class RoomLogic : MonoBehaviour
         
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
         items = new GameObject[] { item1, item2, item3, item4, item5 };
+        Stu.SetActive(false);
 
         if (GameStateManager.CurrentState == gameState.Day0)
         {
