@@ -118,7 +118,7 @@ You need support. Who do you ask?
 * { helpUsedShad == false } [Shad] -> help_shad
 * { helpUsedRory == false } [Master Porthole] -> help_rory
 * { helpUsedRavynn == false } [Ravynn] -> help_ravynn
-* [Nevermind] -> player_turn
++ [Nevermind] -> player_turn
 
 === help_pearl ===
 
@@ -246,97 +246,97 @@ Ravynn glances at you unimpressed.
 === popup_1 ===
 Are you sure you want to gift?
 
-* [Yes]
++ [Yes]
     -> popup_2
-* [No]
++ [No]
     -> player_turn
 
 === popup_2 ===
 Really sure?
 
-* [Yes]
++ [Yes]
     -> popup_3
-* [No]
++ [No]
     -> player_turn
 
 === popup_3 ===
 This isn’t something you can undo.
 
-* [Yes]
++ [Yes]
     -> popup_4
-* [No]
++ [No]
     -> player_turn
 
 === popup_4 ===
 You realise what this means, right?
 
-* [Yes]
++ [Yes]
     -> popup_5
-* [No]
++ [No]
     -> player_turn
 
 === popup_5 ===
 The crew... they trust you.
 
-* [Yes]
++ [Yes]
     -> popup_6
-* [No]
++ [No]
     -> player_turn
 
 === popup_6 ===
 You’re not just doing this to feel important, are you?
 
-* [Yes]
++ [Yes]
     -> popup_7
-* [No]
++ [No]
     -> player_turn
 
 === popup_7 ===
 No take-backs. No retries. No “Oops.”
 
-* [Yes]
++ [Yes]
     -> popup_8
-* [No]
++ [No]
     -> player_turn
 
 === popup_8 ===
 They're watching you.
 
-* [Yes]
++ [Yes]
     -> popup_9
-* [No]
++ [No]
     -> player_turn
 
 === popup_9 ===
 Do you even know what the gift does?
 
-* [Yes]
++ [Yes]
     -> popup_10
-* [No]
++ [No]
     -> player_turn
 
 === popup_10 ===
 You're postitive it's still a yes?
 
-* [Yes]
++ [Yes]
     -> popup_11
-* [No]
++ [No]
     -> player_turn
 
 === popup_11 ===
 You’re not a good person for doing this, you know.
 
-* [Yes]
++ [Yes]
     -> popup_12
-* [No]
++ [No]
     -> player_turn
 
 === popup_12 ===
 Okay. But don’t cry later.
 
-* [Yes]
++ [Yes]
     -> gift
-* [No]
++ [No]
     -> player_turn
 === gift ===
 #speaker:{Name}
