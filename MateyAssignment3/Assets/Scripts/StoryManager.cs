@@ -258,7 +258,7 @@ public class StoryManager : MonoBehaviour
             HandleTags(runningStory.currentTags);
 
 
-            if (speakerName != null && Pose != null && Expression != null)
+            if (speakerName != null && Pose != null )
             {
                 SpriteChange(speakerName, Pose, Expression);
             }
@@ -317,6 +317,11 @@ public class StoryManager : MonoBehaviour
     */
     private void SpriteChange(string speaker, string poseStr, string expStr)
     {
+        if (string.IsNullOrEmpty(expStr))
+        {
+            expStr = "Neutral"; // or any default
+        }
+
         if (string.IsNullOrEmpty(speaker) || string.IsNullOrEmpty(poseStr) || string.IsNullOrEmpty(expStr))
         {
             Debug.LogWarning("SpriteChange called with null or empty values.");
@@ -328,16 +333,44 @@ public class StoryManager : MonoBehaviour
             
             return;
         }
+        switch (speaker.ToLower())
+        {
+            case "stu":
+                if (character is StuCharacter stu &&
+                    Enum.TryParse(poseStr, true, out StuCharacter.StuPose stuPose) &&
+                    Enum.TryParse(expStr, true, out StoryCharacter.Expression stuExp))
+                {
+                    stu.SetSprite(stuPose, stuExp);
+                }
+                break;
 
-        if (System.Enum.TryParse(poseStr, true, out StoryCharacter.Pose pose) &&
-            System.Enum.TryParse(expStr, true, out StoryCharacter.Expression expression))
-        {
-            character.SetSprite(pose, expression);
+            case "pearl":
+                if (character is PearlCharacter pearl &&
+                    Enum.TryParse(poseStr, true, out PearlCharacter.PearlPose pearlPose) &&
+                    Enum.TryParse(expStr, true, out StoryCharacter.Expression pearlExp))
+                {
+                    pearl.SetSprite(pearlPose, pearlExp);
+                }
+                break;
+
+            case "kraken":
+                if (character is KrakenCharacter kraken &&
+                    Enum.TryParse(poseStr, true, out KrakenCharacter.KrakenPose krakenPose) &&
+                    Enum.TryParse(expStr, true, out KrakenCharacter.KrakenExpression krakenExp))
+                {
+                    kraken.SetSprite(krakenPose, krakenExp);
+                }
+                break;
+
+            default:
+                if (Enum.TryParse(poseStr, true, out StoryCharacter.Pose pose) &&
+                    Enum.TryParse(expStr, true, out StoryCharacter.Expression exp))
+                {
+                    character.SetSprite(pose, exp);
+                }
+                break;
         }
-        else
-        {
-            Debug.LogWarning($"Failed to parse pose or expression: Pose='{poseStr}', Expression='{expStr}'");
-        }
+
     }
 
 
@@ -671,7 +704,11 @@ get varstate(nameofvariable)
         variablesInDialogue.SaveVariables();
         foreach (Transform child in charactersInScene.transform)
         {
-            child.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+            if (child.gameObject.name != "Stu")
+            {
+                child.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+            }
+                
         }
         
         if (RoomObject != null)
@@ -679,7 +716,7 @@ get varstate(nameofvariable)
             RoomObject.addTrigger();
             RoomObject.itemImage.transform.localScale = new Vector3(1, 1, 1);
             if (RoomObject.popupPanel != null)
-            {
+            {   
                 var panelAnimation = RoomObject.popupPanel.GetComponent<UIPanelAnimation>();
                 if (panelAnimation != null)
                 {
