@@ -20,3 +20,6 @@ VAR rory_exit_type = ""
 VAR shad_exit_type = ""
 VAR pearl_exit_type = ""
 VAR ravynn_exit_type = ""
+
+// rory name reveal
+VAR roryTrueName = false
