@@ -1,10 +1,11 @@
-using UnityEngine;
-using UnityEngine.Video;
-using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
-using static GameStateManager;
+using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Video;
+using static GameStateManager;
 
 /*
 Title: DayTransitionLogic Unity Script Example
@@ -18,10 +19,12 @@ public class DayTransitionLogic : MonoBehaviour
 {
     public GameObject DayTransition;
     
-    public VideoPlayer videoPlayer; // Assign in Inspector
-    public Image blackScreenImage;  // Fullscreen black UI image
+    public VideoPlayer videoPlayer; 
+    public Image blackScreenImage;  
     public GameObject canvas;
     public SceneChanger sceneChanger;
+    public TextMeshProUGUI dayText; 
+    public float letterDelay = 0.05f; // Delay between letters
 
 
     private void Start()
@@ -30,8 +33,9 @@ public class DayTransitionLogic : MonoBehaviour
         DayTransition.SetActive(true);
        
         StartCoroutine(PlayDayTransition());
-        
-        
+        StartCoroutine(ShowTypedDayTextAfterDelay(3f)); 
+
+
     }
 
     private IEnumerator PlayDayTransition()
@@ -61,5 +65,30 @@ public class DayTransitionLogic : MonoBehaviour
         canvas.SetActive(false);
 
         
+    }
+
+    private IEnumerator ShowTypedDayTextAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        int day = GameStateManager.DayCount;
+        string fullText = $"Day {day}";
+        dayText.text = "";
+
+        
+        dayText.alpha = 0;
+        dayText.DOFade(1f, 1f);
+
+        
+        foreach (char c in fullText)
+        {
+            dayText.text += c;
+            yield return new WaitForSeconds(letterDelay);
+        }
+
+        yield return new WaitForSeconds(1f); //stayvisible
+
+        // Fade out 
+        dayText.DOFade(0f, 1f);
     }
 }
