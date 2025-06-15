@@ -260,7 +260,15 @@ public class StoryManager : MonoBehaviour
 
             if (speakerName != null && Pose != null )
             {
-                SpriteChange(speakerName, Pose, Expression);
+                if (speakerName.ToLower() == "master porthole")
+                {
+                    SpriteChange("Rory", Pose, Expression);
+                }
+                else
+                {
+                    SpriteChange(speakerName, Pose, Expression);
+                }
+                    
             }
         }
 
