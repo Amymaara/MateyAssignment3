@@ -1476,11 +1476,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 543184546212435920, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 941
+      value: 1086
       objectReference: {fileID: 0}
     - target: {fileID: 543184546212435920, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 346
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1201867431304426652, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Pivot.x
@@ -1573,7 +1573,7 @@ PrefabInstance:
     - target: {fileID: 6367897589946669586, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 9217498575569213311, guid: 5bad5b54ce5c08b48bc82f5235c19452, type: 3}
+      objectReference: {fileID: -6186389573439810449, guid: b089a1e10dbe2fd4b8e46b40335243a5, type: 3}
     - target: {fileID: 7502949053543376733, guid: 55711ea641980e447be4befc68bd3583, type: 3}
       propertyPath: m_Name
       value: GlassesHD
@@ -3297,14 +3297,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -980475979106996294, guid: 49f94cf34520a3c429ed2cc7dd11bd09, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

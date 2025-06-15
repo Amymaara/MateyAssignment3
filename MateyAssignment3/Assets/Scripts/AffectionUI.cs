@@ -26,13 +26,14 @@ public class AffectionUI : MonoBehaviour
                 {
                     meter.heartImage.sprite = heartSprites[0];
                 }
-                else if(affectionAmount > 50)
+                else if(affectionAmount > 100)
                 {
-                    meter.heartImage.sprite = heartSprites[11]; // if affection higher than 50, show filled hearts
+                    meter.heartImage.sprite = heartSprites[11]; // if affection higher than 100, show filled hearts
                 }
                 else
                 {
-                    meter.heartImage.sprite = heartSprites[affectionAmount / 5];
+                    int index = Mathf.Clamp(affectionAmount / 10, 0, heartSprites.Length - 1);
+                    meter.heartImage.sprite = heartSprites[index];
                 }
             }
         }
