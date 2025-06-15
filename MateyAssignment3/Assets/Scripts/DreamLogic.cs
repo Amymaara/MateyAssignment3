@@ -79,7 +79,9 @@ public class DreamLogic : MonoBehaviour
         }
         else if (dialogueClicks < 33)
         {
-            dialogueClicks = 23;
+
+            dialogueClicks = 21;
+
             currentImageIndex = 4;
             ShowNextPopupImage();
             dialogueClicks = 25;

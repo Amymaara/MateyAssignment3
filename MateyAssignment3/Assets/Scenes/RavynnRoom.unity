@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stu
       objectReference: {fileID: 0}
+    - target: {fileID: 1921615436661302046, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -219,6 +223,11 @@ PrefabInstance:
 --- !u!224 &112800066 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
+  m_PrefabInstance: {fileID: 112800065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &112800067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1921615436661302046, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
   m_PrefabInstance: {fileID: 112800065}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &167121735
@@ -1736,7 +1745,7 @@ MonoBehaviour:
   Day2PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   Blackscreen: {fileID: 1800026782}
   MainCharcater: {fileID: 1382177576}
-  Stu: {fileID: 0}
+  Stu: {fileID: 112800067}
   Map: {fileID: 1502815320}
   item1: {fileID: 798498330}
   item2: {fileID: 658815765}
