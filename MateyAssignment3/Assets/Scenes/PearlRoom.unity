@@ -442,6 +442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stu
       objectReference: {fileID: 0}
+    - target: {fileID: 1921615436661302046, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -504,11 +508,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 414
+      value: -502
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -28
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -530,6 +534,11 @@ PrefabInstance:
 --- !u!224 &270842129 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8649470345883301784, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
+  m_PrefabInstance: {fileID: 270842128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &270842130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1921615436661302046, guid: 3792c4566ad51614f858078b90269bbb, type: 3}
   m_PrefabInstance: {fileID: 270842128}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &282595846
@@ -3100,7 +3109,7 @@ MonoBehaviour:
   Day2PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   Blackscreen: {fileID: 1934807239}
   MainCharcater: {fileID: 1585172653}
-  Stu: {fileID: 0}
+  Stu: {fileID: 270842130}
   Map: {fileID: 1462825485}
   item1: {fileID: 1823340061}
   item2: {fileID: 547799175}

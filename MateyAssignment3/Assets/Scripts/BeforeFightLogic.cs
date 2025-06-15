@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Video;
 
 public class BeforeFightLogic : MonoBehaviour
 {
     public SceneChanger SceneChanger;
     public TextAsset beforeFight;
+    public VideoPlayer videoPlayer;
     public string nextScene;
     
 
@@ -11,9 +13,19 @@ public class BeforeFightLogic : MonoBehaviour
     {
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
         SceneChanger.OnSceneStart();
-        StoryManager.Instance.StartStory(beforeFight, "beforeFight");
+        videoPlayer.loopPointReached += OnVideoFinished;
+        
+    }
+    private void OnVideoFinished(VideoPlayer vp)
+    {
+        Debug.Log("Video finished!");
+        StartDialogue();
     }
 
+    private void StartDialogue()
+    {
+        StoryManager.Instance.StartStory(beforeFight, "beforeFight");
+    }
     private void AfterStoryEnds(string finishedStory)
     {
         if (finishedStory == "beforeFight")
