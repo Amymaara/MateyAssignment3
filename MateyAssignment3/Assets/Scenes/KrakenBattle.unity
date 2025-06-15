@@ -1888,6 +1888,10 @@ PrefabInstance:
       value: OnContinueButton
       objectReference: {fileID: 0}
     - target: {fileID: 1699260426845770650, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
+      propertyPath: m_Spacing.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699260426845770650, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_Constraint
       value: 1
       objectReference: {fileID: 0}
