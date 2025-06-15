@@ -14,12 +14,14 @@ Crashing, shouting, something sizzling?
 But definitely something screaming.
 
 #Speaker:Stu
+#pose:Pose1
 "Squaaak - either the Galley's on fire or Shad's trying to make another sentient baked good."
 
 #Speaker:{Name}
 I groan and sit up. It's too early for explosions.
 
 #Speaker:Stu
+#pose:Pose2
 "You gonna stop it or let the ship burn down the day after you met your crew?"
 
 #Speaker:{Name}

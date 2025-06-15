@@ -14,6 +14,7 @@ Another tentacle slams down, cracking the deck where I stand.
 My ship? Groaning as if it's giving me an apology for what's to come.
 
 #Speaker:Stu
+#pose:Pose2
 "Squaaak - Cap'n {Name}! MOVE!"
 
 #Speaker:{Name}

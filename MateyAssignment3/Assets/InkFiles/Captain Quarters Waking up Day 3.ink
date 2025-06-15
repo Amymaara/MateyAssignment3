@@ -11,6 +11,7 @@ I blink awake to the sound of... shouting?
 Not the happy, chaotic kind like Shad yelling about overcooked eggs. 
 
 #speaker:Stu
+#pose:Pose1
  "Squaaak, and they said pirates don’t have morning routines..."
 
 #speaker:{Name}
@@ -20,12 +21,14 @@ He lands on the edge of my bed frame, giving smirking like he's enjoying this, b
 "Ughhh, who is it today?"
 
 #speaker:Stu
+#pose:Pose2
 "By the sounds of it your two favourite ladies. I think I heard something about singing and possibly peril?"
 
 #speaker:{Name}
 "Wonderful. Just the vibe I was hoping for today, death threats and musicals."
 
 #speaker:Stu
+#pose:Pose1
 "You gonna step in? Or let them hash it out like mature adults with weapon access?"
 
 #speaker:{Name}
@@ -35,6 +38,7 @@ He lands on the edge of my bed frame, giving smirking like he's enjoying this, b
 The shouting rises in volume, I only manage to hear a few select words like "volume control" and "requested encores", but it's enough to let me know coffee ain't in my cards today.
 
 #speaker:Stu
+#pose:Pose2
 "Squawk — better hurry, Cap’n {Name}. At this rate, one of them’s gonna end up in the ocean."
 
 #speaker:{Name}

@@ -25,32 +25,24 @@ Inside are scribbles, rewritten dialogues, weirdly detailed monster anatomy diag
 "This wouldn’t happen to belong to a certain bestselling author named R. Seaduction, would it?"
 
 #Speaker:Ravynn
-#pose:
-#expression:
 "PUT THAT DOWN."
 
 #Speaker:{Name}
 "So it is yours."
 
 #Speaker:Ravynn
-#pose:
-#expression:
 "It’s ehm...research."
 
 #Speaker:{Name}
 "Uh-huh. I bet this ‘Diedrich the Pack's Alpha’ is deeply symbolic."
 
 #Speaker:Ravynn
-#pose:
-#expression:
 "He’s a tortured soul...you wouldn’t understand."
 
 #Speaker:{Name}
 "I might, if you read it aloud - for tone of course, possibly over dinner."
 
 #Speaker:Ravynn
-#pose:
-#expression:
 "...Don’t test me, I have steamy excerpts and zero shame."
 
 -> END
@@ -67,8 +59,6 @@ I raise a brow and glance at her.
 "Bit weird, even for you."
 
 #Speaker:Ravynn
-#pose:
-#expression:
 "It’s personal."
 
 #Speaker:{Name}
@@ -78,8 +68,6 @@ I flip the cover anyway - diagrams, scene breakdowns, what looks like fanart in 
 "You write... this?"
 
 #Speaker:Ravynn
-#pose:
-#expression:
 "I write stories. What I do with them is none of your business."
 
 #Speaker:{Name}

@@ -11,12 +11,14 @@ INCLUDE Globals.ink
 #music_Medieval-star-188280
 
 #speaker:Stu
+#pose:Pose1
 "Squaaak — what in the seven seas just happened?"
 
 #speaker:{Name}
 "I think I broke her… by flirting."
 
 #speaker:Stu
+#pose:Pose2
 "Remind me to keep you away from the emotional ones, you heartthrob."
 
 #speaker:{Name}
@@ -31,6 +33,7 @@ We stare at the door for a second, then decide to keep walking away, fast.
 #music_Medieval-star-188280
 
 #speaker:Stu
+#pose:Pose2
 "She seems a bit frazzled, Captain {Name}. Let’s give her some space to, uh… organise her socks?"
 
 #speaker:{Name}

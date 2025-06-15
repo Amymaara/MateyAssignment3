@@ -23,8 +23,6 @@ The water inside isn’t still — it swirls like it has somewhere to be. Somehw
 "You carry the sea around with you?"
 
 #Speaker:Pearl
-#pose:
-#expression:
 "Mmh. From back home. I like to take a sniff when I miss it. Not glamorous, I know."
 
 #Speaker:{Name}
@@ -34,8 +32,6 @@ The water inside isn’t still — it swirls like it has somewhere to be. Somehw
 "Plus that jar sure is dressed to impress, reminds me of a pretty sea enthusiast."
 
 #Speaker:Pearl
-#pose:
-#expression:
 "You’re flirting with a water jar, Captain {Name}."
 
 #Speaker:{Name}
@@ -45,8 +41,6 @@ The water inside isn’t still — it swirls like it has somewhere to be. Somehw
 She touches the netting gently, eyes distant.
 
 #Speaker:Pearl
-#pose:
-#expression:
 "Careful. If you keep saying things like that, I might start needing you too."
 
 -> END
@@ -59,24 +53,18 @@ A  jar sits by the edge of her shelf. There’s a cork stuck in it and some wate
 "What's that? Some sea potion or something?"
 
 #Speaker:Pearl
-#pose:
-#expression:
 "...It’s just seawater. From home."
 
 #Speaker:{Name}
 "You kept seawater? Couldn’t you just, like, scoop some up every morning?"
 
 #Speaker:Pearl
-#pose:
-#expression:
 "It’s not the same. That place doesn’t exist anymore... not for me."
 
 #Speaker:{Name}
 I look at the jar again. The water swirls on, undisturbed by my clumsy words.
 
 #Speaker:Pearl
-#pose:
-#expression:
 "I bring it everywhere. It’s silly, but it keeps me grounded."
 
 #Speaker:{Name}

@@ -14,18 +14,21 @@ INCLUDE Globals.ink
 I exit her room, and Stu flutters down to land on my shoulder, beak tilted like he knows exactly what I’ve done.
 
 #speaker:Stu
+#pose:Pose1
 "Squaaak — someone’s got a type."
 
 #speaker:{Name}
 "Shut up."
 
 #speaker:Stu
+#pose:Pose2
 "Sparkly, sings to fish, blushes when you flirt — it’s practically a siren’s résumé."
 
 #speaker:{Name}
 "She’s got a good heart. Even if it’s wrapped in emotional support glitter."
 
 #speaker:Stu
+#pose:Pose1
 "Well, at least she hasn’t tried to hex you yet. This is already going better than your last endeavours."
 
 #speaker:{Name}
@@ -43,18 +46,21 @@ I walk away. The ocean keeps moving — and so do we.
 Stu lands beside me. His talons clink softly on the railing.
 
 #speaker:Stu
+#pose:Pose2
 "Squaaak — that sure went well."
 
 #speaker:{Name}
 "I wasn’t in the mood for whimsy tonight, especially not sea metaphors."
 
 #speaker:Stu
+#pose:Pose1
 "She’s not just metaphors, you know. That girl’s got more heart than half this crew put together."
 
 #speaker:{Name}
 "Yeah, well... that gets people killed."
 
 #speaker:Stu
+#pose:Pose2
 "So does being cold. Let’s hope yours doesn’t freeze over before we reach our destination."
 
 #speaker:{Name}

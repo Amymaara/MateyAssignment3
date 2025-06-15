@@ -5,6 +5,7 @@ INCLUDE Globals.ink
 #music_Celtic-moon-loop-1-284914
 
 #Speaker:Stu
+#pose:Pose2
 "Alright Cap'n {Name}. Let's size up the crew on paper here before you meet 'em.
 
 -> cv_pearl

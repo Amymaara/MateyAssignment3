@@ -15,9 +15,11 @@ INCLUDE Globals.ink
 I smirk and step out of the galley, leaving him to wonder what my actions meant.
 
 #speaker:{Name}
+#pose:Pose1
 Stu’s perched just outside the galley, poorly pretending not to have been eavesdropping.
 
 #speaker:Stu
+#pose:Pose2
 "Squaaak — someone’s turning up the heat in more ways than one."
 
 #speaker:{Name}
@@ -50,6 +52,7 @@ Stu is perched on the railing, waiting for me.
 He doesn’t say anything at first, just judges me with those birdy eyes.
 
 #speaker:Stu
+#pose:Pose2
 "Squaaak — that was… something."
 
 #speaker:{Name}
@@ -62,18 +65,22 @@ I lean against the railing, eyes roaming anywhere but the galley.
 "I’m not here to coddle feelings."
 
 #speaker:Stu
+#pose:Pose1
 "No, you’re a leader.  
 
 #speaker:Stu
+#pose:Pose1
 "But leading doesn’t mean leaving your crew bleeding on the inside."
 
 #speaker:{Name}
 The wind shifts. I instinctively rub my arms.
 
 #speaker:Stu
+#pose:Pose2
 "You don’t have to love the guy. But you looked him right in the eye and kicked down the only thing he’s ever opened up about."
 
 #speaker:Stu
+#pose:Pose1
 "That kind of bruise doesn’t show on the surface — but it lingers."
 
 #speaker:{Name}

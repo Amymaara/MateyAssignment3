@@ -15,12 +15,14 @@ INCLUDE Globals.ink
 I'm almost at the end of the corridor when a familiar feathered friend brushes past me.
 
 #Speaker:Stu
+#pose:Pose1
 "Squaaak - saw you vanish in Pearl's den of sparkles and sea trauma. Everything alright?"
 
 #Speaker:{Name}
 "More or less. Mentally? That's...still under review."
 
 #Speaker:Stu
+#pose:Pose2
 "She do the transformation thing? The sardine situation?"
 
 #Speaker:{Name}
@@ -33,18 +35,21 @@ He blinks back.
 "Yeah. She showed me, and told me."
 
 #Speaker:Stu
+#pose:Pose1
 "Bold move, braver than most people I know."
 
 #Speaker:{Name}
 "She's still beautiful. It doesn't change anything."
 
 #Speaker:Stu
+#pose:Pose2
 "Beautiful? Captain {Name}, she's halfway to being a cursed fish buffet. That takes a specific taste."
 
 #Speaker:{Name}
 "It's a taste I don't mind acquiring."
 
 #Speaker:Stu
+#pose:Pose1
 "Careful. One second you’re holding her fin, the next you’re attending aquatic couples therapy."
 
 #Speaker:{Name}
@@ -61,27 +66,32 @@ The feels peaceful tonight.
 Stu finds his way to me, as he always done. Only this time he has an even more pronounce look of displeasure.
 
 #Speaker:Stu
+#pose:Pose2
 "Squawk - Aren't you the anti-casanova."
 
 #Speaker:{Name}
 "She has gills and glitter, Stu. I needed a moment."
 
 #Speaker:Stu
+#pose:Pose1
 "Hey, no judgement. I once dated a mimic - unknowingly. Took me a month before I realised she wasn't actually a statue."
 
 #Speaker:{Name}
 "...What?"
 
 #Speaker:Stu
+#pose:Pose1
 "But she's been carrying that weight alone."
 
 #Speaker:Stu
+#pose:Pose2
 "Point is - she's still Pearl. Just with more scales and emotional trauma."
 
 #Speaker:{Name}
 "I just..I don't know how to deal with things like this."
 
 #Speaker:Stu
+#pose:Pose1
 "Tell her she's more than her curse. Tell her that over and over again, until she hears it enough to look past her shame."
 
 #Speaker:{Name}

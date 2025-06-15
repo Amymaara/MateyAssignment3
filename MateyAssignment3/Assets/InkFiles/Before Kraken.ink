@@ -39,16 +39,16 @@ The crew starts gathering one by one. No orders needed.
 Pearl clutches a small satchel of seashells, like a talisman.
 
 #Speaker:Pearl 
-#pose:Pose3
-#expression:Angry
+#pose:Pose2
+#expression:Sad
 "I can feel her pain, It's unbearable."
 
 #Speaker:{Name}  
 "The Kraken?"
 
 #Speaker:Pearl  
-#pose:pose3
-#expression:sad
+#pose:Pose3
+#expression:Angry
 "No — the ocean. She’s scared."
 
 #Speaker:{Name}

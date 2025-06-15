@@ -14,16 +14,17 @@ INCLUDE Globals.ink
 #Speaker:{Name}
 I leave and he waves me off, spatula in hand.  
   
-# Speaker:{Name}
+#Speaker:{Name}
 Behind him, a chicken hops onto the counter and pecks at the pie — neither of them look alarmed.
 
 #speaker:Stu
-"Squaaak — did he just try flirting back with a cooking pun?"
+#pose:Pose2
+"Squaaak - did he just try flirting back with a cooking pun?"
 
 #speaker:{Name}
 "I think he tried. Or maybe the fumes were getting to him."
 
- # Speaker:{Name}
+ #Speaker:{Name}
  I look back one more time. He’s whispering words of encouragement to the pot and I don’t have the heart to interrupt him for clarification.
 
 -> END
@@ -34,12 +35,14 @@ Behind him, a chicken hops onto the counter and pecks at the pie — neither of 
 He gives me a thumbs up, and I walk out before something stares at me with contempt again.
 
 #speaker:Stu
+#pose:Pose1
 "Squaaak — I’m sure he means well… but he’s like a tsunami with an apron."
 
 #speaker:{Name}
 "I’d rather my chances with Hades than those meals."
 
 #speaker:Stu
+#pose:Pose2
 "Yet… he’s kind of lovable?"
 
 #speaker:{Name}
