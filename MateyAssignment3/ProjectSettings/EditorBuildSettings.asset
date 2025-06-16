@@ -56,6 +56,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameEnd.unity
     guid: fd03dbba9eb7d304aa6f650cdca41eb2
+  - enabled: 1
+    path: Assets/Scenes/Deck.unity
+    guid: ae0adf655ff12fd4b90a33076e89437f
+  - enabled: 1
+    path: Assets/Scenes/Galley.unity
+    guid: fdad937fe4dab974aa59bb43a4607ebb
+  - enabled: 1
+    path: Assets/Scenes/NoAffectionEnding.unity
+    guid: 03d3b3ef5f81bd747af41ffc63fd5db1
+  - enabled: 1
+    path: Assets/Scenes/PearlEnding.unity
+    guid: f54e7e6cc110ddf48901a5e841e41188
+  - enabled: 1
+    path: Assets/Scenes/ShadEnding.unity
+    guid: 8e3dcc60d0b56c949a42ad2dc197db1f
+  - enabled: 1
+    path: Assets/Scenes/RoryEnding.unity
+    guid: dab02ac0f2de89446b249cacab663b78
+  - enabled: 1
+    path: Assets/Scenes/RavynnEnding.unity
+    guid: 5c1947024608be84481bedd86e3fa78a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
