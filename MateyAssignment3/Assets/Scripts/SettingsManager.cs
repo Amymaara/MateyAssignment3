@@ -98,7 +98,7 @@ public class SettingsManager : MonoBehaviour
 
     public void OpenGoogleDoc()
     {
-        Application.OpenURL("https://www.google.com/");
+        Application.OpenURL("https://docs.google.com/document/d/1OGZ23cGp_fBu_g8hrKWMcZtVLPoSU4CQP8e6yHiGsFQ/edit?tab=t.0");
     }
 
     //Title:VOLUME SLIDER IN UNITY

@@ -69,6 +69,10 @@ public static class GameStateManager
             {
                 DayCount = 4;
             }
+            else if (newState == gameState.Combat)
+            {
+                DayCount = 5;
+            }
             else
             {
                 DayCount++;
