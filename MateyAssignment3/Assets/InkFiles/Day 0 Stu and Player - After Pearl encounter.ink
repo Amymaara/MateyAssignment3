@@ -8,7 +8,7 @@ INCLUDE Globals.ink
 -> stu_disinterested
 }
 === stu_flirty ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #speaker:Stu
 #pose:Pose1
@@ -30,7 +30,7 @@ We stare at the door for a second, then decide to keep walking away, fast.
 -> END
 
  === stu_disinterested ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #speaker:Stu
 #pose:Pose2

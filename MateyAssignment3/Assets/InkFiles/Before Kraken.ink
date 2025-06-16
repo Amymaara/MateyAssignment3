@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> kraken_pre_battle
 === kraken_pre_battle ===
 
-#music_Rpg-medieval-animated-music-320583
+#music_BeforeKrakenFight
 
 #Speaker:{Name}
 The sky is grey.
@@ -20,8 +20,11 @@ Everything’s too quiet. Even the wind feels like it’s waiting for something.
 #Speaker:{Name}
 We’re close. I can feel it.
 
-#Speaker:Stu  
+#Speaker:Stu 
+#pose:Pose1
+#activate:Stu
 "Squaaak — it’s too still. I hate it. I hate it."
+#disable:Stu
 
 #Speaker:{Name}
 "You and me both."
@@ -39,58 +42,72 @@ The crew starts gathering one by one. No orders needed.
 Pearl clutches a small satchel of seashells, like a talisman.
 
 #Speaker:Pearl 
-#pose:Pose2
-#expression:Sad
+#pose:Default
+#expression:Angry
+#activate:Pearl
 "I can feel her pain, It's unbearable."
 
 #Speaker:{Name}  
 "The Kraken?"
 
 #Speaker:Pearl  
-#pose:Pose3
-#expression:Angry
+#pose:Default
+#expression:Sad
 "No — the ocean. She’s scared."
+#disable:Pearl
 
 #Speaker:{Name}
 Shad emerges from the galley, dual-wielding a frying pan and a lemon.
 
 #Speaker:Shad 
 #pose:Pose2
-#expression:Angry
+#expression:Smile
+#activate:Shad
 "Alright team! Either we die heroes or I make the best calamari stew the world’s ever seen."
+#disable:Shad
 
 #Speaker:Ravynn  
 #pose:Pose2
-#expression:Angry
+#expression:Neutral
+#activate:Ravynn
 "Focus. This is unlike anything we’ve faced. If you hesitate, we all die."
+#disable:Ravynn
 
 #Speaker:Master Porthole 
 #pose:Default
 #expression:Neutral
+#activate:Rory
 "Mm. Uplifting. Remind me to invite you to my next gala."
+#disable:Rory
 
 #Speaker:Ravynn  
 #pose:Pose2
-#expression:Angry
+#expression:Neutral
+#activate:Ravynn
 "Remind me to bring a harpoon."
+#disable:Ravynn
 
 #Speaker:{Name}
-
 I almost smile. Almost.
 
- #Speaker:{Name}
+#Speaker:{Name}
 "Listen up. We don’t know what’s happening next but we know each other."
 
 #Speaker:{Name}
 "We’ve been through storms, possible sabotage, arguments, a stolen whisk, and more emotional damage than I care to admit."
 
 #Speaker:Stu  
+#pose:Pose2
+#activate:Stu
 "Don’t forget the time Shad almost poisoned us with his french toast ."
+#disable:Stu
 
 #Speaker:Shad 
 #pose:Pose2
 #expression:Neutral
+#activate:Shad
 "Hey! Those tasted great... ignoring the side effects."
+#disable:Shad
 
 #Speaker:{Name}  
 "Listen! This is it. No more running. No more hiding. We end this or the sea ends us."

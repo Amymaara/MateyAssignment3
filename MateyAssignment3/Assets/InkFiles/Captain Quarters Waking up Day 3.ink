@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> wake_up
 
 === wake_up ===
+#music_StuMusic
 
 #speaker:{Name}
 I blink awake to the sound of... shouting?

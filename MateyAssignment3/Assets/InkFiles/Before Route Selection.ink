@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> post_kraken_victory
 
 === post_kraken_victory ===
+#music_StuMusic
 
 #Speaker:{Name}
 The celebration's echoes are still trailing off outside - laughter carried by wind, mugs clinking, someone singing a song with way too many verses.

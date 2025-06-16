@@ -10,7 +10,8 @@ INCLUDE Globals.ink
 }
 
 === rory_stu_flirty ===
-#music_Medieval-star-188280
+#music_StuMusic2
+
 #speaker:{Name}
 I leave the study, making sure not to look back. The door closes with a soft click, but his gaze lingers on my skin.
 
@@ -53,7 +54,8 @@ The maps rustle as the wind sneaks in through the cracks. For a moment I wonder 
 -> END
 
 === rory_stu_disinterested ===
-#music_Medieval-star-188280
+#music_StuMusic2
+
 #Speaker:{Name}
 I close the door behind me with a firm tug. The study's silence follows me out.
 

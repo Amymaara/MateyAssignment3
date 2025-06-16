@@ -11,7 +11,7 @@ INCLUDE Globals.ink
 }
 
 === stu_flirty ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #speaker:Stu
 #pose:Pose1
@@ -30,7 +30,7 @@ I glance back. She’s already reorganising the ropes. I walk away. Respectfully
 -> END
 
 === stu_disinterested ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #Speaker:{Name}
 I turn and walk back. She doesn’t look back — and neither do I.

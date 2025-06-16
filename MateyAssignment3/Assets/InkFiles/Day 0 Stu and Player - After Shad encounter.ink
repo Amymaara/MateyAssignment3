@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 }
 
 ==== stu_flirty ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #Speaker:{Name}
 I leave and he waves me off, spatula in hand.  
@@ -30,7 +30,7 @@ Behind him, a chicken hops onto the counter and pecks at the pie — neither of 
 -> END
 
 === stu_disinterested ===
-#music_Medieval-star-188280
+#music_StuMusic2
 #Speaker:{Name}
 He gives me a thumbs up, and I walk out before something stares at me with contempt again.
 

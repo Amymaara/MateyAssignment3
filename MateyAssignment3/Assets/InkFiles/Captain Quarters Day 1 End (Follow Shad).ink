@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 }
 
 === shad_follow_stu_soft ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #speaker:{Name}
 I smirk and step out of the galley, leaving him to wonder what my actions meant.
@@ -34,7 +34,7 @@ We keep walking. The air is cooler out here, but it still feels like something�
 -> END
 
 === shad_follow_stu_cold ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #speaker:{Name}
 I walk out before the quiet becomes even more awkward. Behind me, a metal spoon hits the floor — he doesn’t pick it up right away.

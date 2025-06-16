@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> wake_up_galley
 
 === wake_up_galley ===
+#music_StuMusic
 
 #speaker:{Name}
 I wake up to the distinct sound of something clanging. 

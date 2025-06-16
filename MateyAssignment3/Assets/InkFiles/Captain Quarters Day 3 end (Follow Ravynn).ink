@@ -10,6 +10,7 @@ INCLUDE Globals.ink
 }
 
 === ravynn_follow_stu_soft ===
+#music_StuMusic2
 
 #Speaker:{Name}
 The deck is calmer now. Ravynn's voice lingers in my head - half a threat, half a promise.
@@ -55,6 +56,8 @@ We look at each other and burst into laughter. The wind picks up a bit, less of 
 -> END
 
 === ravynn_follow_stu_cold ===
+#music_StuMusic2
+
 #Speaker:{Name}
 I walk away, Ravynn's words still clining like the sea spray to my mind."
 

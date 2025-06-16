@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 }
 
 === stu_flirty ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
  #Speaker:{Name}
 I turn around to leave, and I swear — solemnly swear — that I heard him say: "You’re welcome."
@@ -33,7 +33,7 @@ I’m not sure if I want to kiss him or throw him overboard.
 
 -> END
  === stu_disinterested ===
- #music_Medieval-star-188280
+#music_StuMusic2
  
  #Speaker:{Name}
 I'm out before I associate that nauseating perfume with his ego. 

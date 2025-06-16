@@ -11,6 +11,7 @@ INCLUDE Globals.ink
 }
 
 === rory_stu_flirty ===
+#music_StuMusic2
 
 #Speaker:{Name}
 As I step out of the study, the air still thick with revelations and royalty, Stu glides down and lands beside me.
@@ -57,6 +58,7 @@ As I step out of the study, the air still thick with revelations and royalty, St
 -> END
 
 === rory_stu_disinterested ===
+#music_StuMusic2
 
 #Speaker:{Name}
 I step out of the study, the door clicking softly behind me. Stu lands beside me like he’s been waiting the whole time.

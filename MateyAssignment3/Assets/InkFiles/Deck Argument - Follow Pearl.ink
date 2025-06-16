@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> follow_pearl_room
 
 === follow_pearl_room ===
+#music_PearlMusic
 
 #Speaker:{Name}
 I knock lightly before entering pearls quarters.
@@ -17,8 +18,8 @@ She's facing the wall, hidden behind something - I can't quite make her out clea
 "Pearl?"
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
+#disable:Pearl
 "Go away, don't look."
 
 #Speaker:{Name}
@@ -34,13 +35,12 @@ Where her torso should be...is not there. Scaled fins shimmer in the place of fl
 She's standing awkwardly, well her human legs are, on what looks like a pile of soaked blankets.
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
+#activate:Pearl
 "Reverse mermaid. Fish tail, human top? Nope. I got the deal no one's ordering on the menu."
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "Surprise. I'm the world's least convenient sea creature."
 
 #Speaker:{Name}
@@ -57,8 +57,7 @@ She looks at me - waiting, or more like bracing for my reply.
 ~ Pearl_Affection += 10 
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "You really know how to make a lady feel normal, huh?"
 
 -> pearl_q1_intro
@@ -67,13 +66,11 @@ She looks at me - waiting, or more like bracing for my reply.
 ~ Pearl_Affection += 5
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "Okay...not where I thought this conversation was heading, but sure."
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "Bonus points for originality, I suppose?"
 
 -> pearl_q1_intro
@@ -82,13 +79,11 @@ She looks at me - waiting, or more like bracing for my reply.
 ~ Pearl_Affection -= 5
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "I didn't lie. I just...didn't tell you. There's a difference."
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "But hey, if honestly is all it takes to sink this ship. Maybe I dodged something worse."
 
 -> pearl_q1_intro
@@ -99,34 +94,29 @@ She looks at me - waiting, or more like bracing for my reply.
 She flops, quite literally, onto a pile of blankets and sighs.
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "Ravynn was right, you know. About me being reckless."
 
 #Speaker:{Name}
 "I don't think she meant it that way."
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "She didn't need to. You don't spend your life being...this."
 
 #Speaker:{Name}
 She gestures to her reverse mermaid form, or tries to. Her hands? fins? are quite short.
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid:
 "...without learning to hear the truth behind behinds words."
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "I try to laugh, to sing, to keep the mood light. But it's just -"
 
 #speaker:Pearl
-#pose:
-#expression:
+#pose:Mermaid
 "It's just noise, isn't it? Just noise while I distract myself from the way people judge me."
 
 * "You’re more than just a distraction."
@@ -142,15 +132,15 @@ She gestures to her reverse mermaid form, or tries to. Her hands? fins? are quit
 #Speaker:{Name}
 "You’re not noise. You’re the only thing that makes this ship feel like it has a soul sometimes."
 
-#Speaker:Pearl
-#pose:
-#expression:
+#speaker:Pearl
+#pose:Mermaid
 "...You're either very good at lying, or worse, being sincere."
 
 #Speaker:{Name}
 "Terrifying, huh?"
 
-#Speaker:Pearl
+#speaker:Pearl
+#pose:Mermaid
 "More than the Kraken, honestly."
 
 #Speaker:{Name}
@@ -164,9 +154,8 @@ She smiles or I think it's a smile. Her terminal mouth opens a bit.
 #Speaker:{Name}
 "She tends to lash on when she’s scared. We all do."
 
-#Speaker:Pearl
-#pose:
-#expression:
+#speaker:Pearl
+#pose:Mermaid
 "Yeah. I guess it’s easier to yell at the one singing than admit you’re scared you might die soon."
 
 -> pearl_q3_intro
@@ -177,9 +166,8 @@ She smiles or I think it's a smile. Her terminal mouth opens a bit.
 #Speaker:{Name}
 "You were kind of loud though."
 
-#Speaker:Pearl
-#pose:
-#expression:
+#speaker:Pearl
+#pose:Mermaid
 "Okay rude, but fair. I was really feeling the kelp shanty, alright?
 
 -> pearl_q3_intro
@@ -190,13 +178,13 @@ She smiles or I think it's a smile. Her terminal mouth opens a bit.
 We sit in silence for awhile. Then all of a sudden mystical pearls engulf her and she's back to the usual, fully human pearl.
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Default
+#expression:Sad
 "I'm scared, Captain {Name}. This Kraken thing...it's not like the sea beasts I'm used to. It's ancient, primal and I feel like it knows we're coming."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Sad
 "What...what if I freeze? What if I mess up again? Ravynn already thinks I'm a liability - but what if I actually am?"
 
 * "You’re braver than you think."
@@ -214,16 +202,16 @@ We sit in silence for awhile. Then all of a sudden mystical pearls engulf her an
 "You just don't see yourself the way we do."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "That's...nice to hear. I think I needed that."
 
 #Speaker:{Name}
 "You've always been enough Pearl."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Blush
 "Captain {Name} you really know how to charm a lady."
 
 -> pearl_exit
@@ -232,16 +220,16 @@ We sit in silence for awhile. Then all of a sudden mystical pearls engulf her an
 ~ Pearl_Affection -=5
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "...Right. Thanks for the motivational speech."
 
 #Speaker:{Name}
 "It just feels like you have an existential crisis scheduled daily before lunch."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "...Thanks for the sympathy."
 
 -> pearl_exit
@@ -250,8 +238,8 @@ We sit in silence for awhile. Then all of a sudden mystical pearls engulf her an
 ~ Pearl_Affection += 5
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Default
+#expression:Sad
 "I know. It just feels...heavier when it's me."
 
 #Speaker:{Name}
@@ -261,8 +249,8 @@ We sit in silence for awhile. Then all of a sudden mystical pearls engulf her an
 "We stand together, you belong with us."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose3
+#expression:Smile
 "...Thank you. I'm trying to believe that too."
 
 -> pearl_exit
@@ -273,8 +261,8 @@ We sit in silence for awhile. Then all of a sudden mystical pearls engulf her an
 She takes a deep breath. Her hair shimmers under the light.
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "You seriously not freaked out, are you? About the whole half fish thing?"
 
 #Speaker:{Name}
@@ -284,8 +272,8 @@ I shake my head and stand up.
 "If anything, it's...very Pearl coded."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "That sounds like an insult disguised as a compliment."
 
 * "It’s definitely a compliment. You’re... radiant." 
@@ -296,23 +284,24 @@ I shake my head and stand up.
 === pearl_exit_flirty ===
 ~ Pearl_Affection += 10
 ~ pearl_exit_type = "flirty"
+#music_Flirty
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose3
+#expression:Smile
 "...You're not half bad yourself, Captain {Name}."
 
 #Speaker:{Name}
 "And you're not half bad for being a reverse mermaid."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Blush
 "I could show you more sometime...these parts of me."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "The sea parts, I mean."
 
 #Speaker:{Name}
@@ -334,8 +323,8 @@ Wanting to stretch this moment even longer, my eyes dart around her rom.
 ~ pearl_exit_type = "disinterested"
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "Thanks for not running away screaming. That's more than most do."
 
 #Speaker:{Name}
@@ -345,8 +334,8 @@ Wanting to stretch this moment even longer, my eyes dart around her rom.
 "Besides you're still crew."
 
 #Speaker:Pearl
-#pose:
-#expression:
+#pose:Default
+#expression:Sad
 "Right. Crew."
 
 #Speaker:{Name}

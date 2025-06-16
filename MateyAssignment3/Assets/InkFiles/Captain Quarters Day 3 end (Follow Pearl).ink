@@ -11,6 +11,8 @@ INCLUDE Globals.ink
 }
 
 === pearl_stu_flirty ===
+#music_StuMusic2
+
 #Speaker:{Name}
 I'm almost at the end of the corridor when a familiar feathered friend brushes past me.
 
@@ -61,6 +63,7 @@ The feels peaceful tonight.
 -> END
 
 === pearl_stu_disinterested ===
+#music_StuMusic2
 
 #Speaker:{Name}
 Stu finds his way to me, as he always done. Only this time he has an even more pronounce look of displeasure.

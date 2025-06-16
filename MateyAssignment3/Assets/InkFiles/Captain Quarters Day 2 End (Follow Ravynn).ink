@@ -10,7 +10,7 @@ INCLUDE Globals.ink
 }
 
 === stu_flirty ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #Speaker:{Name}
 I step off the deck, still feeling the tension on my skin.
@@ -50,7 +50,7 @@ The wind picks up, the ship never gives you calm after a storm.
 -> END
 
 === stu_disinterested ===
-#music_Medieval-star-188280
+#music_StuMusic2
 
 #Speaker:{Name}
 I step away from the deck, she didn't watch me go and I didn't look back.

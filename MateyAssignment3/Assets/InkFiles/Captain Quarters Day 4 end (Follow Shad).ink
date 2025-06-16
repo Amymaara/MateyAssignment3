@@ -11,6 +11,7 @@ INCLUDE Globals.ink
 }
 
 === shad_stu_flirty ===
+#music_StuMusic2
 
 #Speaker:{Name}
 The Galley’s door creaks shut behind me, but I don’t even make it halfway down the hall before feathers flutter into view.
@@ -56,6 +57,7 @@ Whatever tomorrow holds, I’m glad he’s still cooking.
 -> END
 
 === shad_stu_disinterested ===
+#music_StuMusic2
 
 #Speaker:{Name}
 The galley fades behind me, but the scent of overcooked ambition still lingers.
