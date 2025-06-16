@@ -7,7 +7,6 @@ INCLUDE Globals.ink
 #music_Storm
 
 #Speaker:{Name}
-#sfx_Sea-waves-7131
 The sea cried that night. Winds howled, waves like blades, cutting into the ship. 
 
 #Speaker:{Name}
