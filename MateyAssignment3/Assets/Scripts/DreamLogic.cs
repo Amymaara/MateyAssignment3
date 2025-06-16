@@ -1,8 +1,9 @@
 using TMPro;
 using UnityEngine;
-using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityEngine.Video;
+using System.Collections;
 
 
 
@@ -23,18 +24,49 @@ public class DreamLogic : MonoBehaviour
     [Header("Pop Ups")]
     public GameObject popupPanel;
     public GameObject[] popupImages;
-    private int currentImageIndex = 0;
-    private int dialogueClicks = 0;
     public GameObject toolTip;
     public Sprite[] lightingTransitionSprites;
     public float frameDuration = 0.05f; // Duration of each lighting frame
 
+    [Header("Video Logic")]
+    public GameObject video;
+    public VideoPlayer videoPlayer;
+    public VideoClip[] videoClips;
+    public float pauseBetweenVideos = 1.5f;
+    private int currentVideoIndex = 0;
+    private int dialogueClicks = 0;
+    private Coroutine replayCoroutine;
+    
+    
+
     private void Start()
     {
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
+        //videoPlayer.loopPointReached += OnVideoEnd;
+        
         toolTip.SetActive(false);
+        RenderTexture rt = (RenderTexture)videoPlayer.targetTexture;
+        RenderTexture.active = rt;
+        GL.Clear(true, true, Color.black);
+        RenderTexture.active = null;
+
 
         //SceneChanger.OnSceneStart();
+    }
+
+
+
+    public void SkipToNextVideo()
+    {
+        if (currentVideoIndex < videoClips.Length - 1)
+        {
+           
+            currentVideoIndex++;
+            videoPlayer.Stop();
+            videoPlayer.clip = videoClips[currentVideoIndex];
+            videoPlayer.frame = 0;
+            videoPlayer.Play();
+        }
     }
 
     private void AfterStoryEnds(string finishedStory)
@@ -48,47 +80,90 @@ public class DreamLogic : MonoBehaviour
         }
     }
 
-    public void ShowNextPopupImage()
+
+
+    private void PlayVideoAtIndex(int index)
     {
-        if (popupImages == null || popupImages.Length == 0) return;
+        if (index >= videoClips.Length) return;
 
+        video.SetActive(true);
+        videoPlayer.Stop();
 
-        dialogueClicks++;
-        Debug.Log("clicks =" + dialogueClicks);
+        videoPlayer.clip = videoClips[index];
+        videoPlayer.frame = 0;
+        videoPlayer.Play();
 
-        if (dialogueClicks == 1 || dialogueClicks == 5 || dialogueClicks == 9 || dialogueClicks == 22 || dialogueClicks == 24 || dialogueClicks == 33 || dialogueClicks == 40)
+        if (replayCoroutine != null)
         {
-            popupImages[currentImageIndex].SetActive(false);
-            // Move to next
-            currentImageIndex++;
-            popupImages[currentImageIndex].SetActive(true);
-            Debug.Log("new image");
+            StopCoroutine(replayCoroutine);
         }
+            
 
-
+        replayCoroutine = StartCoroutine(ReplayWithDelay());
     }
 
-    public void onskip()
+   
+    private IEnumerator ReplayWithDelay()
+    {
+        while (true)
+        {
+            // Wait until video starts playing
+            while (!videoPlayer.isPlaying)
+                yield return null;
+
+            // Wait until video finishes playing
+            while (videoPlayer.isPlaying)
+                yield return null;
+
+            // Disable the video GameObject (for blink or transition)
+            RenderTexture rt = (RenderTexture)videoPlayer.targetTexture;
+            RenderTexture.active = rt;
+            GL.Clear(true, true, Color.black);
+            RenderTexture.active = null;
+
+            // Wait for the defined pause
+            yield return new WaitForSeconds(pauseBetweenVideos);
+
+            // Re-enable the video GameObject
+            
+
+            // Prepare and play the video again
+            videoPlayer.Stop();
+           
+            videoPlayer.frame = 0;
+            videoPlayer.Play();
+        }
+    }
+
+    public void ShowNextPopupVideo()
+    {
+        dialogueClicks++;
+        Debug.Log("Dialogue Clicks: " + dialogueClicks);
+        if (dialogueClicks == 1 || dialogueClicks == 5 || dialogueClicks == 9 || dialogueClicks == 22 || dialogueClicks == 24 || dialogueClicks == 33 || dialogueClicks == 40)
+        {
+            currentVideoIndex++;
+            PlayVideoAtIndex(currentVideoIndex);
+        }
+    }
+
+
+
+
+    public void OnSkip()
     {
         if (dialogueClicks < 12)
         {
             dialogueClicks = 8;
-            currentImageIndex = 3;
-            ShowNextPopupImage();
+            currentVideoIndex = 3;
+            ShowNextPopupVideo();
             dialogueClicks = 12;
         }
-        else if (dialogueClicks < 33)
+        else 
         {
-
-            dialogueClicks = 21;
-
-            currentImageIndex = 4;
-            ShowNextPopupImage();
-            dialogueClicks = 25;
-        }
-        else
-        {
-            return;
+            dialogueClicks = 23;
+            currentVideoIndex = 4;
+            ShowNextPopupVideo();
+            dialogueClicks = 26;
         }
     }
 

@@ -11,8 +11,10 @@ public class BeforeFightLogic : MonoBehaviour
 
     private void Start()
     {
+        GameStateManager.SetState(GameStateManager.gameState.Combat);
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
         SceneChanger.OnSceneStart();
+        
         videoPlayer.loopPointReached += OnVideoFinished;
         
     }

@@ -632,7 +632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 803940642701610612, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowNextPopupImage
+      value: ShowNextPopupVideo
       objectReference: {fileID: 0}
     - target: {fileID: 803940642701610612, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -676,7 +676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8084206527321790138, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: onskip
+      value: OnSkip
       objectReference: {fileID: 0}
     - target: {fileID: 8084206527321790138, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -1645,7 +1645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &650617227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1804,7 +1804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &696173105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1832,7 +1832,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696173104}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 139db5696e20eb44a884c371c1bb25af, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 137e603d9ca65db4c976ea3f702808df, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1846,17 +1846,15 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -2231,6 +2229,18 @@ MonoBehaviour:
   toolTip: {fileID: 1985631825}
   lightingTransitionSprites: []
   frameDuration: 0.05
+  video: {fileID: 696173104}
+  videoPlayer: {fileID: 696173106}
+  videoClips:
+  - {fileID: 32900000, guid: 137e603d9ca65db4c976ea3f702808df, type: 3}
+  - {fileID: 32900000, guid: 137e603d9ca65db4c976ea3f702808df, type: 3}
+  - {fileID: 32900000, guid: ecc0163b133667543bd1521685b1b9b4, type: 3}
+  - {fileID: 32900000, guid: 0f51a50373a8b2e4bb7e5c90ec6b18f0, type: 3}
+  - {fileID: 32900000, guid: ede5f85b77c490a42b7f029bb0c425ed, type: 3}
+  - {fileID: 32900000, guid: 412dd18effc3eb943881be0e6e1c7f09, type: 3}
+  - {fileID: 32900000, guid: af43468bc4096a2498f4d521151d7e41, type: 3}
+  - {fileID: 32900000, guid: a7265cdadd4b02544aac3295c6cc3f69, type: 3}
+  pauseBetweenVideos: 2
 --- !u!114 &851110757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4442,7 +4452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1456770371
 RectTransform:
   m_ObjectHideFlags: 0
