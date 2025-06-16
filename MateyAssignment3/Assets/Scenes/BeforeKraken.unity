@@ -818,6 +818,7 @@ MonoBehaviour:
   choicesGrid: {fileID: 725695051}
   choicePrefab: {fileID: 6573581357642674133, guid: d9eb6b7f0b9f36243bf57fbdade8ca9b, type: 3}
   CGPanel: {fileID: 725695050}
+  waitingForContinue: 0
   storyID: 
   typeSpeed: 0.04
   BigWidth: 1.3
@@ -833,6 +834,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1055012681}
     m_Modifications:
+    - target: {fileID: 2920458854544276661, guid: a42402496967bdc49afdc97fcf9690cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4961626910662971771, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
     - target: {fileID: 4100098994763533355, guid: a42402496967bdc49afdc97fcf9690cd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1557,6 +1562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1055012681}
     m_Modifications:
+    - target: {fileID: 2306172951063693637, guid: 382ffa8ce0ceecf4a89880beb60917b1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4961626910662971771, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
     - target: {fileID: 4573968631359626720, guid: 382ffa8ce0ceecf4a89880beb60917b1, type: 3}
       propertyPath: m_Name
       value: Shad
@@ -2263,6 +2272,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5987230480160690300, guid: f50858f641c20c84f878dc354d7b3e1a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4961626910662971771, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
     - target: {fileID: 9031834593885203997, guid: f50858f641c20c84f878dc354d7b3e1a, type: 3}
       propertyPath: m_Name
       value: Ravynn
@@ -2438,6 +2451,7 @@ MonoBehaviour:
   beforeFight: {fileID: 4900000, guid: 5d5d25adca682df41bc6ef2291f2146e, type: 3}
   videoPlayer: {fileID: 1590578007}
   nextScene: KrakenBattle
+  MapButton: {fileID: 0}
 --- !u!114 &1872124699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,6 +2483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rory
       objectReference: {fileID: 0}
+    - target: {fileID: 8508916714238769854, guid: 540459231b87945449fd3b976e91e67c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4961626910662971771, guid: 0c41de02eb434124b8a8fec2bf63c0bc, type: 3}
     - target: {fileID: 8631822581989655348, guid: 540459231b87945449fd3b976e91e67c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
