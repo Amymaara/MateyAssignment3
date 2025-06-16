@@ -1803,7 +1803,7 @@ MonoBehaviour:
   SceneChanger: {fileID: 1215580581}
   beforeFight: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   videoPlayer: {fileID: 596048553}
-  nextScene: 
+  nextScene: null
   MapButton: {fileID: 1334286799}
 --- !u!1 &1245254157
 GameObject:
