@@ -31,7 +31,7 @@ public class StoryManager : MonoBehaviour
     public Button choicePrefab;
     //public Canvas dialogueCanvas;
     public GameObject CGPanel;
-    private bool waitingForContinue = false;
+    public bool waitingForContinue = false;
 
     [Header("Story Objects")]
     public Story runningStory;
@@ -213,7 +213,7 @@ public class StoryManager : MonoBehaviour
     {
         if (waitingForContinue && Input.GetKeyDown(KeyCode.Space))
         {
-            OnContinueButton(); // or whatever method you're already using
+            OnContinueButton(); 
         }
     }
 

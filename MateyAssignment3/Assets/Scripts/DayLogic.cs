@@ -11,6 +11,7 @@ public class DayLogic : MonoBehaviour
     public SceneChanger sceneChanger;
 
     public Material defaultMaterial;
+    
 
 
 
