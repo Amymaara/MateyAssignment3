@@ -842,17 +842,27 @@ get varstate(nameofvariable)
         GetCurrentAffection();
         isSkipping = true;
         continueButton.gameObject.SetActive(false);
-        
 
-        // Stop typewriter effect mid-line, if needed
-        //isTyping = false;
+       
 
         while (runningStory.canContinue && runningStory.currentChoices.Count == 0)
         {
             string nextLine = runningStory.Continue();
-            dialogueBox.text = nextLine;
-            yield return null; // just wait a frame
+            TagHandler(); 
+
+            if (dialogueBox.text != nextLine)
+            {
+                dialogueBox.text = nextLine;
+            }
+
+          
+
+
+            yield return null;
         }
+
+
+       
 
         if (runningStory.currentChoices.Count > 0)
         {
@@ -864,7 +874,7 @@ get varstate(nameofvariable)
             CheckAffectionChange();
             EndStory();
         }
-        
+
         isSkipping = false;
         continueButton.gameObject.SetActive(true);
     }

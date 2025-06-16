@@ -295,6 +295,7 @@ MonoBehaviour:
   choicesGrid: {fileID: 1058659271}
   choicePrefab: {fileID: 6573581357642674133, guid: d9eb6b7f0b9f36243bf57fbdade8ca9b, type: 3}
   CGPanel: {fileID: 1058659272}
+  waitingForContinue: 0
   storyID: 
   typeSpeed: 0.04
   BigWidth: 1
@@ -1668,7 +1669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -374.61, y: -115.15}
+  m_AnchoredPosition: {x: -351, y: -115.15}
   m_SizeDelta: {x: 949.22, y: 280.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710810124
@@ -1691,7 +1692,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: some description here......
+  m_text: '"She''s ready to uncover the truth beneath her scale and finally face
+    what the ocean has turned her into."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}
   m_sharedMaterial: {fileID: -2082273623067464722, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}

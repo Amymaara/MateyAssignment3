@@ -12,7 +12,11 @@ public class BeforeFightLogic : MonoBehaviour
 
     private void Start()
     {
-        GameStateManager.SetState(GameStateManager.gameState.Combat);
+        if (nextScene != "null")
+        {
+            GameStateManager.SetState(GameStateManager.gameState.Combat);
+        }
+        
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
         SceneChanger.OnSceneStart();
        if (MapButton != null)
@@ -39,7 +43,7 @@ public class BeforeFightLogic : MonoBehaviour
 
             StoryManager.Instance.OnStoryEnd -= AfterStoryEnds; //stop listening for stories that have ended
 
-            if (nextScene != null)
+            if (nextScene != "null")
             {
                 SceneChanger.LoadNextScene(nextScene);
             }
