@@ -218,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+      objectReference: {fileID: 4900000, guid: a450ca4eb00eb30469b514b1c5a024ca, type: 3}
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: popupPanel
       value: 
@@ -1658,7 +1658,7 @@ PrefabInstance:
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+      objectReference: {fileID: 4900000, guid: 07e65c5b507ce5d47906ee2ae89cafb8, type: 3}
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: popupPanel
       value: 
@@ -1725,8 +1725,8 @@ MonoBehaviour:
   Day0PostScript: {fileID: 4900000, guid: a851725ac5cb5ec49a46b02eb20de4f0, type: 3}
   Day1Script: {fileID: 4900000, guid: a687df5d2a53cf84092c9dfe3b478fdb, type: 3}
   Day1PostScript: {fileID: 4900000, guid: 489f4c7af70ebce45bd52554f6030f65, type: 3}
-  Day2Script: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
-  Day2PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+  Day2Script: {fileID: 4900000, guid: cf551a816c722d84390139ab0acd833f, type: 3}
+  Day2PostScript: {fileID: 4900000, guid: 155ee9a55298b754d81c0710e2cd9444, type: 3}
   Blackscreen: {fileID: 1521250672}
   MainCharcater: {fileID: 1539607379}
   Stu: {fileID: 1247804870}
@@ -1734,8 +1734,8 @@ MonoBehaviour:
   item1: {fileID: 1063533929}
   item2: {fileID: 1837118494}
   item3: {fileID: 1540140979}
-  item4: {fileID: 361899750}
-  item5: {fileID: 1898938334}
+  item4: {fileID: 1898938334}
+  item5: {fileID: 361899750}
 --- !u!114 &916676198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2385,7 +2385,7 @@ PrefabInstance:
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+      objectReference: {fileID: 4900000, guid: 359c354232895e64fb45c2ddbe249d3a, type: 3}
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: popupPanel
       value: 

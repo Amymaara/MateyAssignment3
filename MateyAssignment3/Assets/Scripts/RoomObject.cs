@@ -23,7 +23,7 @@ public class StoryItem : MonoBehaviour
     public GameObject[] popupImages; // key frames
     private int currentImageIndex = 0;
     
-    public Image characterImage;
+    
    
 
 

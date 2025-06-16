@@ -7,6 +7,7 @@ public class BeforeFightLogic : MonoBehaviour
     public TextAsset beforeFight;
     public VideoPlayer videoPlayer;
     public string nextScene;
+    public GameObject MapButton;
     
 
     private void Start()
@@ -14,7 +15,10 @@ public class BeforeFightLogic : MonoBehaviour
         GameStateManager.SetState(GameStateManager.gameState.Combat);
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds;
         SceneChanger.OnSceneStart();
-        
+       if (MapButton != null)
+        {
+            MapButton.SetActive(false);
+        }
         videoPlayer.loopPointReached += OnVideoFinished;
         
     }
@@ -33,9 +37,16 @@ public class BeforeFightLogic : MonoBehaviour
         if (finishedStory == "beforeFight")
         {
 
-            Debug.Log("pre fight finished");
             StoryManager.Instance.OnStoryEnd -= AfterStoryEnds; //stop listening for stories that have ended
-            SceneChanger.LoadNextScene(nextScene);
+
+            if (nextScene != null)
+            {
+                SceneChanger.LoadNextScene(nextScene);
+            }
+            else
+            {
+                MapButton.SetActive(true);
+            }
         }
     }
 

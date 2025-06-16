@@ -31,7 +31,7 @@ public class StoryManager : MonoBehaviour
     public Button choicePrefab;
     //public Canvas dialogueCanvas;
     public GameObject CGPanel;
-    private bool waitingForContinue = false;
+    public bool waitingForContinue = false;
 
     [Header("Story Objects")]
     public Story runningStory;
@@ -213,7 +213,7 @@ public class StoryManager : MonoBehaviour
     {
         if (waitingForContinue && Input.GetKeyDown(KeyCode.Space))
         {
-            OnContinueButton(); // or whatever method you're already using
+            OnContinueButton(); 
         }
     }
 
@@ -362,6 +362,7 @@ public class StoryManager : MonoBehaviour
                 break;
 
             case "kraken":
+            case "mr. tickles":
                 if (character is KrakenCharacter kraken &&
                     Enum.TryParse(poseStr, true, out KrakenCharacter.KrakenPose krakenPose) &&
                     Enum.TryParse(expStr, true, out KrakenCharacter.KrakenExpression krakenExp))
@@ -369,6 +370,8 @@ public class StoryManager : MonoBehaviour
                     kraken.SetSprite(krakenPose, krakenExp);
                 }
                 break;
+
+         
 
             default:
                 if (Enum.TryParse(poseStr, true, out StoryCharacter.Pose pose) &&
@@ -536,9 +539,14 @@ public class StoryManager : MonoBehaviour
             {
                 string imageName = item.characterName;
 
-                if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
+                if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase) || CurrentSpeaker.ToLower() == "master porthole")
                 {
-                    if (imageName != "Stu")
+                    if(CurrentSpeaker.ToLower() == "master porthole" && imageName == "Rory")
+                    {
+                        item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    }
+                    
+                     else if (imageName != "Stu")
                     {
                         item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
                     }
@@ -546,7 +554,12 @@ public class StoryManager : MonoBehaviour
                 }
                 else
                 {
-                    if (imageName != "Stu")
+                    if (CurrentSpeaker.ToLower() == "master porthole" && imageName == "Rory")
+                    {
+                        item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    }
+
+                   else  if (imageName != "Stu")
                     {
                         item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
                     }

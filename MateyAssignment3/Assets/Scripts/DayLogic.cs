@@ -10,9 +10,10 @@ public class DayLogic : MonoBehaviour
     [SerializeField] private GameObject AllChars; // group of all the characters in the scene
     public SceneChanger sceneChanger;
 
-
-  
+    public Material defaultMaterial;
     
+
+
 
 
     void Start()
@@ -21,6 +22,8 @@ public class DayLogic : MonoBehaviour
         StoryManager.Instance.OnStoryEnd += AfterStoryEnds; // listen for story ending
         
         RemoveTrigger(AllChars); //characters are not interactable
+
+        
 
         StoryManager.Instance.StartStory(Fight, "Fight");
 
@@ -35,6 +38,13 @@ public class DayLogic : MonoBehaviour
         {
             Debug.Log("story finished");
             addTrigger(AllChars); // make characters interactable again
+
+            // makes sure the character scaling is correct
+            Image[] images = AllChars.GetComponentsInChildren<Image>();
+            foreach (Image img in images)
+            {
+                img.SetNativeSize();
+            }
 
         }
 
@@ -117,6 +127,9 @@ public class DayLogic : MonoBehaviour
         // goes through every image (characters) in the game components children
         foreach (var item in obj.GetComponentsInChildren<Image>())
         {
+            Image temp = item.GetComponent<Image>();
+            temp.material = defaultMaterial;
+
             EventTrigger trigger = item.GetComponent<EventTrigger>(); //get the event triggers from the Image
             if (trigger != null) //checks that there are triggers to activate
             {

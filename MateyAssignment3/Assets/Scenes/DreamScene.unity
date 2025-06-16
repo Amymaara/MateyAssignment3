@@ -702,6 +702,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796b4d1d07344d34f94f84582f152542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &238607769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1341293676485122880, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
+  m_PrefabInstance: {fileID: 238607767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &262606592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1349,7 @@ MonoBehaviour:
   choicesGrid: {fileID: 1393749819}
   choicePrefab: {fileID: 6573581357642674133, guid: d9eb6b7f0b9f36243bf57fbdade8ca9b, type: 3}
   CGPanel: {fileID: 2148564583279521701}
+  waitingForContinue: 0
   storyID: 
   typeSpeed: 0.04
   BigWidth: 1.5
@@ -2216,6 +2222,8 @@ MonoBehaviour:
   PronounPanel: {fileID: 1886960660}
   CCWindow: {fileID: 776635948}
   SceneChanger: {fileID: 851110757}
+  storyManager: {fileID: 481551479}
+  ContinueButton: {fileID: 238607769}
   popupPanel: {fileID: 650617226}
   popupImages:
   - {fileID: 262606592}
@@ -6031,7 +6039,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 803940642701610612, guid: dd6935ea0c01b2841ba679ae693077f4, type: 3}
   m_PrefabInstance: {fileID: 238607767}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 238607769}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}

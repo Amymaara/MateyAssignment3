@@ -1817,7 +1817,7 @@ PrefabInstance:
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+      objectReference: {fileID: 4900000, guid: c8b39f7fb53748146ae1f3a399b8e335, type: 3}
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: popupPanel
       value: 
@@ -2907,7 +2907,7 @@ PrefabInstance:
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+      objectReference: {fileID: 4900000, guid: 28a24c235cc8be6419fa19af9375bc41, type: 3}
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: popupPanel
       value: 
@@ -3105,8 +3105,8 @@ MonoBehaviour:
   Day0PostScript: {fileID: 4900000, guid: 2f1139c157ed0094e9e6cbe12a47dabe, type: 3}
   Day1Script: {fileID: 4900000, guid: 3c38c512df7518e45adb4281df58c2c4, type: 3}
   Day1PostScript: {fileID: 4900000, guid: 921542e8bd6135342b3f39ad5368c31a, type: 3}
-  Day2Script: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
-  Day2PostScript: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+  Day2Script: {fileID: 4900000, guid: 993eb7bccc524c14ba4bec8918ab274c, type: 3}
+  Day2PostScript: {fileID: 4900000, guid: ac9fc0e45ebb9004685977b623fa4146, type: 3}
   Blackscreen: {fileID: 1934807239}
   MainCharcater: {fileID: 1585172653}
   Stu: {fileID: 270842130}
@@ -3340,7 +3340,7 @@ PrefabInstance:
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
+      objectReference: {fileID: 4900000, guid: 177810a495b61754f9e56c9d7af45127, type: 3}
     - target: {fileID: 4481072847656857459, guid: eabc8468f44e7cd4d8d16d4e305f8c3b, type: 3}
       propertyPath: popupPanel
       value: 

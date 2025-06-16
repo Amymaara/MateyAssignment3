@@ -19,6 +19,8 @@ public class DreamLogic : MonoBehaviour
     public GameObject CCWindow;
 
     public SceneChanger SceneChanger;
+    public StoryManager storyManager;
+    public GameObject ContinueButton;
 
 
     [Header("Pop Ups")]
@@ -36,8 +38,10 @@ public class DreamLogic : MonoBehaviour
     private int currentVideoIndex = 0;
     private int dialogueClicks = 0;
     private Coroutine replayCoroutine;
-    
-    
+    private bool canAdvanceVideo = false;
+    private bool previousWaitingForContinue = false;
+
+
 
     private void Start()
     {
@@ -50,8 +54,35 @@ public class DreamLogic : MonoBehaviour
         GL.Clear(true, true, Color.black);
         RenderTexture.active = null;
 
-
+        
         //SceneChanger.OnSceneStart();
+    }
+
+    // i needed chatgpt to help with this... i struggled for so long
+
+    // Title: (DreamLogic) Controlled Video Progression with Spacebar Input
+    // Author: ChatGPT (OpenAI)
+    // Date: 16 June 2025
+    // Code version: 1.0
+    // Available at: https://chatgpt.com/
+    void Update()
+    {
+        
+        if (!previousWaitingForContinue && storyManager.waitingForContinue)
+        {
+            canAdvanceVideo = true;
+            Debug.Log("Can now advance video");
+        }
+
+        previousWaitingForContinue = storyManager.waitingForContinue;
+
+       
+        if (canAdvanceVideo && Input.GetKeyDown(KeyCode.Space))
+        {
+            ShowNextPopupVideo();
+            canAdvanceVideo = false;
+            Debug.Log("Advanced video, resetting flag");
+        }
     }
 
 
@@ -178,8 +209,10 @@ public class DreamLogic : MonoBehaviour
     {
         string name = NamePanel.GetComponentInChildren<TMP_InputField>().text; //get reference to the text field
         ReadName(name); // gets player input
-        //NamePanel.SetActive(false); //close the name input panel
-        //StoryManager.Instance.StartStory(Second, "Second"); // start the second ink story
+                        //NamePanel.SetActive(false); //close the name input panel
+                        //StoryManager.Instance.StartStory(Second, "Second"); // start the second ink story
+
+      
 
     }
     /* VAR PronounHe = ""
@@ -223,7 +256,8 @@ VAR Ravynn_Affection = 0
         int pronoun = PronounPanel.GetComponentInChildren<TMP_Dropdown>().value;
         PronounChoice(pronoun);
         toolTip.SetActive(true);
-        
+       
+
     }
 
     public void OnToolTipClose()
@@ -233,5 +267,7 @@ VAR Ravynn_Affection = 0
         StoryManager.Instance.SetVarState("Shad_Affection", 0);
         StoryManager.Instance.SetVarState("Rory_Affection", 0);
         StoryManager.Instance.SetVarState("Ravynn_Affection", 0);
+
+        
     }
 }
