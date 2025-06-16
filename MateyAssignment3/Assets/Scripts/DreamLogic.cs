@@ -58,10 +58,16 @@ public class DreamLogic : MonoBehaviour
         //SceneChanger.OnSceneStart();
     }
 
+    // i needed chatgpt to help with this... i struggled for so long
 
+    // Title: (DreamLogic) Controlled Video Progression with Spacebar Input
+    // Author: ChatGPT (OpenAI)
+    // Date: 16 June 2025
+    // Code version: 1.0
+    // Available at: https://chatgpt.com/
     void Update()
     {
-        // Detect rising edge: when waitingForContinue becomes true this frame
+        
         if (!previousWaitingForContinue && storyManager.waitingForContinue)
         {
             canAdvanceVideo = true;
@@ -70,7 +76,7 @@ public class DreamLogic : MonoBehaviour
 
         previousWaitingForContinue = storyManager.waitingForContinue;
 
-        // Handle input only if allowed by the flag
+       
         if (canAdvanceVideo && Input.GetKeyDown(KeyCode.Space))
         {
             ShowNextPopupVideo();
