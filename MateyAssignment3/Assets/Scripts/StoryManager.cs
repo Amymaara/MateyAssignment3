@@ -477,7 +477,7 @@ public class StoryManager : MonoBehaviour
 
                 foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
                 {
-                    string imageName = item.GetDisplayName();
+                    string imageName = item.characterName;
 
                     if (imageName.Equals(active, System.StringComparison.OrdinalIgnoreCase))
                     {
@@ -492,7 +492,7 @@ public class StoryManager : MonoBehaviour
 
                 foreach (var item in charactersInScene.GetComponentsInChildren<StoryCharacter>())
                 {
-                    string imageName = item.GetDisplayName();
+                    string imageName = item.characterName;
 
                     if (imageName.Equals(active, System.StringComparison.OrdinalIgnoreCase))
                     {
