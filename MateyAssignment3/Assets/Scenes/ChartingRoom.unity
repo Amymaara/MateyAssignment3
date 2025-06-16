@@ -1380,6 +1380,7 @@ MonoBehaviour:
   Fight: {fileID: 4900000, guid: 270e268b863086e4597ff8c60ae7e928, type: 3}
   AllChars: {fileID: 1525691982}
   sceneChanger: {fileID: 1105794758}
+  defaultMaterial: {fileID: 2100000, guid: 070e0722f9bb38b40afbffab6302d529, type: 2}
 --- !u!1 &1110253177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,8 +1563,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1021749351}
   - {fileID: 1688901442}
+  - {fileID: 1021749351}
   m_Father: {fileID: 1526044310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

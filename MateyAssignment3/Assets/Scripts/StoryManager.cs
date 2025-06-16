@@ -536,9 +536,14 @@ public class StoryManager : MonoBehaviour
             {
                 string imageName = item.characterName;
 
-                if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase))
+                if (imageName.Equals(CurrentSpeaker, System.StringComparison.OrdinalIgnoreCase) || CurrentSpeaker.ToLower() == "master porthole")
                 {
-                    if (imageName != "Stu")
+                    if(CurrentSpeaker.ToLower() == "master porthole" && imageName == "Rory")
+                    {
+                        item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    }
+                    
+                     else if (imageName != "Stu")
                     {
                         item.characterImage.transform.DOScale(new Vector3(BigWidth, BigWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
                     }
@@ -546,7 +551,12 @@ public class StoryManager : MonoBehaviour
                 }
                 else
                 {
-                    if (imageName != "Stu")
+                    if (CurrentSpeaker.ToLower() == "master porthole" && imageName == "Rory")
+                    {
+                        item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
+                    }
+
+                   else  if (imageName != "Stu")
                     {
                         item.characterImage.transform.DOScale(new Vector3(SmallWidth, SmallWidth, 1f), 0.3f).SetEase(Ease.OutQuad);
                     }

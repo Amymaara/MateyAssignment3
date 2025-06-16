@@ -10,9 +10,9 @@ public class DayLogic : MonoBehaviour
     [SerializeField] private GameObject AllChars; // group of all the characters in the scene
     public SceneChanger sceneChanger;
 
+    public Material defaultMaterial;
 
-  
-    
+
 
 
     void Start()
@@ -117,6 +117,9 @@ public class DayLogic : MonoBehaviour
         // goes through every image (characters) in the game components children
         foreach (var item in obj.GetComponentsInChildren<Image>())
         {
+            Image temp = item.GetComponent<Image>();
+            temp.material = defaultMaterial;
+
             EventTrigger trigger = item.GetComponent<EventTrigger>(); //get the event triggers from the Image
             if (trigger != null) //checks that there are triggers to activate
             {

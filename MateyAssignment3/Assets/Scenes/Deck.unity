@@ -1714,6 +1714,7 @@ MonoBehaviour:
   Fight: {fileID: 4900000, guid: dcbe51548ddc7f04e86ac5193c901444, type: 3}
   AllChars: {fileID: 155652626}
   sceneChanger: {fileID: 1876513171}
+  defaultMaterial: {fileID: 2100000, guid: 070e0722f9bb38b40afbffab6302d529, type: 2}
 --- !u!114 &1876513171
 MonoBehaviour:
   m_ObjectHideFlags: 0
