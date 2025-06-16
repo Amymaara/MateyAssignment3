@@ -1004,8 +1004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -374.61, y: -115.15}
-  m_SizeDelta: {x: 949.22, y: 280.29}
+  m_AnchoredPosition: {x: -424, y: -114}
+  m_SizeDelta: {x: 893.22, y: 282.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924541323
 MonoBehaviour:
@@ -1027,7 +1027,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: some description here......
+  m_text: '"All he wants is to perfect his Great Gram-Gram''s final recipe - but
+    like tastes, some ingredients have been lost to time, and dangerous places."
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}
   m_sharedMaterial: {fileID: -2082273623067464722, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}
@@ -1054,8 +1057,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 59
+  m_fontSizeBase: 59
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1482,6 +1485,7 @@ MonoBehaviour:
   choicesGrid: {fileID: 474815912}
   choicePrefab: {fileID: 6573581357642674133, guid: d9eb6b7f0b9f36243bf57fbdade8ca9b, type: 3}
   CGPanel: {fileID: 474815913}
+  waitingForContinue: 0
   storyID: 
   typeSpeed: 0.04
   BigWidth: 1

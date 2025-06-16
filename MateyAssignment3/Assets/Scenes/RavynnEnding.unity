@@ -1473,6 +1473,7 @@ MonoBehaviour:
   choicesGrid: {fileID: 1336153055}
   choicePrefab: {fileID: 6573581357642674133, guid: d9eb6b7f0b9f36243bf57fbdade8ca9b, type: 3}
   CGPanel: {fileID: 1336153056}
+  waitingForContinue: 0
   storyID: 
   typeSpeed: 0.04
   BigWidth: 1
@@ -2681,7 +2682,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: some description here......
+  m_text: '"She spent all her life hiding behind her words - now, it''s time she
+    follows and experiences the story she never had the courage to write."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}
   m_sharedMaterial: {fileID: -2082273623067464722, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}
@@ -2746,7 +2748,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 25.550323, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
