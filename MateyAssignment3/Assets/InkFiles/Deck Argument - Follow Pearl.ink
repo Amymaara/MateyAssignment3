@@ -2,6 +2,7 @@ INCLUDE Globals.ink
 
 -> follow_pearl_room
 
+#disable:Pearl
 === follow_pearl_room ===
 #music_PearlMusic
 
@@ -18,8 +19,6 @@ She's facing the wall, hidden behind something - I can't quite make her out clea
 "Pearl?"
 
 #speaker:Pearl
-#pose:Mermaid
-#disable:Pearl
 "Go away, don't look."
 
 #Speaker:{Name}

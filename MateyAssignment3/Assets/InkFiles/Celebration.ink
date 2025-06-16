@@ -25,6 +25,7 @@ The ship somehow intact rocks gently, the ocean waves caressing the ship as if t
 #Speaker:Stu
 #pose:Pose2
 #activate:Stu
+#sfx_Stu1
 "Squaak - Cap'n {Name}...I'm not crying, you're crying!"
 #disable:Stu
 

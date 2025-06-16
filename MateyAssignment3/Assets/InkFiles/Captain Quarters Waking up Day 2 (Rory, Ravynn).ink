@@ -16,6 +16,7 @@ This was colder, sharper and with a lot more self-righteous vocabulary.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squuaak - sounds like your two favourite egos are butting heads."
 
 #Speaker:{Name}

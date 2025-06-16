@@ -19,6 +19,7 @@ Behind him, a chicken hops onto the counter and pecks at the pie — neither of 
 
 #speaker:Stu
 #pose:Pose2
+#sfx_Stu1
 "Squaaak - did he just try flirting back with a cooking pun?"
 
 #speaker:{Name}
@@ -36,6 +37,7 @@ He gives me a thumbs up, and I walk out before something stares at me with conte
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu2
 "Squaaak — I’m sure he means well… but he’s like a tsunami with an apron."
 
 #speaker:{Name}

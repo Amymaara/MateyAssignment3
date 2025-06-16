@@ -11,6 +11,8 @@ INCLUDE Globals.ink
 
 === stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I step off the deck, still feeling the tension on my skin.
@@ -20,6 +22,7 @@ Stu flutters down. pretending like he didn't just watch the whole thing.
 
 #Speaker:Stu
 #pose:Pose2
+#sfx_Stu1
 "Squaak - are you trying to seduce the ship's armoury?"
 
 #Speaker:{Name}
@@ -47,10 +50,14 @@ Stu whistles as he flutters by my side. The deck is quiet again, yet I can feel 
 
 #Speaker:{Name}
 The wind picks up, the ship never gives you calm after a storm.
+#sfx_DoorSounds
+
 -> END
 
 === stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I step away from the deck, she didn't watch me go and I didn't look back.
@@ -63,6 +70,7 @@ Stu lands beside me.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu2
 "Squaak - well she's frostier than an iceberg."
 
 #Speaker:{Name}
@@ -94,4 +102,6 @@ Stu's quiet for once, just watching the sea with me. It's just like her, unpredi
  
  #Speaker:{Name}
  "Because he's right, and because I'm tired of things sinking."
+ #sfx_DoorSounds
+
 -> END

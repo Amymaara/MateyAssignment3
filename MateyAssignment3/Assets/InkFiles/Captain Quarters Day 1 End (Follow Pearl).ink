@@ -10,11 +10,14 @@ INCLUDE Globals.ink
 
 === pearl_follow_stu_soft ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 #speaker:{Name}
 I exit her room, and Stu flutters down to land on my shoulder, beak tilted like he knows exactly what I’ve done.
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak — someone’s got a type."
 
 #speaker:{Name}
@@ -33,11 +36,13 @@ I exit her room, and Stu flutters down to land on my shoulder, beak tilted like 
 
 #speaker:{Name}
 I glance at the water. The stars are starting to show. Somehow, things feel a little more peaceful tonight.
-
+#sfx_DoorSounds
 -> END
 
 === pearl_follow_stu_cold ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:{Name}
 I walk away. The ocean keeps moving — and so do we.
@@ -47,6 +52,7 @@ Stu lands beside me. His talons clink softly on the railing.
 
 #speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squaaak — that sure went well."
 
 #speaker:{Name}
@@ -65,5 +71,5 @@ Stu lands beside me. His talons clink softly on the railing.
 
 #speaker:{Name}
 I don’t answer. The waves crash against the ship. Tonight, they feel louder than they should.
-
+#sfx_DoorSounds
 -> END

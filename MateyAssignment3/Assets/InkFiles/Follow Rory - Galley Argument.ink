@@ -126,6 +126,7 @@ He slams his hand down the table, rattling its components. A beat passes before 
 -> rory_q2_intro
 
 === rory_q1_joke ===
+~ Rory_Affection +=5
 
 #Speaker:Master Porthole
 #pose:Default

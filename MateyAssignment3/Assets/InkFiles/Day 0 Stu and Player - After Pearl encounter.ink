@@ -12,6 +12,7 @@ INCLUDE Globals.ink
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak — what in the seven seas just happened?"
 
 #speaker:{Name}

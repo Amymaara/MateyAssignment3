@@ -16,6 +16,7 @@ My ship? Groaning as if it's giving me an apology for what's to come.
 #Speaker:Stu
 #pose:Pose2
 #activate:Stu
+#sfx_Stu2
 "Squaaak - Cap'n {Name}! MOVE!"
 #disable:Stu
 

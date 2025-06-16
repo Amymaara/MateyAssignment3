@@ -12,12 +12,15 @@ INCLUDE Globals.ink
 
 === shad_stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 The Galley’s door creaks shut behind me, but I don’t even make it halfway down the hall before feathers flutter into view.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak - heard pots clatter. Should I be setting a table for two or an intervention?"
 
 #Speaker:{Name}
@@ -53,17 +56,21 @@ I smirk, but it’s true - something in me stirs when Shad talks like that. Like
 
 #Speaker:{Name}
 Whatever tomorrow holds, I’m glad he’s still cooking.
+#sfx_DoorSounds
 
 -> END
 
 === shad_stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 The galley fades behind me, but the scent of overcooked ambition still lingers.
 
 #Speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squawk - you look like someone who walked through a dramatic monologue."
 
 #Speaker:{Name}
@@ -89,5 +96,7 @@ The galley fades behind me, but the scent of overcooked ambition still lingers.
 
 #Speaker:{Name}
 The hallway settles around us. I walk on, the weigh of my silence following me.
+
+#sfx_DoorSounds
 
 -> END

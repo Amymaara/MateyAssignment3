@@ -16,6 +16,7 @@ But definitely something screaming.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu2
 "Squaaak - either the Galley's on fire or Shad's trying to make another sentient baked good."
 
 #Speaker:{Name}

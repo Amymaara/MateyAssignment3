@@ -6,7 +6,7 @@ VAR krakenHP = 100
 
 // Damage variables
 VAR krakenDamage = 12
-VAR playerDamage = 9
+VAR playerDamage = 10
 
 // check if help used
 VAR helpUsedPearl = false
@@ -131,7 +131,7 @@ You call out:
 #Speaker:{Name}
 "Pearl, a little help?"
 
-{ Pearl_Affection >= 35:
+{ Pearl_Affection >= 30:
 
 #Speaker:Pearl
 #pose:Pose3
@@ -144,7 +144,7 @@ You call out:
 Pearl sings, the Kraken wails at how tone deaf she is.
  
  ~ helpUsedPearl = true
- ~ temp finalDamage = 9 * 3
+ ~ temp finalDamage = 10 * 3
  ~ krakenHP -= finalDamage
  
  #Speaker:{Name}
@@ -166,7 +166,7 @@ You call out:
 #Speaker:{Name}
 "Shad! now's your time to shine cook up something lethal!"
 
-{Shad_Affection >= 35:
+{Shad_Affection >= 30:
 Shad throws you a suspicious pie that smells.. vaguely radioactive.
 
 #Speaker:Shad
@@ -177,7 +177,7 @@ Shad throws you a suspicious pie that smells.. vaguely radioactive.
 #disable:Shad
 
 ~ helpUsedShad = true
-~ temp finalDamage = 9 * 3
+~ temp finalDamage = 10 * 3
 ~ krakenHP -= finalDamage
 
 You launch the pie at the Kraken. It explodes on impact - in pie we crust. {finalDamage} done!
@@ -203,7 +203,7 @@ Shad shrugs
 
 You shout:
 
-{Rory_Affection >= 35:
+{Rory_Affection >= 30:
 #Speaker:{Name}
 "Master Porthole! Now would be a good time for some flair!"
 
@@ -218,7 +218,7 @@ Don't get it dirty, that gun costs more than this ship."
 #disable:Rory
 
 ~helpUsedRory = true
-~ temp finalDamage = 9 * 3
+~ temp finalDamage = 10 * 3
 ~ krakenHP -= finalDamage
 
 The Kraken reels as you shoot his tentacles with costly lead! {finalDamage} damage afflicted!
@@ -244,7 +244,7 @@ Master Porthole scuffs at you.
 #speaker:{Name}
 "Ravynn, this would be a good time for planned precision!"
 
-{Ravynn_Affection >= 35:
+{Ravynn_Affection >= 30:
 
 #speaker:{Name}
 Ravynn wordlessly tosses you a dagger, it has gold swirls on the hilt.
@@ -257,7 +257,7 @@ Ravynn wordlessly tosses you a dagger, it has gold swirls on the hilt.
 #disable:Ravynn
 
 ~helpUsedRavynn = true
-~ temp finalDamage = 9 * 3
+~ temp finalDamage = 10 * 3
 ~ krakenHP -= finalDamage
 
 You hurl the dagger at the beast - it strikes true. The Kraken lets out a furious bellow. You hit for {finalDamage} damage!

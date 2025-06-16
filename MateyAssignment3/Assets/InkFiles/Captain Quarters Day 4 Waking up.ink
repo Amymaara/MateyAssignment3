@@ -13,6 +13,7 @@ Not like, pirate battle clanging - more like... an insulted frying pan?
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squawk — rise and regret, Captain! There’s drama brewin’."
 
 #speaker:{Name}

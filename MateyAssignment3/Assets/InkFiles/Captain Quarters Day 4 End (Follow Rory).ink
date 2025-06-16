@@ -12,12 +12,15 @@ INCLUDE Globals.ink
 
 === rory_stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 As I step out of the study, the air still thick with revelations and royalty, Stu glides down and lands beside me.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaawk - sooo... you're into crown trauma now?"
 
 #Speaker:{Name}
@@ -54,17 +57,21 @@ As I step out of the study, the air still thick with revelations and royalty, St
 #Speaker:Stu
 #pose:Pose2
 "Then hold onto that. Just...maybe keep a dagger under your pillow, just in case."
+#sfx_DoorSounds
 
 -> END
 
 === rory_stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I step out of the study, the door clicking softly behind me. Stu lands beside me like he’s been waiting the whole time.
 
 #Speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squaaawk - what’s the royal verdict? Still single, still snarky?"
 
 #Speaker:{Name}
@@ -101,5 +108,7 @@ I step out of the study, the door clicking softly behind me. Stu lands beside me
 #Speaker:Stu
 #pose:Pose1
 "Then stop looking for it in people who come with titles and traumas."
+#sfx_DoorSounds
+
 
 -> END

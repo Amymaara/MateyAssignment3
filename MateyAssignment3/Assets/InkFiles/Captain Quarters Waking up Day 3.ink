@@ -13,6 +13,7 @@ Not the happy, chaotic kind like Shad yelling about overcooked eggs.
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu2
  "Squaaak, and they said pirates don’t have morning routines..."
 
 #speaker:{Name}

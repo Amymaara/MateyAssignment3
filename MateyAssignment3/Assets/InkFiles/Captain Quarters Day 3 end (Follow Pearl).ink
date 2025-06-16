@@ -12,12 +12,15 @@ INCLUDE Globals.ink
 
 === pearl_stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I'm almost at the end of the corridor when a familiar feathered friend brushes past me.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak - saw you vanish in Pearl's den of sparkles and sea trauma. Everything alright?"
 
 #Speaker:{Name}
@@ -59,17 +62,22 @@ Despite everything - the chaos, the curse and the pressure of everything. I mana
 
 #Speaker:{Name}
 The feels peaceful tonight.
+#sfx_DoorSounds
+
 
 -> END
 
 === pearl_stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 Stu finds his way to me, as he always done. Only this time he has an even more pronounce look of displeasure.
 
 #Speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squawk - Aren't you the anti-casanova."
 
 #Speaker:{Name}
@@ -102,5 +110,7 @@ I don't reply. Stu doesn't push further.
 
 #Speaker:{Name}
 The ship rocks gentle beneath us, but my guilt makes me wish the sea was more turbulent - to match the feelings in my heart.
+#sfx_DoorSounds
+
 
 -> END

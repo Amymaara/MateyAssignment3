@@ -15,6 +15,7 @@ INCLUDE Globals.ink
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak - was that flirting or an interrogation?"
 
 #speaker:{Name}
@@ -37,6 +38,7 @@ I turn and walk back. She doesn’t look back — and neither do I.
 
 #speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squaaak - she’s not just intense. She’s ferocious."
 
 #speaker:{Name}

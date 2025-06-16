@@ -11,6 +11,8 @@ INCLUDE Globals.ink
 
 === ravynn_follow_stu_soft ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 The deck is calmer now. Ravynn's voice lingers in my head - half a threat, half a promise.
@@ -20,6 +22,7 @@ I'm halfway to the stairs when I hear the sound of feathers and attitude swoopin
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak - I leave you alone for one ration check and suddenly you're in fanfiction."
 
 #Speaker:{Name}
@@ -52,11 +55,15 @@ We look at each other and burst into laughter. The wind picks up a bit, less of 
 #Speaker:Stu
 #pose:Pose1
 "But hey...she trusts you. That means something. Don’t mess it up, unless you want to be the villain in her next story - 'No Love on Deck: The Captain Dies in Every Ending'."
+#sfx_DoorSounds
+
 
 -> END
 
 === ravynn_follow_stu_cold ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I walk away, Ravynn's words still clining like the sea spray to my mind."
@@ -98,5 +105,7 @@ I stare out at the sea. It suddenly looks a lot wider and quieter than before.
 
 #Speaker:{Name}
 The ship creaks as it sways forward. For the first time in awhile, I don't feel like I'm worthy of the title Captain.
+#sfx_DoorSounds
+
 
 -> END

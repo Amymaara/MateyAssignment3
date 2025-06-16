@@ -10,6 +10,8 @@ INCLUDE Globals.ink
 
 === shad_follow_stu_soft ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:{Name}
 I smirk and step out of the galley, leaving him to wonder what my actions meant.
@@ -20,6 +22,7 @@ Stu’s perched just outside the galley, poorly pretending not to have been eave
 
 #speaker:Stu
 #pose:Pose2
+#sfx_Stu1
 "Squaaak — someone’s turning up the heat in more ways than one."
 
 #speaker:{Name}
@@ -30,11 +33,14 @@ I glance back toward the galley door where laughter and the clanging of pans sti
 
 #speaker:{Name}
 We keep walking. The air is cooler out here, but it still feels like something’s heating up.
+#sfx_DoorSounds
 
 -> END
 
 === shad_follow_stu_cold ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:{Name}
 I walk out before the quiet becomes even more awkward. Behind me, a metal spoon hits the floor — he doesn’t pick it up right away.
@@ -53,6 +59,7 @@ He doesn’t say anything at first, just judges me with those birdy eyes.
 
 #speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squaaak — that was… something."
 
 #speaker:{Name}
@@ -88,5 +95,6 @@ I don’t respond. I grip the railing tighter and stare into the sea.
 
 #speaker:{Name}
 The waves sound louder than they should.
+#sfx_DoorSounds
 
 -> END

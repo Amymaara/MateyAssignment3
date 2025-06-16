@@ -11,6 +11,8 @@ INCLUDE Globals.ink
 
 === rory_stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:{Name}
 I leave the study, making sure not to look back. The door closes with a soft click, but his gaze lingers on my skin.
@@ -20,6 +22,7 @@ Stu is already waiting in the hallway, perched atop a lantern.
 
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak - stars in his eyes and yours too, huh Cap'n {Name}?"
 
 #Speaker:{Name}
@@ -51,10 +54,14 @@ I'm like a moth drawn to a flame around him."
 
 #Speaker:{Name}
 The maps rustle as the wind sneaks in through the cracks. For a moment I wonder if he's still watching me from behind the door.
+#sfx_DoorSounds
+
 -> END
 
 === rory_stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I close the door behind me with a firm tug. The study's silence follows me out.
@@ -64,6 +71,7 @@ Stu is perched outside, looking annoying as usual.
 
 #Speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "Squaak - you left him ice-cold."
 
 #Speaker:{Name}
@@ -92,5 +100,7 @@ Stu tilts his head, his talons softly click on the wood.
 
 #Speaker:{Name}
 The wind outside is louder now. Somehow the silence in the hallway feels like it belongs to him.
+#sfx_DoorSounds
+
 
 -> END

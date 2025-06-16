@@ -16,6 +16,7 @@ I turn around to leave, and I swear — solemnly swear — that I heard him say:
 
 #speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaaak, was that flirting or a verbal skirmish?"
 
 #speaker:{Name}
@@ -43,6 +44,7 @@ Nope. Already done.
 
 #speaker:Stu
 #pose:Pose2
+#sfx_Stu2
 "You two get along as well as pirates and piranhas."
 
 #speaker:{Name}

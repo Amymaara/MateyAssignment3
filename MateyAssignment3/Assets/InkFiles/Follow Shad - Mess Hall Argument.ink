@@ -103,7 +103,7 @@ As I'm about to leave something catches my eye.
 -> END
 
 === shad_follow_disinterest ===
-~ Shad_Affection -= 10
+~ Shad_Affection -= 5
 ~ shad_exit_type = "disinterested"
 
 #Speaker:{Name}

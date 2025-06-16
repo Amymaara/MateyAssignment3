@@ -4,7 +4,8 @@ INCLUDE Globals.ink
 
 
 === storm_intro ===
-#music_Storm
+#music_Rain
+#sfx_Lightning1
 
 #Speaker:{Name}
 The sea cried that night. Winds howled, waves like blades, cutting into the ship. 
@@ -35,6 +36,7 @@ No, tonight it’s a deathbed.
 
 #Speaker:{Name}
 The ship jerked, I hit the deck - hard. 
+#sfx_Lightning2
 
 #Speaker:{Name}
 The stinging of rain, chaos, even more screams.
@@ -69,7 +71,7 @@ Another tentacle. But this one was bigger, meaner. Not squid like, no...
  
 #Speaker:{Name}
 this was different - violent, malevolent. 
-
+#sfx_Lightning1
 #Speaker:{Name}
 I gripped my compass, knuckles going white. 
 
@@ -84,7 +86,7 @@ But thinking, idling - costs everything.
 
 #Speaker:{Name}
 I hear another scream, another crewmate gone. In the blink of an eye. #sfx_Scream-85294
-
+#sfx_Lightning2
 #Speaker:{Name}
 #sfx_Walking-on-a-wet-surface-41742
 I ran to the wheel, my boots slipping against the wet planks but I held on. 
@@ -123,7 +125,7 @@ My aim was off, I grazed it but not enough.
 The damage was done, I saved myself but the wheel was gone - splintered.  #sfx_Log-split-88986
 #Speaker:{Name}
 We were stuck. 
-
+#sfx_Lightning2
 #Speaker:{Name}
 There were only two of us and one thing left to try.
 
@@ -140,8 +142,8 @@ But so was she - my last crewmate.
 Falling towards the beast.
 
 #Speaker:{Name}
-I tried reaching out, I tried saving her. #sfx_Girl-screaming-sound-effect-259472
-
+I tried reaching out, I tried saving her.
+#sfx_Lightning1
 #Speaker:{Name}
 I couldn’t save her.
 
