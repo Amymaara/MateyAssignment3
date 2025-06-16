@@ -22,6 +22,8 @@ public class DayLogic : MonoBehaviour
         
         RemoveTrigger(AllChars); //characters are not interactable
 
+        
+
         StoryManager.Instance.StartStory(Fight, "Fight");
 
 
@@ -35,6 +37,13 @@ public class DayLogic : MonoBehaviour
         {
             Debug.Log("story finished");
             addTrigger(AllChars); // make characters interactable again
+
+            // makes sure the character scaling is correct
+            Image[] images = AllChars.GetComponentsInChildren<Image>();
+            foreach (Image img in images)
+            {
+                img.SetNativeSize();
+            }
 
         }
 

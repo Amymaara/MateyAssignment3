@@ -362,6 +362,7 @@ public class StoryManager : MonoBehaviour
                 break;
 
             case "kraken":
+            case "mr. tickles":
                 if (character is KrakenCharacter kraken &&
                     Enum.TryParse(poseStr, true, out KrakenCharacter.KrakenPose krakenPose) &&
                     Enum.TryParse(expStr, true, out KrakenCharacter.KrakenExpression krakenExp))
@@ -369,6 +370,8 @@ public class StoryManager : MonoBehaviour
                     kraken.SetSprite(krakenPose, krakenExp);
                 }
                 break;
+
+         
 
             default:
                 if (Enum.TryParse(poseStr, true, out StoryCharacter.Pose pose) &&
