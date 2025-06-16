@@ -69,6 +69,7 @@ public class DayTransitionLogic : MonoBehaviour
 
     private IEnumerator ShowTypedDayTextAfterDelay(float delay)
     {
+        Debug.Log("Day type effect");
         yield return new WaitForSeconds(delay);
 
         int day = GameStateManager.DayCount;

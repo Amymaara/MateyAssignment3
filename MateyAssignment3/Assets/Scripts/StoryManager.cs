@@ -848,7 +848,7 @@ get varstate(nameofvariable)
         while (runningStory.canContinue && runningStory.currentChoices.Count == 0)
         {
             string nextLine = runningStory.Continue();
-            TagHandler(); 
+            
 
             if (dialogueBox.text != nextLine)
             {
