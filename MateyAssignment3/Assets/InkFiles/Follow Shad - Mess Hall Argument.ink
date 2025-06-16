@@ -2,7 +2,8 @@ INCLUDE Globals.ink
 
 -> follow_shad_whisk
 === follow_shad_whisk ===
-#music_Celtic-moon-loop-1-284914
+#music_ShadMusic
+
 #speaker:{Name}
 I head to the Galley while Pearl disappears, talking to herself like she just failed a hostage negotiation.
 
@@ -44,13 +45,14 @@ For once, he doesn’t have his usual goofy smile. He’s just... kind of honest
 === shad_follow_flirt ===
 ~ Shad_Affection += 10
 ~ shad_exit_type = "flirty"
+#music_Flirty
 
 #Speaker:{Name}
 His eyes widen. He breaks into a sheepish grin.
 
 #speaker:Shad
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "Really? Me? People usually call me a walking hazard or a kitchen apocalypse."
 
 #speaker:{Name}
@@ -61,7 +63,7 @@ His eyes widen. He breaks into a sheepish grin.
  
 #speaker:Shad
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "Guilty as charged. I have. Twice."
 
 #Speaker:{Name}
@@ -69,7 +71,7 @@ He pauses. The laughter fades into something softer, more intimate.
 
 #speaker:Shad
 #pose:Default
-#expression:Neutral
+#expression:Blush
 "Thanks, Cap’n. I really appreciate being seen like that — as myself.  
 Not just a chaotic mess or the guy who’s comedic relief."
 
@@ -80,7 +82,7 @@ Not just a chaotic mess or the guy who’s comedic relief."
 Shad grins, voice dropping just a little.
 
 #speaker:Shad
-#pose:Neutral
+#pose:Pose2
 #expression:Blush
 "Careful Cap’n. You keep that up and I might start thinking you’re sweet on me."
 
@@ -88,6 +90,8 @@ Shad grins, voice dropping just a little.
 He leans in to whisper.
 
 #speaker:Shad
+#pose:Pose2
+#expression:Smile
 "And if you are... well, I’m not exactly known for resisting temptation."
 
 #Speaker:{Name}
@@ -122,7 +126,7 @@ The bubbling sounds a little too loud, but maybe it’s just the silence between
 He doesn’t respond immediately. Instead, he gives a sharp nod and a tight smile that doesn’t reach his eyes.
 
 #speaker:Shad
-#pose:Neutral
+#pose:Default
 #expression:Angry
 "Yup. Got it, Cap’n. Back to business."
 

@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> rory_intro
 
 === rory_intro ===
-#music_Celtic-moon-loop-1-284914
+#music_RoryMusic
 
 #speaker:Stu
 "We should definitely check out that suspicious guy. Hopefully he hasn’t royally messed up or stolen anything."
@@ -49,7 +49,7 @@ And the cause of it? Yup — there he was, standing by the window like a paintin
 (Okay. Time to react to that name…)
 
 * "That name sounds... character-building."
-    ~ Rory_Affection -= 10
+    ~ Rory_Affection -= 5
     
 #speaker:{Name}
 He looks at me as if I murdered his child.
@@ -66,13 +66,13 @@ He looks at me as if I murdered his child.
 
 #speaker:Master Porthole
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "How strangely sincere of you."
    
     -> rory_flooring
 
 * "Sounds fake, but alright"
- ~ Rory_Affection += 0
+ ~ Rory_Affection += 5
 
 #speaker:Master Porthole
 #pose:Pose2
@@ -107,7 +107,7 @@ Touché. Let’s just say it’s a… placeholder, for now."
     -> rory_deed
 
 === rory_troll ===
-~ Rory_Affection += 0
+~ Rory_Affection += 5
 
 #speaker:Master Porthole
 #pose:Pose3
@@ -117,7 +117,7 @@ Touché. Let’s just say it’s a… placeholder, for now."
 -> rory_tone
 
 === rory_drunk ===
-~ Rory_Affection -= 10
+~ Rory_Affection -= 5
 
 #speaker:Master Porthole
 #pose:Pose3
@@ -131,7 +131,7 @@ Touché. Let’s just say it’s a… placeholder, for now."
 
 #speaker:Master Porthole
 #pose:Pose3
-#expression:Blush
+#expression:Smile
 "A fellow opportunist? Good. You might survive me after all."
 
 -> rory_tone
@@ -163,10 +163,11 @@ Touché. Let’s just say it’s a… placeholder, for now."
 === rory_exit_flirty ===
 ~Rory_Affection += 10 
 ~ rory_exit_type = "flirty"
+#music_Flirty
 
 #speaker:Master Porthole
 #pose:Pose3
-#expression:Neutral
+#expression:Blush
 "Good. I’d be horrified if you forgot me that easily."
 
 #speaker:{Name}

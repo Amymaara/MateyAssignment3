@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> shad_intro
 
 === shad_intro ===
-#music_Celtic-moon-loop-1-284914
+#music_ShadMusic
 
 #speaker:Stu
 "Wait… What’s that smell? It smells like burning sugar and nightmares. Let’s go to the Galley. Shad should be there."
@@ -37,13 +37,13 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     #speaker:Shad
  #pose:Default
-#expression:Blush
+#expression:Smile
     "A lot of food with a pinch of love, and sometimes consciousness."
 
     -> shad_kitchen_story
 
 * "Should I be concerned about the bubbling jar of slime on the counter?"
-    ~ Shad_Affection += 0
+    ~ Shad_Affection += 5
 
     #speaker:Shad
     #pose:Default
@@ -53,7 +53,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
     -> shad_kitchen_story
 
 * "The galley’s in a state of chaos, what happened?"
-    ~ Shad_Affection -= 10
+    ~ Shad_Affection -= 5
 
 
     #speaker:Shad
@@ -104,7 +104,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     #speaker:Shad
     #pose:Default
-#expression:Blush
+#expression:Smile
     "That might be the best compliment I’ve ever gotten! I’m writing that on my gravestone!"
 
 #Speaker:{Name}
@@ -112,13 +112,13 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
     
     #Speaker:Shad
 #pose:Pose3
-#expression:Blush
+#expression:Smile
 "Also I didn't hear a no! You can be the first person to ever try my soul food...maybe the last."
     -> shad_exit
 
 #speaker:{Name}
 * "As long as you don’t poison me, we’ll get along fine."
-    ~ Shad_Affection += 0
+    ~ Shad_Affection += 5
 
     #speaker:Shad
     #pose:Default
@@ -128,7 +128,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
     -> shad_exit
 
 * "I think you might be a bigger danger than any sea monster."
-    ~ Shad_Affection-= 10
+    ~ Shad_Affection -= 5
 
     #speaker:Shad
     #pose:Default
@@ -148,11 +148,13 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
  -> shad_exit_flirty
  
  * "Good luck with whatever this is. I’m gonna try and find something to eat that’s not vaguely alive."
-  ~ Shad_Affection -= 10
+  ~ Shad_Affection -= 5
  -> shad_exit_disinterested
  
  === shad_exit_flirty ===
+ #music_Flirty
  ~shad_exit_type = "flirty"
+ 
     #speaker:Shad
     #pose:Default
 #expression:Blush
@@ -163,7 +165,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 
     #speaker:Shad
       #pose:Default
-#expression:Blush
+#expression:Smile
     "Huh, a romantic and a risk taker — you’re making my heart skip a beet."
 
 #Speaker:{Name}

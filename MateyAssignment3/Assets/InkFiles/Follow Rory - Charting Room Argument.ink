@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> follow_rory
 ==== follow_rory ====
-#music_Celtic-moon-loop-1-284914
+#music_RoryMusic
 
 #Speaker:{Name}
 I step into the study and wonder if I somehow ended up at the palace library.
@@ -54,13 +54,14 @@ He turns to face me now, something lies between us — something unspoken in the
 === exit_flirty ===
 ~ rory_exit_type = "flirty"
 ~ Rory_Affection +=10
+#music_Flirty
 
 #Speaker:{Name}
 Master Porthole steps closer towards me.
 
 #Speaker:Master Porthole
 #pose:Pose3
-#expression:Blush
+#expression:Smile
 "Careful, Captain {Name}. If you see through me so clearly, I might start thinking we're more than comrades."
 
 #Speaker:{Name}
@@ -82,7 +83,7 @@ Master Porthole steps closer towards me.
 
 #Speaker:Master Porthole
 #pose:Pose2
-#expression:Neutral
+#expression:Smile
 "Give me a reason, and I'll follow you into every storm. Cross me and I'll become one."
 
 #Speaker{Name}
@@ -107,7 +108,7 @@ Master Porthole steps closer towards me.
  
  === exit_disinterested ===
 ~ rory_exit_type = "disinterested"
-~ Rory_Affection -= 10
+~ Rory_Affection -= 5
 
 #Speaker:{Name}
 I watch as his jaw tenses, only for a moment, but it's enough to notice.

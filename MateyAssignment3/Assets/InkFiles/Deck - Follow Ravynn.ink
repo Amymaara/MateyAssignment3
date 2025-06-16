@@ -13,7 +13,7 @@ I walk to towards her, she notices me approaching but doesn't tell me to leave. 
 
 #Speaker:Ravynn
 #pose:Default
-#expression:Neutrak
+#expression:Neutral
 "You always follow people after fights, Captain {Name}? Or am I just special?"
 
 #Speaker:{Name}

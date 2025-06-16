@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> kraken_death_scene
 === kraken_death_scene ===
-#music_Celtic-moon-loop-1-284914
+#music_StuMusic2
 
 #Speaker:{Name}
 I should have seen it coming - the shift in the wind, the sudden deafening silence.
@@ -15,7 +15,9 @@ My ship? Groaning as if it's giving me an apology for what's to come.
 
 #Speaker:Stu
 #pose:Pose2
+#activate:Stu
 "Squaaak - Cap'n {Name}! MOVE!"
+#disable:Stu
 
 #Speaker:{Name}
 I spin to raise my harpoon. But the deck crumbling beneath my balance was my downfall.

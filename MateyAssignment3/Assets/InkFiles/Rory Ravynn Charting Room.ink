@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> charting_room
 === charting_room ===
-#music_Celtic-moon-loop-1-284914
+#music_StuMusic2
 
 #speaker: {Name}
 The charting room is a disaster - not in the way the Galley is no. This disaster is split right down the middle of the room.
@@ -33,7 +33,7 @@ The middle? A map - torn, smudged, and the topic of a very aggressive...debate?
 
 #Speaker:Ravynn
 #pose:Default
-#expression:Angry
+#expression:Neutral
 "The wind has shifted. If we stay on your course we'll drift into still water by sunrise."
 
 #Speaker:{Name}
@@ -46,7 +46,7 @@ He sips his tea before replying to her.
 
 #Speaker:Ravynn
 #pose:Pose2
-#expression:Angry
+#expression:Neutral
 "I'd rather bet on mood swings than astrology and flair."
 
 #Speaker:Master Porthole
@@ -62,7 +62,7 @@ Ravynn points to the map with irritation.
 
 #Speaker:Ravynn
 #pose:Pose3
-#expression:Angry
+#expression:Neutral
 "Storm is due north, this crew cannot afford another close call."
 
 #Speaker:Master Porthole
@@ -90,7 +90,7 @@ Master Porthole preens as if I handed him an expensive jewel.
 
 #Speaker:Master Porthole
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "Looks like someone does have taste. Welcome to the celestial fold Captain {Name}."
 
 #Speaker:{Name}
@@ -98,7 +98,7 @@ Ravynn snaps a map tube shut as if it just offended her whole lineage.
 
 #Speaker:Ravynn
 #pose:Pose2
-#expression:Angry
+#expression:Neutral
 "Remind me to prepare extra lifeboats."
 
 #Speaker:{Name}
@@ -109,7 +109,7 @@ Master Porthole leans towards me to say something.
 
 #Speaker:Master Porthole
 #pose:Pose3
-#expression:Blush
+#expression:Smile
 "Smart and loyal. You're going to be the death of me - or someone else."
 
 #Speaker:{Name}
@@ -129,7 +129,7 @@ Ravynn nods once at me, I feel like a kid finally getting their unimpressed pare
 
 #Speaker:Ravynn
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "Understood."
 
 #Speaker:{Name}

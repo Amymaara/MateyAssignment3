@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> follow_ravynn
 === follow_ravynn ===
-#music_Celtic-moon-loop-1-284914
+#music_RavynnMusic
 
  #Speaker:{Name}
  The deck is spick and span, but also very quiet. 
@@ -15,7 +15,7 @@ INCLUDE Globals.ink
  
  #Speaker:Ravynn
  #pose:Pose3
- #expression:Angry
+ #expression:Neutral
  "You followed, why?"
  
  #Speaker:{Name}
@@ -23,7 +23,7 @@ INCLUDE Globals.ink
  
  #Speaker:Ravynn
  #pose:Pose2
- #expression:Angry
+ #expression:Neutral
  "You shouldn't waste your time here."
  
  #Speaker:{Name}
@@ -34,7 +34,7 @@ INCLUDE Globals.ink
  
  #Speaker:Ravynn
  #pose:Default
- #expression:Angry
+ #expression:Neutral
  "I said what I needed to say."
  
  #Speaker:{Name}
@@ -42,7 +42,7 @@ INCLUDE Globals.ink
  
  #Speaker:Ravynn
  #pose:Default
- #expression;Angry
+ #expression:Neutral
  "Understanding is earned, not gifted."
  
  #Speaker:{Name}
@@ -74,6 +74,7 @@ INCLUDE Globals.ink
  === ravynn_flirty ===
  ~ Ravynn_Affection +=10
  ~ ravynn_exit_type = "flirty"
+ #music_Flirty
 
   #Speaker:{Name}
  "You're just...sharp edged."
@@ -86,7 +87,7 @@ INCLUDE Globals.ink
  
  #Speaker:Ravynn
  #pose:Pose2
- #expression:Blush
+ #expression:Smile
  "Keep talking like that and I'll take it as you want to cut on purpose."
  
  #Speaker:{Name}
@@ -96,8 +97,8 @@ INCLUDE Globals.ink
  She steps closer, just enough so that I can notice her warmth.
  
  #Speaker:Ravynn
-  #pose:Pose2
- #expression:Angry
+ #pose:Pose2
+ #expression:Neutral
  "If you're flirting, you're playing with fire."
  
  #Speaker:{Name}
@@ -111,15 +112,15 @@ INCLUDE Globals.ink
 
 #Speaker:Ravynn
 #pose:Pose2
- #expression:Angry
+ #expression:Neutral
 "I don't melt, I don't burn easily either."
 
 #Speaker:{Name}
 She brushes past me, her voice lower.
 
 #Speaker:Ravynn
-# #pose:Default
- #expression:Blush
+#pose:Default
+#expression:Blush
 "But if you wanna test heat...you better be prepared."
 
 #Speaker:{Name}
@@ -134,7 +135,7 @@ Feeling slightly flushed, I begin to be more aware of my surroundings.
 -> END
 
 === ravynn_disinterested ===
-~ Ravynn_Affection -= 10
+~ Ravynn_Affection -= 5
 ~ ravynn_exit_type = "disinterested"
 
  #Speaker:{Name}
@@ -142,7 +143,7 @@ She pauses for a moment.
 
 #Speaker:Ravynn
 #pose:Default
-#expression:Angry
+#expression:Neutral
 "Good. Then I don't need to worry."
 
 #Speaker:{Name}
@@ -150,7 +151,7 @@ She nods, professional and curt. Her guard not dropping for a second.
 
 #Speaker:Ravynn
 #pose:Default
-#expression:Angry
+#expression:Neutral
 "You should go, the wind's changing."
 
 #Speaker:{Name}
@@ -158,7 +159,7 @@ She nods, professional and curt. Her guard not dropping for a second.
 
 #Speaker:Ravynn
 #pose:Pose3
-#expression:Angry
+#expression:Neutral
 "Always."
 
 #Speaker:{Name}

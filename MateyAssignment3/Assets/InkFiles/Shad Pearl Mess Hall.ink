@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> shad_pearl_octopus_scene
 
 === shad_pearl_octopus_scene ===
-#music_Celtic-moon-loop-1-284914
+#music_StuMusic2
 
 #Speaker:{Name}
 The Mess Hall is in chaos. Again.
@@ -43,7 +43,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 
 #speaker:Pearl
 #pose:Default
-#expression:neutral
+#expression:Neutral
 "We can lure it away or offer it a trade! I can negotiate!"
 
 #speaker:Shad
@@ -69,7 +69,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 
 #speaker:Pearl
 #pose:Pose3
-#expression:Blush 
+#expression:Smile 
 "See! The Captain gets it. We’re not barbarians."
 
 #speaker:Shad
@@ -88,7 +88,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 
 #speaker:Shad
 #pose:Default
-#expression:Blush
+#expression:Smile
 "Thank you! Finally, someone who respects the sanctity of Mr Whisk."
 
 #speaker:Pearl

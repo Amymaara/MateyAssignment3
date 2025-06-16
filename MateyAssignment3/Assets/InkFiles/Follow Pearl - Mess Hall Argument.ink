@@ -1,8 +1,9 @@
 INCLUDE Globals.ink
 
 -> follow_pearl_whisk
-#music_Celtic-moon-loop-1-284914
+
 === follow_pearl_whisk ===
+#music_PearlMusic
 
 #speaker:{Name}
 I find Pearl in her room, sitting on her chair watching Sardinella float calmly as she gently hums.
@@ -35,7 +36,7 @@ She doesn’t laugh, but rather smiles gently.
 "I’ve always felt things out there understood me better — sea creatures, the waves, even the stars."
 
 #speaker:Pearl
-#pose:Pose2
+#pose:Default
 #expression:Sad
 "But people? They usually think I’m a joke."
 
@@ -43,12 +44,12 @@ She doesn’t laugh, but rather smiles gently.
 "You’re not."
 
 #speaker:Pearl
-#pose:Pose2
+#pose:Default
 #expression:Sad
 "I just saw myself in that octopus. I know he didn’t have bad intentions — he probably saw something shiny and wanted a closer look."
 
 #speaker:Pearl
-#pose:Pose3
+#pose:Pose2
 #expression:Sad
 "And besides, I know what it feels like to be misunderstood."
 
@@ -63,13 +64,14 @@ She dips her fingers into the bowl and watches the ripples, her face tinted with
 === pearl_follow_flirt ===
 ~ Pearl_Affection += 10
 ~ pearl_exit_type = "flirty"
+#music_Flirty
 
 #speaker:{Name}
 Her eyes widen. A real blush blooms across her cheeks.
 
 #speaker:Pearl
 #pose:Pose3
-#expression:Blush
+#expression:Smile
 "If you keep saying things like that, I’ll have to add you to the list of things that make me swoon dramatically."
 
 #speaker:{Name}
@@ -88,7 +90,7 @@ She nudges a bit closer to me. There’s laughter in her voice again — and a h
 -> END
 
 === pearl_follow_disinterest ===
-~ Pearl_Affection -= 10
+~ Pearl_Affection -= 5
 ~ pearl_exit_type = "disinterested"
 
 #speaker:{Name}

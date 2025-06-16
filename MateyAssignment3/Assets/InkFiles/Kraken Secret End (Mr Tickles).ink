@@ -2,7 +2,7 @@ INCLUDE Globals.ink
 
 -> kraken_secret_end
 === kraken_secret_end ===
-#music_Medieval-star-188280
+#music_KrakenRomance
 
 #Speaker:{Name}
 My crew, all gone.
@@ -31,7 +31,9 @@ Eldritch Sea God. Devourer of Ship.
 #Speaker:{Name}
 My Cuddly Bug from the Deep.
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles
+#pose:Default
+#expression:Blush
 "You came back, my driftling."
 
 #Speaker:{Name}  
@@ -40,13 +42,29 @@ My Cuddly Bug from the Deep.
 #Speaker:{Name}
 His voice wraps around me like a current — warm, wicked, velvety smooth.
 
-#Speaker:Mr. Tickles  
+#Speaker:{Name}
+"You really gonna stay like that?"
+
+#Speaker:Mr.Tickles
+#pose:Default
+#expression:Neutral
+"Well aren't you impatient, but I don't mind it as long as I'm the one you're yearning for."
+
+#Speaker:{Name}
+He changes into a more familiar form, well to me.
+
+
+#Speaker:Mr. Tickles 
+#pose:Human
+#expression:Neutral
 "You always bring me the sweetest gifts."
 
 #Speaker:{Name}  
 "Well. They did trust me, that was their first mistake."
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles 
+#pose:Human
+#expression:Neutral
 "And now it's their last."
 
 #Speaker:{Name} 
@@ -54,37 +72,49 @@ He slithers closer — tentacles gripping gently around my waist.
 
 "Miss me?"
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles 
+#pose:Human
+#expression:Blush
 "More than anything, like waves miss the shore, like the sky misses the stars, and like I - "
 
 #Speaker:{Name}  
 "— miss the screams of sacrifices?"
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles 
+#pose:Human
+#expression:Blush
 "Exactly, you even complete my sentences my little minnow."
 
 #Speaker:{Name}
 He leans down, eyes glowing like bioluminescent sinful orbs.
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles
+#pose:Human
+#expression:Neutral
 "You looked so commanding up there, feeding me their lives like breadcrumbs. I was swooning."
 
 #Speaker:{Name}  
 "You’re always swooning."
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles
+#pose:Human
+#expression:Blush
 "Only when you call me Mr. Tickles."
 
 #Speaker:{Name}  
 He laughs — the kind of laugh that causes minor earthquakes.
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles 
+#pose:Human
+#expression:Neutral
 "Come now, my monstrous muse. Let give you your hard-earned reward."
 
 #Speaker:{Name}  
 "And pray tell, what is my reward?"
 
-#Speaker:Mr. Tickles  
+#Speaker:Mr. Tickles 
+#pose:Human
+#expression:Blush
 "My undying devotion, my most valuable artifact and lastly my warmest tentacles."
 
 #Speaker:{Name}  
@@ -94,6 +124,8 @@ He coils tighter — not enough to crush. Just enough to remind me what's holdin
 "I guess I do deserve to be spoiled, since I did all the work"
 
 #Speaker:Mr. Tickles  
+#pose:Human
+#expression:Blush
 "And I’ll do all the wrapping or should I say unwrapping."
 
 #Speaker:{Name}

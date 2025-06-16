@@ -4,7 +4,7 @@ INCLUDE Globals.ink
 
 
 === storm_intro ===
-#music_Atlantic-storm-58999
+#music_Storm
 
 #Speaker:{Name}
 #sfx_Sea-waves-7131
@@ -162,5 +162,8 @@ I hit the ocean.
 Everything went dark as I sank into the abyss.
 
 #sfx_stop
+#music_stop
+#sfxstop
+#musicstop
 
 -> END

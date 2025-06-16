@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> wake_up
 
 === wake_up ===
-#music_Celtic-moon-loop-1-284914
+#music_StuMusic
 
 #Speaker:Stu
 #pose:Pose1

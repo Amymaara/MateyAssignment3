@@ -3,6 +3,7 @@ INCLUDE Globals.ink
 -> follow_shad_galley
 
 === follow_shad_galley ===
+#music_ShadMusic
 
 #Speaker:{Name}
 Shad is still in the Galley, sleeves rolled up and furiously chopping herbs like they owe him money.
@@ -14,16 +15,16 @@ The air is thick with the leftover tension...and fermented horseradish. Definete
 "That banana really caused quite the issue, huh?"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "He called it gastrointestinal sabotage. Like I was trying to kill everyone off by adding flavour to the dish."
 
 #Speaker:{Name}
 "To be fair, it did smell like a fusion of a musty landfill and spice market."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "I was trying to give people something new, something jouful. But apparently joy is off the menu now."
 
 #Speaker:{Name}
@@ -45,8 +46,8 @@ He tosses a sprig of parsley into the wastebin and sighs.
 "Some risks are worth taking, but maybe not this one."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Sad
 "I guess that makes sense. It just...kinda sucks, y'know? I only wanted to help."
 
 -> shad_q2_intro
@@ -58,13 +59,13 @@ He tosses a sprig of parsley into the wastebin and sighs.
 "He probably wanted something sage. You were trying to lift spirits, through. That's never the wrong choice."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "Exactly! The crews terrified, heck I sure know I am. But food can help say things words can't."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "And i've never been one to word things correctly, I show it through acts of kindness and out my feelings into the meal I make. I know if people just gave it a chance it would get through to them."
 
 -> shad_q2_intro 
@@ -76,8 +77,8 @@ He tosses a sprig of parsley into the wastebin and sighs.
 "It sure smelt haunted, but hey at least it was memorable."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "Infamous dishes are a form of both legacy and delicacy."
 
 #Speaker:{Name}
@@ -87,8 +88,8 @@ He tosses a sprig of parsley into the wastebin and sighs.
 "It's best practise not to experiment during battle prep."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "...Fair."
 
 -> shad_q2_intro
@@ -99,21 +100,21 @@ He tosses a sprig of parsley into the wastebin and sighs.
 His knife stills mid-slice.
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "I'm not actually scared of Master Porthole, y'know. I'm scared of what comes next."
 
 #Speaker:{Name}
 "The kraken?"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "It's not just the kraken. It's also know knowing - I've never been in this position before. I feel like a fish out of water."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Sad
 "I just...I've never been apart of a sea battle. Let alone with the Kraken it's all so new to me."
 
 * "It’s okay to admit you’re scared. We all are."
@@ -132,24 +133,24 @@ His knife stills mid-slice.
 "It's not a weakness to feel things. You just happen to feel things through...carbs and apparently fermented ingredients."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Smile
 "I knew there was a reason I liked you."
 
 #Speaker:{Name}
 "You know, I don't think fermented foods are all that bad. I guess you could say, I'm cultured."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Blush
 "Captain {Name}... was that a pun?"
 
 #Speaker:{Name}
 "Yes...lettuce move past that."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "Yes, let that romaine in the past."
 
 -> shad_q3_intro
@@ -161,16 +162,16 @@ His knife stills mid-slice.
 "Fear is fine. Freezing isn't. If you mess up I wont hesitate to drop liabilities."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "You're make a terrifying sous chef."
 
 #Speaker:{Name}
 "If I was a chef, I wouldn't be a sous chef."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "Right...got it."
 
 -> shad_q3_intro
@@ -182,8 +183,8 @@ His knife stills mid-slice.
 "Jokes aside, when i'm scared I just pretend to be invincible. It's gotten me through everything thus far."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "That's actually not bad advice."
 
 #Speaker:{Name}
@@ -193,8 +194,8 @@ His knife stills mid-slice.
 "I have to be able to ease the nerves of my crew and rough the waves, if I can't do any of that - I don't deserve this title."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Smile
 "ALright I'll try it. It might not be foolproof but if you've gone as far as to give me advice, I'll try my best to make it work."
 
 -> shad_q3_intro
@@ -202,34 +203,34 @@ His knife stills mid-slice.
 === shad_q3_intro ===
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "Cap'n {Name}, there's something I haven't told anyone yet."
 
 #Speaker:{Name}
 He opens a bottle and gently unfurls a half faded piece of parchement
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "My great gram gram once made a dish so good it make a navy general weep. She never shared it with anyone but sent the recipe in a bottle out to sea."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "I-I came upon this a few months ago and I think it might be hers. It's heavily faded but it feels like home, like family,"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "I've been trying to recreate it from scraps and guessing. All my experiments, even the banana from earlier is me trying to make this."
 
 #Speaker:{Name}
 "It sounds like a culinary treasure hunt to me"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "Exactly, and I want to make it real again. Before... there's no one left to remember her cooking."
 
 * "That’s kind of beautiful. I’d like to taste it too."
@@ -248,16 +249,16 @@ He opens a bottle and gently unfurls a half faded piece of parchement
 "But then again, I'd try anything you made. Even if it kills me."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Blush
 "Tempting me with loyalty and mild recklessness? Careful, Cap'n {Name} - I fall hard for that combo."
 
 #Speaker:{Name}
 "Even better."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "But can't have you croaking out on me just yet - I got a whole lotta recipe's I'd love for you to try."
 
 -> shad_q4_intro
@@ -269,37 +270,37 @@ He opens a bottle and gently unfurls a half faded piece of parchement
 "It's a nice goal, but right now - we need you grounded. No distractions."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "Right, Food is just fuel. I get it."
 
 #Speaker:{Name}
 "There's times for dreams, but right now you have to face reality."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "Yup, i'll just put this on hold."
 
 -> shad_q4_intro    
 
 === shad_q3_neutrallead ===
-~ Shad_Affection -=5
+~ Shad_Affection +=5
 
 #Speaker:{Name}
 "Or...tweak the ratio's. The idea's got heart, but the execution needs a little work."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Smile
 "Oh! Heart and horseradish - why didn't I think of that."
 
 #Speaker:{Name}
 "Wait -"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "Hmm how do you ferment beef heart safely, wait doesn't cooking kill all the bad stuff anyways - should be fine!"
 
 -> shad_q4_intro
@@ -310,16 +311,16 @@ He opens a bottle and gently unfurls a half faded piece of parchement
 He leans back, finally breathing a little easier.
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "So what do you think Cap'n - can I one day achieve this?"
 
 #Speaker:{Name}
 "You mean completing the recipe?"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "Yeah."
 
 * "I believe in your dream. Just don’t forget to survive first."
@@ -331,18 +332,19 @@ He leans back, finally breathing a little easier.
 === shad_exit_flirty ===
 ~ Shad_Affection += 10
 ~ shad_exit_type = "flirty"
+#music_Flirty
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "When this is all over, maybe I'll make you be the first to taste it - privately of course."
 
 #Speaker:{Name}
 "In the Galley?"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Blush
 "No, somewhere quieter. Candlelights and possible missing shirts."
 
 #Speaker:{Name}
@@ -364,16 +366,16 @@ As I turn to leave, something new catches my eye near the spice rack.
 ~ shad_exit_type = "disinterested"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "Right. Dreams are a luxury. Got it."
 
 #Speaker:{Name}
 "That’s not what I - "
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "I’ll get back to stirring. You go command stuff."
 
 #Speaker:{Name}

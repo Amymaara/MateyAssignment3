@@ -3,6 +3,8 @@ INCLUDE Globals.ink
 -> conflic_shad_rory
 
 === conflic_shad_rory ===
+#music_StuMusic2
+
  #Speaker:{Name}
  The galley smells...complicated. There's the usual hint of sweet, spicy but an overwhelming scent of something brewing that shouldn't be.
  
@@ -13,57 +15,57 @@ INCLUDE Globals.ink
  Master Porthole is standing nearby, arms crossed and eyes twitching with an increasing disdain.
  
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "Tell me that isn’t...a fermented banana floating in there."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "Banana and horseradish. It’s a bold pairing but i'm sure it'll help with morale!"
 
 #Speaker:{Name}
 Master Porthole visibly recoils like the contents in the pot insulted his bloodline.
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "For morale? It smells like a dare gone wrong, we're not savages for godsakes!"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "You don't need luxuries to make something delicious, your highness."
 
 #Speaker:{Name}
 (Oh no.)
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "You're feeding the crew, not pranking them. We're hours away from a monster attack and you're treating it like an experimental potluck!"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "Exactly. We might die tomorrow. The crew deserves flavour."
 
 #Speaker:{Name}
 There it is, the real reason behind this clash of egos.
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "What they deserve is nourishment. A balance, stabilised, edible meal. Not a gastrointestinal ticking bomb."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "You think your fancy little charts and mannerisms can save people from fear? Sometimes a hearty meal helps a lot more than planning."
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "And sometimes planning prevents funerals."
 
 #Speaker:{Name}
@@ -85,24 +87,24 @@ They're both worked up. Neither of them are even talking about food anymore.
 "We need stability right now. This isn't the time to risk turning our dinner into a catastrophe."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "Oh. Got it. Back to my gruel and silence, then."
 
 #Speaker:{Name}
 "That's not what I meant-"
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "Sure it isn't."
 
 #Speaker:{Name}
 He grabs a ladle and mutters something about me having 'joyless leadership' and storm to a cabinet.
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "Thank you. Someone has to maintain standards around here."
 
 #Speaker:{Name}
@@ -118,26 +120,26 @@ Master Porthole side eyes Shad's mystery dish before leaving swiftly.
 "Loosen up a bit, people cope in different ways. Right now Shad wants to feed not just food but hope too."
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Pose2
+#expression:Angry
 "Hope doesn't come with indigestion."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "Hey! I heard that. But don't worry next time i'll go easy on the squik ink in your portion."
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Default
+#expression:Angry
 "I-Forget it. Enjoy your culinary chaos."
 
 #Speaker:{Name}
 Master Porthole turns on his heel and leaves.
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Smile
 "Thank you...I just wish I got to show him the shrimp dessert."
 
 -> galley_choose
@@ -150,13 +152,13 @@ Master Porthole turns on his heel and leaves.
 "Look we're all stressed. Let's not turn this into a battleground too."
 
 #Speaker:Shad
-#pose:
-#expression:
+#pose:Pose2
+#expression:Neutral
 "Fine...I'll try this new recipe next time."
 
 #Speaker:Master Porthole
-#pose:
-#expression:
+#pose:Default
+#expression:Neutral
 "And I'll...refrain from arguing over questionable ingredients."
 
 #Speaker:{Name}

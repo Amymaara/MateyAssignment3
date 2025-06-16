@@ -3,7 +3,7 @@ INCLUDE Globals.ink
 -> pearl_visit 
 
 === pearl_visit ===
-#music_Celtic-moon-loop-1-284914
+#music_PearlMusic
 
 #speaker:Stu
 "Why don’t we pay a visit to Pearl?"
@@ -32,7 +32,7 @@ She suddenly turned around, bright eyed.
 
 #speaker:Pearl
 #pose:Default
-#expression:Neutral
+#expression:Smile
 "You must be the new Captain, {Name}! We were taking bets on what you’d be like. I guessed tall and grumpy, she said damp and confused."
 
 #speaker:{Name}
@@ -67,13 +67,13 @@ She suddenly turned around, bright eyed.
 
 #speaker:Pearl
 #pose:Default
-#expression:Blush
+#expression:Smile
 "That’s the nicest compliment I’ve ever gotten!"
 
 -> pearl_island
 
 === reserve_judgment ===
-~ Pearl_Affection -= 10
+~ Pearl_Affection -= 5
 
 #speaker:Pearl
 #pose:Default
@@ -83,7 +83,7 @@ She suddenly turned around, bright eyed.
 -> pearl_island
 
 === crab_cult_response ===
-~ Pearl_Affection += 0
+~ Pearl_Affection += 5
 
 #speaker:Pearl
 #pose:Default
@@ -122,12 +122,12 @@ She suddenly turned around, bright eyed.
     -> pearl_screaming_water
     
 === pearl_island_knife ===
-~ Pearl_Affection += 0
+~ Pearl_Affection += 5
 
 
 #speaker:Pearl
 #pose:Pose2
-#expression:Neutral
+#expression:Smile
 "Classic. Very pirate. Very stabby. I respect it."
 
 #speaker:Pearl
@@ -153,7 +153,7 @@ She suddenly turned around, bright eyed.
 -> continue_to_belongings
 
 === pearl_screaming_water ===
-~ Pearl_Affection -= 10
+~ Pearl_Affection -= 5
 
 #speaker:Pearl
 #pose:Pose2
@@ -200,7 +200,7 @@ The room settles into a softer kind of quiet. Pearl’s eyes scan her belongings
 
 #speaker:Pearl
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "That’s because they matter. Even the cracked ones."
 
 #speaker:{Name}
@@ -227,7 +227,7 @@ She laughs but it doesn’t quite reach her eyes.
 
 #speaker:Pearl
 #pose:Pose3
-#expression:Blush
+#expression:Smile
 "Exactly! I need to decide where my belongings go. They need to twinkle just right. The moonlight shifts to different angles when you're on sea. They all need to shine their brightest."
 
 #speaker:Pearl
@@ -243,6 +243,8 @@ She laughs but it doesn’t quite reach her eyes.
 
 === pearl_flirt ===
 ~ Pearl_Affection += 10
+~ pearl_exit_type = "flirty"
+#music_Flirty
 
 #speaker:{Name}
 She slow blinks, once, twice, thrice.
@@ -257,7 +259,7 @@ She looked at me, then the floor, then a jar labelled “Emergency shells”, th
 
 #speaker:Pearl
 #pose:Pose2
-#expression:Blush
+#expression:Smile
 "Okay cool, yeah, no this is fine — totally normal. I’m super chill right now."
 
 #Speaker:{Name}
@@ -281,7 +283,7 @@ My hand catches on something, Oh? It's one of her belongings.
 
 === pearl_inspection ===
 ~ pearl_exit_type = "disinterested"
-~ Pearl_Affection -= 10
+~ Pearl_Affection -= 5
 
 #speaker:Pearl
 #pose:Default

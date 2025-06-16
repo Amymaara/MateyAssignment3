@@ -15,14 +15,17 @@ VAR helpUsedRory = false
 VAR helpUsedRavynn = false
 
 -> start
-#music_Horror-258261
+
 === start ===
-#Speaker:Stu
-#music_Horror-258261
+
+#music_KrakenFight
 The Kraken rising from the depths trashes his tentacles towards your ship.
 
 #Speaker:Stu
+#pose:Pose2
+#activate:Stu
 "It's time to act, Cap'n {Name}!"
+#disable:Stu
 
 -> player_turn
 
@@ -94,6 +97,7 @@ The Kraken pauses mid-swipe, did it just...blush?
 It shfits awkwardly.
 
 #Speaker:Kraken
+#pose:Blush
 "Krr Krra Krraken..."
 (translation: flattery will get you nowhere...maybe.)
 
@@ -128,7 +132,16 @@ You call out:
 "Pearl, a little help?"
 
 { Pearl_Affection >= 35:
- Pearl sings, the Kraken wails at how tone deaf she is.
+
+#Speaker:Pearl
+#pose:Pose3
+#expression:Angry
+#activate:Pearl
+"I got your back!"
+#disable:Pearl
+
+#speaker:{Name}
+Pearl sings, the Kraken wails at how tone deaf she is.
  
  ~ helpUsedPearl = true
  ~ temp finalDamage = 9 * 3
@@ -157,7 +170,11 @@ You call out:
 Shad throws you a suspicious pie that smells.. vaguely radioactive.
 
 #Speaker:Shad
+#pose:Pose3
+#expression:Angry
+#activate:Shad
 "Don't ask! Just throw it!"
+#disable:Shad
 
 ~ helpUsedShad = true
 ~ temp finalDamage = 9 * 3
@@ -173,7 +190,11 @@ You launch the pie at the Kraken. It explodes on impact - in pie we crust. {fina
 Shad shrugs
 
 #Speaker:Shad
+#pose:Pose2
+#expression:Neutral
+#activate:Shad
 "Sorry Cap'n {Name}, Kitchens closed after operating hours unless you're on my good side."
+#disable:Shad
 
 -> player_turn
 }
@@ -190,7 +211,11 @@ You shout:
 With elegance, Master Porthole tosses you a blunderbass.
 
 #Speaker:Master Porthole
+#pose:Pose3
+#expression:Smile
+#activate:Rory
 Don't get it dirty, that gun costs more than this ship."
+#disable:Rory
 
 ~helpUsedRory = true
 ~ temp finalDamage = 9 * 3
@@ -206,7 +231,11 @@ The Kraken reels as you shoot his tentacles with costly lead! {finalDamage} dama
 Master Porthole scuffs at you.
 
 #Speaker:Master Porthole
+#pose:Pose1
+#expression:Angry
+#activate:Rory
 "Earn my attention first, Captain {Name}."
+#disable:Rory
 
 -> player_turn
 }
@@ -221,7 +250,11 @@ Master Porthole scuffs at you.
 Ravynn wordlessly tosses you a dagger, it has gold swirls on the hilt.
 
 #Speaker:Ravynn
+#pose:Pose3
+#expression:Neutral
+#activate:Ravynn
 "Aim for the eye."
+#disable:Ravynn
 
 ~helpUsedRavynn = true
 ~ temp finalDamage = 9 * 3
@@ -237,7 +270,11 @@ You hurl the dagger at the beast - it strikes true. The Kraken lets out a furiou
 Ravynn glances at you unimpressed. 
 
 #speaker:Ravynn
+#pose:Default
+#expression:Neutral
+#activate:Ravynn
 "You want my help? Tell me one reason you deserve it."
+#disable:Ravynn
 
 -> player_turn
 }
@@ -363,19 +400,36 @@ A pact, made long ago with your lover.
 #Speaker: {Name}
 "I give you my crew."
 
+#Speaker: {Name}
 There's a beat of silence.
 
 #Speaker:Pearl
+#pose:Pose3
+#expression:Angry
+#activate:Pearl
 "Surely you're joking."
+#disable:Pearl
 
 #Speaker:Shad
+#pose:Pose2
+#expression:Angry
+#activate:Shad
 "Haha, nice one Cap'n"
+#disable:Shad
 
 #Speaker:Master Porthole
+#pose:Pose2
+#expression:Angry
+#activate:Rory
 "...what?"
+#disable:Rory
 
 #speaker:Ravynn
+#pose:Pose3
+#expression:Neutral
+#activate:Ravynn
 "You've gone mad."
+#disable:Ravynn
 
 #speaker:{Name}
 I watch as some nervously laugh, and others draw their weapons.
@@ -402,6 +456,5 @@ You stand, you watch. You feel no fear, no remorse.
 There only exists devotion.
 
 #krakenEnd
-//You have found the Secret
 
 -> END
