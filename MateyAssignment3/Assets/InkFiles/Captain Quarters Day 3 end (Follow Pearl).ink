@@ -61,7 +61,7 @@ He blinks back.
 Despite everything - the chaos, the curse and the pressure of everything. I manage a smile.
 
 #Speaker:{Name}
-The feels peaceful tonight.
+The air feels peaceful tonight.
 #sfx_DoorSounds
 
 
@@ -73,7 +73,7 @@ The feels peaceful tonight.
 #sfx_HallwayWalk
 
 #Speaker:{Name}
-Stu finds his way to me, as he always done. Only this time he has an even more pronounce look of displeasure.
+Stu finds his way to me, as he always does. Only this time he has an even more pronounced look of displeasure.
 
 #Speaker:Stu
 #pose:Pose2
@@ -109,7 +109,7 @@ Stu finds his way to me, as he always done. Only this time he has an even more p
 I don't reply. Stu doesn't push further.
 
 #Speaker:{Name}
-The ship rocks gentle beneath us, but my guilt makes me wish the sea was more turbulent - to match the feelings in my heart.
+The ship rocks gently beneath us, but my guilt makes me wish the sea was more turbulent - to match the feelings in my heart.
 #sfx_DoorSounds
 
 

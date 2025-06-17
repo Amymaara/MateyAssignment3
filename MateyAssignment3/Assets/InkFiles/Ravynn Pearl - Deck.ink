@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 #music_StuMusic
 
 #Speaker:{Name}
-The deck is tense today, not the usual tense from Ravynn's menancing aura. No, this was something else.  Quietness hangs in the air like it's holding its breath.
+The deck is tense today, not the usual tense from Ravynn's menacing aura. No, this was something else.  Quietness hangs in the air like it's holding its breath.
 
 #Speaker:{Name}
 This was a complete 180 from the shouting that spurred me into action, honestly - I think this might be worse.
@@ -15,7 +15,7 @@ This was a complete 180 from the shouting that spurred me into action, honestly 
 Pearl is humming a tune, off key and very loudly.
 
 #Speaker:{Name}
-She's perched near the railing strining together sea glass like oblivious that the deck is teetering on the edge of chaos.
+She's perched near the railing stringing together sea glass like oblivious that the deck is teetering on the edge of chaos.
 
 #Speaker:Ravynn
 #pose:Default
@@ -23,7 +23,7 @@ She's perched near the railing strining together sea glass like oblivious that t
 "Pearl."
 
 #Speaker:{Name}
-I turn to find Ravynn not far off, crouching near one of the cargo creates with a notebook in hand, eyes twitching with every high pitched note.
+I turn to find Ravynn not far off, crouching near one of the cargo crates with a notebook in hand, eyes twitching with every high pitched note.
 
 #Speaker:Ravynn
 #pose:Pose2
@@ -31,7 +31,7 @@ I turn to find Ravynn not far off, crouching near one of the cargo creates with 
 "I'm trying to count rations. Your noise is...unhelpful."
 
 #Speaker:{Name}
-Pearl looks suprised, as if the thought never occured to her.
+Pearl looks surprised, as if the thought never occurred to her.
 
 #Speaker:Pearl
 #pose:Pose3
@@ -67,7 +67,7 @@ They're both on edge, this tension isn't just about singing.
 #Speaker:Pearl
 #pose:Default
 #expression:Angry
-"It's not reckless to find joy in something. Gods, we're about to face a MONSTER, Ravynn. It might be the lsat one we ever face, and you want silence?"
+"It's not reckless to find joy in something. Gods, we're about to face a MONSTER, Ravynn. It might be the last one we ever face, and you want silence?"
 
 #Speaker:Ravynn
 #pose:Pose2
@@ -155,7 +155,7 @@ She picks up her string of seaglass and walks away without another word.
 #Speaker:Ravynn
 #pose:Default
 #expression:Neutral
-"I’m not asking for a concert — just basic discipline and accomadation."
+"I’m not asking for a concert — just basic discipline and accommodation."
 
 #Speaker:Pearl
 #pose:Pose2
@@ -196,7 +196,7 @@ Pearl storms off with her sea glass still clutched in hand.
 "Fine. I’ll go... be distracting elsewhere."
 
 #Speaker:{Name}
-Pearl gathers her seagless, she's not happy but not beaten down either.
+Pearl gathers her sea glass, she's not happy but not beaten down either.
 
 #Speaker:Ravynn
 #pose:Pose3

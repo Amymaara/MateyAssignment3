@@ -36,7 +36,7 @@ But that thought didn't finish.
 The world shifts, the air stolen from my lungs as the force of the impact sends me flying.
 
 #Speaker:{Name}
-I hit the opposite end of the deck, stinging flooding every nerve.
+I hit the opposite end of the deck, pain flooding every nerve.
 
 #Speaker:{Name}
 Everything is spinning.

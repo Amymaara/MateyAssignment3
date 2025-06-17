@@ -95,7 +95,7 @@ The galley fades behind me, but the scent of overcooked ambition still lingers.
 "Sometimes silence says plenty - just don’t let it be the only thing he hears."
 
 #Speaker:{Name}
-The hallway settles around us. I walk on, the weigh of my silence following me.
+The hallway settles around us. I walk on, the weight of my silence following me.
 
 #sfx_DoorSounds
 

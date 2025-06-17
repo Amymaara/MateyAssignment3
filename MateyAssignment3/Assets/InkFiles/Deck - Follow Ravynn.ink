@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 The deck is still. No more tension, nor argument. Just the sound of the sea and the sight of Ravynn - slumped against a crate.
 
 #Speaker:{Name}
-I walk to towards her, she notices me approaching but doesn't tell me to leave. That's a start.
+I walk towards her, she notices me approaching but doesn't tell me to leave. That's a start.
 
 #Speaker:Ravynn
 #pose:Default
@@ -28,7 +28,7 @@ You're special.
 "I hate this part, the waiting. The silence before the storm."
 
 #Speaker:{Name}
-She lefts out a sigh, a sharp and tired one.
+She lets out a sigh, a sharp and tired one.
 
 #Speaker:{Name}
 "Is that why you snapped at Pearl?"
@@ -202,7 +202,7 @@ I could feel my jaw dropping to the floor.
 "Not even remotely. Ever heard of the name 'R. Seaduction'?"
 
 #Speaker:{Name}
-"Oh my god. R. Seaduction as in the author of 'Drenched in Desire: A Sea Withches Curse'?
+"Oh my god. R. Seaduction as in the author of 'Drenched in Desire: A Sea Witch's Curse'?"
 
 #Speaker:Ravynn
 #pose:Pose2
@@ -288,12 +288,12 @@ She exhales, it's not a sigh but something softer. It's softer than anything I'v
 "Watch your back."
 
 #Speaker:{Name}
-"Quite the harsh reply, R. Seaduction. Have you ever wrote fanfiction of me?"
+"Quite the harsh reply, R. Seaduction. Have you ever written fanfiction of me?"
 
 #Speaker:Ravynn
 #pose:Pose3
 #expression:Smile
-"Maybe, I would tell you the contents but I don't think it's an appropriate topic for when i'm on the clock."
+"Maybe, I would tell you the contents but I don't think it's an appropriate topic for when I'm on the clock."
 
 #Speaker:{Name}
 "Oh? Should we discuss this further after you're done with your work?"
@@ -310,7 +310,7 @@ I'm not sure if it's the sun or her words that are burning me up. She smirks and
 I'm not one for asking fate for help, but I pray we win this battle.
 
 #Speaker:{Name}
-Looking for an excuse to stay longer, my eyes linger on new items she's acquired
+Looking for an excuse to stay longer, my eyes linger on new items she's acquired.
 
 #Speaker:{Name}
 (Let's try asking about them.)

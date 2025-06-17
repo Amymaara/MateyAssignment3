@@ -18,7 +18,7 @@ On a barrel sits a sealed glass bottle, upright, weighted with sand and holding 
 "Is this the bottle you found it in?"
 
 #Speaker:Shad
-"Yes! I swear great gram gram used to keep this bottle in her kitchen shelf."
+"Yes! I swear Great Gram-Gram used to keep this bottle in her kitchen shelf."
 
 #Speaker:{Name}
 "And you’ve kept it ever since?"

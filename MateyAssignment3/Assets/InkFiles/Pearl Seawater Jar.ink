@@ -17,7 +17,7 @@ INCLUDE Globals.ink
 Tucked neatly on her shelf, I notice a jar — round at the base, wrapped in netting and tied with a chain. Tiny pearl decorate its neck, glimmering brilliantly.
 
 #Speaker:{Name}
-The water inside isn’t still — it swirls like it has somewhere to be. Somehwere it belongs.
+The water inside isn’t still — it swirls like it has somewhere to be. Somewhere it belongs.
 
 #Speaker:{Name}
 "You carry the sea around with you?"
@@ -47,7 +47,7 @@ She touches the netting gently, eyes distant.
 
 === jar_disinterested ===
 #Speaker:{Name}
-A  jar sits by the edge of her shelf. There’s a cork stuck in it and some water inside,  darker blue, swirling slowly.
+A jar sits by the edge of her shelf. There’s a cork stuck in it and some water inside, darker blue, swirling slowly.
 
 #Speaker:{Name}
 "What's that? Some sea potion or something?"

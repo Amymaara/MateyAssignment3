@@ -18,13 +18,13 @@ Kitchen tools lie hanging on the wall with strange bolts where handles should be
 "Let me guess. Prosthetic cooking arm attachments?"
 
 #Speaker:Shad
-"Meet Mr Whisk and Captain Stir. They're both realiable and dashingly functional"
+"Meet Mr Whisk and Captain Stir. They're both reliable and dashingly functional"
 
 #Speaker:{Name}
 "Do you name all your tools?"
 
 #Speaker:Shad
-"They’re part of me - might as well treat them like friends, if i'm honest I can't live without them."
+"They’re part of me - might as well treat them like friends, if I'm honest I can't live without them."
 
 #Speaker:{Name}
 "Sounds like they see more action than some of our crewmates."

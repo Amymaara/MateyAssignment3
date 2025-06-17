@@ -25,7 +25,7 @@ There's a half-shredded wanted poster stabbed into the wall with seven different
 "You kept it?"
 
 #Speaker:Ravynn
-"Every scar deserves a story, that one's mine."
+"Every scar deserves a story, that one belongs to me."
 
 #Speaker:{Name}
 "And the daggers?"

@@ -17,7 +17,7 @@ Not the happy, chaotic kind like Shad yelling about overcooked eggs.
  "Squaaak, and they said pirates don’t have morning routines..."
 
 #speaker:{Name}
-He lands on the edge of my bed frame, giving smirking like he's enjoying this, because he is.
+He lands on the edge of my bed frame, smirking like he's enjoying this, because he is.
 
 #speaker:{Name}
 "Ughhh, who is it today?"
@@ -47,7 +47,7 @@ The shouting rises in volume, I only manage to hear a few select words like "vol
 "I swear if Pearl gets herself accidentally thrown overbaord again..."
 
 #speaker:{Name}
-I  reluctantly swing my legs over the side of the bed, already bracing for whatever mess the deck has waiting.
+I reluctantly swing my legs over the side of the bed, already bracing for whatever mess the deck has waiting.
 
 -> END
 

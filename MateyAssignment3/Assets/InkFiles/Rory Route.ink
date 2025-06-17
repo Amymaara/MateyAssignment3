@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 A soft knock, not tentative nor commanding. Just... deliberate.
 
 #Speaker:{Name}
-I open the door to find him leaning casually against the frame with arms crossed."
+I open the door to find him leaning casually against the frame with arms crossed.
 
 #Speaker:{Name}
 "You lost or just here to critique my décor?"
@@ -49,7 +49,7 @@ He walks toward the desk, fingertips brushing the compass like he’s tempted to
 #Speaker:Master Porthole
 #pose:Pose3
 #expression:Angry
-"I don’t want a throne. I want balance,  a world where power isn't inherited - it’s earned."
+"I don’t want a throne. I want balance, a world where power isn't inherited - it’s earned."
 
 #Speaker:Master Porthole
 #pose:Pose3

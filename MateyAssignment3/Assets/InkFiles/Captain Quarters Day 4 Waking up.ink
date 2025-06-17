@@ -58,6 +58,6 @@ I throw off my blanket and sigh - deeply, loudly, reluctantly.
 I mutter something unkind under my breath and make my way to the Galley.
 
 #speaker:{Name}
-Someone better be gettimg flambeed, if not i'll make sure they are for disturbing my peace.
+Someone better be getting flambéed, if not I'll make sure they are for disturbing my peace.
 
 -> END

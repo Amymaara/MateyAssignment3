@@ -5,8 +5,10 @@ INCLUDE Globals.ink
 === wake_up ===
 #music_StuMusic
 
+
 #Speaker:Stu
 #pose:Pose1
+#sfx_Stu1
 "Squaak! Rise and shine, Cap’n. Catching up on beauty sleep? Not that that will help your ugly mug."
 
 #Speaker: {Name}  
@@ -44,7 +46,7 @@ And just as I was beginning to enjoy my pity party, a bird decides to scream dir
 #pose:Pose2
 "Oh and guess what? You OVERSLEPT. 
 
-#Spaker:Stu
+#Speaker:Stu
 #pose:Pose1
 "The new crew you put together to retrieve your compass and defeat the Kraken is probably planning the demise of their irresponsible Cap'n.
 
@@ -57,6 +59,6 @@ Fantastic, just what I needed. Mutiny and zero caffeine.
 
 #Speaker:Stu
 #pose:Pose1
-"Being the ever so responsible and best wingman around - I set their resume's on the table. Might help you make enemies into allies.
+"Being the ever so responsible and best wingman around - I set their resumés on the table. Might help you make enemies into allies.
 
 -> END

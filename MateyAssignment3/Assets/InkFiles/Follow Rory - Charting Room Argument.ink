@@ -16,7 +16,7 @@ Master Porthole doesn't look up at me.
 #Speaker:Master Porthole
 #pose:Default
 #expression:Neutral
-"So.. you followed. Should I be flattered or suspicious?"
+"So... you followed. Should I be flattered or suspicious?"
 
 #Speaker:{Name}
 I let out a little chuckle.
@@ -86,7 +86,7 @@ Master Porthole steps closer towards me.
 #expression:Smile
 "Give me a reason, and I'll follow you into every storm. Cross me and I'll become one."
 
-#Speaker{Name}
+#Speaker:{Name}
 "I don't get shaken easily. But you? You tempt me in the worst possible ways."
  
  #Speaker:{Name}

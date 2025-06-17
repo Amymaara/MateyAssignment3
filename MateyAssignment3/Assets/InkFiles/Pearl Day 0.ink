@@ -23,7 +23,7 @@ In the middle of the room, there she stood.
 (Is she talking to a… fish?)
 
 #speaker:{Name}
-She suddenly turned around, bright eyed.
+She suddenly turned around, bright-eyed.
 
 #speaker:Pearl
 #pose:Pose2
@@ -102,12 +102,16 @@ She suddenly turned around, bright eyed.
 "Yeah, I don't pay much mind to them though."
 
 #Speaker:Pearl
-"Well, I'm stumped on todays question, would you mind telling me your answer for it?"
+#pose:Pose2
+#expression:Neutral
+"Well, I'm stumped on today's question, would you mind telling me your answer for it?"
 
 #Speaker:{Name}
 "Uhh, sure"
 
-#Speaker:Peal
+#Speaker:Pearl
+#pose:Pose3
+#expression:Neutral
 "If you had to pick one thing to keep on a deserted island, what would it be?"
 
 #speaker:{Name}
@@ -196,7 +200,7 @@ The room settles into a softer kind of quiet. Pearl’s eyes scan her belongings
 "Most people think I collect junk. But to me? These are memories of places I loved... or tried to love."
 
 #speaker:{Name}
-"Seems like they’ve been loved back. Everything feels like its been placed with intention."
+"Seems like they’ve been loved back. Everything feels like it's been placed with intention."
 
 #speaker:Pearl
 #pose:Pose2
@@ -293,7 +297,7 @@ My hand catches on something, Oh? It's one of her belongings.
 #speaker:Pearl
 #pose:Default
 #expression:Neutral
-"Haha, yeah well — look at the time. I think I need to reorganise my sock drawer. Private business, you know, because you can’t let anyone see… your socks un-drawered. I mean unorganised!"
+"Haha, yeah well — look at the time. I think I need to reorganise my sock drawer. Private business, you know, because you can’t let anyone see… your socks undrawered. I mean unorganised!"
 
 #Speaker:{Name}
 Trying to get her to calm down, I reached for one of her items.

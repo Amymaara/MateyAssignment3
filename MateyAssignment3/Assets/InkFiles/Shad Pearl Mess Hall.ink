@@ -14,7 +14,7 @@ Flour is scattered everywhere like a snowstorm just hit. Something is boiling th
 #Speaker:Shad
 #pose:Pose3
 #expression:Angry
-"I’m telling you, Pearl, that slimy thief reached right in and took my whisk — right off of my hand! My favourite one — Mr Whisk!"
+"I’m telling you, Pearl, that slimy thief reached right in and took my whisk — right off my hand! My favourite one — Mr Whisk!"
 
 #Speaker:Pearl
 #pose:Default
@@ -94,7 +94,7 @@ Shad is wielding a skillet like it’s the blade of justice.
 #speaker:Pearl
 #pose:Pose2
 #expression:Sad
-"You..you’d cook Sardinella next, wouldn’t you?!"
+"You...you’d cook Sardinella next, wouldn’t you?!"
 
 -> whisk_aftermath
 

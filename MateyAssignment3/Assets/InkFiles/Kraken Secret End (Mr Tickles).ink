@@ -26,7 +26,7 @@ The Kraken.
 Mr. Tickles.
 
 #Speaker:{Name}
-Eldritch Sea God. Devourer of Ship.
+Eldritch Sea God. Devourer of Ships.
 
 #Speaker:{Name}
 My Cuddly Bug from the Deep.
@@ -70,6 +70,7 @@ He changes into a more familiar form, well to me.
 #Speaker:{Name} 
 He slithers closer — tentacles gripping gently around my waist.
 
+#Speaker:{Name} 
 "Miss me?"
 
 #Speaker:Mr. Tickles 
@@ -107,7 +108,7 @@ He laughs — the kind of laugh that causes minor earthquakes.
 #Speaker:Mr. Tickles 
 #pose:Human
 #expression:Neutral
-"Come now, my monstrous muse. Let give you your hard-earned reward."
+"Come now, my monstrous muse. Let me give you your hard-earned reward."
 
 #Speaker:{Name}  
 "And pray tell, what is my reward?"
@@ -121,7 +122,7 @@ He laughs — the kind of laugh that causes minor earthquakes.
 He coils tighter — not enough to crush. Just enough to remind me what's holding me, that he owns not just my body but my heart as well.
 
 #Speaker:{Name}
-"I guess I do deserve to be spoiled, since I did all the work"
+"I guess I do deserve to be spoiled, since I did all the work."
 
 #Speaker:Mr. Tickles  
 #pose:Human

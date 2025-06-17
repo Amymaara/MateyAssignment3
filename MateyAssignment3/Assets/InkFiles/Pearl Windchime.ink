@@ -59,7 +59,7 @@ I think I can faintly hear the song they're swaying to.
 === windchime_disinterested ===
 
 #Speaker:{Name}
-I glance at the windchimes that were strung from driftwood. Seaglass pieces clinking together.
+I glance at the windchimes that were strung from driftwood. Sea glass pieces clinking together.
 
 #Speaker:{Name}
 "Looks like an ocean thrift store strung itself together."

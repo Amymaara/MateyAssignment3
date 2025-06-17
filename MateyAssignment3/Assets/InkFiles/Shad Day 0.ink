@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 #music_ShadMusic
 
 #speaker:Stu
-"Wait… What’s that smell? It smells like burning sugar and nightmares. Let’s go to the Galley. Shad should be there."
+"Wait...What’s that smell? It smells like burning sugar and nightmares. Let’s go to the Galley. Shad should be there."
 
 #speaker:{Name}
 The door creaks open and I’m immediately hit with an odour.  
@@ -29,7 +29,7 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 (Why is he acting like this is completely normal kitchen behaviour?) 
 
 #speaker:{Name}
-I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
+I look to the pie on the counter and I swear, solemnly swear, I saw it wriggle.
 
 
 * "What in Poseidon’s name are you concocting down here?"
@@ -80,7 +80,7 @@ I look to the pie on the counter and I swear, solemnly swear I saw it wriggle.
 #speaker:Shad
 #pose:Default
 #expression:Neutral
-"Haha, anyways. I’m Shad! Pirate chef. "
+"Haha, anyways. I’m Shad!...Pirate chef. "
 
 #speaker:Shad
 #pose:Default

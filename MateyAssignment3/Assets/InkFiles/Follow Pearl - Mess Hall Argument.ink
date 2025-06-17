@@ -51,7 +51,7 @@ She doesn’t laugh, but rather smiles gently.
 #speaker:Pearl
 #pose:Pose2
 #expression:Sad
-"And besides, I know what it feels like to be misunderstood."
+"And besides, I know what it feels like to be 'misunderstood'."
 
 #Speaker:{Name}
 She dips her fingers into the bowl and watches the ripples, her face tinted with sorrow.

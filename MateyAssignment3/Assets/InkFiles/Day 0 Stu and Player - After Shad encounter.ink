@@ -10,6 +10,8 @@ INCLUDE Globals.ink
 
 ==== stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I leave and he waves me off, spatula in hand.  
@@ -27,11 +29,16 @@ Behind him, a chicken hops onto the counter and pecks at the pie — neither of 
 
  #Speaker:{Name}
  I look back one more time. He’s whispering words of encouragement to the pot and I don’t have the heart to interrupt him for clarification.
+ 
+#sfx_DoorSounds
 
 -> END
 
 === stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
+
 #Speaker:{Name}
 He gives me a thumbs up, and I walk out before something stares at me with contempt again.
 
@@ -58,5 +65,6 @@ I choose peace.
 
 #speaker:{Name}
 And distance.
+#sfx_DoorSounds
 
 -> END

@@ -46,12 +46,12 @@ She approaches the desk and rests a hand gently on the compass, watching it spin
 "I want to be whole. Not a spell gone wrong, but someone I choose to be."
 
 #Speaker:{Name}
-She looks at me - not pleading, but certain. Like this isn’t just a  yearning dream, it’s a conquerable mission.
+She looks at me - not pleading, but certain. Like this isn’t just a yearning dream, it’s a conquerable mission.
 
 #Speaker:Pearl
 #pose:Pose2
 #expression:Blush
-"So... Captain {Name} . How do you feel about this treasure hunt?"
+"So... Captain {Name}. How do you feel about this treasure hunt?"
 
 #Speaker:{Name}
 I grin.

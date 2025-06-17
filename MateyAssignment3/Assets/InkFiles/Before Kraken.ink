@@ -4,6 +4,11 @@ INCLUDE Globals.ink
 === kraken_pre_battle ===
 
 #music_BeforeKrakenFight
+#disable:Stu
+#disable:Rory
+#disable:Ravynn
+#disable:Pearl
+#disable:Shad
 
 #Speaker:{Name}
 The sky is grey.
@@ -45,7 +50,7 @@ Pearl clutches a small satchel of seashells, like a talisman.
 #pose:Default
 #expression:Angry
 #activate:Pearl
-"I can feel her pain, It's unbearable."
+"I can feel her pain, it's unbearable."
 
 #Speaker:{Name}  
 "The Kraken?"
@@ -99,7 +104,7 @@ I almost smile. Almost.
 #Speaker:Stu  
 #pose:Pose2
 #activate:Stu
-"Don’t forget the time Shad almost poisoned us with his french toast ."
+"Don’t forget the time Shad almost poisoned us with his French toast ."
 #disable:Stu
 
 #Speaker:Shad 

@@ -2,12 +2,12 @@ INCLUDE Globals.ink
 
 -> follow_pearl_room
 
-#disable:Pearl
 === follow_pearl_room ===
+#disable:Pearl
 #music_PearlMusic
 
 #Speaker:{Name}
-I knock lightly before entering pearls quarters.
+I knock lightly before entering Pearl's quarters.
 
 #Speaker:{Name}
 The familiar smell of salt, lavender and something vaguely fishy greets me. Only, this time Pearl is no longer humming or monologuing. 
@@ -108,7 +108,7 @@ She gestures to her reverse mermaid form, or tries to. Her hands? fins? are quit
 
 #speaker:Pearl
 #pose:Mermaid:
-"...without learning to hear the truth behind behinds words."
+"...without learning to hear the truth behind other's words."
 
 #speaker:Pearl
 #pose:Mermaid
@@ -174,7 +174,7 @@ She smiles or I think it's a smile. Her terminal mouth opens a bit.
 === pearl_q3_intro ===
 
 #Speaker:{Name}
-We sit in silence for awhile. Then all of a sudden mystical pearls engulf her and she's back to the usual, fully human pearl.
+We sit in silence for a while. Then all of a sudden mystical pearls engulf her and she's back to the usual, fully human pearl.
 
 #Speaker:Pearl
 #pose:Default
@@ -327,7 +327,7 @@ Wanting to stretch this moment even longer, my eyes dart around her rom.
 "Thanks for not running away screaming. That's more than most do."
 
 #Speaker:{Name}
-"Not much places to run when you sailing the sea."
+"Not many places to run when you sailing the sea."
 
 #Speaker:{Name}
 "Besides you're still crew."

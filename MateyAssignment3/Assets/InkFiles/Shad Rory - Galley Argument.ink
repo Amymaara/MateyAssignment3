@@ -22,7 +22,7 @@ INCLUDE Globals.ink
 #Speaker:Shad
 #pose:Pose2
 #expression:Angry
-"Banana and horseradish. It’s a bold pairing but i'm sure it'll help with morale!"
+"Banana and horseradish. It’s a bold pairing but I'm sure it'll help with morale!"
 
 #Speaker:{Name}
 Master Porthole visibly recoils like the contents in the pot insulted his bloodline.
@@ -97,7 +97,7 @@ They're both worked up. Neither of them are even talking about food anymore.
 #Speaker:Shad
 #pose:Default
 #expression:Angry
-"Sure it isn't."
+"Sure, it isn't."
 
 #Speaker:{Name}
 He grabs a ladle and mutters something about me having 'joyless leadership' and storm to a cabinet.
@@ -127,7 +127,7 @@ Master Porthole side eyes Shad's mystery dish before leaving swiftly.
 #Speaker:Shad
 #pose:Default
 #expression:Neutral
-"Hey! I heard that. But don't worry next time i'll go easy on the squik ink in your portion."
+"Hey! I heard that. But don't worry next time I'll go easy on the squid ink in your portion."
 
 #Speaker:Master Porthole
 #pose:Default

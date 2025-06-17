@@ -18,7 +18,7 @@ INCLUDE Globals.ink
 I step off the deck, still feeling the tension on my skin.
 
 #Speaker:{Name}
-Stu flutters down. pretending like he didn't just watch the whole thing.
+Stu flutters down, pretending like he didn't just watch the whole thing.
 
 #Speaker:Stu
 #pose:Pose2
@@ -33,7 +33,7 @@ Stu flutters down. pretending like he didn't just watch the whole thing.
 
 #Speaker:Stu
 #pose:Pose1
-"You've got a death wish Cap'n {Name}, and apparently a type, an intense, terrifying type."
+"You've got a death wish Cap'n {Name}, and apparently a type - an intense, terrifying type."
 
 #Speaker:{Name}
 "She's sharp, focused - she makes me want to be a better Captain."
@@ -60,7 +60,7 @@ The wind picks up, the ship never gives you calm after a storm.
 #sfx_HallwayWalk
 
 #Speaker:{Name}
-I step away from the deck, she didn't watch me go and I didn't look back.
+I step away from the deck; she didn't watch me go and I didn't look back.
 
 #Speaker:{Name}
 Some people build walls to protect others, Ravynn builds them to make sure no one tries.
@@ -98,7 +98,7 @@ Stu's quiet for once, just watching the sea with me. It's just like her, unpredi
 "Just don't forget, Cap'n {Name}...even strong ships need care. Otherwise they sink and take everyone with them."
 
 #Speaker:{Name}
- I don't reply - I just grip the railing tigher."
+ I don't reply - I just grip the railing tighter."
  
  #Speaker:{Name}
  "Because he's right, and because I'm tired of things sinking."

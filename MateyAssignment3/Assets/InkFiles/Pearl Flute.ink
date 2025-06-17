@@ -18,7 +18,7 @@ I find a delicate glass flute that has gold embellishments and sea beads.
 "This is...beautiful."
 
 #Speaker:Pearl
-"Thank you, It's my treasure. My mom gave it to me right before I left my home town."
+"Thank you, It's my treasure. My mom gave it to me right before I left my hometown."
 
 #Speaker:{Name}
 "You play?"
@@ -26,7 +26,7 @@ I find a delicate glass flute that has gold embellishments and sea beads.
 #Speaker:Pearl
 "I sure do. I'm not a singer - no matter how much I want to be, but this?"
 
-#Speaker{Name}
+#Speaker:{Name}
 She gently caresses it, so delicately like she's scared it would shatter.
 
 #Speaker:Pearl
@@ -35,7 +35,7 @@ She gently caresses it, so delicately like she's scared it would shatter.
 #Speaker:{Name}
 "I'd listen to that voice anytime."
 #Speaker:{Name}
-She gently bites her lips and turns away shyly. 
+She gently bites her lip and turns away shyly. 
 
 #Speaker:{Name}
 She tries to hide it but I catch a smile.
@@ -45,7 +45,7 @@ She tries to hide it but I catch a smile.
 
 -> END
 
-=== flute_disinterested ====
+=== flute_disinterested ===
 
 #Speaker:{Name}
 A glass flute catches my gaze. It gleams gently, showcasing its beads and trim.

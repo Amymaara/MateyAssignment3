@@ -22,7 +22,7 @@ On her desk sits an iridescent blue quill dipped in ink - labeled in her meticul
 "They're writing tools - a gift, actually."
 
 #Speaker:{Name}
-"Let me guess, to warn your enemies of their incomming demise?"
+"Let me guess, to warn your enemies of their incoming demise?"
 
 #Speaker:Ravynn
 "Close, but no - they’re for... something more personal."

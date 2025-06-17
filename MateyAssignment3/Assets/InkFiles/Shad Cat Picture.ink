@@ -64,7 +64,7 @@ Shad shrugs, not too interested in the conversation.
 "That's Miss Gingey Whiskers - my compadre and sous chef"
 
 #Speaker:{Name}
-"What did she supervise your soufflés?"
+"What, did she supervise your soufflés?"
 
 #Speaker:Shad
 "She kept me company, kept me grounded."

@@ -19,7 +19,7 @@ There’s a scroll sitting next to Sardinella, its parchment curled and bound in
 "Ancient artefact, or failed attempt at poetry?"
 
 #Speaker:Pearl
-"Neither. It’s the reason I have gills and and oddly flexible legs."
+"Neither. It’s the reason I have gills and oddly flexible legs."
 
 #Speaker:{Name}
 I blink.

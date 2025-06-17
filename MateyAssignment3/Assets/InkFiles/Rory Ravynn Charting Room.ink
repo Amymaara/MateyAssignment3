@@ -14,7 +14,7 @@ On the left, Master Porthole sat on a chair, telescope in hand.
 His surroundings? Neatly rolled maps tied with silk ribbons - one of them even has his initials etched into the corner. 
 
 #speaker: {Name}
-This, accompanied by a quill resting at an angle ready to sign a decree. This entire side of the room feels like it's about to offer me  tea and gossip.
+This, accompanied by a quill resting at an angle ready to sign a decree. This entire side of the room feels like it's about to offer me tea and gossip.
 
 #speaker: {Name}
 On the right? Ravynn.
@@ -169,7 +169,7 @@ Both of them seem sort of stunned, not at my suggestion but rather that they wer
 "I don't hate it."
 
 #Speaker:{Name}
-"Perfect! You're both equally displeased - i've achieved what I wanted."
+"Perfect! You're both equally displeased - I've achieved what I wanted."
 
 #Speaker:{Name}
 I stare at them as they part like rival military generals after a ceasefire announcement was made.

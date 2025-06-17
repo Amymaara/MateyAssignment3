@@ -30,7 +30,7 @@ INCLUDE Globals.ink
 
 === cv_ravynn ===
 #Speaker:Stu
-"Ravyn — quiet, deliberate, and belonged to an enemy ship?? Now that’s a backstory."
+"Ravynn — quiet, deliberate, and belonged to an enemy ship?? Now that’s a backstory."
 -> cv_end
 
 === cv_end ===

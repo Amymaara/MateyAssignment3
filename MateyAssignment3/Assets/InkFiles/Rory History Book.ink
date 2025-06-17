@@ -46,7 +46,7 @@ I close the book gently, like it's a sacred tome.
 He replies flatly.
 
 #Speaker:Master Porthole
-"Something about it amuse you, Captain {Name}?"
+"Does something about it amuse you, Captain {Name}?"
 
 #Speaker:{Name}
 "It's just... a lot of drama for something with footnotes."

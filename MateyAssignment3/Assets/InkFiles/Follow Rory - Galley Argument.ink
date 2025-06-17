@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 I find him exactly where I expected - in the study, pacing like he's trying to outrun his thoughts.
 
 #Speaker:{Name}
-The Galley door slammed not too long ago, the echo still ringing in my ear. The images of him and Shad still player on my mind - ego's bruised and voices raised.
+The Galley door slammed not too long ago, the echo still ringing in my ear. The images of him and Shad still play on my mind - ego's bruised and voices raised.
 
 #Speaker:{Name}
 I decide to lean against the doorway.
@@ -33,15 +33,15 @@ I decide to lean against the doorway.
 #Speaker:Master Porthole
 #pose:Pose2
 #expression:Neutral
-"Because it wasn't about those petty semantic!"
+"Because it wasn't about those petty semantics!"
 
 #Speaker:{Name}
-He exhale sharply, losing his facade of arrogance just for a second.
+He exhales sharply, losing his facade of arrogance just for a second.
 
 #Speaker:Master Porthole
 #pose:Pose2
 #expression:Angry
-"I could have been in silk sheets, sipping  champage. Instead I'm here - on a barely floating ship - with pirates and poultry."
+"I could have been in silk sheets, sipping  champagne. Instead I'm here - on a barely floating ship - with pirates and poultry."
 
 #Speaker:{Name}
 "You mean Stu?"
@@ -146,7 +146,7 @@ He slams his hand down the table, rattling its components. A beat passes before 
 === rory_q2_intro ===
 
 #Speaker:{Name}
-He rubs his templed, stress bleeding through.
+He rubs his temples, stress bleeding through.
 
 #Speaker:Master Porthole
 #pose:Pose2
@@ -359,7 +359,7 @@ He finally says it out loud.
 #Speaker:Master Porthole
 #pose:Pose3
 #expression:Smile
-"That's quite genuiene of you...thanks."
+"That's quite genuine of you...thanks."
 
 -> rory_q4_intro
 
@@ -384,7 +384,7 @@ He finally says it out loud.
 #Speaker:Master Porthole
 #pose:Pose3
 #expression:Neutral
-"Captain {Name}, if you every betray me...I'll still write sonnets about you."
+"Captain {Name}, if you ever betray me...I'll still write sonnets about you."
 
 #Speaker:Master Porthole
 #pose:Pose3
@@ -397,10 +397,10 @@ He finally says it out loud.
 #Speaker:Master Porthole
 #pose:Pose3
 #expression:Blush
-"One day, I might give you the world. All the jewels your heart can desired, soaked in moonlit glow."
+"One day, I might give you the world. All the jewels your heart can desire, soaked in moonlit glow."
 
 #Speaker:{Name}
-"That's oddly romantic...and midly concerning."
+"That's oddly romantic...and mildly concerning."
 
 #Speaker:Master Porthole
 #pose:Pose3
@@ -439,8 +439,8 @@ Not wanting to make reckless choices, I distract myself by scanning my surroundi
 He forces a smirk and returns to his maps.
 
 #Speaker:{Name}
-As i'm leaving I see a new object shimmer in my peripheral. When did he get that?
+As I'm leaving I see a new object shimmer in my peripheral. When did he get that?
 
-#Speaker{Name}
+#Speaker:{Name}
 (Let's ask him.)
 -> END

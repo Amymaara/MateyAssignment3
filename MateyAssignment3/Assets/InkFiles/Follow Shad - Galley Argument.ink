@@ -9,7 +9,7 @@ INCLUDE Globals.ink
 Shad is still in the Galley, sleeves rolled up and furiously chopping herbs like they owe him money.
 
 #Speaker:{Name}
-The air is thick with the leftover tension...and fermented horseradish. Definetely horseradish.
+The air is thick with the leftover tension...and fermented horseradish. Definitely horseradish.
 
 #Speaker:{Name}
 "That banana really caused quite the issue, huh?"
@@ -25,7 +25,7 @@ The air is thick with the leftover tension...and fermented horseradish. Definete
 #Speaker:Shad
 #pose:Default
 #expression:Angry
-"I was trying to give people something new, something jouful. But apparently joy is off the menu now."
+"I was trying to give people something new, something joyful. But apparently joy is off the menu now."
 
 #Speaker:{Name}
 He tosses a sprig of parsley into the wastebin and sighs.
@@ -56,7 +56,7 @@ He tosses a sprig of parsley into the wastebin and sighs.
 ~ Shad_Affection +=10 
 
 #Speaker:{Name}
-"He probably wanted something sage. You were trying to lift spirits, through. That's never the wrong choice."
+"He probably wanted something sage. You were trying to lift spirits, though. That's never the wrong choice."
 
 #Speaker:Shad
 #pose:Pose2
@@ -66,7 +66,7 @@ He tosses a sprig of parsley into the wastebin and sighs.
 #Speaker:Shad
 #pose:Default
 #expression:Neutral
-"And i've never been one to word things correctly, I show it through acts of kindness and out my feelings into the meal I make. I know if people just gave it a chance it would get through to them."
+"And I've never been one to word things correctly, I show it through acts of kindness and put my feelings into the meal I make. I know if people just gave it a chance it would get through to them."
 
 -> shad_q2_intro 
 
@@ -110,12 +110,12 @@ His knife stills mid-slice.
 #Speaker:Shad
 #pose:Pose2
 #expression:Neutral
-"It's not just the kraken. It's also know knowing - I've never been in this position before. I feel like a fish out of water."
+"It's not just the kraken. It's also not knowing - I've never been in this position before. I feel like a fish out of water."
 
 #Speaker:Shad
 #pose:Pose2
 #expression:Sad
-"I just...I've never been apart of a sea battle. Let alone with the Kraken it's all so new to me."
+"I just...I've never been a part of a sea battle. Let alone with the Kraken it's all so new to me."
 
 * "It’s okay to admit you’re scared. We all are."
     -> shad_q2_empathy
@@ -196,7 +196,7 @@ His knife stills mid-slice.
 #Speaker:Shad
 #pose:Default
 #expression:Smile
-"ALright I'll try it. It might not be foolproof but if you've gone as far as to give me advice, I'll try my best to make it work."
+"Alright I'll try it. It might not be foolproof but if you've gone as far as to give me advice, I'll try my best to make it work."
 
 -> shad_q3_intro
 
@@ -208,12 +208,12 @@ His knife stills mid-slice.
 "Cap'n {Name}, there's something I haven't told anyone yet."
 
 #Speaker:{Name}
-He opens a bottle and gently unfurls a half faded piece of parchement
+He opens a bottle and gently unfurls a half faded piece of parchment.
 
 #Speaker:Shad
 #pose:Default
 #expression:Neutral
-"My great gram gram once made a dish so good it make a navy general weep. She never shared it with anyone but sent the recipe in a bottle out to sea."
+"My Great Gram-Gram once made a dish so good it made a navy general weep. She never shared it with anyone but sent the recipe in a bottle out to sea."
 
 #Speaker:Shad
 #pose:Pose2
@@ -223,7 +223,7 @@ He opens a bottle and gently unfurls a half faded piece of parchement
 #Speaker:Shad
 #pose:Default
 #expression:Neutral
-"I've been trying to recreate it from scraps and guessing. All my experiments, even the banana from earlier is me trying to make this."
+"I've been trying to recreate it from scraps and guessing. All my experiments, even the banana from earlier are me trying to make this."
 
 #Speaker:{Name}
 "It sounds like a culinary treasure hunt to me"
@@ -259,7 +259,7 @@ He opens a bottle and gently unfurls a half faded piece of parchement
 #Speaker:Shad
 #pose:Pose2
 #expression:Smile
-"But can't have you croaking out on me just yet - I got a whole lotta recipe's I'd love for you to try."
+"But can't have you croaking out on me just yet - I got a whole lotta recipes I'd love for you to try."
 
 -> shad_q4_intro
 
@@ -288,7 +288,7 @@ He opens a bottle and gently unfurls a half faded piece of parchement
 ~ Shad_Affection +=5
 
 #Speaker:{Name}
-"Or...tweak the ratio's. The idea's got heart, but the execution needs a little work."
+"Or...tweak the ratios. The idea's got heart, but the execution needs a little work."
 
 #Speaker:Shad
 #pose:Default

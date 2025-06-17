@@ -19,7 +19,7 @@ INCLUDE Globals.ink
  "You followed, why?"
  
  #Speaker:{Name}
- Mainly out of curiosity, or I might just like being glared at."
+ "Mainly out of curiosity, or I might just like being glared at."
  
  #Speaker:Ravynn
  #pose:Pose2
@@ -102,7 +102,7 @@ INCLUDE Globals.ink
  "If you're flirting, you're playing with fire."
  
  #Speaker:{Name}
- "Well I've always wanted to see how close i'd get without burning."
+ "Well I've always wanted to see how close I'd get without burning."
  
   #Speaker:{Name}
  She's silent for a beat, then she exhales sharply.

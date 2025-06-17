@@ -197,7 +197,7 @@ My eyes catch on something of his.
 As I head out I see something obnoxious, I decide to let him yap to me about it.
 
 #speaker:{Name}
-(I should ask his what this is)
+(I should ask him what this is)
 
 -> END
 

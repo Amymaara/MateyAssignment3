@@ -3,12 +3,17 @@ INCLUDE Globals.ink
 -> celebration
 === celebration ===
 #music_StuMusic
+#disable:Stu
+#disable:Rory
+#disable:Ravynn
+#disable:Pearl
+#disable:Shad
 
 #Speaker:{Name}
 We did it.
 
 #Speaker:{Name}
-Holy sea soaked shit - we actually did it.
+Holy sea-soaked shit - we actually did it.
 
 #Speaker:{Name}
 The Kraken let out a scream, flailed those cursed limbs one last time...and then sank.
@@ -20,7 +25,7 @@ Not dramatically, not slow. It just...sank.
 It seemed that even it was surprised we won.
 
 #Speaker:{Name}
-The ship somehow intact rocks gently, the ocean waves caressing the ship as if to say good job.
+The ship, somehow intact rocks gently, the ocean waves caressing the ship as if to say good job.
 
 #Speaker:Stu
 #pose:Pose2
@@ -110,7 +115,7 @@ She sheaths her dagger and nods towards me.
 I look around. This crew, this mess of a crew is all grinning, hugging, limping but somehow still standing.
 
 #Speaker:{Name}
-They were strangers just a few days ago. No they're something else, something stronger.
+They were strangers just a few days ago. Now they're something else, something stronger.
 
 #Speaker:{Name}
 Master Porthole raises a flask of something sparkling and probably expensive.
@@ -119,7 +124,7 @@ Master Porthole raises a flask of something sparkling and probably expensive.
 #pose:Pose2
 #expression:Smile
 #activate:Rory
-"To Captain {Name}! who led us through literal hell and back, with style."
+"To Captain {Name}, who led us through literal hell and back, with style."
 #disable:Rory
 
 #Speaker:Shad

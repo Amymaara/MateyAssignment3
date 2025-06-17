@@ -47,10 +47,10 @@ I snort, unable to help the grin tugging at my mouth.
 
 #Speaker:Stu
 #pose:Pose2
-"Captain {Name}, If she let's you survive after hearing about this, you're halfway to marriage."
+"Captain {Name}, If she lets you survive after hearing about this, you're halfway to marriage."
 
 #Speaker:{Name}
-We look at each other and burst into laughter. The wind picks up a bit, less of storm and more of a breeze.
+We look at each other and burst into laughter. The wind picks up a bit, less of a storm and more of a breeze.
 
 #Speaker:Stu
 #pose:Pose1
@@ -66,7 +66,7 @@ We look at each other and burst into laughter. The wind picks up a bit, less of 
 #sfx_HallwayWalk
 
 #Speaker:{Name}
-I walk away, Ravynn's words still clining like the sea spray to my mind."
+I walk away, Ravynn's words still clinging like the sea spray to my mind."
 
 #Speaker:{Name}
 Stu glides down from the mast and lands beside me. No sass, no squawk - he too is silent.
@@ -84,7 +84,7 @@ Stu glides down from the mast and lands beside me. No sass, no squawk - he too i
 
 #Speaker:Stu
 #pose:Pose2
-"And you trampled on it, like it was a piece of barnacle infested driftwood."
+"And you trampled on it, like it was a piece of barnacle-infested driftwood."
 
 #Speaker:{Name}
 I stare out at the sea. It suddenly looks a lot wider and quieter than before.
@@ -104,7 +104,7 @@ I stare out at the sea. It suddenly looks a lot wider and quieter than before.
 "I speak facts."
 
 #Speaker:{Name}
-The ship creaks as it sways forward. For the first time in awhile, I don't feel like I'm worthy of the title Captain.
+The ship creaks as it sways forward. For the first time in a while, I don't feel like I'm worthy of the title Captain.
 #sfx_DoorSounds
 
 

@@ -33,10 +33,10 @@ I pick up one of the earrings, gently. It's warm, delicate. It's as if it rememb
 "I meant it in the most flattering way."
 
 #Speaker:Pearl
-"I found the shell after a special moment - the First dive I took. I was terrified... then I saw it, half-buried in coral, it felt like it was meant for me."
+"I found the shell after a special moment - the first dive I took. I was terrified... then I saw it, half-buried in coral, it felt like it was meant for me."
 
 #Speaker:{Name}
-"You kept it, after all these years?."
+"You kept it, after all these years?"
 
 #Speaker:Pearl
 "It reminded me not all change is bad and that not all treasure is gold."
@@ -46,7 +46,7 @@ I pick up one of the earrings, gently. It's warm, delicate. It's as if it rememb
 === dish_disinterested ===
 
 #Speaker:{Name}
-A clamshell dish sits slightly open on the table. Inside is a tangled pile of jewellery - some starfish earrings and a knotted  pearl chain or two.
+A clamshell dish sits slightly open on the table. Inside is a tangled pile of jewellery - some starfish earrings and a knotted pearl chain or two.
 
 #Speaker:{Name}
 "Bit messy."

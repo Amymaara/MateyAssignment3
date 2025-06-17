@@ -12,6 +12,8 @@ INCLUDE Globals.ink
 
 === stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:Stu
 #pose:Pose1
@@ -27,11 +29,14 @@ INCLUDE Globals.ink
 
 #speaker:{Name}
 I glance back. She’s already reorganising the ropes. I walk away. Respectfully.
+#sfx_DoorSounds
 
 -> END
 
 === stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #Speaker:{Name}
 I turn and walk back. She doesn’t look back — and neither do I.
@@ -49,5 +54,6 @@ I look back one more time - she’s still sharpening that harpoon.
 
 #speaker:{Name}
 I realise my hand is gripping the hem of my sleeve.
+#sfx_DoorSounds
 
 -> END

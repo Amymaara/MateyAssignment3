@@ -36,7 +36,7 @@ She runs her thumb across the golden swirl on the hilt.
 "So it's a form of protection?"
 
 #Speaker:Ravynn
-"Maybe, or maybe I just enjoy the look on someones face when they realise I bite back."
+"Maybe, or maybe I just enjoy the look on someone's face when they realise I bite back."
 
 #Speaker:{Name}
 She smirks, and for the first time - I catch a flicker of emotion.

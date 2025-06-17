@@ -79,7 +79,7 @@ Stu is perched outside, looking annoying as usual.
 
 #Speaker:Stu
 #pose:Pose1
-"Maybe, but I give it 2 hours before he's monologing to the stars."
+"Maybe, but I give it 2 hours before he's monologuing to the stars."
 
 #Speaker:{Name}
 "He's intense, not fragile."

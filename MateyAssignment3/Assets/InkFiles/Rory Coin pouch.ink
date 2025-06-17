@@ -31,7 +31,7 @@ A pouch nearly bursting with gold coins sits tossed carelessly on the desk.
 "You do realise this screams ‘rob me’, right?"
 
 #Speaker:Master Porthole
-"If anyone’s brave enough to try, I’ll offer them a fashion advise before I stab them."
+"If anyone’s brave enough to try, I’ll offer them a fashion advice before I stab them."
 
 #Speaker:{Name}
 "...Oddly charming."

@@ -55,7 +55,7 @@ Oh yes...
 === regain_composure ===
 #Speaker:{Name}
 //footstep sound
-I forced myself up, I tried my damndest to steady myself against the ship's sway. I grabbed my harpoon and aimed through the storm.
+I forced myself up, I tried my damnedest to steady myself against the ship's sway. I grabbed my harpoon and aimed through the storm.
 
 -> kraken_attack
 

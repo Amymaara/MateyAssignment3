@@ -95,7 +95,7 @@ He leans in to whisper.
 "And if you are... well, I’m not exactly known for resisting temptation."
 
 #Speaker:{Name}
-As I'm about to leave something catches my eye.
+As I'm about to leave, something catches my eye.
 
 #Speaker:{Name}
 (I should ask him about it.)

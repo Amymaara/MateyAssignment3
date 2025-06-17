@@ -4,6 +4,11 @@ INCLUDE Globals.ink
 
 === bad_ending_insufferable ===
 #music_StuMusic2
+#disable:Stu
+#disable:Rory
+#disable:Pearl
+#disable:Ravynn
+#disable:Shad
 
 #Speaker:{Name}
 There’s a knock at the door.
@@ -58,8 +63,14 @@ The entire crew is there - bags packed, faces grim.
 #pose:Default
 #expression:Neutral
 #activate: Ravynn
-"You knocked over the rations while I was mid count and called it 'character building'. You yelled at Shad for cooking too early for breakfast at 3pm. You banned Pearl's fish from being in her fishbowl, and you replaced our battle plan with a lecture on ‘how to be more like you’."
+"You knocked over the rations while I was midcount and called it 'character building'. You yelled at Shad for cooking too early for breakfast at 3pm."
+
+#Speaker:Ravynn
+#pose:Default
+#expression:Neutral
+" You banned Pearl's fish from being in her fishbowl, and you replaced our battle plan with a lecture on ‘how to be more like you’."
 #disable:Ravynn
+
 
 #Speaker:Shad
 #pose:Pose2

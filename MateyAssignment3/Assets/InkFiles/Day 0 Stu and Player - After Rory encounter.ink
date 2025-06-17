@@ -10,6 +10,8 @@ INCLUDE Globals.ink
 
 === stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
  #Speaker:{Name}
 I turn around to leave, and I swear — solemnly swear — that I heard him say: "You’re welcome."
@@ -31,11 +33,14 @@ I glance back one last time. He’s already adjusting and aligning new pieces of
 
 #speaker:{Name}
 I’m not sure if I want to kiss him or throw him overboard.
+#sfx_DoorSounds
 
 -> END
  === stu_disinterested ===
 #music_StuMusic2
- 
+#sfx_DoorSounds
+#sfx_HallwayWalk
+
  #Speaker:{Name}
 I'm out before I associate that nauseating perfume with his ego. 
 
@@ -55,5 +60,6 @@ I glance back at the room. He didn’t follow, but I’m 97% sure he’s schemin
 
 #speaker:{Name}
 I’ve survived worse — like tentacles and emotional vulnerability.
+#sfx_DoorSounds
 
 -> END

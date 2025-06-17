@@ -9,6 +9,8 @@ INCLUDE Globals.ink
 }
 === stu_flirty ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:Stu
 #pose:Pose1
@@ -28,10 +30,14 @@ INCLUDE Globals.ink
 #speaker:{Name}
 We stare at the door for a second, then decide to keep walking away, fast.
 
+#sfx_DoorSounds
+
 -> END
 
  === stu_disinterested ===
 #music_StuMusic2
+#sfx_DoorSounds
+#sfx_HallwayWalk
 
 #speaker:Stu
 #pose:Pose2
@@ -41,9 +47,10 @@ We stare at the door for a second, then decide to keep walking away, fast.
 "Yeah, agreed. Let’s get out of here."
 
 #speaker:{Name}
-I left Pearl's room. She hums and tosses things about.  
+I leave Pearl's room. She hums and tosses things about.  
 
 #speaker:{Name}
 I wonder why she got so worked up over what I said?
+#sfx_DoorSounds
 
 -> END
