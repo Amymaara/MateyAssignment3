@@ -330,8 +330,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Art - UI, Characters, Items, Hallway\nAnimations - Day Change & Intro
-    \nSome Audio Files"
+  m_text: 'Art - UI, Characters, Items, Hallway
+
+    Animations - Day Change, Intro 
+    & Particles
+
+    Stu Squawk'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}
   m_sharedMaterial: {fileID: -2082273623067464722, guid: 078b5a70ccad20c418639e7be5a10dce, type: 2}

@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static GameStateManager;
-using static UnityEditor.Progress;
+
 
 
 
@@ -401,21 +401,25 @@ public class StoryManager : MonoBehaviour
     {
         if (NewAudioManager.instance == null)
         {
-            Debug.LogError("NewAudioManager is STILL NULL when HandleTags runs!");
+            Debug.Log("NewAudioManager is STILL NULL when HandleTags runs!");
             return;
         }
 
-        foreach (string tag in tags)
+        else
         {
-            if (tag.StartsWith("sfx_"))
-                NewAudioManager.instance.PlaySFX(tag.Substring(4));
-            else if (tag.StartsWith("music_"))
-                NewAudioManager.instance.PlayMusic(tag.Substring(6));
-            else if (tag == "music_stop")
-                NewAudioManager.instance.StopMusic();
-            else if (tag == "sfx_stop")
-                NewAudioManager.instance.StopSFX();
+            foreach (string tag in tags)
+            {
+                if (tag.StartsWith("sfx_"))
+                    NewAudioManager.instance.PlaySFX(tag.Substring(4));
+                else if (tag.StartsWith("music_"))
+                    NewAudioManager.instance.PlayMusic(tag.Substring(6));
+                else if (tag == "music_stop")
+                    NewAudioManager.instance.StopMusic();
+                else if (tag == "sfx_stop")
+                    NewAudioManager.instance.StopSFX();
+            }
         }
+            
     }
 
 
