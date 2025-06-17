@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f9208059830793e4e95832b6237a6645
+guid: 61840ec498b76b34c86979b733032b8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3200770805392361792
-    second: Settings screen 2_0
+      213: -8202552113706842274
+    second: Combat health box_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Settings screen 2_0
+      name: Combat health box_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 507
+        y: 335
+        width: 852
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0494adec61c6b6c20800000000000000
-      internalID: 3200770805392361792
+      spriteID: e57cfd2cf4eaa2e80800000000000000
+      internalID: -8202552113706842274
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Settings screen 2_0: 3200770805392361792
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
