@@ -38,7 +38,7 @@ public class AffectionEndCard : MonoBehaviour
     {
         int affection;
 
-        if (Character_Affection != null) 
+        if (Character_Affection == null) 
         {
             affection = 100;
         }
