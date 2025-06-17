@@ -6,7 +6,7 @@ public class SparklesManager : MonoBehaviour
     public ParticleSystem sparkles;
     public int clicks;
     private int clicksCounter;
-    public int transTwice = -1;
+   
     private bool canAdvance = false;
     private bool previousWaitingForContinue = false;
 
