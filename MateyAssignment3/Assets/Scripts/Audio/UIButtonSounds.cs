@@ -11,16 +11,39 @@ public class UIButtonSounds : MonoBehaviour
     // Date: 17 June 2025
     // Code Version: Custom Collaborative Implementation
     // Description: This script plays hover and click sounds for all UI buttons in a Unity scene and ensures these hooks persist across scene loads using Unity's EventTrigger system.
+    public static UIButtonSounds instance { get; private set; }
+
     private void Awake()
     {
-        // Persist across scenes
-        DontDestroyOnLoad(gameObject);
+       
+        if (instance == null)
+        {
+            instance = this;
 
-        // Initial hookup
+            // detach from any parent so this becomes a root object
+            transform.SetParent(null);
+
+            // persists on loads
+            DontDestroyOnLoad(gameObject);
+
+            
+            HookAllButtons();
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene s, LoadSceneMode m)
+    {
         HookAllButtons();
-
-        // Hook new buttons on scene load
-        SceneManager.sceneLoaded += (s, m) => HookAllButtons();
     }
 
     void HookAllButtons()
