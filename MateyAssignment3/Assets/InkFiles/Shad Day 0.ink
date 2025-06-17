@@ -31,37 +31,38 @@ There’s a big guy in the middle of what seems to be a culinary experiment gone
 #speaker:{Name}
 I look to the pie on the counter and I swear, solemnly swear, I saw it wriggle.
 
-
 * "What in Poseidon’s name are you concocting down here?"
-    ~ Shad_Affection += 10
-
-    #speaker:Shad
- #pose:Default
-#expression:Smile
-    "A lot of food with a pinch of love, and sometimes consciousness."
-
-    -> shad_kitchen_story
+    -> shad_choice_1
 
 * "Should I be concerned about the bubbling jar of slime on the counter?"
-    ~ Shad_Affection += 5
-
-    #speaker:Shad
-    #pose:Default
-#expression:Neutral
-    "Is that not how it’s supposed to be?"
-
-    -> shad_kitchen_story
+    -> shad_choice_2
 
 * "The galley’s in a state of chaos, what happened?"
-    ~ Shad_Affection -= 5
+    -> shad_choice_3
 
+=== shad_choice_1 ===
+~ Shad_Affection += 10
+#speaker:Shad
+#pose:Default
+#expression:Smile
+"A lot of food with a pinch of love, and sometimes consciousness."
+-> shad_kitchen_story
 
-    #speaker:Shad
-    #pose:Default
+=== shad_choice_2 ===
+~ Shad_Affection += 5
+#speaker:Shad
+#pose:Default
+#expression:Neutral
+"Is that not how it’s supposed to be?"
+-> shad_kitchen_story
+
+=== shad_choice_3 ===
+~ Shad_Affection -= 5
+#speaker:Shad
+#pose:Default
 #expression:Sad
-    "Yeah I’m sorry, I had my recipe book upside down so all the ingredients and numbers were messed up..."
-
-    -> shad_kitchen_story
+"Yeah I’m sorry, I had my recipe book upside down so all the ingredients and numbers were messed up..."
+-> shad_kitchen_story
 
 === shad_kitchen_story ===
 #speaker:Shad
@@ -97,45 +98,50 @@ I look to the pie on the counter and I swear, solemnly swear, I saw it wriggle.
 #expression:Neutral
 "You hungry? I tried making something called 'soul' food. For your soul, you know?"
 
-#speaker:{Name}
-* "You’re like the sun if it wore an apron and caused mild property damage."
-    ~ Shad_Affection += 10
-  
 
-    #speaker:Shad
-    #pose:Default
+* "You’re like the sun if it wore an apron and caused mild property damage."
+    -> shad_property
+
+* "As long as you don’t poison me, we’ll get along fine."
+    -> shad_poison
+
+* "I think you might be a bigger danger than any sea monster."
+    -> shad_monster
+
+=== shad_property ===
+~ Shad_Affection += 10
+
+#speaker:Shad
+#pose:Default
 #expression:Smile
-    "That might be the best compliment I’ve ever gotten! I’m writing that on my gravestone!"
+"That might be the best compliment I’ve ever gotten! I’m writing that on my gravestone!"
 
 #Speaker:{Name}
-    (I watch as he scrambles to jot something down in his book.)
-    
-    #Speaker:Shad
+(I watch as he scrambles to jot something down in his book.)
+
+#Speaker:Shad
 #pose:Pose3
 #expression:Smile
 "Also I didn't hear a no! You can be the first person to ever try my soul food...maybe the last."
-    -> shad_exit
+-> shad_exit
 
-#speaker:{Name}
-* "As long as you don’t poison me, we’ll get along fine."
-    ~ Shad_Affection += 5
+=== shad_poison ===
+~ Shad_Affection += 5
 
-    #speaker:Shad
-    #pose:Default
+#speaker:Shad
+#pose:Default
 #expression:Neutral
-    "I can promise… I’ll try not to!"
+"I can promise… I’ll try not to!"
+-> shad_exit
 
-    -> shad_exit
+=== shad_monster ===
+~ Shad_Affection -= 5
 
-* "I think you might be a bigger danger than any sea monster."
-    ~ Shad_Affection -= 5
-
-    #speaker:Shad
-    #pose:Default
+#speaker:Shad
+#pose:Default
 #expression:Sad
-    "Y’know, everyone always tells me that. I don’t try to be… I just am."
-
-    -> shad_exit
+"Y’know, everyone always tells me that. I don’t try to be… I just am."
+-> shad_exit
 
 === shad_exit ===
 #speaker:Shad
