@@ -88,7 +88,7 @@ But thinking, idling - costs everything.
 I hear another scream, another crewmate gone. In the blink of an eye. #sfx_Scream-85294
 #sfx_Lightning2
 #Speaker:{Name}
-#sfx_Walking-on-a-wet-surface-41742
+#sfx_WetWalk
 I ran to the wheel, my boots slipping against the wet planks but I held on. 
 
 #Speaker:{Name}
