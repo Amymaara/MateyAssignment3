@@ -11,7 +11,8 @@ public class BlackoutScript : MonoBehaviour
     public StoryManager storyManager;
     private void Start()
     {
-        blackScreen.SetActive(true);
+       
+        //blackScreen.SetActive(true);
     }
 
     void Update()
@@ -20,7 +21,6 @@ public class BlackoutScript : MonoBehaviour
         if (!previousWaitingForContinue && storyManager.waitingForContinue)
         {
             canAdvanceVideo = true;
-            Debug.Log("Can now advance video");
         }
 
         previousWaitingForContinue = storyManager.waitingForContinue;
@@ -30,7 +30,6 @@ public class BlackoutScript : MonoBehaviour
         {
             continueButton();
             canAdvanceVideo = false;
-            Debug.Log("Advanced video, resetting flag");
         }
     }
 
