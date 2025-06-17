@@ -10,7 +10,7 @@ public class SettingsManager : MonoBehaviour
     public GameObject exitGameWarning;
     public Button pauseExit;
 
-    public Slider volumeSlider;
+    //public Slider volumeSlider;
     // add the other sliders here if you need owo
     
     public Slider textSpeedSlider;
@@ -34,13 +34,13 @@ public class SettingsManager : MonoBehaviour
                PlayerPrefs.SetFloat("typeSpeed", 0.04f);
            }
 
-        if (PlayerPrefs.HasKey("soundVolume"))
-            LoadVolume();
-        else
-        {
-            PlayerPrefs.SetFloat("soundVolume", 1);
-            LoadVolume();
-        }
+        //if (PlayerPrefs.HasKey("soundVolume"))
+            //LoadVolume();
+        //else
+        //{
+        //    PlayerPrefs.SetFloat("soundVolume", 1);
+        //    LoadVolume();
+       // }
     }
 
     public void SetTextSpeed()
@@ -107,21 +107,21 @@ public class SettingsManager : MonoBehaviour
     //Code version: unknown
     //Availability: https://www.youtube.com/watch?v=prT-PMl4JSA&ab_channel=SoloGameDev
 
-    public void SetVolume()
-        {
-            AudioListener.volume = volumeSlider.value;
-            SaveVolume();
-        }
+    //public void SetVolume()
+       // {
+       //     AudioListener.volume = volumeSlider.value;
+        //    SaveVolume();
+       // }
 
-        public void SaveVolume()
-        {
-            PlayerPrefs.SetFloat("soundVolume", volumeSlider.value);
-        }
+       // public void SaveVolume()
+       // {
+       //     PlayerPrefs.SetFloat("soundVolume", volumeSlider.value);
+       // }
 
-        public void LoadVolume()
-        {
-            volumeSlider.value = PlayerPrefs.GetFloat("soundVolume");
-        }
+       // public void LoadVolume()
+       // {
+        //    volumeSlider.value = PlayerPrefs.GetFloat("soundVolume");
+       // }
     
 
 }
