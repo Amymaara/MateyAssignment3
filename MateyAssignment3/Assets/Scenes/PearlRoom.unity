@@ -3588,7 +3588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackScreen: {fileID: 805565049}
-  clicks: 3
+  clicks: 9
   storyManager: {fileID: 69370154}
 --- !u!114 &1884388770
 MonoBehaviour:
