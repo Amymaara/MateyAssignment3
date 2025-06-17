@@ -88,7 +88,7 @@ INCLUDE Globals.ink
  #Speaker:Ravynn
  #pose:Pose2
  #expression:Smile
- "Keep talking like that and I'll take it as you want to cut on purpose."
+ "Keep talking like that and I'll take it as you want a cut on purpose."
  
  #Speaker:{Name}
  "Wouldn't be the worst scar I've earned."
