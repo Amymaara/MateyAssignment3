@@ -6,6 +6,11 @@ using System.Collections.Generic;
 
 public class UIButtonSounds : MonoBehaviour
 {
+    // Title: UIButton Sound Hooker with Scene Persistence
+    // Author(s): Ammaarah C & ChatGPT (debugging and tweaking)
+    // Date: 17 June 2025
+    // Code Version: Custom Collaborative Implementation
+    // Description: This script plays hover and click sounds for all UI buttons in a Unity scene and ensures these hooks persist across scene loads using Unity's EventTrigger system.
     private void Awake()
     {
         // Persist across scenes

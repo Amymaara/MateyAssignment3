@@ -4,6 +4,12 @@ using UnityEngine.UI;
 
 public class VolumeSettings : MonoBehaviour
 {
+    // Title:Unity AUDIO Volume Settings Menu Tutorial
+    // Author: Rehope Games, edited by Ammaarah Cassim
+    // Date: 7 March 2022
+    // Code Version: unknown
+    // Avaliability: https://www.youtube.com/watch?v=G-JUp8AMEx0&ab_channel=RehopeGames
+
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
