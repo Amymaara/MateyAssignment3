@@ -925,7 +925,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3608,7 +3608,6 @@ MonoBehaviour:
   ParticleObject: {fileID: 1638652776}
   sparkles: {fileID: 1638652777}
   clicks: 9
-  transTwice: -1
   storyManager: {fileID: 69370154}
 --- !u!1 &1897739143
 GameObject:
