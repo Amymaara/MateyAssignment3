@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rory new CV_0: 96752812329840335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
