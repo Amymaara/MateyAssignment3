@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a331a1c1817cb964cb75d1ae76e96ea4
+guid: c21712b9d05df7443aa99bb3ab49a863
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6173893664071715121
-    second: Pearl CV blank (new)_0
+      213: 96752812329840335
+    second: Rory new CV_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pearl CV blank (new)_0
+      name: Rory new CV_0
       rect:
         serializedVersion: 2
         x: 604
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc678f75c6ce15aa0800000000000000
-      internalID: -6173893664071715121
+      spriteID: fcea0f19b2cb75100800000000000000
+      internalID: 96752812329840335
       vertices: []
       indices: 
       edges: []
