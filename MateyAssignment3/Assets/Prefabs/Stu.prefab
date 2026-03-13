@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6948298680974755865, guid: 8b8b7f7caf2d0dc46837d564f2d36d27, type: 3}
+  m_Sprite: {fileID: -771194123991293091, guid: a3074286431befa4787055740ec61982, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93,5 +93,5 @@ MonoBehaviour:
   affectionGainParticles: {fileID: 0}
   affectionLossParticles: {fileID: 0}
   sprites:
-  - {fileID: -6948298680974755865, guid: 8b8b7f7caf2d0dc46837d564f2d36d27, type: 3}
-  - {fileID: 4719656446326347438, guid: 6c20f49d663da6e498d50972ccb8a0f7, type: 3}
+  - {fileID: -771194123991293091, guid: a3074286431befa4787055740ec61982, type: 3}
+  - {fileID: 3632133601015483714, guid: 614693f26b98ef24c8a82a2f506a6a7b, type: 3}
